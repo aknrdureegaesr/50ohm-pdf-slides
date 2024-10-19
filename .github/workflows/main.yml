@@ -16,15 +16,26 @@ jobs:
             - name: checkout repo
               uses: actions/checkout@v4
             
-            - name: Set up Debian with LaTeX
-              run: |
-                sudo apt-get update
-                sudo apt-get install -y texlive-full make
-                tlmgr init-usertree
-                sudo tlmgr update --all
+            - name: Compile Slides N
+              uses: dante-ev/latex-action@latest
+              with:
+                working_directory: tex
+                compiler: lualatex
+                root_file: slides-N.tex
 
-            - name: Build PDFs
-              run: make
+            - name: Compile Slides E
+              uses: dante-ev/latex-action@latest
+              with:
+                working_directory: tex
+                compiler: lualatex
+                root_file: slides-E.tex
+
+            - name: Compile Slides NE
+              uses: dante-ev/latex-action@latest
+              with:
+                working_directory: tex
+                compiler: lualatex
+                root_file: slides-NE.tex
 
             - name: Upload PDF slides-N
               uses: actions/upload-artifact@v4.4.3
