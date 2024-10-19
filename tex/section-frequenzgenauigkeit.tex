@@ -1,0 +1,242 @@
+
+\section{Frequenzgenauigkeit}
+\label{section:frequenzgenauigkeit}
+\begin{frame}%STARTCONTENT
+
+\only<1>{
+\begin{QQuestion}{AA115}{Eine Genauigkeit von \qty{1}{\ppm} bei einer Frequenz von \qty{435}{\MHz} entspricht~...}{\qty{43,5}{\Hz}.}
+{\qty{435}{\Hz}.}
+{\qty{4,35}{\MHz}.}
+{\qty{4,35}{\kHz}.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AA115}{Eine Genauigkeit von \qty{1}{\ppm} bei einer Frequenz von \qty{435}{\MHz} entspricht~...}{\qty{43,5}{\Hz}.}
+{\textbf{\textcolor{DARCgreen}{\qty{435}{\Hz}.}}}
+{\qty{4,35}{\MHz}.}
+{\qty{4,35}{\kHz}.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $f = 435MHz$
+  \item gesucht: $1pmm$ von $f$
+  \end{itemize}
+    \pause
+    $435MHz \cdot frac{1}{10^6} = \frac{435\cdot \cancel{10^6}Hz}{\cancel{10^6}} = 435Hz$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AA116}{Die Frequenzerzeugung eines Senders hat eine Genauigkeit von \qty{10}{\ppm}. Die digitale Anzeige zeigt eine Sendefrequenz von 14,200.\qty{000}{\MHz} an. In welchen Grenzen kann sich die tatsächliche Frequenz bewegen?}{Zwischen \qtyrange{14,199858}{14,200142}{\MHz}}
+{Zwischen \qtyrange{14,199986}{14,200014}{\MHz}}
+{Zwischen \qtyrange{14,199990}{14,200010}{\MHz}}
+{Zwischen \qtyrange{14,198580}{14,201420}{\MHz}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AA116}{Die Frequenzerzeugung eines Senders hat eine Genauigkeit von \qty{10}{\ppm}. Die digitale Anzeige zeigt eine Sendefrequenz von 14,200.\qty{000}{\MHz} an. In welchen Grenzen kann sich die tatsächliche Frequenz bewegen?}{\textbf{\textcolor{DARCgreen}{Zwischen \qtyrange{14,199858}{14,200142}{\MHz}}}}
+{Zwischen \qtyrange{14,199986}{14,200014}{\MHz}}
+{Zwischen \qtyrange{14,199990}{14,200010}{\MHz}}
+{Zwischen \qtyrange{14,198580}{14,201420}{\MHz}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $f = 14,200.000MHz$
+  \item gegeben: $\textrm{Abw.} = 10ppm$
+  \item gesucht: $f_{min}, f_{max}$
+  \end{itemize}
+    \pause
+    $f_{min} = f -- f \cdot \frac{10}{10^6} = 14,2MHz -- \frac{14,2\cdot \cancel{10^6}Hz\cdot 10}{\cancel{10^6}} = 14,2MHz -- 142Hz = 14,199858MHz$
+
+$f_{max} = f + f \cdot \frac{10}{10^6} = 14,2MHz + \frac{14,2\cdot \cancel{10^6}Hz\cdot 10}{\cancel{10^6}} = 14,2MHz + 142Hz = 14,200142MHz$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AI506}{Die relative Ungenauigkeit der digitalen Anzeige eines Empfängers beträgt \qty{0,01}{\percent}. Um wieviel Hertz kann die angezeigte Frequenz bei \qty{29}{\MHz} maximal abweichen?}{\qty{290}{\Hz}}
+{\qty{2900}{\Hz}}
+{\qty{29}{\Hz}}
+{\qty{29}{\kHz}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AI506}{Die relative Ungenauigkeit der digitalen Anzeige eines Empfängers beträgt \qty{0,01}{\percent}. Um wieviel Hertz kann die angezeigte Frequenz bei \qty{29}{\MHz} maximal abweichen?}{\qty{290}{\Hz}}
+{\textbf{\textcolor{DARCgreen}{\qty{2900}{\Hz}}}}
+{\qty{29}{\Hz}}
+{\qty{29}{\kHz}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $f = 29MHz$
+  \item gegeben: $\textrm{Abw.} = 0,01\%$
+  \item gesucht: $\Delta f$
+  \end{itemize}
+    \pause
+    $\Delta f = 29MHz \cdot 0,01\% = 29\cdot \cancel{10^6}Hz \cdot 100\cdot \cancel{10^{-6}} = 2900Hz$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AI507}{Ein TRX mit einem eingebauten OCXO besitzt eine Anzeigegenauigkeit von $\pm$\qty{0,00001}{\percent}. Wie groß ist die maximale Abweichung, wenn eine Frequenz von \qty{14100}{\kHz} angezeigt wird?}{$\pm$ \qty{1,410}{\Hz}}
+{$\pm$ \qty{0,141}{\Hz}}
+{$\pm$ \qty{1,141}{\Hz}}
+{$\pm$ \qty{114,1}{\Hz}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AI507}{Ein TRX mit einem eingebauten OCXO besitzt eine Anzeigegenauigkeit von $\pm$\qty{0,00001}{\percent}. Wie groß ist die maximale Abweichung, wenn eine Frequenz von \qty{14100}{\kHz} angezeigt wird?}{\textbf{\textcolor{DARCgreen}{$\pm$ \qty{1,410}{\Hz}}}}
+{$\pm$ \qty{0,141}{\Hz}}
+{$\pm$ \qty{1,141}{\Hz}}
+{$\pm$ \qty{114,1}{\Hz}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $f = 14100kHz$
+  \item gegeben: $\textrm{Abw.} = \pm0,00001\%$
+  \item gesucht: $\Delta f$
+  \end{itemize}
+    \pause
+    $\Delta f = 14100kHz \cdot 0,00001\% = 14,1\cdot \cancel{10^6}Hz \cdot 0,1\cdot \cancel{10^{-6}} = 1,41Hz$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AI508}{Ein Frequenzzähler misst auf $\pm$\qty{1}{\ppm} genau. Ist der Zähler auf den \qty{100}{\MHz}-Bereich eingestellt, so ist am oberen Ende dieses Bereiches eine Ungenauigkeit zu erwarten von~...}{$\pm$~\qty{1}{\Hz}.}
+{$\pm$~\qty{10}{\Hz}.}
+{$\pm$~\qty{1}{\kHz}.}
+{$\pm$~\qty{100}{\Hz}.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AI508}{Ein Frequenzzähler misst auf $\pm$\qty{1}{\ppm} genau. Ist der Zähler auf den \qty{100}{\MHz}-Bereich eingestellt, so ist am oberen Ende dieses Bereiches eine Ungenauigkeit zu erwarten von~...}{$\pm$~\qty{1}{\Hz}.}
+{$\pm$~\qty{10}{\Hz}.}
+{$\pm$~\qty{1}{\kHz}.}
+{\textbf{\textcolor{DARCgreen}{$\pm$~\qty{100}{\Hz}.}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $f = 100MHz$
+  \item gegeben: $\textrm{Abw.} = \pm1ppm$
+  \item gesucht: $\Delta f$
+  \end{itemize}
+    \pause
+    $\Delta f = 100MHz \cdot \frac{1}{10^6} = \frac{100\cdot \cancel{10^6}Hz}{\cancel{10^6}} = 100Hz$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AI509}{Mit einem auf \qty{10}{\ppm} genauen digitalen Frequenzzähler wird eine Frequenz von \qty{145}{\MHz} gemessen. In welchem Bereich liegt der vom Zähler angezeigte Frequenzwert?}{\qty{144,999275}{\MHz}~-~\qty{145,000725}{\MHz}}
+{\qty{144,99565}{\MHz}~-~\qty{145,00435}{\MHz}}
+{\qty{144,9971}{\MHz}~-~\qty{145,0029}{\MHz}}
+{\qty{144,99855}{\MHz}~-~\qty{145,00145}{\MHz}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AI509}{Mit einem auf \qty{10}{\ppm} genauen digitalen Frequenzzähler wird eine Frequenz von \qty{145}{\MHz} gemessen. In welchem Bereich liegt der vom Zähler angezeigte Frequenzwert?}{\qty{144,999275}{\MHz}~-~\qty{145,000725}{\MHz}}
+{\qty{144,99565}{\MHz}~-~\qty{145,00435}{\MHz}}
+{\qty{144,9971}{\MHz}~-~\qty{145,0029}{\MHz}}
+{\textbf{\textcolor{DARCgreen}{\qty{144,99855}{\MHz}~-~\qty{145,00145}{\MHz}}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $f = 145MHz$
+  \item gegeben: $\textrm{Abw.} = 10ppm$
+  \item gesucht: $f_{min},f_{max}$
+  \end{itemize}
+    \pause
+    $\Delta f = 145MHz \cdot \frac{10}{10^6} = \frac{145\cdot \cancel{10^6}Hz \cdot 10}{\cancel{10^6}} = 1450Hz$
+    \pause
+    $f_{min} = f -- \Delta f = 145MHz -- 1450Hz = 144,99855MHz$
+
+$f_{max} = f -- \Delta f = 145MHz + 1450Hz = 145,00145MHz$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AI510}{Ein Transceivers zeigt Frequenzen im \qty{2}{\m}-Band auf \qty{1}{\ppm} genau an. Um wie viel kHz muss die an diesem Transceiver bei SSB-Betrieb (USB) eingestellte Sendefrequenz (Frequenz des unterdrückten Trägers) unterhalb von \qty{144,400}{\MHz} liegen, um das dort beginnende Bakensegment zu schützen, wenn die übertragene NF auf den Bereich \qty{300}{\Hz} bis \qty{2,7}{\kHz} beschränkt ist?}{\qty{0,144}{\kHz}}
+{\qty{2,844}{\kHz}}
+{\qty{1,42}{\kHz}}
+{\qty{2,70}{\kHz}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AI510}{Ein Transceivers zeigt Frequenzen im \qty{2}{\m}-Band auf \qty{1}{\ppm} genau an. Um wie viel kHz muss die an diesem Transceiver bei SSB-Betrieb (USB) eingestellte Sendefrequenz (Frequenz des unterdrückten Trägers) unterhalb von \qty{144,400}{\MHz} liegen, um das dort beginnende Bakensegment zu schützen, wenn die übertragene NF auf den Bereich \qty{300}{\Hz} bis \qty{2,7}{\kHz} beschränkt ist?}{\qty{0,144}{\kHz}}
+{\textbf{\textcolor{DARCgreen}{\qty{2,844}{\kHz}}}}
+{\qty{1,42}{\kHz}}
+{\qty{2,70}{\kHz}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $f = 144,400MHz$
+  \item gegeben: $\textrm{Abw.} = 1ppm$
+  \item gegeben: $f_{B,max} = 2,7kHz$
+  \item gesucht: $f_{B,max,Abw}$
+  \end{itemize}
+    \pause
+    $\Delta f = 144,4MHz \cdot \frac{1}{10^6} = \frac{144,4\cdot \cancel{10^6}Hz}{\cancel{10^6}} = 144,4Hz$
+    \pause
+    $f_{B,max,Abw} = f_{B,max} + \Delta f = 2,7kHz + 144,4Hz = 2,8444kHz$
+
+
+
+\end{frame}%ENDCONTENT

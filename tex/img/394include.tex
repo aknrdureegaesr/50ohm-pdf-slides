@@ -1,0 +1,108 @@
+% Abbildung zu Frage TM341
+%
+% Author: Dr. Henning Paul, DO9PHB
+% Year: 2021
+%
+
+\usepackage{tikz,pgfplots}
+\usetikzlibrary{arrows}
+\usetikzlibrary{shapes.geometric}
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{Fira Math}
+\setmathfont[range=up]{Roboto}
+\setmathfont[range=it]{Roboto-Italic}
+\setmathfont[range=\int]{Fira Math}
+\usepackage[euler]{textgreek}
+
+\begin{document}
+
+\pgfplotsset{
+  every axis plot/.append style={line width=0.8pt},
+}
+\tikzstyle{block} = [draw, rectangle, minimum height=10mm, minimum width=10mm]
+\tikzstyle{input} = [coordinate]
+\tikzstyle{output} = [coordinate]
+\tikzstyle{support}=[coordinate,join=by fuzzy]
+     
+\def\adder#1{ \node [draw,circle,minimum size=7mm] (#1) {};
+     \draw (#1.0) -- (#1.180); 
+     \draw (#1.90) -- (#1.270); 
+     }
+\def\scaler#1{ \node [isosceles triangle,isosceles triangle apex angle=60,shape border rotate=-90,draw] (#1) {$\cdot \frac{1}{4}$}; }
+  
+\begin{tikzpicture}
+ \matrix [column sep=0.3cm, row sep=0.5cm]
+  {
+    % row 1
+    \node [input] (xin) {};\pgfmatrixnextcell
+    \node [support] (undelayed) {};\pgfmatrixnextcell
+    \node [block] (delay1) {Delay};\pgfmatrixnextcell
+    \node [support] (delayed1) {};\pgfmatrixnextcell
+    \node [block] (delay2) {Delay};\pgfmatrixnextcell
+    \node [support] (delayed2) {};\pgfmatrixnextcell
+    \node [block] (delay3) {Delay};\pgfmatrixnextcell
+    \node [support] (delayed3) {};\pgfmatrixnextcell \\
+   %% row 2
+    \pgfmatrixnextcell
+    \scaler{mul0};\pgfmatrixnextcell
+    \pgfmatrixnextcell
+    \scaler{mul1};\pgfmatrixnextcell
+    \pgfmatrixnextcell
+    \scaler{mul2};\pgfmatrixnextcell
+    \pgfmatrixnextcell
+    \scaler{mul3};\pgfmatrixnextcell
+    \pgfmatrixnextcell 	\\
+	%% row 3
+    \pgfmatrixnextcell
+	\node [support] (knick) {};\pgfmatrixnextcell
+    \pgfmatrixnextcell
+    \adder{add1};\pgfmatrixnextcell
+    \pgfmatrixnextcell
+    \adder{add2};\pgfmatrixnextcell
+    \pgfmatrixnextcell
+	\adder{add3};\pgfmatrixnextcell
+    \node [output] (yout) {$y(t)$}; \pgfmatrixnextcell \\
+    % row 4
+    \pgfmatrixnextcell
+    \node [support] (dlyin) {}; \pgfmatrixnextcell
+    \node [block] (delay0) {Delay};\pgfmatrixnextcell
+    \node [support] (dlyout) {}; \pgfmatrixnextcell
+    \pgfmatrixnextcell
+    \pgfmatrixnextcell
+    \pgfmatrixnextcell
+    \pgfmatrixnextcell \\
+  };
+    
+\draw (xin) -- node [above] {$\mathrm{x}(\mathrm{t})$} (undelayed);
+\fill (undelayed) circle (0.75mm);
+\draw[->,arrows=-triangle 60] (undelayed) -- (delay1);
+\draw (delay1) -- (delayed1);
+\fill (delayed1) circle (0.75mm);
+\draw[->,arrows=-triangle 60] (delayed1) -- (delay2);
+\draw (delay2) -- (delayed2);
+\fill (delayed2) circle (0.75mm);
+\draw[->,arrows=-triangle 60](delayed2) -- (delay3);
+\draw (delay3) -- (delayed3);
+
+\draw (undelayed) -- (mul0);
+\draw (delayed1) -- (mul1);
+\draw (delayed2) -- (mul2);
+\draw (delayed3) -- (mul3);
+
+\draw (mul0) -- (knick);
+\draw[->,arrows=-triangle 60] (knick) -- (add1);
+\draw[->,arrows=-triangle 60] (mul1) -- (add1);
+\draw[->,arrows=-triangle 60] (add1) -- (add2);
+\draw[->,arrows=-triangle 60] (mul2) -- (add2);
+\draw[->,arrows=-triangle 60] (add2) -- (add3);
+\draw[->,arrows=-triangle 60] (mul3) -- (add3);
+\draw[->,arrows=-triangle 60] (add3) -- node [above] {$\mathrm{y}(\mathrm{t})$} (yout);
+
+\draw[->,arrows=-triangle 60](dlyin) -- (delay0);
+\draw (delay0) -- (dlyout);
+\draw (dlyout) node [right] {$\mathrel{\widehat{=}}$ Verzögerungsglied um einen Abtastwert};
+
+\end{tikzpicture}
+\end{document}

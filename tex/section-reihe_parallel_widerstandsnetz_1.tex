@@ -1,0 +1,111 @@
+
+\section{Widerstandsnetzwerke I}
+\label{section:reihe_parallel_widerstandsnetz_1}
+\begin{frame}%STARTCONTENT
+
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Bei einer komplexeren Schaltung geht man wie folgt vor: In kleinere Teile auflösen und diese berechnen, danach die Schaltung neu zeichnen und überlegen wie es weitergeht
+  \item Schauen wir uns die Beispielschaltung mal genauer an
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{815include}
+    \caption{\scriptsize Widerstandsnetzwerk}
+    \label{e_widerstandsnetzwerk_1}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item $R_5$ und $R_7$ liegen in Reihe und dazu ist $R_8$ parallel geschaltet. Wir berechen diese und nennen den Wert dann $R_{ 5,7,8 }$
+  \item $R_3$ und $R_6$ liegen in Reihe und dazu ist $R_2$ parallel geschaltet. Wir berechen diese und nennen den Wert dann $R_{ 2,3,6 }$
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{815include}
+    \caption{\scriptsize Widerstandsnetzwerk}
+    \label{e_widerstandsnetzwerk_1}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Dann schauen wir uns an, was von der Schaltung übrig geblieben ist.
+  \item Wir sehen eine Reihenschaltung von 4 Widerständen, die sich leicht berechnen lässt.
+  \item Damit können wir dann auch die folgenden Prüfungsfragen leicht beantworten.
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{817include}
+    \caption{\scriptsize Widerstandsnetzwerk in der Auflösung}
+    \label{e_widerstandsnetzwerk_2}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{ED115}{Wie groß ist der Gesamtwiderstand der dargestellten Schaltung?}{\qty{383}{\ohm}}
+{\qty{360}{\ohm}}
+{\qty{1150}{\ohm}}
+{\qty{550}{\ohm}}
+{\DARCimage{1.0\linewidth}{306include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{ED115}{Wie groß ist der Gesamtwiderstand der dargestellten Schaltung?}{\qty{383}{\ohm}}
+{\qty{360}{\ohm}}
+{\qty{1150}{\ohm}}
+{\textbf{\textcolor{DARCgreen}{\qty{550}{\ohm}}}}
+{\DARCimage{1.0\linewidth}{306include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{ED116}{Wie groß ist der Gesamtwiderstand der dargestellten Schaltung?}{\qty{950}{\ohm}}
+{\qty{120}{\ohm}}
+{\qty{2950}{\ohm}}
+{\qty{750}{\ohm}}
+{\DARCimage{1.0\linewidth}{395include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{ED116}{Wie groß ist der Gesamtwiderstand der dargestellten Schaltung?}{\textbf{\textcolor{DARCgreen}{\qty{950}{\ohm}}}}
+{\qty{120}{\ohm}}
+{\qty{2950}{\ohm}}
+{\qty{750}{\ohm}}
+{\DARCimage{1.0\linewidth}{395include}}\end{PQuestion}
+
+}
+\end{frame}%ENDCONTENT

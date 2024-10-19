@@ -1,0 +1,165 @@
+
+\section{Mischer}
+\label{section:mischer}
+\begin{frame}%STARTCONTENT
+
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Beim Mischen von zwei Eingangs-Frequenzen entstehen immer zwei Ausgangs-Frequenzen
+  \end{itemize}
+\begin{equation}f_\text{A1} = f_\text{E1} + f_\text{E2}\end{equation}
+
+\begin{equation}f_\text{A2} = |f_\text{E1} -- f_\text{E2}|\end{equation}
+
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{102include}
+    \caption{\scriptsize Mischer mit zwei Eingangsfrequenzen}
+    \label{e_mischer}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{EF201}{Welche wesentlichen Ausgangsfrequenzen erzeugt die in der Abbildung dargestellte Stufe?}{\qty{42}{\MHz} und \qty{63,4}{\MHz}}
+{\qty{10,7}{\MHz} und \qty{52,7}{\MHz}}
+{\qty{21}{\MHz} und \qty{63,4}{\MHz}}
+{\qty{21,4}{\MHz} und \qty{105,4}{\MHz}}
+{\DARCimage{0.75\linewidth}{102include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{EF201}{Welche wesentlichen Ausgangsfrequenzen erzeugt die in der Abbildung dargestellte Stufe?}{\qty{42}{\MHz} und \qty{63,4}{\MHz}}
+{\textbf{\textcolor{DARCgreen}{\qty{10,7}{\MHz} und \qty{52,7}{\MHz}}}}
+{\qty{21}{\MHz} und \qty{63,4}{\MHz}}
+{\qty{21,4}{\MHz} und \qty{105,4}{\MHz}}
+{\DARCimage{0.75\linewidth}{102include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item Gegeben: $f_{E1} = 21MHz$, $f_{E2} = 31,7MHz$
+  \item Lösung:
+  \end{itemize}
+$$\begin{split}f_{A1} &= 21MHz + 31,7MHz\\ &= 52,7MHz\end{split}\end{equation}
+
+$$\begin{split}f_{A2} &= |21MHz -- 31,7MHz|\\ &= |-10,7MHz|\\ &= 10,7MHz\end{split}\end{equation}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EF202}{Einem Mischer werden die Frequenzen \qty{28}{\MHz} und \qty{38,7}{\MHz} zugeführt. Welche Mischfrequenzen werden hauptsächlich erzeugt?}{\qty{45,3}{\MHz} und \qty{88,1}{\MHz}}
+{\qty{17,3}{\MHz} und \qty{49,4}{\MHz}}
+{\qty{56}{\MHz} und \qty{77,4}{\MHz}}
+{\qty{10,7}{\MHz} und \qty{66,7}{\MHz}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EF202}{Einem Mischer werden die Frequenzen \qty{28}{\MHz} und \qty{38,7}{\MHz} zugeführt. Welche Mischfrequenzen werden hauptsächlich erzeugt?}{\qty{45,3}{\MHz} und \qty{88,1}{\MHz}}
+{\qty{17,3}{\MHz} und \qty{49,4}{\MHz}}
+{\qty{56}{\MHz} und \qty{77,4}{\MHz}}
+{\textbf{\textcolor{DARCgreen}{\qty{10,7}{\MHz} und \qty{66,7}{\MHz}}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EF203}{Welches sind die erwünschten Produkte, die bei der Mischung der Frequenzen \qty{30}{\MHz} und \qty{39}{\MHz} am Ausgang des Mischers entstehen?}{\qty{9}{\MHz} und \qty{69}{\MHz}}
+{\qty{9}{\MHz} und \qty{39}{\MHz}}
+{\qty{30}{\MHz} und \qty{39}{\MHz}}
+{\qty{39}{\MHz} und \qty{69}{\MHz}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EF203}{Welches sind die erwünschten Produkte, die bei der Mischung der Frequenzen \qty{30}{\MHz} und \qty{39}{\MHz} am Ausgang des Mischers entstehen?}{\textbf{\textcolor{DARCgreen}{\qty{9}{\MHz} und \qty{69}{\MHz}}}}
+{\qty{9}{\MHz} und \qty{39}{\MHz}}
+{\qty{30}{\MHz} und \qty{39}{\MHz}}
+{\qty{39}{\MHz} und \qty{69}{\MHz}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EF204}{Einem Mischer werden die Frequenzen \qty{136}{\MHz} und \qty{145}{\MHz} zugeführt. Welche Mischfrequenzen werden hauptsächlich erzeugt?}{\qty{9}{\MHz} und \qty{281}{\MHz}}
+{\qty{127}{\MHz} und \qty{154}{\MHz}}
+{\qty{272}{\MHz} und \qty{290}{\MHz}}
+{\qty{118}{\MHz} und \qty{163}{\MHz}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EF204}{Einem Mischer werden die Frequenzen \qty{136}{\MHz} und \qty{145}{\MHz} zugeführt. Welche Mischfrequenzen werden hauptsächlich erzeugt?}{\textbf{\textcolor{DARCgreen}{\qty{9}{\MHz} und \qty{281}{\MHz}}}}
+{\qty{127}{\MHz} und \qty{154}{\MHz}}
+{\qty{272}{\MHz} und \qty{290}{\MHz}}
+{\qty{118}{\MHz} und \qty{163}{\MHz}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EF205}{Welches sind die erwünschten Produkte, die bei der Mischung der Frequenzen \qty{136}{\MHz} und \qty{145}{\MHz} am Ausgang des Mischers entstehen?}{\qty{9}{\MHz} und \qty{281}{\MHz}}
+{\qty{127}{\MHz} und \qty{154}{\MHz}}
+{\qty{272}{\MHz} und \qty{290}{\MHz}}
+{\qty{154}{\MHz} und \qty{281}{\MHz}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EF205}{Welches sind die erwünschten Produkte, die bei der Mischung der Frequenzen \qty{136}{\MHz} und \qty{145}{\MHz} am Ausgang des Mischers entstehen?}{\textbf{\textcolor{DARCgreen}{\qty{9}{\MHz} und \qty{281}{\MHz}}}}
+{\qty{127}{\MHz} und \qty{154}{\MHz}}
+{\qty{272}{\MHz} und \qty{290}{\MHz}}
+{\qty{154}{\MHz} und \qty{281}{\MHz}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Schirmung}
+\begin{itemize}
+  \item In der Regel ist nur eine von den beiden Frequenzen erwünscht
+  \item Die unerwünschte Frequenz wird durch Filter beseitigt
+  \item Bis dahin sollte diese Frequenz nicht außerhalb der Mischerstufe zu detektieren sein
+  \item Deshalb wird die Mischerstufe vor Abstrahlungen gut geschirmt, z.B. mit einem Metallgehäuse
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EF206}{Wie sollte eine Mischstufe beschaffen sein, um unerwünschte Abstrahlungen zu vermeiden?}{Sie sollte möglichst lose mit dem VFO gekoppelt sein. }
+{Sie sollte niederfrequent entkoppelt werden.}
+{Sie sollte nicht geerdet werden.}
+{Sie sollte gut abgeschirmt sein.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EF206}{Wie sollte eine Mischstufe beschaffen sein, um unerwünschte Abstrahlungen zu vermeiden?}{Sie sollte möglichst lose mit dem VFO gekoppelt sein. }
+{Sie sollte niederfrequent entkoppelt werden.}
+{Sie sollte nicht geerdet werden.}
+{\textbf{\textcolor{DARCgreen}{Sie sollte gut abgeschirmt sein.}}}
+\end{QQuestion}
+
+}
+\end{frame}%ENDCONTENT

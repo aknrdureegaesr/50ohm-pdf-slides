@@ -1,0 +1,11 @@
+% Author: Dr. Matthias Jung, DL9MJ
+% Year: 2022
+\begin{circuitikz}
+    \draw(2,0) 
+        to [short] ++ (1,0)
+        to [twoportsplit, >, l ={\footnotesize Kanalcodierer}] ++(1,0)
+        to [short, >] ++ (1,0) node[inputarrow]{};
+    %% Decoration:
+    \draw (3.35,+0.25) node(){\texttt{01}};
+    \draw (3.65,-0.25) node(){\tiny\texttt{0101}};
+\end{circuitikz}

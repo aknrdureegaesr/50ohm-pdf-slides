@@ -1,0 +1,41 @@
+% Author: Dr. Matthias Jung (DL9MJ)
+% Year: 2022
+
+
+\usepackage{amssymb}
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{Fira Math}
+\setmathfont[range=up]{Roboto}
+\setmathfont[range=it]{Roboto-Italic}
+\setmathfont[range=\int]{Fira Math}
+\usepackage[euler]{textgreek}
+\usetikzlibrary{arrows, arrows.meta}
+
+
+\begin{document}
+	\begin{circuitikz}[european]
+        %\tikzstyle{help lines}=[blue!50];
+        %\draw[style=help lines] (-1,-1) grid (8,2);
+        \draw(0,0) node[bnc](B1){} 
+                   to [short] ++(0.5,0)
+                   to [short] ++(0,1.0)
+                   to [short,-*] ++(1.0,0) coordinate(n1)
+                   to [C, -*] ++(2.0,0) coordinate(n2)
+                   to [short] ++(1.0,0)
+                   to [short] ++(0,-1)
+                   to [short] ++(0.5,0)
+                   node[bnc, xscale=-1](B2){};
+
+        \node [ground] at (B1.shield) {};
+        \node [ground] at (B2.shield) {};
+
+        \draw(n1) to [short] ++(0,-0.129)
+                  to [american inductor, inductors/coils=3, inductors/scale=0.6] ++(0,-1.0) node [ground] {};
+
+        \draw(n2) to [short] ++(0,-0.129)
+                  to [american inductor, inductors/coils=3, inductors/scale=0.6] ++(0,-1.0) node [ground] {};
+
+	\end{circuitikz}
+\end{document}

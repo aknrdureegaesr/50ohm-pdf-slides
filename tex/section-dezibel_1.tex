@@ -1,0 +1,153 @@
+
+\section{Dezibel I}
+\label{section:dezibel_1}
+\begin{frame}%STARTCONTENT
+
+\frametitle{Dezibel einfach erklärt}
+\begin{table}
+\begin{DARCtabular}{lr}
+    Was  &Leistung in mW   \\
+     effektive Leistung EME-Station  & 100 000 000   \\
+     Standard Transceiver  & 100 000   \\
+     Kleine Handfunke  & 1 000   \\
+     Lautsprechersignal (Zimmerlautstärke)  & 100   \\
+     Kopfhörersignal  & 1   \\
+     Lautes KW-Signal  & 0,000 001   \\
+     Leises KW-Signal (Antenneneingang RX)  & 0,000 000 000 001   \\
+\end{DARCtabular}
+\caption{Leistungen in mW}
+\label{e_dezibel_leistungen_mw}
+\end{table}
+Wer mit diesen Zahlen umgeht, fängt automatisch an, die Nullen zu zählen.
+
+\end{frame}
+
+\begin{frame}Wir zählen die Nullen (und nennen das Ergebnis \enquote{Bel})
+
+\begin{table}
+\begin{DARCtabular}{lrr}
+    Was  &Leistung in mW  &Bel   \\
+     effektive Leistung EME-Station  & 100 000 000  & 8   \\
+     Standard Transceiver  & 100 000  & 5   \\
+     Kleine Handfunke  & 1 000  & 3   \\
+     Lautsprechersignal (Zimmerlautstärke)  & 100  & 2   \\
+     Kopfhörersignal  & 1  & 0   \\
+     Lautes KW-Signal  & 0,000 001  & -6   \\
+     Leises KW-Signal (Antenneneingang RX)  & 0,000 000 000 001  & -12   \\
+\end{DARCtabular}
+\caption{Leistungen in mW und Bel}
+\label{e_dezibel_leistungen_bel}
+\end{table}
+
+\end{frame}
+
+\begin{frame}dBm = Dezibel bezogen auf mW
+
+\begin{table}
+\begin{DARCtabular}{lrrr}
+    Was  &Leistung in mW  &Bel  &dBm   \\
+     effektive Leistung EME-Station  & 100 000 000  & 8  & 80   \\
+     Standard Transceiver  & 100 000  & 5  & 50   \\
+     Kleine Handfunke  & 1 000  & 3  & 30   \\
+     Lautsprechersignal (Zimmerlautstärke)  & 100  & 2  & 20   \\
+     Kopfhörersignal  & 1  & 0  & 0   \\
+     Lautes KW-Signal  & 0,000 001  & -6  & -60   \\
+     Leises KW-Signal (Antenneneingang RX)  & 0,000 000 000 001  & -12  & -120   \\
+\end{DARCtabular}
+\caption{Leistungen in mW und Bel}
+\label{e_dezibel_leistungen_bel}
+\end{table}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Leistungsverstärkung}
+\emph{Empfänger}
+
+\begin{itemize}
+  \item Eingangssignal: 0,000 000 000 \qty{001}{\milli\watt}
+  \item Ausgangssignal: \qty{100}{\milli\watt}
+  \item Benötigte Verstärkung: 100 000 000 000 000
+  \end{itemize}
+\emph{Sender}
+
+\begin{itemize}
+  \item Frequenzerzeugende Stufe (Oszillator): \qty{10}{\milli\watt}
+  \item Ausgangssignal: 100 \qty{000}{\milli\watt}
+  \item Benötigte Verstärkung: 10 000
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Leistungsverstärkung mit dB}
+\emph{Empfänger}
+
+\begin{itemize}
+  \item Eingangssignal: 0,000 000 000 \qty{001}{\milli\watt} = -\qty{120}{\dBm}
+  \item Ausgangssignal: \qty{100}{\milli\watt} = \qty{20}{\dBm}
+  \item Benötigte Verstärkung: 100 000 000 000 000 = \qty{140}{\dB}
+  \end{itemize}
+\emph{Sender}
+
+\begin{itemize}
+  \item Frequenzerzeugende Stufe (Oszillator): \qty{10}{\milli\watt} = \qty{10}{\dBm}
+  \item Ausgangssignal: 100 \qty{000}{\milli\watt} = \qty{50}{\dBm}
+  \item Benötigte Verstärkung: 10 000 = \qty{40}{\dB}
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Wichtige Leistungsfaktoren}
+\begin{table}
+\begin{DARCtabular}{cc}
+    dB  & $\approx$  Leistungsfaktor   \\
+     0  & 1   \\
+     1,5  &$\sqrt{2} = 1,41$  \\
+     2,15  & 1,64   \\
+     3  & 2   \\
+     5  &$\sqrt{10} = 3,16$  \\
+     6  & 4   \\
+     10  & 10   \\
+     20  & 100   \\
+\end{DARCtabular}
+\caption{Wichtige Leistungsfaktoren in dB}
+\label{e_dezibel_leistungsfaktoren}
+\end{table}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Berechnung mit Taschenrechner}
+Ältere Modelle
+
+\begin{itemize}
+  \item Faktor-Wert $\rightarrow$ \emph{log}-Taste $\rightarrow$ $\cdot$10 $\rightarrow$ dB
+  \item dB-Wert $\rightarrow$  $\div$ 10 $\rightarrow$ \emph{10<sup>x</sup>}-Taste $\rightarrow$ Faktor
+  \end{itemize}
+Neuere Modelle
+
+\begin{itemize}
+  \item \emph{log}-Taste $\rightarrow$ Faktor-Wert $\rightarrow$ \emph{)}-Taste $\rightarrow$ $\cdot$10 $\rightarrow$ \emph{=}-Taste $\rightarrow$ dB
+  \item \emph{10<sup>x</sup>}-Taste $\rightarrow$ dB-Wert $\rightarrow$  $\div$ 10 $\rightarrow$ \emph{=}-Taste $\rightarrow$ Faktor
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EA107}{Um wie viel Dezibel verändert sich der Leistungspegel, wenn die Leistung verdoppelt wird?}{\qty{3}{\decibel}}
+{\qty{6}{\decibel}}
+{\qty{1,5}{\decibel}}
+{\qty{12}{\decibel}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EA107}{Um wie viel Dezibel verändert sich der Leistungspegel, wenn die Leistung verdoppelt wird?}{\textbf{\textcolor{DARCgreen}{\qty{3}{\decibel}}}}
+{\qty{6}{\decibel}}
+{\qty{1,5}{\decibel}}
+{\qty{12}{\decibel}}
+\end{QQuestion}
+
+}
+\end{frame}%ENDCONTENT

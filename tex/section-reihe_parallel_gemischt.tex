@@ -1,0 +1,144 @@
+
+\section{Reihen- und Parallelschaltung gemischter Bauelemente}
+\label{section:reihe_parallel_gemischt}
+\begin{frame}%STARTCONTENT
+
+\only<1>{
+\begin{QQuestion}{AD101}{Wie groß ist die Gesamtkapazität, wenn drei Kondensatoren $C_1$ = \qty{0,10}{\nF}, $C_2$ = \qty{47}{\pF} und $C_3$ = \qty{22}{\pF} in Reihe geschaltet werden?}{\qty{0,13}{\nF}}
+{\qty{13,0}{\pF}}
+{\qty{169}{\pF}}
+{\qty{16,9}{\pF}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AD101}{Wie groß ist die Gesamtkapazität, wenn drei Kondensatoren $C_1$ = \qty{0,10}{\nF}, $C_2$ = \qty{47}{\pF} und $C_3$ = \qty{22}{\pF} in Reihe geschaltet werden?}{\qty{0,13}{\nF}}
+{\textbf{\textcolor{DARCgreen}{\qty{13,0}{\pF}}}}
+{\qty{169}{\pF}}
+{\qty{16,9}{\pF}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $C_1 = 0,10nF$
+  \item gegeben: $C_2 = 47pF$
+  \item gegeben: $C_3 = 22pF$
+  \item gesucht: $C_{\textrm{ges}}$
+  \end{itemize}
+    \pause
+    \begin{equation}\begin{align}\nonumber \tfrac{1}{C_{\textrm{ges}}} &= \tfrac{1}{C_1} + \tfrac{1}{C_2} + \tfrac{1}{C_3} = \tfrac{1}{0,10nF} + \tfrac{1}{47pF} + \tfrac{1}{22pF}\\ \nonumber &= 7,67\cdot 10^{10} \tfrac{1}{F}\\ \nonumber \Rightarrow C_{\textrm{ges}} &= \frac{1}{7,67\cdot 10^{10} \frac{1}{F}} \approx 13,0pF \end{align}\end{equation}
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AD103}{Wie groß ist die Gesamtkapazität dieser Schaltung, wenn $C_1$ = \qty{0,1}{\nF}, $C_2$ = \qty{1,5}{\nF}, $C_3$ = \qty{220}{\pF} und die Eigenkapazität der Spule \qty{1}{\pF} beträgt?}{\qty{66}{\pF}}
+{\qty{1821}{\pF}}
+{\qty{1,6}{\nF}}
+{\qty{1}{\pF}}
+{\DARCimage{1.0\linewidth}{776include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AD103}{Wie groß ist die Gesamtkapazität dieser Schaltung, wenn $C_1$ = \qty{0,1}{\nF}, $C_2$ = \qty{1,5}{\nF}, $C_3$ = \qty{220}{\pF} und die Eigenkapazität der Spule \qty{1}{\pF} beträgt?}{\qty{66}{\pF}}
+{\textbf{\textcolor{DARCgreen}{\qty{1821}{\pF}}}}
+{\qty{1,6}{\nF}}
+{\qty{1}{\pF}}
+{\DARCimage{1.0\linewidth}{776include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $C_1 = 0,1nF$
+  \item gegeben: $C_2 = 1,5nF$
+  \item gegeben: $C_3 = 220pF$
+  \item gegeben: $C_{\textrm{L}} = 1pF$
+  \item gesucht: $C_{\textrm{ges}}$
+  \end{itemize}
+    \pause
+    \begin{equation}\begin{split}\nonumber C_{\textrm{ges}} &= C_1 + C_2 + C_3 + C_{\textrm{L}}\\ &= 0,1nF + 1,5nF + 220pF + 1pF\\ &= 1821pF \end{split}\end{equation}
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AD105}{Berechne den Betrag des Scheinwiderstands $Z$ für eine Reihenschaltung aus $R$~=~\qty{100}{\ohm} und $L$~=~\qty{100}{\micro\H} bei \qty{1}{\MHz}.}{$|Z|$~=~\qty{636}{\ohm}}
+{$|Z|$~=~\qty{628}{\ohm}}
+{$|Z|$~=~\qty{188}{\ohm}}
+{$|Z|$~=~\qty{259}{\ohm}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AD105}{Berechne den Betrag des Scheinwiderstands $Z$ für eine Reihenschaltung aus $R$~=~\qty{100}{\ohm} und $L$~=~\qty{100}{\micro\H} bei \qty{1}{\MHz}.}{\textbf{\textcolor{DARCgreen}{$|Z|$~=~\qty{636}{\ohm}}}}
+{$|Z|$~=~\qty{628}{\ohm}}
+{$|Z|$~=~\qty{188}{\ohm}}
+{$|Z|$~=~\qty{259}{\ohm}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $R = 100\Omega$
+  \item gegeben: $L = 100\mu H$
+  \item gegeben: $f = 1MHz$
+  \item gesucht: $Z$
+  \end{itemize}
+    \pause
+    $X_{\textrm{L}} = \omega \cdot L = 2 \cdot \pi \cdot f \cdot L = 2 \cdot \pi \cdot 1MHz \cdot 100\mu H = 628\Omega$
+    \pause
+    $Z = \sqrt{R^2 + X^2} = \sqrt{(100\Omega)^2 + (628\Omega)^2} \approx 636\Omega$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AD104}{Berechne den Betrag des Scheinwiderstands $Z$ für eine Reihenschaltung aus $R$~=~\qty{100}{\ohm} und $C$~=~\qty{1}{\nF} bei \qty{1}{\MHz}.}{$|Z|$~=~\qty{188}{\ohm}}
+{$|Z|$~=~\qty{159}{\ohm}}
+{$|Z|$~=~\qty{636}{\ohm}}
+{$|Z|$~=~\qty{259}{\ohm}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AD104}{Berechne den Betrag des Scheinwiderstands $Z$ für eine Reihenschaltung aus $R$~=~\qty{100}{\ohm} und $C$~=~\qty{1}{\nF} bei \qty{1}{\MHz}.}{\textbf{\textcolor{DARCgreen}{$|Z|$~=~\qty{188}{\ohm}}}}
+{$|Z|$~=~\qty{159}{\ohm}}
+{$|Z|$~=~\qty{636}{\ohm}}
+{$|Z|$~=~\qty{259}{\ohm}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $R = 100\Omega$
+  \item gegeben: $C = 100nF$
+  \item gegeben: $f = 1MHz$
+  \item gesucht: $Z$
+  \end{itemize}
+    \pause
+    $X_{\textrm{C}} = \frac{1}{\omega \cdot C} = \frac{1}{2 \cdot \pi \cdot f \cdot C} = \frac{1}{2 \cdot \pi \cdot 1MHz \cdot 100nF} = 159\Omega$
+    \pause
+    $Z = \sqrt{R^2 + X^2} = \sqrt{(100\Omega)^2 + (159\Omega)^2} \approx 188\Omega$
+
+
+
+\end{frame}%ENDCONTENT

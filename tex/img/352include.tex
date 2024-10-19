@@ -1,0 +1,27 @@
+% Author: Dr. Matthias Jung, DL9MJ
+% Year: 2021
+% TD110D
+
+\usetikzlibrary{calc, positioning}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{Fira Math}
+\setmathfont[range=up]{Roboto}
+\setmathfont[range=it]{Roboto-Italic}
+\setmathfont[range=\int]{Fira Math}
+\usepackage[euler]{textgreek}
+\usetikzlibrary{decorations.markings,patterns,bending}
+\usetikzlibrary{arrows}
+
+\begin{document}
+\begin{circuitikz}
+    \draw[-{Triangle[length=2mm, width=1.30mm]}] (0,0.2) -- (1, 0.2); 
+    \draw[-{Triangle[length=2mm, width=1.30mm]}] (0,0)   -- (3, 0); 
+    \draw[-{Triangle[length=2mm, width=1.30mm]}] (3,0)   -- (3,-3); 
+    \draw[-{Triangle[length=2mm, width=1.30mm]}] (0,0)   -- (3,-3); 
+    \draw (0.50, 0.50) node[]{$\mathrm{I}_\mathrm{R}$};
+    \draw (1.70, 0.25) node[]{a};
+    \draw (1.25,-1.70) node[]{c};
+    \draw (3.25,-1.50) node[]{b};
+\end{circuitikz}
+\end{document}

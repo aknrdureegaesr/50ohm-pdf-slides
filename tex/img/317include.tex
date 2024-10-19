@@ -1,0 +1,17 @@
+% Author: Dr. Matthias Jung, DL9MJ
+% Year: 2021
+\begin{circuitikz}
+    %\tikzstyle{help lines}=[blue!50];
+    %\draw[style=help lines] (-6,-4) grid (16,4);
+    \draw(0,0)
+        node[anchor=east](){\qty{0}{\volt}}
+        to [short, o-] ++(3,0) coordinate(dc0)
+        to [short, -o] ++(1.5,0);
+    \draw(0,3)
+        node[anchor=east](){+\qty{12}{\volt}}
+        to [R, o-] ++(3,0) coordinate(dc1)
+        to [short, -o] ++(1.5,0)
+        node[anchor=west](){+\qty{4,7}{\volt}};
+    \draw(dc0) 
+        to [stroke Zener diode, mirror, *-*] (dc1);
+\end{circuitikz}

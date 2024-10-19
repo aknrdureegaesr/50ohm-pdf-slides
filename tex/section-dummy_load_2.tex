@@ -1,0 +1,92 @@
+
+\section{Dummy-Load II}
+\label{section:dummy_load_2}
+\begin{frame}%STARTCONTENT
+
+\only<1>{
+\begin{PQuestion}{AI601}{Die Darstellung zeigt eine aus \qty{150}{\ohm} / \qty{1}{\W}-Widerständen aufgebaute künstliche Antenne (Dummy Load). Mit dieser Kombination aus Reihen- und Parallelschaltung werden ca. \qty{50}{\ohm} erreicht. Wie viele Widerstände werden für diesen Aufbau benötigt und welche Dauerleistung verträgt diese künstliche Antenne?}{16~Widerstände, \qty{16}{\W}}
+{48~Widerstände, \qty{12}{\W}}
+{12~Widerstände, \qty{48}{\W}}
+{48~Widerstände, \qty{48}{\W}}
+{\DARCimage{1.0\linewidth}{47include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AI601}{Die Darstellung zeigt eine aus \qty{150}{\ohm} / \qty{1}{\W}-Widerständen aufgebaute künstliche Antenne (Dummy Load). Mit dieser Kombination aus Reihen- und Parallelschaltung werden ca. \qty{50}{\ohm} erreicht. Wie viele Widerstände werden für diesen Aufbau benötigt und welche Dauerleistung verträgt diese künstliche Antenne?}{16~Widerstände, \qty{16}{\W}}
+{48~Widerstände, \qty{12}{\W}}
+{12~Widerstände, \qty{48}{\W}}
+{\textbf{\textcolor{DARCgreen}{48~Widerstände, \qty{48}{\W}}}}
+{\DARCimage{1.0\linewidth}{47include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item gegeben: $R = 150Ω$
+  \item gegeben: $R_S = 4\cdot 150Ω = 600Ω$
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       \begin{itemize}
+  \item gegeben: $R_{ges} = 50Ω$
+  \item gegeben: $P_R = 1W$
+  \item gesucht: $n$ Widerstände, $P$
+  \end{itemize}
+
+   \end{column}
+\end{columns}
+    \pause
+    Reihen mit je 4 Widerständen:
+
+$\frac{1}{R_{ges}} = n_S \cdot \frac{1}{R_S} \Rightarrow n_S = \frac{R_S}{R_{ges}} = \frac{600Ω}{50Ω} = 12$
+
+$n = 4 \cdot n_S = 4 \cdot 12 = 48$
+    \pause
+    $P = n \cdot P_R = 48 \cdot 1W = 48W$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AI602}{Eine künstliche Antenne (Dummy Load) verfügt über einen Messausgang, der intern an einen Spitzenwertgleichrichter angeschlossen ist. Wozu dient dieser Messausgang? Er dient~...}{zur indirekten Messung der Hochfrequenzleistung.}
+{als Anschluss für einen Antennenvorverstärker.}
+{als Abgriff einer ALC-Regelspannung für die Sendeendstufe.}
+{zum Nachjustieren der Widerstände in der künstlichen Antenne.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AI602}{Eine künstliche Antenne (Dummy Load) verfügt über einen Messausgang, der intern an einen Spitzenwertgleichrichter angeschlossen ist. Wozu dient dieser Messausgang? Er dient~...}{\textbf{\textcolor{DARCgreen}{zur indirekten Messung der Hochfrequenzleistung.}}}
+{als Anschluss für einen Antennenvorverstärker.}
+{als Abgriff einer ALC-Regelspannung für die Sendeendstufe.}
+{zum Nachjustieren der Widerstände in der künstlichen Antenne.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AI603}{Eine künstliche Antenne (Dummy Load) von \qty{50}{\ohm} verfügt über eine Anzapfung bei \qty{5}{\ohm} vom erdnahen Ende. Was könnte zur ungefähren Ermittlung der Senderausgangsleistung über diesen Messpunkt eingesetzt werden?}{Stehwellenmessgerät mit Abschlusswiderstand.}
+{Digitalmultimeter mit HF-Tastkopf.}
+{Stehwellenmessgerät ohne Abschlusswiderstand.}
+{Künstliche \qty{50}{\ohm}-Antenne mit zusätzlichem HF-Dämpfungsglied.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AI603}{Eine künstliche Antenne (Dummy Load) von \qty{50}{\ohm} verfügt über eine Anzapfung bei \qty{5}{\ohm} vom erdnahen Ende. Was könnte zur ungefähren Ermittlung der Senderausgangsleistung über diesen Messpunkt eingesetzt werden?}{Stehwellenmessgerät mit Abschlusswiderstand.}
+{\textbf{\textcolor{DARCgreen}{Digitalmultimeter mit HF-Tastkopf.}}}
+{Stehwellenmessgerät ohne Abschlusswiderstand.}
+{Künstliche \qty{50}{\ohm}-Antenne mit zusätzlichem HF-Dämpfungsglied.}
+\end{QQuestion}
+
+}
+\end{frame}%ENDCONTENT

@@ -1,0 +1,248 @@
+
+\section{Widerstandsnetzwerke II}
+\label{section:reihe_parallel_widerstandsnetz_2}
+\begin{frame}%STARTCONTENT
+
+\only<1>{
+\begin{PQuestion}{AD106}{Wie groß ist die Spannung $U$, wenn durch $R_3$ ein Strom von \qty{1}{\mA} fließt und alle Widerstände $R_1$ bis $R_3$ je \qty{10}{\kohm} betragen? }{\qty{30}{\V}}
+{\qty{20}{\V}}
+{\qty{15}{\V}}
+{\qty{40}{\V}}
+{\DARCimage{1.0\linewidth}{398include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AD106}{Wie groß ist die Spannung $U$, wenn durch $R_3$ ein Strom von \qty{1}{\mA} fließt und alle Widerstände $R_1$ bis $R_3$ je \qty{10}{\kohm} betragen? }{\textbf{\textcolor{DARCgreen}{\qty{30}{\V}}}}
+{\qty{20}{\V}}
+{\qty{15}{\V}}
+{\qty{40}{\V}}
+{\DARCimage{1.0\linewidth}{398include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $R_1 = R_2 = R_3 = 10kΩ$
+  \item gegeben: $I_3 = I_2 = 1mA$
+  \item gesucht: $U$
+  \end{itemize}
+    \pause
+    $R_{ges} = R_1 + \frac{R_1 \cdot R_2}{R_1 + R_2} = 10kΩ + \frac{10kΩ \cdot 10kΩ}{10kΩ + 10kΩ} = 15kΩ$
+    \pause
+    $I_{ges} = I_2 + I_3 = 1mA + 1mA = 2mA$
+    \pause
+    $U = R_{ges} \cdot I_{ges} = 15kΩ \cdot 2mA = 30V$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AD107}{Wie groß ist der Strom durch $R_3$, wenn $U$~=~\qty{15}{\V} und alle Widerstände $R_1$ bis $R_3$ je \qty{10}{\kohm} betragen?}{\qty{4,5}{\mA}}
+{\qty{1,0}{\mA}}
+{\qty{1,6}{\mA}}
+{\qty{0,5}{\mA}}
+{\DARCimage{1.0\linewidth}{398include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AD107}{Wie groß ist der Strom durch $R_3$, wenn $U$~=~\qty{15}{\V} und alle Widerstände $R_1$ bis $R_3$ je \qty{10}{\kohm} betragen?}{\qty{4,5}{\mA}}
+{\qty{1,0}{\mA}}
+{\qty{1,6}{\mA}}
+{\textbf{\textcolor{DARCgreen}{\qty{0,5}{\mA}}}}
+{\DARCimage{1.0\linewidth}{398include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $R_1 = R_2 = R_3 = 10kΩ$
+  \item gegeben: $U=15V$
+  \item gesucht: $I_3$
+  \end{itemize}
+    \pause
+    $R_{ges} = R_1 + \frac{R_1 \cdot R_2}{R_1 + R_2} = 10kΩ + \frac{10kΩ \cdot 10kΩ}{10kΩ + 10kΩ} = 15kΩ$
+    \pause
+    $\frac{U_3}{U} = \frac{R_{2\parallel 3}}{R_{ges}} \Rightarrow U_3 = \frac{R_{2\parallel 3}}{R_{ges}} \cdot U = \frac{5kΩ}{15kΩ} \cdot 15V = 5V$
+    \pause
+    $I_3 = \frac{U_3}{R_3} = \frac{5V}{10kΩ} = 0,5mA$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AD108}{Welche Leistung tritt in $R_2$ auf, wenn $U$~=~\qty{15}{\V} und alle Widerstände $R_1$ bis $R_3$ je \qty{10}{\kohm} betragen? }{\qty{1,5}{\mW}}
+{\qty{5,0}{\mW}}
+{\qty{2,5}{\mW}}
+{\qty{0,15}{\W}}
+{\DARCimage{1.0\linewidth}{398include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AD108}{Welche Leistung tritt in $R_2$ auf, wenn $U$~=~\qty{15}{\V} und alle Widerstände $R_1$ bis $R_3$ je \qty{10}{\kohm} betragen? }{\qty{1,5}{\mW}}
+{\qty{5,0}{\mW}}
+{\textbf{\textcolor{DARCgreen}{\qty{2,5}{\mW}}}}
+{\qty{0,15}{\W}}
+{\DARCimage{1.0\linewidth}{398include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $R_1 = R_2 = R_3 = 10kΩ$
+  \item gegeben: $U=15V$
+  \item gesucht: $P_2$
+  \end{itemize}
+    \pause
+    $\frac{U_2}{U} = \frac{R_{2\parallel 3}}{R_{ges}} \Rightarrow U_2 = \frac{R_{2\parallel 3}}{R_{ges}} \cdot U = \frac{5kΩ}{15kΩ} \cdot 15V = 5V$
+    \pause
+    $P_2 = \frac{U_2^2}{R_2} = \frac{(5V)^2}{10kΩ} = 2,5mW$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AD109}{In welchem Bereich liegt der Eingangswiderstand der folgenden Schaltung, wenn $R$ alle Werte von \qty{0}{\ohm} bis \qty{1}{\kohm} annehmen kann? }{\qtyrange{300}{367}{\ohm}}
+{\qtyrange{300}{500}{\ohm}}
+{\qtyrange{292}{367}{\ohm}}
+{\qtyrange{267}{292}{\ohm}}
+{\DARCimage{1.0\linewidth}{384include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AD109}{In welchem Bereich liegt der Eingangswiderstand der folgenden Schaltung, wenn $R$ alle Werte von \qty{0}{\ohm} bis \qty{1}{\kohm} annehmen kann? }{\qtyrange{300}{367}{\ohm}}
+{\qtyrange{300}{500}{\ohm}}
+{\qtyrange{292}{367}{\ohm}}
+{\textbf{\textcolor{DARCgreen}{\qtyrange{267}{292}{\ohm}}}}
+{\DARCimage{1.0\linewidth}{384include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item gegeben: $R = 0\dots 1kΩ$
+  \item gegeben: $R_1 = 200Ω$
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       \begin{itemize}
+  \item gegeben: $R_2 = 100Ω$
+  \item gegeben: $R_3 = 200Ω$
+  \end{itemize}
+
+   \end{column}
+\end{columns}
+    \pause
+    $R_{ges} = R_1 + \frac{R_2 \cdot (R_3 + R)}{R_2 + (R_3 + R)}$
+    \pause
+    Bei $R = 0Ω$:
+
+$R_{ges} = 200Ω + \frac{100Ω \cdot (200Ω + 0Ω)}{100Ω + 200Ω +0Ω} \approx 267Ω$
+    \pause
+    Bei $R = 1kΩ$:
+
+$R_{ges} = 200Ω + \frac{100Ω \cdot (200Ω + 1kΩ)}{100Ω + 200Ω +1kΩ} \approx 292Ω$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AD110}{Wenn $\textrm{R}_1$ und $\textrm{R}_3$ je \qty{2,2}{\kohm} haben und $\textrm{R}_2$ und $\textrm{R}_4$ je \qty{220}{\ohm} betragen, hat die Schaltung zwischen den Punkten a und b einen Gesamtwiderstand von~...}{\qty{1540}{\ohm}.}
+{\qty{1210}{\ohm}.}
+{\qty{4840}{\ohm}.}
+{\qty{2420}{\ohm}.}
+{\DARCimage{1.0\linewidth}{344include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AD110}{Wenn $\textrm{R}_1$ und $\textrm{R}_3$ je \qty{2,2}{\kohm} haben und $\textrm{R}_2$ und $\textrm{R}_4$ je \qty{220}{\ohm} betragen, hat die Schaltung zwischen den Punkten a und b einen Gesamtwiderstand von~...}{\qty{1540}{\ohm}.}
+{\textbf{\textcolor{DARCgreen}{\qty{1210}{\ohm}.}}}
+{\qty{4840}{\ohm}.}
+{\qty{2420}{\ohm}.}
+{\DARCimage{1.0\linewidth}{344include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $R_1 = R_3 = 2,2kΩ$
+  \item gegeben: $R_2 = R_4 = 220Ω$
+  \item gesucht: $R_{ges}$
+  \end{itemize}
+    \pause
+    $R_{ges} = \frac{(R_1 + R_2) \cdot (R_3 + R_4)}{(R_1 + R_2) + (R_3 + R_4)} = \frac{(2,2kΩ + 220Ω) \cdot (2,2kΩ + 220Ω)}{2,2kΩ + 220Ω + 2,2kΩ + 220Ω} = 1210Ω$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AD114}{Wie groß ist die Spannung $U_2$ in der Schaltung mit folgenden Werten: $U_{\symup{B}}~=~\qty{12}{\V}$, $R_1~=~10~k\Omega$, $R_2~=~2,2~k\Omega$, $R_{\symup{L}}~=~8,2~k\Omega$}{\qty{2,2}{\V}}
+{\qty{1,8}{\V}}
+{\qty{5,4}{\V}}
+{\qty{8,2}{\V}}
+{\DARCimage{0.75\linewidth}{199include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AD114}{Wie groß ist die Spannung $U_2$ in der Schaltung mit folgenden Werten: $U_{\symup{B}}~=~\qty{12}{\V}$, $R_1~=~10~k\Omega$, $R_2~=~2,2~k\Omega$, $R_{\symup{L}}~=~8,2~k\Omega$}{\qty{2,2}{\V}}
+{\textbf{\textcolor{DARCgreen}{\qty{1,8}{\V}}}}
+{\qty{5,4}{\V}}
+{\qty{8,2}{\V}}
+{\DARCimage{0.75\linewidth}{199include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item gegeben: $R_1 = 10kΩ$
+  \item gegeben: $R_2 = 2,2kΩ$
+  \item gegeben: $R_L = 8,2kΩ$
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       \begin{itemize}
+  \item gegeben: $U_B = 12V$
+  \item gesucht: $U_2$
+  \end{itemize}
+
+   \end{column}
+\end{columns}
+    \pause
+    $\frac{U_2}{U_B} = \frac{R_{2\parallel L}}{R_{ges}}$
+
+$R_{2\parallel L} = \frac{R_2 \cdot R_L}{R_2 + R_L} = \frac{2,2kΩ \cdot 8,2kΩ}{2,2kΩ + 8,2kΩ} = 1,74kΩ$
+
+$R_{ges} = R_1 + R_{2\parallel L} = 10kΩ + 1,74kΩ = 11,74kΩ$
+    \pause
+    $U_2 = \frac{R_{2\parallel L}}{R_{ges}} \cdot U_B = \frac{1,74kΩ}{11,74kΩ} \cdot 12V \approx 1,8V$
+
+
+
+\end{frame}%ENDCONTENT

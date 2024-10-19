@@ -1,0 +1,280 @@
+
+\section{Kondensator in Reihen- und Parallelschaltung}
+\label{section:reihe_parallel_kondensator}
+\begin{frame}%STARTCONTENT
+
+\frametitle{Reihenschaltung}
+\begin{itemize}
+  \item Da die Spannung entscheidend für das Entstehen des elektrischen Feldes ist (und diese sich bei der Reihenschaltung aufteilt), ist die Berechung der Kapazität genau umgekehrt wie bei Widerständen.
+  \item Anwendungsfall: Bei hohen Spannungen werden mehrere Kondensatoren in Reihe geschaltet, um die Gefahr eines Durchschlags zu verhindern. Dabei ist hilfreich, dass sich die Gesamtspannung an den Kondensatoren aufteilt.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\begin{itemize}
+  \item Bei einer Reihenschaltung von Kondensatoren ist die Gesamtkapazität kleiner als der Wert des kleinsten Kondensators
+  \end{itemize}
+
+\begin{figure}
+    \DARCimage{0.85\linewidth}{823include}
+    \caption{\scriptsize Reihenschaltung von 3 Kondensatoren}
+    \label{e_reihenschaltung_kondensatoren}
+\end{figure}
+
+$\frac{ 1 }{ C_{ G } } = \frac{ 1 }{ C_{ 1 } } + \frac{ 1 }{ C_{ 2 } } + \frac{ 1 }{ C_{ 3 } }$
+
+\end{frame}
+
+\begin{frame}\begin{itemize}
+  \item Vereinfachung für zwei Kondensatoren:
+  \end{itemize}
+$C_{ G } = \dfrac{ C_{ 1 } \cdot C_{ 2 } }{ C_{ 1 } + C_{ 2 }}$
+
+\end{frame}
+
+\begin{frame}\begin{itemize}
+  \item Vereinfachung für gleiche Kondensatoren:
+  \end{itemize}
+$C_{ G } = \dfrac{ C }{ n }$
+
+$n$ steht für die Anzahl der Kondensatoren
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{ED119}{Eine Reihenschaltung besteht aus drei Kondensatoren von je \qty{0,33}{\micro\F}. Wie groß ist die Gesamtkapazität dieser Schaltung?}{\qty{0,110}{\micro\F}}
+{\qty{0,990}{\micro\F}}
+{\qty{0,011}{\micro\F}}
+{\qty{0,099}{\micro\F}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{ED119}{Eine Reihenschaltung besteht aus drei Kondensatoren von je \qty{0,33}{\micro\F}. Wie groß ist die Gesamtkapazität dieser Schaltung?}{\textbf{\textcolor{DARCgreen}{\qty{0,110}{\micro\F}}}}
+{\qty{0,990}{\micro\F}}
+{\qty{0,011}{\micro\F}}
+{\qty{0,099}{\micro\F}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{ED120}{Welche Gesamtkapazität ergibt sich bei einer Reihenschaltung der Kondensatoren \qty{100}{\micro\F}, \qty{200000}{\nF} und \qty{200}{\micro\F}?}{\qty{102}{\micro\F}}
+{\qty{320}{\nF}}
+{\qty{300,2}{\micro\F}}
+{\qty{50}{\micro\F}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{ED120}{Welche Gesamtkapazität ergibt sich bei einer Reihenschaltung der Kondensatoren \qty{100}{\micro\F}, \qty{200000}{\nF} und \qty{200}{\micro\F}?}{\qty{102}{\micro\F}}
+{\qty{320}{\nF}}
+{\qty{300,2}{\micro\F}}
+{\textbf{\textcolor{DARCgreen}{\qty{50}{\micro\F}}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Parallelschaltung}
+\begin{itemize}
+  \item Hier ist es genau umgekehrt wie bei Widerständen, weil an allen Kondensatoren die gleiche Spannung anliegt, welche ja entscheidend für die Entstehung des elektrischen Feldes ist.
+  \item Anwendungsfall: Kondensatoren werden parallel geschaltet, um aus der Normreihe auf den Wert zu kommen, den man benötigt.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}\begin{itemize}
+  \item Bei einer Parallelschaltung addieren sich die Kapazitäten
+  \end{itemize}
+
+\begin{figure}
+    \DARCimage{0.85\linewidth}{822include}
+    \caption{\scriptsize Parallelschaltung von 3 Kondensatoren}
+    \label{e_parallelschaltung_kondensatoren}
+\end{figure}
+
+$C_{ G } = C_{ 1 } + C_{ 2 } + C_{ 3 }$
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{ED117}{Drei Kondensatoren mit den Kapazitäten $C_1$ = \qty{0,1}{\micro\F}, $C_2$ = \qty{150}{\nF} und $C_3$ = \qty{50000}{\pF} werden parallel geschaltet. Wie groß ist die Gesamtkapazität?}{\qty{0,3}{\micro\F}}
+{\qty{0,2}{\micro\F}}
+{\qty{0,027}{\micro\F}}
+{\qty{0,255}{\micro\F}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{ED117}{Drei Kondensatoren mit den Kapazitäten $C_1$ = \qty{0,1}{\micro\F}, $C_2$ = \qty{150}{\nF} und $C_3$ = \qty{50000}{\pF} werden parallel geschaltet. Wie groß ist die Gesamtkapazität?}{\textbf{\textcolor{DARCgreen}{\qty{0,3}{\micro\F}}}}
+{\qty{0,2}{\micro\F}}
+{\qty{0,027}{\micro\F}}
+{\qty{0,255}{\micro\F}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{ED118}{Wie groß ist die Gesamtkapazität von drei parallel geschalteten Kondensatoren von \qty{22}{\nF}, \qty{0,033}{\micro\F} und \qty{15000}{\pF}?}{\qty{40,3}{\nF}}
+{\qty{700}{\nF}}
+{\qty{0,070}{\micro\F}}
+{\qty{7021}{\pF}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{ED118}{Wie groß ist die Gesamtkapazität von drei parallel geschalteten Kondensatoren von \qty{22}{\nF}, \qty{0,033}{\micro\F} und \qty{15000}{\pF}?}{\qty{40,3}{\nF}}
+{\qty{700}{\nF}}
+{\textbf{\textcolor{DARCgreen}{\qty{0,070}{\micro\F}}}}
+{\qty{7021}{\pF}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Gemischte Schaltungen}
+\end{frame}
+
+\begin{frame}
+\frametitle{Variante 1: Zwei Parallel und dazu einer in Reihe}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Hier berechnet man zuerst die Parallelschaltung von $C_{ 2 }$ und $C_{ 3 }$
+  \end{itemize}
+$C_{ Gp } = C_{ 2 } + C_{ 3 }$
+
+\begin{itemize}
+  \item Danach berechnet man die Reihenschaltung von $C_{ 1 }$ und $C_{ Gp }$
+  \end{itemize}
+$C_{ G } = \frac{ C_{ 1 } \cdot C_{ Gp } }{ C_{ 1 } + C_{ Gp }}$
+
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{820include}
+    \caption{\scriptsize Gemischte Schaltung -- Variante 1}
+    \label{e_gemischt_variante_1}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{ED123}{Welche Gesamtkapazität hat die folgende Schaltung? Gegeben: $C_1$ = \qty{8}{\nF}; $C_2$ = \qty{4}{\nF}; $C_3$ = \qty{4}{\nF}}{\qty{4}{\nF}}
+{\qty{16}{\nF}}
+{\qty{1}{\nF}}
+{\qty{9}{\nF}}
+{\DARCimage{1.0\linewidth}{440include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{ED123}{Welche Gesamtkapazität hat die folgende Schaltung? Gegeben: $C_1$ = \qty{8}{\nF}; $C_2$ = \qty{4}{\nF}; $C_3$ = \qty{4}{\nF}}{\textbf{\textcolor{DARCgreen}{\qty{4}{\nF}}}}
+{\qty{16}{\nF}}
+{\qty{1}{\nF}}
+{\qty{9}{\nF}}
+{\DARCimage{1.0\linewidth}{440include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{ED124}{Welche Gesamtkapazität hat diese Schaltung, wenn $C_1$ = \qty{200}{\nF}, $C_2$ = \qty{100}{\nF} und $C_3$ = \qty{100000}{\pF} betragen?}{\qty{400}{\nF}}
+{\qty{250}{\nF}}
+{\qty{100}{\nF}}
+{\qty{200}{\nF}}
+{\DARCimage{1.0\linewidth}{440include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{ED124}{Welche Gesamtkapazität hat diese Schaltung, wenn $C_1$ = \qty{200}{\nF}, $C_2$ = \qty{100}{\nF} und $C_3$ = \qty{100000}{\pF} betragen?}{\qty{400}{\nF}}
+{\qty{250}{\nF}}
+{\textbf{\textcolor{DARCgreen}{\qty{100}{\nF}}}}
+{\qty{200}{\nF}}
+{\DARCimage{1.0\linewidth}{440include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{ED122}{Welche Gesamtkapazität hat diese Schaltung, wenn $C_1$~=~\qty{2}{\micro\F}, $C_2$~=~\qty{1}{\micro\F} und $C_3$~=~\qty{1}{\micro\F} betragen? }{\qty{1,0}{\micro\F}}
+{\qty{4400}{\nF}}
+{\qty{2,5}{\micro\F}}
+{\qty{4,0}{\micro\F}}
+{\DARCimage{1.0\linewidth}{440include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{ED122}{Welche Gesamtkapazität hat diese Schaltung, wenn $C_1$~=~\qty{2}{\micro\F}, $C_2$~=~\qty{1}{\micro\F} und $C_3$~=~\qty{1}{\micro\F} betragen? }{\textbf{\textcolor{DARCgreen}{\qty{1,0}{\micro\F}}}}
+{\qty{4400}{\nF}}
+{\qty{2,5}{\micro\F}}
+{\qty{4,0}{\micro\F}}
+{\DARCimage{1.0\linewidth}{440include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Variante 2: Zwei in Reihe und dazu einer Parallel}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Hier berechnet man zuerst die Reihenschaltung von $C_{ 1 }$ und $C_{ 2 }$
+  \end{itemize}
+$C_{ Gr } = \frac{ C_{ 1 } \cdot C_{ 2 } }{ C_{ 1 } + C_{ 2 }}$
+
+\begin{itemize}
+  \item Danach berechnet man die Parallelschaltung von $C_{ 3 }$ und $C_{ Gr }$
+  \end{itemize}
+$C_{ G } = \frac{ C_{ 3 } \cdot C_{ Gr } }{ C_{ 3 } + C_{ Gr }}$
+
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{457include}
+    \caption{\scriptsize Gemischte Schaltung -- Variante 2}
+    \label{e_gemischt_variante_2}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{ED121}{Welche Gesamtkapazität hat die folgende Schaltung? Gegeben: $C_1$~=~\qty{10}{\nF}; $C_2$~=~\qty{10}{\nF}; $C_3$~=~\qty{5}{\nF}}{\qty{25}{\nF}}
+{\qty{5}{\nF}}
+{\qty{20}{\nF}}
+{\qty{10}{\nF}}
+{\DARCimage{1.0\linewidth}{457include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{ED121}{Welche Gesamtkapazität hat die folgende Schaltung? Gegeben: $C_1$~=~\qty{10}{\nF}; $C_2$~=~\qty{10}{\nF}; $C_3$~=~\qty{5}{\nF}}{\qty{25}{\nF}}
+{\qty{5}{\nF}}
+{\qty{20}{\nF}}
+{\textbf{\textcolor{DARCgreen}{\qty{10}{\nF}}}}
+{\DARCimage{1.0\linewidth}{457include}}\end{PQuestion}
+
+}
+\end{frame}%ENDCONTENT

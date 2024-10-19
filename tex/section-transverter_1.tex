@@ -1,0 +1,205 @@
+
+\section{Konverter und Transverter}
+\label{section:transverter_1}
+\begin{frame}%STARTCONTENT
+
+\frametitle{Konverter}
+\begin{itemize}
+  \item Signale auf einem Frequenzband werden in ein anderes Frequenzband umgesetzt
+  \item z.B. wird ein 2m-Signal im Empfang als ein 70cm-Signal ausgesendet
+  \item Signal wird nur in eine Richtung umgewandelt
+  \item Im Grunde ein einfacher Mischer
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{EF504}{Was stellt die nachfolgende Schaltung dar?}{Einen \qty{13}{\cm}-Transverter zur Vorschaltung vor einen VHF-Sender}
+{Einen \qty{13}{\cm}-Konverter für einen VHF-Sender}
+{Einen \qty{13}{\cm}-Transverter zur Vorschaltung vor einen VHF-Empfänger}
+{Teile eines I/Q-Mischers für das \qty{13}{\cm}-Band}
+{\DARCimage{1.0\linewidth}{651include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{EF504}{Was stellt die nachfolgende Schaltung dar?}{Einen \qty{13}{\cm}-Transverter zur Vorschaltung vor einen VHF-Sender}
+{\textbf{\textcolor{DARCgreen}{Einen \qty{13}{\cm}-Konverter für einen VHF-Sender}}}
+{Einen \qty{13}{\cm}-Transverter zur Vorschaltung vor einen VHF-Empfänger}
+{Teile eines I/Q-Mischers für das \qty{13}{\cm}-Band}
+{\DARCimage{1.0\linewidth}{651include}}\end{PQuestion}
+
+}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EF505}{Warum soll der Lokaloszillator (XO) in einem Transverter für Satellitenbetrieb mit einer Uplinkfrequenz von \qty{2,4}{\GHz} temperaturstabilisiert oder durch ein höherwertiges Frequenznormal synchronisiert sein?}{Da die Frequenz des Oszillators für die Sendefrequenz heruntergemischt wird, verringert sich dadurch die Abweichung. }
+{Da die Frequenz des Oszillators für die Sendefrequenz vervielfacht wird, vervielfacht sich auch die Abweichung, die für SSB-Betrieb zu groß wäre. }
+{Da die Frequenz des Oszillators für die Sendefrequenz vervielfacht wird, nehmen die Nebenaussendungen mit zunehmender Frequenzabweichung zu. }
+{Da die Frequenz des Oszillators für die Sendefrequenz heruntergemischt wird, verringert sich bei zunehmender Frequenzabweichung der Modulationsgrad. }
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EF505}{Warum soll der Lokaloszillator (XO) in einem Transverter für Satellitenbetrieb mit einer Uplinkfrequenz von \qty{2,4}{\GHz} temperaturstabilisiert oder durch ein höherwertiges Frequenznormal synchronisiert sein?}{Da die Frequenz des Oszillators für die Sendefrequenz heruntergemischt wird, verringert sich dadurch die Abweichung. }
+{\textbf{\textcolor{DARCgreen}{Da die Frequenz des Oszillators für die Sendefrequenz vervielfacht wird, vervielfacht sich auch die Abweichung, die für SSB-Betrieb zu groß wäre. }}}
+{Da die Frequenz des Oszillators für die Sendefrequenz vervielfacht wird, nehmen die Nebenaussendungen mit zunehmender Frequenzabweichung zu. }
+{Da die Frequenz des Oszillators für die Sendefrequenz heruntergemischt wird, verringert sich bei zunehmender Frequenzabweichung der Modulationsgrad. }
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Transverter}
+\begin{itemize}
+  \item Beim Transverter funktioniert die Umsetzung in beide Richtungen
+  \item Die Umsetzung erfolgt auch hier durch Mischung
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EF501}{Welche der nachfolgenden Antworten trifft für die Wirkungsweise eines Transverters zu? Ein Transverter setzt...}{beim Empfangen z.~B. ein \qty{70}{\cm}-Signal in das \qty{10}{\m}-Band und beim Senden das \qty{10}{\m}-Sendesignal auf das \qty{70}{\cm}-Band um.}
+{sowohl beim Senden als auch beim Empfangen z.~B. ein \qty{70}{\cm}-Signal in das \qty{10}{\m}-Band um.}
+{sowohl beim Senden als auch beim Empfangen z.~B. ein frequenzmoduliertes Signal in ein amplitudenmoduliertes Signal um.}
+{sowohl beim Senden als auch beim Empfangen z.~B. ein DMR-Signal in ein D-Star-Signal um.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EF501}{Welche der nachfolgenden Antworten trifft für die Wirkungsweise eines Transverters zu? Ein Transverter setzt...}{\textbf{\textcolor{DARCgreen}{beim Empfangen z.~B. ein \qty{70}{\cm}-Signal in das \qty{10}{\m}-Band und beim Senden das \qty{10}{\m}-Sendesignal auf das \qty{70}{\cm}-Band um.}}}
+{sowohl beim Senden als auch beim Empfangen z.~B. ein \qty{70}{\cm}-Signal in das \qty{10}{\m}-Band um.}
+{sowohl beim Senden als auch beim Empfangen z.~B. ein frequenzmoduliertes Signal in ein amplitudenmoduliertes Signal um.}
+{sowohl beim Senden als auch beim Empfangen z.~B. ein DMR-Signal in ein D-Star-Signal um.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EF502}{Durch welchen Vorgang setzt ein Transverter einen Frequenzbereich in einen anderen um?}{Durch Rückkopplung}
+{Durch Vervielfachung}
+{Durch Frequenzteilung}
+{Durch Mischung}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EF502}{Durch welchen Vorgang setzt ein Transverter einen Frequenzbereich in einen anderen um?}{Durch Rückkopplung}
+{Durch Vervielfachung}
+{Durch Frequenzteilung}
+{\textbf{\textcolor{DARCgreen}{Durch Mischung}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{EF503}{Was stellt folgendes Blockschaltbild dar?}{Einen Transverter für das \qty{2}{\m}-Band}
+{Einen Empfangskonverter für das \qty{2}{\m}-Band}
+{Einen Vorverstärker für das \qty{10}{\m}-Band}
+{Einen Transceiver für das \qty{10}{\m}-Band}
+{\DARCimage{1.0\linewidth}{94include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{EF503}{Was stellt folgendes Blockschaltbild dar?}{\textbf{\textcolor{DARCgreen}{Einen Transverter für das \qty{2}{\m}-Band}}}
+{Einen Empfangskonverter für das \qty{2}{\m}-Band}
+{Einen Vorverstärker für das \qty{10}{\m}-Band}
+{Einen Transceiver für das \qty{10}{\m}-Band}
+{\DARCimage{1.0\linewidth}{94include}}\end{PQuestion}
+
+}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+Frequenz des Generators wird ver-3-facht: $38,666MHz \cdot 3 = 116MHz$
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \emph{TX Weg}
+
+\begin{itemize}
+  \item Die \qtyrange{28}{30}{\mega\hertz} vom TRX werden mit \qty{116}{\mega\hertz} gemischt
+  \item Das Signal kann 80-90MHz oder \qtyrange{144}{146}{\mega\hertz} sein
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{843include}
+    \caption{\scriptsize Transverter im TX-Pfad}
+    \label{e_transverter_tx}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \emph{RX Weg}
+
+\begin{itemize}
+  \item Das Antennensignal wird mit \qty{116}{\mega\hertz} gemischt und es kommen \qtyrange{28}{30}{\mega\hertz} raus
+  \item Das Antennensignal liegt somit u.a. bei \qtyrange{144}{146}{\mega\hertz}
+  \item $\rightarrow$ Es ist nur die Antwort mit \qty{2}{\metre} und der Transverter richtig
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{842include}
+    \caption{\scriptsize Transverter im RX-Pfad}
+    \label{e_transverter_rx}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Frequenzstabilität}
+\begin{itemize}
+  \item Konverter und Transverter sollten mit frequenzstabilen Oszillatoren gebaut werden
+  \item Weicht die Frequenz ab, ist die Ausgangsfrequenz auch abweichend
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Grafik aus vorheriger Frage
+  \item Aus \qty{10}{\mega\hertz} werden \qty{2,256}{\giga\hertz}, also 225,6 Vervielfachung
+  \item Statt \qty{10}{\mega\hertz} erzeugt der Oszillator aufgrund eines Fehlers \qty{10,01}{\mega\hertz}
+  \item \qty{10,01}{\mega\hertz} $\cdot$ 225,6 = \qty{2,258256}{\giga\hertz}
+  \item Mischer: \qty{144}{\mega\hertz} + \qty{2,258256}{\giga\hertz} = \qty{2,402256}{\giga\hertz} $\rightarrow$ \qty{2,256}{\mega\hertz} daneben
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{651include}
+    \caption{\scriptsize Konverter für das 13cm-Band}
+    \label{e_konverter_13cm}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}%ENDCONTENT

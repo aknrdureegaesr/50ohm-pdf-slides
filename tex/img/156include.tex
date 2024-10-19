@@ -1,0 +1,63 @@
+% Author: Prof. Dr. Matthias Jung
+% Year: 2023
+\begin{circuitikz}[european]
+	\ctikzset{
+	    resistors/scale=\getDarcImageFactor,
+	    capacitors/scale=\getDarcImageFactor,
+	    inductors/scale=\getDarcImageFactor,
+	    diodes/scale=\getDarcImageFactor,
+	    transistors/scale=\getDarcImageFactor
+	}
+    \draw(0,0) coordinate(u0)
+        to [short, -*] ++(2,0) coordinate(u1)
+        to [short, -*] ++(2,0) coordinate(u2)
+        to [short, -*] ++(2,0) coordinate(u3)
+        to [short, -*] ++(2,0) coordinate(u4)
+        to [short, -o] ++(4,0) coordinate(u6)
+        node[anchor=north](){--};
+    \draw(0,0)
+        to [american inductor, l={$L$}] ++(0,4) coordinate(o0)
+        to [short, -*] ++(2,0) coordinate(o1)
+        to [short, -*] ++(2,0) coordinate(o2)
+        to [short, -*] ++(2,0) coordinate(o3)
+        to [C, l=$C_6$, -*] ++(2,0) coordinate(o4)
+        to [short    ] ++(1,0) 
+        node [npn, tr circle, anchor=B](T){$K_1$};
+    
+    % Füllung
+    \draw (u1) to [variable capacitor, l=$C_1$, tunable end arrow={Triangle}] (o1);
+    \draw (u2) to [variable capacitor, l=$C_2$, tunable end arrow={Bar}]      (o2);
+    \draw (o3)
+        to [C, l_=$C_3$] ++(0,-2) coordinate(m3)
+        to [C, l_=$C_4$, *-] (u3);
+    \draw(o4) 
+        to [short] (o4|-m3)
+        to [R, l_=$R_3$] (u4);
+    \draw(T.E)
+        to [short,-*] (T.E|-m3) coordinate(m5)
+        to [R, l_=$R_2$, -*] (m5|-u4)
+        node[rground](){};
+    \draw(m3)
+        to [short] (m5)
+        to [C, l=$C_8$, -o] (m5-|u6);
+    \draw(o4)
+        to [R,l_=$R_4$, -*] ++(0,3) coordinate(g4)
+        to [short, -*] (g4-|T.C) coordinate(g5)
+        to [short] (T.C);
+    \draw(g5)
+        to [R, l=$R_1$, -o] (g5-|u6)
+        node[anchor=south](){+};
+    \draw(g4) 
+        to [short, -*] ++(-2,0) coordinate(g3)
+        to [short, -*] ++(-2,0) coordinate(g2)
+        to [short    ] ++(-2,0) coordinate(g1)
+        to [C, l=$C_6$, name={myC}] ++(0,-2)
+        to [short    ] ++(+2,0) coordinate(i2)
+        node[rground](){}
+        to [short    ] ++(+2,0) coordinate(i3)
+        to [stroke Zener diode, l_=$R_5$] (g3);
+    \draw(g2)
+        to [C,l=$C_7$] (i2);
+
+    \draw (myC.south west) node[anchor=south]{$+$};
+\end{circuitikz}

@@ -1,0 +1,104 @@
+
+\section{Verstärkungsleistung}
+\label{section:verstaerkungsleistung}
+\begin{frame}%STARTCONTENT
+
+\only<1>{
+\begin{QQuestion}{AD427}{Ein NF-Verstärker hebt die Eingangsspannung von \qty{1}{\mV} auf \qty{4}{\mV} Ausgangsspannung an. Eingangs- und Ausgangswiderstand sind gleich. Wie groß ist die Spannungsverstärkung des Verstärkers?}{\qty{6}{\decibel}}
+{\qty{3}{\decibel}}
+{\qty{12}{\decibel}}
+{\qty{9}{\decibel}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AD427}{Ein NF-Verstärker hebt die Eingangsspannung von \qty{1}{\mV} auf \qty{4}{\mV} Ausgangsspannung an. Eingangs- und Ausgangswiderstand sind gleich. Wie groß ist die Spannungsverstärkung des Verstärkers?}{\qty{6}{\decibel}}
+{\qty{3}{\decibel}}
+{\textbf{\textcolor{DARCgreen}{\qty{12}{\decibel}}}}
+{\qty{9}{\decibel}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $U_1 = 1mV$
+  \item gegeben: $U_2 = 4mV$
+  \item gesucht: $g$
+  \end{itemize}
+    \pause
+    $g = 20\cdot \log_{10}{(\frac{U_2}{U_1})}dB = 20\cdot \log_{10}{(\frac{4mV}{1mV})}dB = 12dB$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AD428}{Ein Leistungsverstärker hebt die Eingangsleistung von \qty{2,5}{\W} auf \qty{38}{\W} Ausgangsleistung an. Dem entspricht eine Leistungsverstärkung von~...}{\qty{23,6}{\decibel}.}
+{\qty{15,2}{\decibel}.}
+{\qty{17,7}{\decibel}.}
+{\qty{11,8}{\decibel}.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AD428}{Ein Leistungsverstärker hebt die Eingangsleistung von \qty{2,5}{\W} auf \qty{38}{\W} Ausgangsleistung an. Dem entspricht eine Leistungsverstärkung von~...}{\qty{23,6}{\decibel}.}
+{\qty{15,2}{\decibel}.}
+{\qty{17,7}{\decibel}.}
+{\textbf{\textcolor{DARCgreen}{\qty{11,8}{\decibel}.}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $P_1 = 38W$
+  \item gegeben: $P_2 = 2,5W$
+  \item gesucht: $g$
+  \end{itemize}
+    \pause
+    $g = 10\cdot \log_{10}{(\frac{P_2}{P_1})}dB = 10\cdot \log_{10}{(\frac{38W}{2,5W})}dB = 11,8dB$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AD426}{Ein HF-Leistungsverstärker hat eine Verstärkung von \qty{16}{\decibel}. Welche HF-Ausgangsleistung ist zu erwarten, wenn der Verstärker mit \qty{1}{\W} HF-Eingangsleistung angesteuert wird?}{\qty{80}{\W}}
+{\qty{40}{\W}}
+{\qty{16}{\W}}
+{\qty{20}{\W}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AD426}{Ein HF-Leistungsverstärker hat eine Verstärkung von \qty{16}{\decibel}. Welche HF-Ausgangsleistung ist zu erwarten, wenn der Verstärker mit \qty{1}{\W} HF-Eingangsleistung angesteuert wird?}{\qty{80}{\W}}
+{\textbf{\textcolor{DARCgreen}{\qty{40}{\W}}}}
+{\qty{16}{\W}}
+{\qty{20}{\W}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $g = 16dB$
+  \item gegeben: $P_1 = 1W$
+  \item gesucht: $P_2$
+  \end{itemize}
+    \pause
+    $g = 16dB = 10dB + 6dB = 10 \cdot 4 = 40$
+    \pause
+    $P_2 = P_1 \cdot g = 1W \cdot 40 = 40W$
+
+
+
+\end{frame}%ENDCONTENT

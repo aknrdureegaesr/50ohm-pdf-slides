@@ -1,0 +1,206 @@
+
+\section{Binäres Zahlensystem}
+\label{section:binaer}
+\begin{frame}%STARTCONTENT
+
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \emph{Dezimalsystem}
+
+\begin{itemize}
+  \item Menschen sind es gewohnt, die zehn Ziffern von 0 bis 9 zu benutzen
+  \item Man spricht von einem Zehner- oder Dezimalsystem
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       \emph{Binärsystem}
+
+\begin{itemize}
+  \item Für Computer ist es hingegen einfacher mit nur 2 Ziffern zu arbeiten: Der 0 und der 1
+  \item Dies entspricht zwei Zuständen: Beispielsweise ausgeschaltet und eingeschaltet oder auch 0 V und 5 V
+  \end{itemize}
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EA201}{Was ist der Vorteil des binären Zahlensystems gegenüber dem dezimalen Zahlensystem in elektronischen Schaltungen?}{Die Genauigkeit des binären Systems (mit zwei Ziffern) ist um den Faktor 5 höher als die des Dezimalsystems (mit 10 Ziffern).}
+{Die binären Ziffern 0 und 1 können als zwei elektrische Zustände dargestellt und dadurch einfach mittels Schaltelementen (z.~B. Transistoren) verarbeitet werden.}
+{Der Zwischenbereich zwischen 0 und 1 kann von analogen Verstärkerschaltungen mit hoher Genauigkeit abgebildet werden.}
+{Je Ziffer kann mehr als ein Bit an Information übertragen werden (1 binäre Ziffer erlaubt die Übertragung von 8 Dezimalziffern).}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EA201}{Was ist der Vorteil des binären Zahlensystems gegenüber dem dezimalen Zahlensystem in elektronischen Schaltungen?}{Die Genauigkeit des binären Systems (mit zwei Ziffern) ist um den Faktor 5 höher als die des Dezimalsystems (mit 10 Ziffern).}
+{\textbf{\textcolor{DARCgreen}{Die binären Ziffern 0 und 1 können als zwei elektrische Zustände dargestellt und dadurch einfach mittels Schaltelementen (z.~B. Transistoren) verarbeitet werden.}}}
+{Der Zwischenbereich zwischen 0 und 1 kann von analogen Verstärkerschaltungen mit hoher Genauigkeit abgebildet werden.}
+{Je Ziffer kann mehr als ein Bit an Information übertragen werden (1 binäre Ziffer erlaubt die Übertragung von 8 Dezimalziffern).}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}\begin{itemize}
+  \item Mit einem Bit sind zwei Werte möglich (0 und 1)
+  \item Mit zwei Bits schon vier (00, 01, 10 und 11) und mit jedem weiteren Bit jeweils doppelt so viele
+  \item Mathematisch ausgedrückt: Mit n Bits lassen sich 2<sup>n</sup> verschiedene Zahlen darstellen
+  \item Neben Binärzahl wird auch Dualzahl gesagt
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EA202}{Wie viele unterschiedliche Zustände können mit einer Dualzahl dargestellt werden, die aus einer Folge von \qty{3}{\bit} besteht?}{8}
+{4}
+{6}
+{16}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EA202}{Wie viele unterschiedliche Zustände können mit einer Dualzahl dargestellt werden, die aus einer Folge von \qty{3}{\bit} besteht?}{\textbf{\textcolor{DARCgreen}{8}}}
+{4}
+{6}
+{16}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EA203}{Wie viele unterschiedliche Zustände können mit einer Dualzahl dargestellt werden, die aus einer Folge von \qty{4}{\bit} besteht?}{16}
+{4}
+{6}
+{8}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EA203}{Wie viele unterschiedliche Zustände können mit einer Dualzahl dargestellt werden, die aus einer Folge von \qty{4}{\bit} besteht?}{\textbf{\textcolor{DARCgreen}{16}}}
+{4}
+{6}
+{8}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EA204}{Wie viele unterschiedliche Werte können mit einer fünfstelligen Dualzahl dargestellt werden?}{5}
+{32}
+{64}
+{128}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EA204}{Wie viele unterschiedliche Werte können mit einer fünfstelligen Dualzahl dargestellt werden?}{5}
+{\textbf{\textcolor{DARCgreen}{32}}}
+{64}
+{128}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Umwandlung}
+Binärzahlen in Dezimale Zahlen am Beispiel von 10001110
+
+\begin{table}
+\begin{DARCtabular}{cccccccc}
+      &  &  &  &  &  &  &   \\
+     2<sup>7</sup>  & 2<sup>6</sup>  & 2<sup>5</sup>  & 2<sup>4</sup>  & 2<sup>3</sup>  & 2<sup>2</sup>  & 2<sup>1</sup>  & 2<sup>0</sup>   \\
+     128  & 64  & 32  & 16  & 8  & 4  & 2  & 1   \\
+     1  & 0  & 0  & 0  & 1  & 1  & 1  & 0   \\
+\end{DARCtabular}
+\caption{Stellenwerte der achtstelligen Dualzahl 10001110}
+\label{binar_stellenwert_dual}
+\end{table}
+    \pause
+    128 + 8 + 4 + 2 = 142
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EA205}{Berechnen Sie den dezimalen Wert der Dualzahl 01001110. Die Dezimalzahl lautet:}{156}
+{78}
+{142}
+{248}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EA205}{Berechnen Sie den dezimalen Wert der Dualzahl 01001110. Die Dezimalzahl lautet:}{156}
+{\textbf{\textcolor{DARCgreen}{78}}}
+{142}
+{248}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EA206}{Berechnen Sie den dezimalen Wert der Dualzahl 10001110. Die Dezimalzahl lautet:}{78}
+{142}
+{156}
+{248}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EA206}{Berechnen Sie den dezimalen Wert der Dualzahl 10001110. Die Dezimalzahl lautet:}{78}
+{\textbf{\textcolor{DARCgreen}{142}}}
+{156}
+{248}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EA207}{Berechnen Sie den dezimalen Wert der Dualzahl 10011100. Die Dezimalzahl lautet:}{78}
+{142}
+{156}
+{248}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EA207}{Berechnen Sie den dezimalen Wert der Dualzahl 10011100. Die Dezimalzahl lautet:}{78}
+{142}
+{\textbf{\textcolor{DARCgreen}{156}}}
+{248}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EA208}{Berechnen Sie den dezimalen Wert der Dualzahl 11111000. Die Dezimalzahl lautet:}{142}
+{78}
+{156}
+{248}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EA208}{Berechnen Sie den dezimalen Wert der Dualzahl 11111000. Die Dezimalzahl lautet:}{142}
+{78}
+{156}
+{\textbf{\textcolor{DARCgreen}{248}}}
+\end{QQuestion}
+
+}
+\end{frame}%ENDCONTENT

@@ -1,0 +1,158 @@
+
+\section{Strom- und Spannungsmessung III}
+\label{section:strom_spannung_messung_3}
+\begin{frame}%STARTCONTENT
+
+\frametitle{Foliensatz in Arbeit}
+2024-04-28: Die Inhalte werden noch aufbereitet.
+
+Derzeit sind in diesem Abschnitt nur die Fragen sortiert enthalten.
+
+Für das Selbststudium verweisen wir aktuell auf den Abschnitt Messtechnik im DARC Online Lehrgang (\textcolor{DARCblue}{\faLink~\href{https://www.darc.de/der-club/referate/ajw/lehrgang-ta/a16/}{www.darc.de/der-club/referate/ajw/lehrgang-ta/a16/}}) für die Prüfung bis Juni 2024. Bis auf die Fragen hat sich an der Thematik nichts geändert.
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Strom- und Spannungsmessung}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AI101}{Wie sollten Strom- und Spannungsmessgeräte zur Feststellung der Gleichstrom-Eingangsleistung des dargestellten Endverstärkers (PA) angeordnet werden?}{Spannungsmessgerät bei 3, Strommessgerät bei 1.}
+{Spannungsmessgerät bei 1, Strommessgerät bei 2.}
+{Spannungsmessgerät bei 1, Strommessgerät bei 3.}
+{Spannungsmessgerät bei 3, Strommessgerät bei 4.}
+{\DARCimage{1.0\linewidth}{443include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AI101}{Wie sollten Strom- und Spannungsmessgeräte zur Feststellung der Gleichstrom-Eingangsleistung des dargestellten Endverstärkers (PA) angeordnet werden?}{Spannungsmessgerät bei 3, Strommessgerät bei 1.}
+{Spannungsmessgerät bei 1, Strommessgerät bei 2.}
+{\textbf{\textcolor{DARCgreen}{Spannungsmessgerät bei 1, Strommessgerät bei 3.}}}
+{Spannungsmessgerät bei 3, Strommessgerät bei 4.}
+{\DARCimage{1.0\linewidth}{443include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AI102}{Für die Messung der Gleichstrom-Eingangsleistung werden verschiedene Messgeräte verwendet. Bei welchen der Instrumente in der Abbildung handelt es sich um Strommessgeräte?}{2, 3 und 4}
+{1, 2 und 3}
+{2, 4 und 1}
+{1, 3 und 4}
+{\DARCimage{1.0\linewidth}{443include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AI102}{Für die Messung der Gleichstrom-Eingangsleistung werden verschiedene Messgeräte verwendet. Bei welchen der Instrumente in der Abbildung handelt es sich um Strommessgeräte?}{\textbf{\textcolor{DARCgreen}{2, 3 und 4}}}
+{1, 2 und 3}
+{2, 4 und 1}
+{1, 3 und 4}
+{\DARCimage{1.0\linewidth}{443include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Messgenauigkeit}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AI103}{Ein Spannungs- und ein Strommessgerät werden für die Ermittlung der Gleichstromeingangsleistung einer Schaltung verwendet. Das Spannungsmessgerät zeigt \qty{10}{\V}, das Strommessgerät \qty{10}{\A} an. Falls beide dabei im Rahmen ihrer Messgenauigkeit jeweils einen um \qty{5}{\percent} zu geringen Wert anzeigen würden, würde man die elektrische Leistung um~...}{\qty{5}{\percent} zu hoch bestimmen.}
+{\qty{5}{\percent} zu niedrig bestimmen.}
+{\qty{10,25}{\percent} zu hoch bestimmen.}
+{\qty{9,75}{\percent} zu niedrig bestimmen.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AI103}{Ein Spannungs- und ein Strommessgerät werden für die Ermittlung der Gleichstromeingangsleistung einer Schaltung verwendet. Das Spannungsmessgerät zeigt \qty{10}{\V}, das Strommessgerät \qty{10}{\A} an. Falls beide dabei im Rahmen ihrer Messgenauigkeit jeweils einen um \qty{5}{\percent} zu geringen Wert anzeigen würden, würde man die elektrische Leistung um~...}{\qty{5}{\percent} zu hoch bestimmen.}
+{\qty{5}{\percent} zu niedrig bestimmen.}
+{\qty{10,25}{\percent} zu hoch bestimmen.}
+{\textbf{\textcolor{DARCgreen}{\qty{9,75}{\percent} zu niedrig bestimmen.}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item Prozentrechnung – die absoluten Werte sind nicht relevant
+  \item gegeben: $U_{\textrm{Abw}}$ mit \qty{95}{\percent} vom Realwert
+  \item gegeben: $I_{\textrm{Abw}}$ mit \qty{95}{\percent} vom Realwert
+  \item gesucht: Abweichung der Leistung $P = U \cdot I$
+  \end{itemize}
+    \pause
+    \begin{equation}\begin{split} \nonumber P_{\textrm{Abw}} &= 100\% -- (U_{\textrm{Abw}} \cdot I_{\textrm{Abw}})\\ &= 100\% -- (95\% \cdot 95\%)\\ &= 100\% -- 90,25\%\\ &= 9,75\% \end{split}\end{equation}
+
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Strom durch Multimeter}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AI104}{Für ein digitales Multimeter ist folgende Angabe im Datenblatt zu finden: Kleinste Auflösung \qty{100}{\micro\V}, Innenwiderstand \qty{10}{\Mohm} in allen Messbereichen. Sie messen eine Spannung von \qty{0,5}{\V}. Welcher Strom fließt dabei durch das Multimeter?}{50~nA}
+{10~nA}
+{500~nA}
+{200~nA}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AI104}{Für ein digitales Multimeter ist folgende Angabe im Datenblatt zu finden: Kleinste Auflösung \qty{100}{\micro\V}, Innenwiderstand \qty{10}{\Mohm} in allen Messbereichen. Sie messen eine Spannung von \qty{0,5}{\V}. Welcher Strom fließt dabei durch das Multimeter?}{\textbf{\textcolor{DARCgreen}{50~nA}}}
+{10~nA}
+{500~nA}
+{200~nA}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $U = 0,5V$
+  \item gegeben: $R = 10M\Omega$
+  \item gesucht: $I$
+  \end{itemize}
+    \pause
+    \begin{equation} \nonumber I = \frac{U}{R} = \frac{0,5V}{10M\Omega} = 50nA \end{equation}
+
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Thermoumformer}
+\begin{itemize}
+  \item Messgerät, bei dem die abgestrahlte Wärme an einem Widerstand gemessen wird
+  \item Aus der abgestrahlten Wärme wird mit einem Thermoelement eine Gleichspannung erzeugt, die gemessen werden kann
+  \item Wird dann eingesetzt, wenn eine elektrische Messung nicht möglich ist, z.B. bei nicht-periodischen Signalen
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AI105}{Zur genauen Messung der effektiven Leistung eines modulierten Signals bis in den oberen GHz-Bereich eignet sich~...}{ein Digitalmultimeter.}
+{ein Oszillograf.}
+{ein Messgerät mit Diodentastkopf.}
+{ein Messgerät mit Thermoumformer.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AI105}{Zur genauen Messung der effektiven Leistung eines modulierten Signals bis in den oberen GHz-Bereich eignet sich~...}{ein Digitalmultimeter.}
+{ein Oszillograf.}
+{ein Messgerät mit Diodentastkopf.}
+{\textbf{\textcolor{DARCgreen}{ein Messgerät mit Thermoumformer.}}}
+\end{QQuestion}
+
+}
+\end{frame}%ENDCONTENT

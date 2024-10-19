@@ -1,0 +1,79 @@
+
+\section{Brückenschaltung}
+\label{section:brueckenschaltung}
+\begin{frame}%STARTCONTENT
+
+\only<1>{
+\begin{PQuestion}{AD111}{In welchem Verhältnis müssen die Widerstände $R_1$ bis $R_4$ zueinander stehen, damit das Messinstrument im Brückenzweig keine Spannung anzeigt?}{$\dfrac{R_1}{R_4} = \dfrac{R_2}{R_3}$}
+{$\dfrac{R_1}{R_2} = \dfrac{R_4}{R_3}$}
+{$\dfrac{R_2}{R_1} = \dfrac{R_3}{R_4}$}
+{$\dfrac{R_1}{R_2} = \dfrac{R_3}{R_4}$}
+{\DARCimage{1.0\linewidth}{343include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AD111}{In welchem Verhältnis müssen die Widerstände $R_1$ bis $R_4$ zueinander stehen, damit das Messinstrument im Brückenzweig keine Spannung anzeigt?}{$\dfrac{R_1}{R_4} = \dfrac{R_2}{R_3}$}
+{$\dfrac{R_1}{R_2} = \dfrac{R_4}{R_3}$}
+{$\dfrac{R_2}{R_1} = \dfrac{R_3}{R_4}$}
+{\textbf{\textcolor{DARCgreen}{$\dfrac{R_1}{R_2} = \dfrac{R_3}{R_4}$}}}
+{\DARCimage{1.0\linewidth}{343include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AD112}{Die Spannung an der Brückenschaltung beträgt \qty{10}{\V}. Alle Widerstände haben einen Wert von \qty{50}{\ohm}. Wie groß ist die Spannung zwischen A und B im Brückenzweig (gemessen von A nach B)?}{\qty{2,5}{\V}}
+{\qty{-5}{\V}}
+{\qty{5}{\V}}
+{\qty{0}{\V}}
+{\DARCimage{1.0\linewidth}{343include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AD112}{Die Spannung an der Brückenschaltung beträgt \qty{10}{\V}. Alle Widerstände haben einen Wert von \qty{50}{\ohm}. Wie groß ist die Spannung zwischen A und B im Brückenzweig (gemessen von A nach B)?}{\qty{2,5}{\V}}
+{\qty{-5}{\V}}
+{\qty{5}{\V}}
+{\textbf{\textcolor{DARCgreen}{\qty{0}{\V}}}}
+{\DARCimage{1.0\linewidth}{343include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AD113}{Die Spannung an der Brückenschaltung beträgt \qty{11}{\V}. Die Widerstände haben folgende Werte: $R_1$ = \qty{1}{\kohm}; $R_2$ = \qty{10}{\kohm}; $R_3$ = \qty{10}{\kohm}; $R_4$ = \qty{1}{\kohm}. Wie groß ist die Spannung zwischen A und B im Brückenzweig (gemessen von A nach B)?}{$U_{AB} = \qty{-9}{\V}$}
+{$U_{AB} = \qty{9}{\V}$ }
+{$U_{AB} = \qty{10}{\V}$}
+{$U_{AB} = \qty{-10}{\V}$}
+{\DARCimage{1.0\linewidth}{343include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AD113}{Die Spannung an der Brückenschaltung beträgt \qty{11}{\V}. Die Widerstände haben folgende Werte: $R_1$ = \qty{1}{\kohm}; $R_2$ = \qty{10}{\kohm}; $R_3$ = \qty{10}{\kohm}; $R_4$ = \qty{1}{\kohm}. Wie groß ist die Spannung zwischen A und B im Brückenzweig (gemessen von A nach B)?}{$U_{AB} = \qty{-9}{\V}$}
+{\textbf{\textcolor{DARCgreen}{$U_{AB} = \qty{9}{\V}$ }}}
+{$U_{AB} = \qty{10}{\V}$}
+{$U_{AB} = \qty{-10}{\V}$}
+{\DARCimage{1.0\linewidth}{343include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $R_1 = R_4 = 1kΩ$
+  \item gegeben: $R_2 = R_3 = 10kΩ$
+  \item gegeben: $U = 11V$
+  \item gesucht: $U_{AB}$
+  \end{itemize}
+    \pause
+    $\frac{U_A}{U} = \frac{R_1}{R_1 + R_2} \Rightarrow U_A = \frac{R_1}{R_1 + R_2} \cdot U = \frac{1kΩ}{1kΩ + 10kΩ} \cdot 11V = 1V$
+    \pause
+    $\frac{U_B}{U} = \frac{R_3}{R_3 + R_4} \Rightarrow U_B = \frac{R_3}{R_3 + R_4} \cdot U = \frac{10kΩ}{10kΩ + 1kΩ} \cdot 11V = 10V$
+    \pause
+    $U_{AB} = |U_A -- U_B| = |1V -- 10V| = 9V$
+
+
+
+\end{frame}%ENDCONTENT

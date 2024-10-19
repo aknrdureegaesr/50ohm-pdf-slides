@@ -1,0 +1,24 @@
+% Author: Dr. Matthias Jung, DL9MJ
+% Year: 2021
+\documentclass[convert=false]{standalone}
+\input{../common/settings.tex}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{Fira Math}
+\setmathfont[range=up]{Roboto}
+\setmathfont[range=it]{Roboto-Italic}
+\setmathfont[range=\int]{Fira Math}
+\usepackage[euler]{textgreek}
+\ctikzset{%
+    american
+}%
+\begin{document}
+\begin{circuitikz}
+    \tikzstyle{help lines}=[white!50];
+    \draw[style=help lines] (-1.3,-0.8) grid (1.3,0.8);
+    \draw (0.75,0) node[european xor port]{};
+    %\draw (0.65,0) node[notcirc]{};
+    %\draw (0.0,0) node[ieeestd xor port]{};
+\end{circuitikz}
+\end{document}
+

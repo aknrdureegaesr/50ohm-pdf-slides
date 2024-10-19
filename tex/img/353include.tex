@@ -1,0 +1,33 @@
+% Author: Dr. Matthias Jung, DL9MJ
+% Year: 2020
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{Fira Math}
+\setmathfont[range=up]{Roboto}
+\setmathfont[range=it]{Roboto-Italic}
+\setmathfont[range=\int]{Fira Math}
+\usepackage[euler]{textgreek}
+
+\begin{document}
+
+\begin{circuitikz}[american]
+    %\tikzstyle{help lines}=[blue!50];
+    %\draw[style=help lines] (0,0) grid (6,6);
+
+    \draw(0,0) to [short,o-*] ++(1,0) coordinate(C1)
+               to [short] ++(1.5,0)
+               to [rmeter] ++(0,3)
+               to [short,-*] ++(-1.5,0) coordinate(C2)
+               to [short, i_<={I}, -o] ++(-1,0);
+    
+    \draw(C1) to [european resistor, l={$\mathrm{R}_\mathrm{P}$}] (C2);
+
+    \draw(3.7,1.85) node[]{1 mA};
+    \draw(3.7,1.525) node[]{Vollaus-};
+    \draw(3.7,1.15) node[]{schlag};
+
+    \draw[-Triangle] (2.3, 1.3) -- ++(0.4,0.4);
+
+\end{circuitikz}
+\end{document}

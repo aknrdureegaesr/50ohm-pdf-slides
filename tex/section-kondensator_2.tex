@@ -1,0 +1,296 @@
+
+\section{Kondensator II}
+\label{section:kondensator_2}
+\begin{frame}%STARTCONTENT
+
+\only<1>{
+\begin{QQuestion}{AC101}{Ein verlustloser Kondensator wird an eine Wechselspannungsquelle angeschlossen. Welche Phasenverschiebung zwischen Spannung und Strom stellt sich ein?}{Der Strom eilt der Spannung um \qty{90}{\degree} voraus.}
+{Die Spannung eilt dem Strom um \qty{90}{\degree} voraus.}
+{Die Spannung eilt dem Strom um \qty{45}{\degree} voraus.}
+{Der Strom eilt der Spannung um \qty{45}{\degree} voraus.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC101}{Ein verlustloser Kondensator wird an eine Wechselspannungsquelle angeschlossen. Welche Phasenverschiebung zwischen Spannung und Strom stellt sich ein?}{\textbf{\textcolor{DARCgreen}{Der Strom eilt der Spannung um \qty{90}{\degree} voraus.}}}
+{Die Spannung eilt dem Strom um \qty{90}{\degree} voraus.}
+{Die Spannung eilt dem Strom um \qty{45}{\degree} voraus.}
+{Der Strom eilt der Spannung um \qty{45}{\degree} voraus.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC102}{Welches Vorzeichen hat der Blindwiderstand eines idealen Kondensators und von welchen physikalischen Größen hängt er ab? Der Blindwiderstand ist~...}{positiv und unabhängig von der Kapazität und der anliegenden Frequenz.}
+{negativ und unabhängig von der Kapazität und der anliegenden Frequenz.}
+{positiv und abhängig von der Kapazität und der anliegenden Frequenz.}
+{negativ und abhängig von der Kapazität und der anliegenden Frequenz.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC102}{Welches Vorzeichen hat der Blindwiderstand eines idealen Kondensators und von welchen physikalischen Größen hängt er ab? Der Blindwiderstand ist~...}{positiv und unabhängig von der Kapazität und der anliegenden Frequenz.}
+{negativ und unabhängig von der Kapazität und der anliegenden Frequenz.}
+{positiv und abhängig von der Kapazität und der anliegenden Frequenz.}
+{\textbf{\textcolor{DARCgreen}{negativ und abhängig von der Kapazität und der anliegenden Frequenz.}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC103}{Welcher der folgenden Widerstände hat keine Wärmeverluste?}{Der NTC-Widerstand}
+{Der Metalloxidwiderstand}
+{Der Wirkwiderstand}
+{Der Blindwiderstand}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC103}{Welcher der folgenden Widerstände hat keine Wärmeverluste?}{Der NTC-Widerstand}
+{Der Metalloxidwiderstand}
+{Der Wirkwiderstand}
+{\textbf{\textcolor{DARCgreen}{Der Blindwiderstand}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC104}{Wie groß ist der Betrag des kapazitiven Blindwiderstands eines Kondensators mit \qty{10}{\pF} bei einer Frequenz von \qty{100}{\MHz}?}{\qty{318}{\ohm}}
+{\qty{1,59}{\kohm}}
+{\qty{159}{\ohm}}
+{\qty{31,8}{\ohm}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC104}{Wie groß ist der Betrag des kapazitiven Blindwiderstands eines Kondensators mit \qty{10}{\pF} bei einer Frequenz von \qty{100}{\MHz}?}{\qty{318}{\ohm}}
+{\qty{1,59}{\kohm}}
+{\textbf{\textcolor{DARCgreen}{\qty{159}{\ohm}}}}
+{\qty{31,8}{\ohm}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $C = 10pF$
+  \item gegeben: $f = 100MHz$
+  \item gesucht: $X_{\textrm{C}}$
+  \end{itemize}
+    \pause
+    \begin{equation}\begin{split}\nonumber X_{\textrm{C}} &= \frac{1}{\omega \cdot C} = \frac{1}{2\pi \cdot f \cdot C}\\ &= \frac{1}{2\pi \cdot 100MHz \cdot 10pF}\\ &\approx 159\Omega \end{split}\end{equation}
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC106}{Wie groß ist der Betrag des kapazitiven Blindwiderstands eines Kondensators mit \qty{100}{\pF} bei einer Frequenz von \qty{100}{\MHz}?}{ca. \qty{15,9}{\ohm}}
+{ca. \qty{159}{\ohm}}
+{ca. \qty{31,8}{\ohm}}
+{ca. \qty{3,2}{\ohm}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC106}{Wie groß ist der Betrag des kapazitiven Blindwiderstands eines Kondensators mit \qty{100}{\pF} bei einer Frequenz von \qty{100}{\MHz}?}{\textbf{\textcolor{DARCgreen}{ca. \qty{15,9}{\ohm}}}}
+{ca. \qty{159}{\ohm}}
+{ca. \qty{31,8}{\ohm}}
+{ca. \qty{3,2}{\ohm}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $C = 100pF$
+  \item gegeben: $f = 100MHz$
+  \item gesucht: $X_{\textrm{C}}$
+  \end{itemize}
+    \pause
+    \begin{equation}\begin{split}\nonumber X_{\textrm{C}} &= \frac{1}{\omega \cdot C} = \frac{1}{2\pi \cdot f \cdot C}\\ &= \frac{1}{2\pi \cdot 100MHz \cdot 100pF}\\ &\approx 15,9\Omega \end{split}\end{equation}
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC105}{Wie groß ist der Betrag des kapazitiven Blindwiderstands eines Kondensators mit \qty{50}{\pF} bei einer Frequenz von \qty{145}{\MHz} ?}{ca. \qty{69}{\ohm}}
+{ca. \qty{0,045}{\ohm}}
+{ca. \qty{18,2}{\kohm}}
+{ca. \qty{22}{\ohm}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC105}{Wie groß ist der Betrag des kapazitiven Blindwiderstands eines Kondensators mit \qty{50}{\pF} bei einer Frequenz von \qty{145}{\MHz} ?}{ca. \qty{69}{\ohm}}
+{ca. \qty{0,045}{\ohm}}
+{ca. \qty{18,2}{\kohm}}
+{\textbf{\textcolor{DARCgreen}{ca. \qty{22}{\ohm}}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $C = 50pF$
+  \item gegeben: $f = 145MHz$
+  \item gesucht: $X_{\textrm{C}}$
+  \end{itemize}
+    \pause
+    \begin{equation}\begin{split}\nonumber X_{\textrm{C}} &= \frac{1}{\omega \cdot C} = \frac{1}{2\pi \cdot f \cdot C}\\ &= \frac{1}{2\pi \cdot 145MHz \cdot 50pF}\\ &\approx 22\Omega \end{split}\end{equation}
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC107}{Wie groß ist der Betrag des kapazitiven Blindwiderstands eines Kondensators mit \qty{100}{\pF} bei einer Frequenz von \qty{435}{\MHz} ?}{ca. \qty{3,7}{\ohm}}
+{ca. \qty{0,27}{\ohm}}
+{ca. \qty{27,3}{\kohm}}
+{ca. \qty{11,5}{\ohm}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC107}{Wie groß ist der Betrag des kapazitiven Blindwiderstands eines Kondensators mit \qty{100}{\pF} bei einer Frequenz von \qty{435}{\MHz} ?}{\textbf{\textcolor{DARCgreen}{ca. \qty{3,7}{\ohm}}}}
+{ca. \qty{0,27}{\ohm}}
+{ca. \qty{27,3}{\kohm}}
+{ca. \qty{11,5}{\ohm}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $C = 100pF$
+  \item gegeben: $f = 435MHz$
+  \item gesucht: $X_{\textrm{C}}$
+  \end{itemize}
+    \pause
+    \begin{equation}\begin{split}\nonumber X_{\textrm{C}} &= \frac{1}{\omega \cdot C} = \frac{1}{2\pi \cdot f \cdot C}\\ &= \frac{1}{2\pi \cdot 435MHz \cdot 100pF}\\ &\approx 3,7\Omega \end{split}\end{equation}
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC108}{An einem unbekannten Kondensator liegt eine Wechselspannung mit \qty{16}{\V} und \qty{50}{\Hz}. Es wird ein Strom von \qty{32}{\mA} gemessen. Welche Kapazität hat der Kondensator?}{ca. \qty{0,637}{\micro\F}}
+{ca. \qty{6,37}{\micro\F}}
+{ca. \qty{0,45}{\micro\F}}
+{ca. \qty{4,5}{\micro\F}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC108}{An einem unbekannten Kondensator liegt eine Wechselspannung mit \qty{16}{\V} und \qty{50}{\Hz}. Es wird ein Strom von \qty{32}{\mA} gemessen. Welche Kapazität hat der Kondensator?}{ca. \qty{0,637}{\micro\F}}
+{\textbf{\textcolor{DARCgreen}{ca. \qty{6,37}{\micro\F}}}}
+{ca. \qty{0,45}{\micro\F}}
+{ca. \qty{4,5}{\micro\F}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item gegeben: $U = 16V$
+  \item gegeben: $I = 32mA$
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       \begin{itemize}
+  \item gegeben: $f = 50Hz$
+  \item gesucht: $C$
+  \end{itemize}
+
+   \end{column}
+\end{columns}
+    \pause
+    $X_{\textrm{C}} = \frac{U}{I} = \frac{16V}{32mA} = 500\Omega$
+    \pause
+    \begin{equation}\begin{align}\nonumber X_{\textrm{C}} &= \frac{1}{\omega \cdot C} \\ \nonumber \Rightarrow C &= \frac{1}{\omega \cdot X_{\textrm{C}}} = \frac{1}{2\pi \cdot f \cdot X_{\textrm{C}}}\\ \nonumber &= \frac{1}{2\pi \cdot 50Hz \cdot 500\Omega}\\ \nonumber &\approx 6,37\mu F\end{align}\end{equation}
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC109}{Kommt es in einem von Wechselstrom durchflossenen realen Kondensator zu Verlusten?}{Ja, infolge von Verlusten in Dielektrikum und Zuleitung}
+{Nein, beim Kondensator handelt es sich  um eine reine Blindleistung.}
+{Ja, infolge des Blindwiderstands}
+{Nein, bei Wechselstrom treten keine Verluste auf.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC109}{Kommt es in einem von Wechselstrom durchflossenen realen Kondensator zu Verlusten?}{\textbf{\textcolor{DARCgreen}{Ja, infolge von Verlusten in Dielektrikum und Zuleitung}}}
+{Nein, beim Kondensator handelt es sich  um eine reine Blindleistung.}
+{Ja, infolge des Blindwiderstands}
+{Nein, bei Wechselstrom treten keine Verluste auf.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC110}{Neben dem kapazitiven Blindwiderstand treten im von Wechselstrom durchflossenen Kondensator auch Verluste auf, die rechnerisch in einem parallelgeschalteten Verlustwiderstand zusammengefasst werden können. Die Kondensatorverluste werden oft durch~...}{den relativen Blindwiderstand in Ohm pro Farad angegeben, mit dem die Kondensatorgüte berechnet werden kann.}
+{den relativen Verlustwiderstand in Ohm pro Farad angegeben, mit dem die Kondensatorgüte berechnet werden kann.}
+{den Verlustfaktor tan $\delta$ angegeben, der dem Kehrwert des Gütefaktors entspricht.}
+{den Verlustfaktor cos $\phi$ angegeben, der dem Kehrwert des Gütefaktors entspricht.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC110}{Neben dem kapazitiven Blindwiderstand treten im von Wechselstrom durchflossenen Kondensator auch Verluste auf, die rechnerisch in einem parallelgeschalteten Verlustwiderstand zusammengefasst werden können. Die Kondensatorverluste werden oft durch~...}{den relativen Blindwiderstand in Ohm pro Farad angegeben, mit dem die Kondensatorgüte berechnet werden kann.}
+{den relativen Verlustwiderstand in Ohm pro Farad angegeben, mit dem die Kondensatorgüte berechnet werden kann.}
+{\textbf{\textcolor{DARCgreen}{den Verlustfaktor tan $\delta$ angegeben, der dem Kehrwert des Gütefaktors entspricht.}}}
+{den Verlustfaktor cos $\phi$ angegeben, der dem Kehrwert des Gütefaktors entspricht.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC111}{An einem Kondensator mit einer Kapazität von \qty{1}{\micro\F} wird ein NF-Signal mit \qty{10}{\kHz} und \qty{12}{\V}$_{\textrm{eff}}$ angelegt. Wie groß ist die aufgenommene Wirkleistung im eingeschwungenen Zustand?}{\qty{0,9}{\W}}
+{Näherungsweise \qty{0}{\W}}
+{\qty{0,75}{\W}}
+{\qty{9}{\W}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC111}{An einem Kondensator mit einer Kapazität von \qty{1}{\micro\F} wird ein NF-Signal mit \qty{10}{\kHz} und \qty{12}{\V}$_{\textrm{eff}}$ angelegt. Wie groß ist die aufgenommene Wirkleistung im eingeschwungenen Zustand?}{\qty{0,9}{\W}}
+{\textbf{\textcolor{DARCgreen}{Näherungsweise \qty{0}{\W}}}}
+{\qty{0,75}{\W}}
+{\qty{9}{\W}}
+\end{QQuestion}
+
+}
+
+\end{frame}%ENDCONTENT

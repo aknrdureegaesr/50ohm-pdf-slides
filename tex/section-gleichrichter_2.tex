@@ -1,0 +1,109 @@
+
+\section{Gleichrichter II}
+\label{section:gleichrichter_2}
+\begin{frame}%STARTCONTENT
+
+\only<1>{
+\begin{PQuestion}{AD302}{Berechnen Sie für diese Schaltung die Leerlaufspannung an den Klemmen A - B.}{Zirka \qty{42}{\V}}
+{Zirka \qty{15}{\V}}
+{Zirka \qty{30}{\V}}
+{Zirka \qty{21}{\V}}
+{\DARCimage{1.0\linewidth}{198include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AD302}{Berechnen Sie für diese Schaltung die Leerlaufspannung an den Klemmen A - B.}{Zirka \qty{42}{\V}}
+{Zirka \qty{15}{\V}}
+{Zirka \qty{30}{\V}}
+{\textbf{\textcolor{DARCgreen}{Zirka \qty{21}{\V}}}}
+{\DARCimage{1.0\linewidth}{198include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $U_{eff} = 15V$
+  \item gesucht: $\hat{U}$
+  \end{itemize}
+    \pause
+    $\hat{U} = U_{eff} \cdot \sqrt{2} = 15V \cdot 1,41 = 21,21V$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AD303}{Welche Spannungsfestigkeit des Kondensators sollte mindestens gewählt werden, wenn das Transformationsverhältnis 20:1 beträgt und ein Sicherheitsaufschlag auf die Spannungsfestigkeit von \qty{50}{\percent} berücksichtigt werden soll?}{\qty{35}{\V}}
+{\qty{16}{\V} }
+{\qty{25}{\V} }
+{\qty{10}{\V}}
+{\DARCimage{1.0\linewidth}{29include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AD303}{Welche Spannungsfestigkeit des Kondensators sollte mindestens gewählt werden, wenn das Transformationsverhältnis 20:1 beträgt und ein Sicherheitsaufschlag auf die Spannungsfestigkeit von \qty{50}{\percent} berücksichtigt werden soll?}{\qty{35}{\V}}
+{\qty{16}{\V} }
+{\textbf{\textcolor{DARCgreen}{\qty{25}{\V} }}}
+{\qty{10}{\V}}
+{\DARCimage{1.0\linewidth}{29include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $U_P = 230V$
+  \item gegeben: $\"{u} = 20:1$
+  \item gesucht: $\hat{U} + 50\%$
+  \end{itemize}
+    \pause
+    $ü = \frac{U_P}{U_S} \Rightarrow U_S = \frac{U_P}{ü} = \frac{230V}{20} = 11,5V$
+    \pause
+    $\hat{U} = U_S \cdot \sqrt{2} = 11,5V \cdot 1,41 \approx 16,26V$
+    \pause
+    $\hat{U} + 50\% \approx 25V$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AD304}{Bei einem Transformationsverhältnis von 5:1 sollte die Spannungsfestigkeit der Diode (max. Spannung plus \qty{20}{\percent} Sicherheitsaufschlag) in dieser Schaltung nicht weniger als~...}{\qty{90}{\V} betragen.}
+{\qty{78}{\V} betragen.}
+{\qty{156}{\V} betragen.}
+{\qty{130}{\V} betragen.}
+{\DARCimage{1.0\linewidth}{29include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AD304}{Bei einem Transformationsverhältnis von 5:1 sollte die Spannungsfestigkeit der Diode (max. Spannung plus \qty{20}{\percent} Sicherheitsaufschlag) in dieser Schaltung nicht weniger als~...}{\qty{90}{\V} betragen.}
+{\qty{78}{\V} betragen.}
+{\textbf{\textcolor{DARCgreen}{\qty{156}{\V} betragen.}}}
+{\qty{130}{\V} betragen.}
+{\DARCimage{1.0\linewidth}{29include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $U_P = 230V$
+  \item gegeben: $\"{u} = 5:1$
+  \item gesucht: $U_{SS} + 20\%$
+  \end{itemize}
+    \pause
+    $ü = \frac{U_P}{U_S} \Rightarrow U_S = \frac{U_P}{ü} = \frac{230V}{5} = 46V$
+    \pause
+    $\hat{U} = U_S \cdot \sqrt{2} = 46V \cdot 1,41 \approx 65,05V$
+    \pause
+    $U_{SS} + 20\% = 2 \cdot \hat{U} + 20\% \approx 156V$
+
+
+
+\end{frame}%ENDCONTENT

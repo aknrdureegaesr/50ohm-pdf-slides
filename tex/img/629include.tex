@@ -1,0 +1,41 @@
+% !TeX program = lualatex
+
+% Author: Matthias, DL9MJ
+% Year: 2022
+
+
+\usepackage{siunitx}
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{Fira Math}
+\setmathfont[range=up]{Roboto}
+\setmathfont[range=it]{Roboto-Italic}
+\setmathfont[range=\int]{Fira Math}
+\usepackage[euler]{textgreek}
+\usetikzlibrary{decorations.pathmorphing}
+
+\begin{document}
+
+\begin{circuitikz}[scale=1.5]
+
+  \draw[very thick] (0.6,0.1) -- ++(0,1.15) -- ++(-0.6,0) -- ++(0,-1.15);
+  \draw[white, double=black, double distance=1.2pt, thick] (0.3,0.1) -- (0.3,5/1.6);
+  \draw (0.15, 0.4) ellipse (0.075 and 0.03);
+  \draw (0.075,0.4) -- ++(0,-0.65) coordinate(d1);
+  \draw (0.225,0.4) -- ++(0,-0.65) coordinate(d2);
+  \draw (0.150,0.4) -- ++(0,+0.1) -- ++(0.15,0) coordinate(c1);
+  \draw (0.075,0.4) coordinate(e1) -- ++(0,+0.1) -- ++(-0.075,0) coordinate(c2);
+  \fill(c1) circle(0.025);
+  \fill(c2) circle(0.025);
+  \fill(e1) circle(0.025);
+  \draw(d1) sin ++(0.075/2, 0.015)
+            cos ++(0.075/2,-0.015)
+            sin ++(0.075/2,-0.015)
+            cos ++(0.075/2, 0.015);
+  \draw(d1) sin ++(0.075/2,-0.015)
+            cos ++(0.075/2, 0.015);
+
+\end{circuitikz}
+
+\end{document}

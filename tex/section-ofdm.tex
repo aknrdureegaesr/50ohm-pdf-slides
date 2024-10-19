@@ -1,0 +1,67 @@
+
+\section{Orthogonales Frequenzmultiplexverfahren (OFDM)}
+\label{section:ofdm}
+\begin{frame}%STARTCONTENT
+\begin{itemize}
+  \item Es ist auch möglich, einen Datenstrom auf mehrere Träger zu verteilen, die auf unterschiedlichen, jedoch nahegelegenen Frequenzen liegen.
+  \item Bei der orthogonalen Frequenzmodulation (Orthogonal Frequency-Division Multiplexing, OFDM) werden die einzelnen Träger in einem Abstand platziert, wo ein gegenseitiges Stören untereinander (ein sogenanntes „Übersprechen“) vermieden wird.
+  \end{itemize}
+
+\begin{figure}
+    \DARCimage{0.85\linewidth}{704include}
+    \caption{\scriptsize Frequenzspektrum eines einfachen OFDM-Signals}
+    \label{ofdm}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}\begin{itemize}
+  \item Ein Vorteil dieses Vorgehens liegt darin, dass schmalbandige Störungen nur einen oder wenige Träger stören.
+  \item Im Zusammenspiel mit Fehlerkorrekturverfahren mit redundanter Datenübertragung, die wir später kennenlernen werden, ist es so möglich, trotz schmalbandiger Störungen eine fehlerfreie Übertragung zu erreichen.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AE421}{Orthogonale Frequenzmultiplexverfahren (OFDM) mit redundanter Übertragung sind besonders unempfindlich gegen~...}{schmalbandige Störungen, da es einen Träger mit hoher Bandbreite verwendet.}
+{schmalbandige Störungen, da das Gesamtsignal aus mehreren Einzelträgern besteht.}
+{breitbandige Störungen, da das Gesamtsignal aus mehreren Einzelträgern besteht.}
+{breitbandige Störungen, da es einen Träger mit hoher Bandbreite verwendet.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AE421}{Orthogonale Frequenzmultiplexverfahren (OFDM) mit redundanter Übertragung sind besonders unempfindlich gegen~...}{schmalbandige Störungen, da es einen Träger mit hoher Bandbreite verwendet.}
+{\textbf{\textcolor{DARCgreen}{schmalbandige Störungen, da das Gesamtsignal aus mehreren Einzelträgern besteht.}}}
+{breitbandige Störungen, da das Gesamtsignal aus mehreren Einzelträgern besteht.}
+{breitbandige Störungen, da es einen Träger mit hoher Bandbreite verwendet.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}\begin{itemize}
+  \item Ein weiterer Vorteil ergibt sich aus der geringeren Symbolrate jedes einzelnen Trägers.
+  \item Durch die geringere Symbolrate ist die Dauer eines jeden Symbols länger.
+  \item Im Falle zeitlicher Verschiebungen aufgrund von Mehrwegeausbreitung ist der Anteil der Überlagerung zwischen den Signalen entsprechend geringer.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AE422}{Bei welcher Art von Kanalstörung sind Orthogonale Frequenzmultiplexverfahren (OFDM) mit redundanter Übertragung besonders vorteilhaft?}{Überreichweiten anderer OFDM-Sender}
+{Impulse durch Gewitter}
+{Breitbandiges Rauschen}
+{Mehrwegeausbreitung}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AE422}{Bei welcher Art von Kanalstörung sind Orthogonale Frequenzmultiplexverfahren (OFDM) mit redundanter Übertragung besonders vorteilhaft?}{Überreichweiten anderer OFDM-Sender}
+{Impulse durch Gewitter}
+{Breitbandiges Rauschen}
+{\textbf{\textcolor{DARCgreen}{Mehrwegeausbreitung}}}
+\end{QQuestion}
+
+}
+\end{frame}%ENDCONTENT

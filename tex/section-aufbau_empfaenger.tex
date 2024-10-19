@@ -1,0 +1,194 @@
+
+\section{Aufbau eines Empfängers}
+\label{section:aufbau_empfaenger}
+\begin{frame}%STARTCONTENT
+
+\frametitle{1. Antenne}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    
+\begin{figure}
+    \DARCimage{0.85\linewidth}{736include}
+    \caption{\scriptsize Blockdiagramm eines einfachen Empfängers}
+    \label{aufbau_empfaenger_blockdiagramm}
+\end{figure}
+
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       \begin{itemize}
+  \item Nimmt Vielzahl von Funkwellen auf
+  \item Leitet sie als elektrische Schwingungen weiter
+  \end{itemize}
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{2. Bandpassfilter}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    
+\begin{figure}
+    \DARCimage{0.85\linewidth}{736include}
+    \caption{\scriptsize Blockdiagramm eines einfachen Empfängers}
+    \label{aufbau_empfaenger_blockdiagramm}
+\end{figure}
+
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       \begin{itemize}
+  \item Lässt nur gewünschten Frequenzbereich durch
+  \item Sperrt alle anderen ungewünschten Frequenzen
+  \end{itemize}
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{3. HF-Verstärker}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    
+\begin{figure}
+    \DARCimage{0.85\linewidth}{736include}
+    \caption{\scriptsize Blockdiagramm eines einfachen Empfängers}
+    \label{aufbau_empfaenger_blockdiagramm}
+\end{figure}
+
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       \begin{itemize}
+  \item Verstärkt das herausgefilterte Signal
+  \end{itemize}
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{4. Demodulator}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    
+\begin{figure}
+    \DARCimage{0.85\linewidth}{736include}
+    \caption{\scriptsize Blockdiagramm eines einfachen Empfängers}
+    \label{aufbau_empfaenger_blockdiagramm}
+\end{figure}
+
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       \begin{itemize}
+  \item Zurückgewinnung des ursprünglichen Signals, z.B. Sprachsignal
+  \item Ergebnis ist das Niederfrequenz-Signal (NF)
+  \end{itemize}
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{5. NF-Verstärker}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    
+\begin{figure}
+    \DARCimage{0.85\linewidth}{736include}
+    \caption{\scriptsize Blockdiagramm eines einfachen Empfängers}
+    \label{aufbau_empfaenger_blockdiagramm}
+\end{figure}
+
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       \begin{itemize}
+  \item Verstärkt das demodulierte Signal
+  \item NF-Verstärker zum Verstärken des Signals für den Lautsprecher
+  \end{itemize}
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{6. Lautsprecher}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    
+\begin{figure}
+    \DARCimage{0.85\linewidth}{736include}
+    \caption{\scriptsize Blockdiagramm eines einfachen Empfängers}
+    \label{aufbau_empfaenger_blockdiagramm}
+\end{figure}
+
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       \begin{itemize}
+  \item Wandelt elektrische Schwingung in Schallwelle um
+  \item Signal wird wieder hörbar gemacht
+  \end{itemize}
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{NF201}{Was stellt folgendes Blockdiagramm dar?}{Sender}
+{Tongenerator}
+{Relaisfunkstelle}
+{Empfänger}
+{\DARCimage{1.0\linewidth}{525include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{NF201}{Was stellt folgendes Blockdiagramm dar?}{Sender}
+{Tongenerator}
+{Relaisfunkstelle}
+{\textbf{\textcolor{DARCgreen}{Empfänger}}}
+{\DARCimage{1.0\linewidth}{525include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Empfindlichkeit}
+\begin{itemize}
+  \item Je nach Aufbau haben Empfänger unterschiedliche Eigenschaften
+  \item Wichtige Eigenschaft: \emph{Empfindlichkeit}
+  \item Fähigkeit, schwache Signale zu empfangen
+  \item Je empfindlicher, umso schwächere Signale können empfangen werden
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{NF303}{Worauf bezieht sich die Empfindlichkeit eines Empfängers?}{Auf die Fähigkeit, schwache Signale zu empfangen}
+{Auf die Stabilität des VFO}
+{Auf die Bandbreite des HF-Vorverstärkers}
+{Auf die Fähigkeit, starke Signale zu unterdrücken}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{NF303}{Worauf bezieht sich die Empfindlichkeit eines Empfängers?}{\textbf{\textcolor{DARCgreen}{Auf die Fähigkeit, schwache Signale zu empfangen}}}
+{Auf die Stabilität des VFO}
+{Auf die Bandbreite des HF-Vorverstärkers}
+{Auf die Fähigkeit, starke Signale zu unterdrücken}
+\end{QQuestion}
+
+}
+\end{frame}%ENDCONTENT

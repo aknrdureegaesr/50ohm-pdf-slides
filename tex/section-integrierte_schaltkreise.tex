@@ -1,0 +1,188 @@
+
+\section{Integrierte Schaltkreise}
+\label{section:integrierte_schaltkreise}
+\begin{frame}%STARTCONTENT
+
+\only<1>{
+\begin{QQuestion}{AC601}{Eine integrierte Schaltung ist~...}{eine miniaturisierte, aus SMD-Bauteilen aufgebaute Schaltung.}
+{eine aus einzelnen Bauteilen aufgebaute vergossene Schaltung.}
+{eine komplexe Schaltung auf einem Halbleitersubstrat.}
+{die Zusammenschaltung einzelner Baugruppen zu einem elektronischen Gerät.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC601}{Eine integrierte Schaltung ist~...}{eine miniaturisierte, aus SMD-Bauteilen aufgebaute Schaltung.}
+{eine aus einzelnen Bauteilen aufgebaute vergossene Schaltung.}
+{\textbf{\textcolor{DARCgreen}{eine komplexe Schaltung auf einem Halbleitersubstrat.}}}
+{die Zusammenschaltung einzelner Baugruppen zu einem elektronischen Gerät.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Monolithic Microwave Integrated Circuit (MMIC)}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC602}{Welche Bauteile sind in einem Monolithic Microwave Integrated Circuit (MMIC) enthalten?}{Ein MMIC enthält alle aktiven und passiven Bauteile auf einem Halbleiter-Substrat.}
+{Ein MMIC enthält nur aktive Bauteile auf einem Halbleiter-Substrat.}
+{Ein MMIC enthält nur passive Bauteile auf einem Halbleiter-Substrat.}
+{Ein MMIC enthält alle aktiven und passiven Bauteile auf einer Leiterplatte.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC602}{Welche Bauteile sind in einem Monolithic Microwave Integrated Circuit (MMIC) enthalten?}{\textbf{\textcolor{DARCgreen}{Ein MMIC enthält alle aktiven und passiven Bauteile auf einem Halbleiter-Substrat.}}}
+{Ein MMIC enthält nur aktive Bauteile auf einem Halbleiter-Substrat.}
+{Ein MMIC enthält nur passive Bauteile auf einem Halbleiter-Substrat.}
+{Ein MMIC enthält alle aktiven und passiven Bauteile auf einer Leiterplatte.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC603}{Welchen Vorteil hat ein Monolithic Microwave Integrated Circuit (MMIC) gegenüber einem diskreten Transistorverstärker?}{Ein MMIC bietet einen hohen Eingangswiderstand und einen niedrigen Ausgangswiderstand.}
+{Ein MMIC bietet schmalbandig eine hohe Verstärkung in einem Bauteil.}
+{Ein MMIC bietet breitbandig eine hohe Verstärkung mit weniger Bauteilen.}
+{Ein MMIC bietet einstellbare Eingangs- und Ausgangsimpedanz.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC603}{Welchen Vorteil hat ein Monolithic Microwave Integrated Circuit (MMIC) gegenüber einem diskreten Transistorverstärker?}{Ein MMIC bietet einen hohen Eingangswiderstand und einen niedrigen Ausgangswiderstand.}
+{Ein MMIC bietet schmalbandig eine hohe Verstärkung in einem Bauteil.}
+{\textbf{\textcolor{DARCgreen}{Ein MMIC bietet breitbandig eine hohe Verstärkung mit weniger Bauteilen.}}}
+{Ein MMIC bietet einstellbare Eingangs- und Ausgangsimpedanz.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC604}{Was ist typisch für einen Monolithic Microwave Integrated Circuit (MMIC)?}{Sie sind nur im Mikrowellenbereich einsetzbar.}
+{Die Verstärkung ist bereits ab \qty{0}{\Hz} konstant.}
+{Ein- und Ausgangsimpedanz entsprechen üblichen Leitungsimpedanzen (z. B. 50 Ohm).}
+{Der Verstärkungsbereich ist schmalbandig.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC604}{Was ist typisch für einen Monolithic Microwave Integrated Circuit (MMIC)?}{Sie sind nur im Mikrowellenbereich einsetzbar.}
+{Die Verstärkung ist bereits ab \qty{0}{\Hz} konstant.}
+{\textbf{\textcolor{DARCgreen}{Ein- und Ausgangsimpedanz entsprechen üblichen Leitungsimpedanzen (z. B. 50 Ohm).}}}
+{Der Verstärkungsbereich ist schmalbandig.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AF425}{Der optimale Arbeitspunkt des dargestellten MMIC ist mit \qty{4}{\volt} und \qty{10}{\mA} angegeben. Die Betriebsspannung beträgt \qty{13,5}{\volt}. Berechnen Sie den Vorwiderstand ($R_\text{BIAS}$).}{\qty{95}{\ohm}}
+{\qty{1350}{\ohm}}
+{\qty{950}{\ohm}}
+{\qty{400}{\ohm}}
+{\DARCimage{1.0\linewidth}{773include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AF425}{Der optimale Arbeitspunkt des dargestellten MMIC ist mit \qty{4}{\volt} und \qty{10}{\mA} angegeben. Die Betriebsspannung beträgt \qty{13,5}{\volt}. Berechnen Sie den Vorwiderstand ($R_\text{BIAS}$).}{\qty{95}{\ohm}}
+{\qty{1350}{\ohm}}
+{\textbf{\textcolor{DARCgreen}{\qty{950}{\ohm}}}}
+{\qty{400}{\ohm}}
+{\DARCimage{1.0\linewidth}{773include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $U_{\textrm{D}} = 4V$
+  \item gegeben: $U_{\textrm{CC}} = 13,5V$
+  \item gegeben: $I_{\textrm{D}} = 10mA$
+  \item gesucht: $R_{\textrm{BIAS}}$
+  \end{itemize}
+    \pause
+    $R_{\textrm{BIAS}} = \frac{U_{\textrm{CC}} -- U_{\textrm{D}}}{I_{\textrm{D}}} = \frac{13,5V -4V}{10mA} = 950\Omega$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AF426}{Berechnen Sie $R_\text{BIAS}$ für die dargestellte MMIC-Schaltung und wählen Sie den nächsten Normwert. $U_\text{CC}$~=~\qty{13,8}{\V}; $U_\text{D}$~=~\qty{4}{\V}; $I_\text{D}$~=~\qty{15}{\mA}}{\qty{820}{\ohm}}
+{\qty{680}{\ohm}}
+{\qty{270}{\ohm}}
+{\qty{560}{\ohm}}
+{\DARCimage{1.0\linewidth}{773include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AF426}{Berechnen Sie $R_\text{BIAS}$ für die dargestellte MMIC-Schaltung und wählen Sie den nächsten Normwert. $U_\text{CC}$~=~\qty{13,8}{\V}; $U_\text{D}$~=~\qty{4}{\V}; $I_\text{D}$~=~\qty{15}{\mA}}{\qty{820}{\ohm}}
+{\textbf{\textcolor{DARCgreen}{\qty{680}{\ohm}}}}
+{\qty{270}{\ohm}}
+{\qty{560}{\ohm}}
+{\DARCimage{1.0\linewidth}{773include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $U_{\textrm{D}} = 4V$
+  \item gegeben: $U_{\textrm{CC}} = 13,8V$
+  \item gegeben: $I_{\textrm{D}} = 15mA$
+  \item gesucht: $R_{\textrm{BIAS}}$
+  \end{itemize}
+    \pause
+    $R_{\textrm{BIAS}} = \frac{U_{\textrm{CC}} -- U_{\textrm{D}}}{I_{\textrm{D}}} = \frac{13,8V -4V}{15mA} = 653,3\Omega \rightarrow 680\Omega$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AF427}{Wieviel Wärmeleistung wird im MMIC in Wärme umgesetzt, wenn die Betriebsspannung \qty{9}{\V} beträgt und $R_\text{BIAS}$ einen Wert von \qty{470}{\ohm} hat?}{\qty{90}{\mW}}
+{\qty{47}{\mW}}
+{\qty{43}{\mW}}
+{\qty{52}{\mW}}
+{\DARCimage{1.0\linewidth}{773include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AF427}{Wieviel Wärmeleistung wird im MMIC in Wärme umgesetzt, wenn die Betriebsspannung \qty{9}{\V} beträgt und $R_\text{BIAS}$ einen Wert von \qty{470}{\ohm} hat?}{\qty{90}{\mW}}
+{\qty{47}{\mW}}
+{\textbf{\textcolor{DARCgreen}{\qty{43}{\mW}}}}
+{\qty{52}{\mW}}
+{\DARCimage{1.0\linewidth}{773include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $U = 9V$
+  \item gegeben: $R_{\textrm{BIAS}} = 470\Omega$
+  \item gegeben: $U_{\textrm{D}} = 4V$
+  \item gesucht: $P$
+  \item Ansatz: Strom durch $R_{\textrm{BIAS}}$ ist überall gleich, weil kein anderer ohmschmer Verbraucher in der Schaltung vorhanden ist
+  \end{itemize}
+    \pause
+    $I_{\textrm{D}} = \frac{U_{\textrm{BIAS}}}{R_{\textrm{BIAS}}} = \frac{U-U_{\textrm{D}}}{R_{\textrm{BIAS}}} = \frac{9V-4V}{470\Omega} = 10,64mA$
+    \pause
+    $P = U_{\textrm{D}} \cdot I_{\textrm{D}} = 4V \cdot 10,64mA \approx 43mW$
+
+
+
+\end{frame}%ENDCONTENT

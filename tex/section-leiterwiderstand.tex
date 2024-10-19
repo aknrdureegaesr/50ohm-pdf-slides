@@ -1,0 +1,147 @@
+
+\section{Leiterwiderstand}
+\label{section:leiterwiderstand}
+\begin{frame}%STARTCONTENT
+
+\frametitle{Foliensatz in Arbeit}
+2024-04-28: Die Inhalte werden noch aufbereitet.
+
+Derzeit sind in diesem Abschnitt nur die Fragen sortiert enthalten.
+
+Für das Selbststudium verweisen wir aktuell auf den Abschnitt Messtechnik im DARC Online Lehrgang (\textcolor{DARCblue}{\faLink~\href{https://www.darc.de/der-club/referate/ajw/lehrgang-ta/a16/}{www.darc.de/der-club/referate/ajw/lehrgang-ta/a16/}}) für die Prüfung bis Juni 2024. Bis auf die Fragen hat sich an der Thematik nichts geändert.
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Widerstand von Drähten}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    $R = \frac{\rho\cdot l}{A_{\textrm{Dr}}}$
+
+\begin{itemize}
+  \item $l$: Drahtlänge
+  \item $A_{\textrm{Dr}}$: Drahtquerschnitt
+  \item $\rho$: Spezifischer Widerstand in Ωmm<sup>2</sup>/m
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+    \pause
+    Kupfer: 0,018
+
+Aluminium: 0,028
+
+Gold: 0,022
+
+Silber: 0,016
+
+Zink: 0,11
+
+Eisen: 0,1
+
+Messing: 0,07
+
+
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AB101}{Welchen Widerstand hat ein Kupferdraht etwa, wenn der verwendete Draht eine Länge von \qty{1,8}{\m} und einen Durchmesser von \qty{0,2}{\mm} hat?}{\qty{0,26}{\ohm}}
+{\qty{56,0}{\ohm}}
+{\qty{1,02}{\ohm}}
+{\qty{0,16}{\ohm}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AB101}{Welchen Widerstand hat ein Kupferdraht etwa, wenn der verwendete Draht eine Länge von \qty{1,8}{\m} und einen Durchmesser von \qty{0,2}{\mm} hat?}{\qty{0,26}{\ohm}}
+{\qty{56,0}{\ohm}}
+{\textbf{\textcolor{DARCgreen}{\qty{1,02}{\ohm}}}}
+{\qty{0,16}{\ohm}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $l = 1,8m$
+  \item gegeben: $d = 0,2mm$
+  \item gegeben: $\rho = 0,018 \frac{\Omega mm^2}{m}$
+  \item gesucht: $R$
+  \end{itemize}
+    \pause
+    \begin{equation} \nonumber A_{\textrm{Dr}} = \frac{d^2\cdot \pi}{4} = \frac{(0,2mm)^2 \cdot \pi}{4} = \frac{\pi}{100}mm^2 = 0,0314mm^2 \end{equation}
+    \pause
+    \begin{equation} \nonumber R = \frac{\rho\cdot l}{A_{\textrm{Dr}}} = \frac{0,018 \frac{\Omega mm^2}{m} \cdot 1,8m}{0,0314mm^2} \approx 1,02\Omega \end{equation}
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AB102}{Zwischen den Enden eines Kupferdrahtes mit einem Querschnitt von \qty{0,5}{\mm\squared} messen Sie einen Widerstand von \qty{1,5}{\ohm}. Wie lang ist der Draht etwa?}{\qty{41,7}{\m}}
+{\qty{3,0}{\m}}
+{\qty{4,2}{\m}}
+{\qty{16,5}{\m}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AB102}{Zwischen den Enden eines Kupferdrahtes mit einem Querschnitt von \qty{0,5}{\mm\squared} messen Sie einen Widerstand von \qty{1,5}{\ohm}. Wie lang ist der Draht etwa?}{\textbf{\textcolor{DARCgreen}{\qty{41,7}{\m}}}}
+{\qty{3,0}{\m}}
+{\qty{4,2}{\m}}
+{\qty{16,5}{\m}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $A_{\textrm{Dr}} = 0,5mm^2$
+  \item gegeben: $R = 1,5\Omega$
+  \item gegeben: $\rho = 0,018 \frac{\Omega mm^2}{m}$
+  \item gesucht: $l$
+  \end{itemize}
+    \pause
+    \begin{equation}\begin{align} \nonumber R &= \frac{\rho\cdot l}{A_{\textrm{Dr}}}\\ \nonumber \Rightarrow l &= \frac{R\cdot A_{\textrm{Dr}}}{\rho} = \frac{1,5\Omega \cdot 0,5mm^2}{0,018 \frac{\Omega mm^2}{m}} \approx 41,7m \end{align}\end{equation}
+
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Temperaturkoeffizient}
+\begin{itemize}
+  \item Widerstand von Metallen steigt bei zunehemender Temperatur
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AB103}{Wie ändert sich der Widerstand eines Metalls mit der Temperatur im Regelfall?}{Der Widerstand steigt mit zunehmender Temperatur, d. h. der Temperaturkoeffizient ist positiv.}
+{Der Widerstand sinkt mit zunehmender Temperatur, d. h. der Temperaturkoeffizient ist negativ.}
+{Der Widerstand ändert sich nicht mit zunehmender Temperatur, d. h. der Temperaturkoeffizient ist Null.}
+{Der Widerstand oszilliert mit zunehmender Temperatur, d. h. der Temperaturkoeffizient ist komplex.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AB103}{Wie ändert sich der Widerstand eines Metalls mit der Temperatur im Regelfall?}{\textbf{\textcolor{DARCgreen}{Der Widerstand steigt mit zunehmender Temperatur, d. h. der Temperaturkoeffizient ist positiv.}}}
+{Der Widerstand sinkt mit zunehmender Temperatur, d. h. der Temperaturkoeffizient ist negativ.}
+{Der Widerstand ändert sich nicht mit zunehmender Temperatur, d. h. der Temperaturkoeffizient ist Null.}
+{Der Widerstand oszilliert mit zunehmender Temperatur, d. h. der Temperaturkoeffizient ist komplex.}
+\end{QQuestion}
+
+}
+\end{frame}%ENDCONTENT

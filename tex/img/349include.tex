@@ -1,0 +1,25 @@
+% Author: Dr. Matthias Jung, DL9MJ
+% Year: 2021
+
+\usetikzlibrary{calc, positioning}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{Fira Math}
+\setmathfont[range=up]{Roboto}
+\setmathfont[range=it]{Roboto-Italic}
+\setmathfont[range=\int]{Fira Math}
+\usepackage[euler]{textgreek}
+\usetikzlibrary{decorations.markings,patterns,bending}
+
+\begin{document}
+\begin{circuitikz}
+    \draw[-Triangle] (0,0) -- (1,0); 
+    \draw[-Triangle] (1,0) -- (2.5,0); 
+    \draw[-Triangle] (0,0) -- (0,-2.0); 
+    \draw[-Triangle] (0,0) -- (0,+2.0); 
+    \draw (0.5,+2) node[]{$\mathrm{U}_\mathrm{R}$};
+    \draw (0.5,-0.35) node[]{$\mathrm{U}_\mathrm{L}$};
+    \draw (0.5,-2) node[]{$\mathrm{U}_\mathrm{C}$};
+    \draw (2.75,0) node[]{I};
+\end{circuitikz}
+\end{document}

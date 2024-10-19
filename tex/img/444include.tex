@@ -1,0 +1,48 @@
+% Author: Dr. Matthias Jung, DL9MJ
+% Year: 2020
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{Fira Math}
+\setmathfont[range=up]{Roboto}
+\setmathfont[range=it]{Roboto-Italic}
+\setmathfont[range=\int]{Fira Math}
+\usepackage[euler]{textgreek}
+\ctikzset{%
+    american
+}%
+\begin{document}
+\begin{circuitikz}
+    %\tikzstyle{help lines}=[blue!50];
+    %\draw[style=help lines] (-1,-1) grid (8,5);
+
+    \draw[thick] (0,3) node [ocirc, thick]{} -- ++ (4,0);
+    \draw[thick] (0,2) node [ocirc, thick]{} -- ++ (4,0);
+
+    \draw[dashed] (0,3.0) sin ++ (4, 1.5);
+    \draw         (0,4.5) cos ++ (4,-1.5);
+
+    \draw[dashed] (0,2.0) sin ++ (4,-1.5);
+    \draw         (0,0.5) cos ++ (4, 1.5);
+
+    \draw (0,0) -- ++(0,-0.5);
+    \draw (4,0) -- ++(0,-0.5);
+
+    \draw[Triangle-] (0,-0.25) -- ++(+1.75,0);
+    \draw[Triangle-] (4,-0.25) -- ++(-1.75,0);
+
+
+    \draw (0,4.85) node [] {I};
+    \draw (4,4.85) node [] {U};
+
+    \draw (2, -0.25) node [] {$\frac{\lambda}{4}$};
+
+    \draw (6.5,-0.25) node [ocirc] {}
+                  to [C] ++(0,2.5)
+                  to [american inductor] ++(0,2.5)
+                  node [ocirc] {};
+
+    \draw[-Triangle, thick] (4.5,2.5) -- ++(1.0,0);
+
+\end{circuitikz}
+\end{document}

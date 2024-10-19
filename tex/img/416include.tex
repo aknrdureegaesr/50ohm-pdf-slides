@@ -1,0 +1,65 @@
+% Question: TM208
+%
+% Author: Dr. Henning Paul, DO9PHB
+% Year: 2022
+%
+\documentclass[tikz=true,convert=false]{standalone}
+\input{../common/settings.tex}
+\usepackage{tikz,pgfplots}
+\usetikzlibrary{arrows}
+\usetikzlibrary{shapes.geometric}
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{Fira Math}
+\setmathfont[range=up]{Roboto}
+\setmathfont[range=it]{Roboto-Italic}
+\setmathfont[range=\int]{Fira Math}
+\usepackage[euler]{textgreek}
+
+\begin{document}
+
+\pgfplotsset{
+  every axis plot/.append style={line width=0.8pt},
+}
+\tikzstyle{block} = [draw, rectangle, minimum height=20mm, minimum width=20mm]
+\tikzstyle{input} = [coordinate]
+\tikzstyle{output} = [coordinate]
+\tikzstyle{support}=[coordinate,join=by fuzzy]
+     
+\def\LS#1{\node [draw,rectangle, minimum height=10mm, minimum width=7.5mm] (#1){};
+    \draw (#1.north east) -- ($(#1.north east) + (5mm,5mm)$) -- ($(#1.south east) + (5mm,-5mm)$) -- (#1.south east) --(#1.north east);
+}
+\def\DAC#1{\node [draw,rectangle, minimum height=20mm, minimum width=20mm] (#1){}; \draw (#1.45) -- node [above left,font=\huge] {D} node [below right,font=\huge] {A} (#1.225);}
+\def\Mic#1{\node [draw,circle, minimum size=10mm] (#1){}; \draw (#1.180)+(0,5mm) -- (#1.180); \draw (#1.180)+(0,-5mm) -- (#1.180);}
+\def\amp#1{ \node [draw,rectangle, minimum height=20mm, minimum width=20mm] (#1) {}; 
+    \draw ($(#1)+(5mm,0mm)$) -- ($(#1)+(-5mm,5mm)$) -- ($(#1)+(-5mm,-5mm)$)-- ($(#1)+(5mm,0mm)$) ;
+}
+\def\antenna#1{ \node [coordinate] (#1) {}; 
+    \draw ($(#1)+(0,15mm)$) -- (#1); 
+    \draw ($(#1)+(-4mm,15mm)$)-- ($(#1)+(0,8mm)$) -- ($(#1)+(4mm,15mm)$) ; 
+}  
+  
+\begin{tikzpicture}
+ \matrix [column sep=0.3cm, row sep=0.5cm]
+  {
+    % row 1
+    \antenna{a};\pgfmatrixnextcell
+    \node [block,align=center] (b) {Demodu-\\ lation};\pgfmatrixnextcell
+    \node [block,align=center] (c) {Kanal-\\ decodierung};\pgfmatrixnextcell
+    \node [block,align=center] (d) {Quellen-\\ decodierung};\pgfmatrixnextcell
+    \DAC{e};\pgfmatrixnextcell
+    \LS{f};
+    \\
+  };
+    
+\draw[->,arrows=-triangle 60] (a) -- (b);
+\draw[->,arrows=-triangle 60] (b) -- (c);
+\draw (c.south) node [below,align=center] {Fehlerkorrektur\\ mittels\\ Redundanz};
+\draw[->,arrows=-triangle 60] (c) -- (d);
+\draw (d.south) node [below,align=center] {mittels\\ Sprachcodec};
+\draw[->,arrows=-triangle 60] (d) -- (e);
+\draw[->,arrows=-triangle 60] (e) -- (f);
+
+\end{tikzpicture}
+\end{document}

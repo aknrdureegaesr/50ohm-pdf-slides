@@ -1,0 +1,49 @@
+% Author: Stephan Kregel, DG1HXJ
+% Year: 2022
+% 3-TD605, 3-TD606
+
+
+\usepackage{amssymb}
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{Fira Math}
+\setmathfont[range=up]{Roboto}
+\setmathfont[range=it]{Roboto-Italic}
+\setmathfont[range=\int]{Fira Math}
+\usepackage[euler]{textgreek}
+\usetikzlibrary{arrows, arrows.meta}
+
+\begin{document}
+    \begin{circuitikz}
+    \coordinate(init) at (0,0);
+ 	\draw (init)++(3,0) node[npn, name=T1, tr circle] {T1} ++(0,0);
+ 	\draw (init)++(-2,0) to [C=$\text{C}_\text{5}$] ++(0,-3) coordinate(c5-b);
+ 	\draw (c5-b) -- ++(1.5,0) coordinate(r3-b)
+ 	to [R, l_=$\text{R}_\text{3}$, *-*] ++(0,3) coordinate(r3-a);
+ 	\draw (r3-b) -- ++(3.5,0) coordinate(r2-b)
+ 	to [R, l_=$\text{R}_\text{2}$, *-*] ++(0,2) coordinate(r2-a);
+ 	\draw (r2-a) -- (T1.E);
+    \draw (r2-b) to node[rground]{} ++(0,0);
+    \draw (r2-b) -- ++(4,0) to node[ocirc, name=gnd]{} ++(0,0);
+    \draw (init)++(-2,0) -- (r3-a) -- (T1.B);
+    \draw (r3-a) to [R, l_=$\text{R}_\text{4}$, -*] ++(0,3) coordinate(r4-a);
+    \draw (r4-a) -- ++(-1.5,0)
+    to [C=$\text{C}_\text{4}$] ++(0,-1) 
+    to node[rground]{} ++(0,0);
+    \draw (r4-a) -- ++(1.5,0) coordinate(c1-a)
+    to [vC=$\text{C}_\text{1}$,tunable end arrow={Bar}, invert, *-] ++(0,-2) -- ++(2,0) coordinate(l1-b)
+    to [american inductor=L, inductors/coils=4, *-*] ++(0,2) coordinate(l1-a);
+    \draw (l1-b) -- (T1.C);
+    \draw (c1-a) -- (l1-a);
+    \draw (l1-a) to [R, l=$\text{R}_\text{1}$, *-*] ++(4,0)
+    to node[ocirc, name=vcc]{} ++(0,0);
+    \draw (l1-b)++(0,1) to node[circ]{} ++(0,0) -- ++(2,0) coordinate(q1-a)
+    to [PZ, l_=Q, *-]++(0,-1.5)
+    to [vC=$\text{C}_\text{3}$,tunable end arrow={Bar}, invert] ++(0,-1.5) -- (r2-a);
+    \draw (q1-a) to [C, l=$\text{C}_\text{2}$] ++(2,0)
+    to node[ocirc]{} ++(0,0);
+    \draw (gnd) ++(0.25,0) node[]{$\text{-}$};
+ 	\draw (vcc) ++(0.25,0) node[]{$\text{+}$};
+    \end{circuitikz}
+\end{document}

@@ -1,0 +1,284 @@
+
+\section{Spule I}
+\label{section:spule_1}
+\begin{frame}%STARTCONTENT
+
+\frametitle{Induktivität}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Jeder stromdurchflossene Leiter hat eine Induktivität
+  \item Um einen stromdurchflossenen Leiter entsteht ein Magnetfeld
+  \item In einem Leiter entsteht ein Strom, wenn dieser durch ein Magnetfeld bewegt wird
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{833include}
+    \caption{\scriptsize Magnetfeld um einen stromdurchflossenen Leiter}
+    \label{e_spule_magnetfeld_um_leiter}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EC304}{Hat ein gerades Leiterstück eine Induktivität?}{Nein, der Leiter muss wenigstens eine Krümmung (eine viertel, halbe oder ganze Windung) haben.}
+{Ja, jeder Leiter besitzt, unabhängig von der Form, eine Induktivität.}
+{Ja, solange der Blindwiderstand \qty{0}{\ohm} beträgt.}
+{Nein, beispielsweise im Vakuum entstehen keine Induktivitäten.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EC304}{Hat ein gerades Leiterstück eine Induktivität?}{Nein, der Leiter muss wenigstens eine Krümmung (eine viertel, halbe oder ganze Windung) haben.}
+{\textbf{\textcolor{DARCgreen}{Ja, jeder Leiter besitzt, unabhängig von der Form, eine Induktivität.}}}
+{Ja, solange der Blindwiderstand \qty{0}{\ohm} beträgt.}
+{Nein, beispielsweise im Vakuum entstehen keine Induktivitäten.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Spule und Induktivität}
+\begin{itemize}
+  \item Eine Spule optimiert die Induktivität eines Leiters
+  \item Wichtigste Eigenschaft der Spule: Energie speichern
+  \end{itemize}
+$L = \dfrac{N\cdot \Phi}{I}$
+
+\begin{itemize}
+  \item mit $N$ Anzahl Windungen und $\Phi$ als magnetischer Fluss
+  \item Einheit: $\frac{Vs}{A}$ bzw. Henry $H$
+  \item Die Induktivität ist der magnetische Fluss pro Ampere
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Induktivität durch Bauart}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Die Induktivität einer Spule kann durch die Bauart erreicht werden
+  \end{itemize}
+$L = \dfrac{\mu_0 \cdot \mu_r \cdot N^2 \cdot A_S}{l}$
+
+\begin{itemize}
+  \item $\rightarrow$ Induktivität ist größer bei größerem Querschnitt, anderem Kern oder kleinerer Länge
+  \item $\rightarrow$ Induktivität ist viel größer bei höherer Windungszahl
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       \begin{itemize}
+  \item $\mu_0 = 1,2566 \cdot 10^{-6}\frac{H}{m}$: magnetische Feldkonstante
+  \item $\mu_r$: relative Permeabilität, abhängig vom Spulenkern (Luft  $\approx$  1)
+  \item $N$: Windungszahl
+  \item $A_S$: Querschnittsfläche der Spule
+  \item $l$: Länge der Spule bzw. mittlere Feldlinienlänge
+  \end{itemize}
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EA102}{Welche Einheit wird üblicherweise für die Induktivität verwendet?}{Henry (H)}
+{Farad (F)}
+{Ohm ($\Omega$)}
+{Amperestunden (Ah)}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EA102}{Welche Einheit wird üblicherweise für die Induktivität verwendet?}{\textbf{\textcolor{DARCgreen}{Henry (H)}}}
+{Farad (F)}
+{Ohm ($\Omega$)}
+{Amperestunden (Ah)}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{EC307}{Wie ändert sich die Induktivität einer Spule von \qty{12}{\micro\H}, wenn die Windungszahl bei gleicher Wickellänge verdoppelt wird?}{Die Induktivität steigt auf \qty{24}{\micro\H}.}
+{Die Induktivität steigt auf \qty{48}{\micro\H}.}
+{Die Induktivität sinkt auf \qty{6}{\micro\H}.}
+{Die Induktivität sinkt auf \qty{3}{\micro\H}.}
+{\DARCimage{1.0\linewidth}{449include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{EC307}{Wie ändert sich die Induktivität einer Spule von \qty{12}{\micro\H}, wenn die Windungszahl bei gleicher Wickellänge verdoppelt wird?}{Die Induktivität steigt auf \qty{24}{\micro\H}.}
+{\textbf{\textcolor{DARCgreen}{Die Induktivität steigt auf \qty{48}{\micro\H}.}}}
+{Die Induktivität sinkt auf \qty{6}{\micro\H}.}
+{Die Induktivität sinkt auf \qty{3}{\micro\H}.}
+{\DARCimage{1.0\linewidth}{449include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{EC306}{Vorausgesetzt sind zwei Spulen in gleicher Umgebung, mit gleicher Windungszahl und mit gleicher Querschnittsfläche. Die erste Spule hat eine Induktivität von \qty{12}{\micro\H}. Die zweite Spule hat die doppelte Länge der ersten Spule. Wie hoch ist die Induktivität der zweiten Spule?}{\qty{3}{\micro\H}}
+{\qty{24}{\micro\H}}
+{\qty{48}{\micro\H}}
+{\qty{6}{\micro\H}}
+{\DARCimage{1.0\linewidth}{473include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{EC306}{Vorausgesetzt sind zwei Spulen in gleicher Umgebung, mit gleicher Windungszahl und mit gleicher Querschnittsfläche. Die erste Spule hat eine Induktivität von \qty{12}{\micro\H}. Die zweite Spule hat die doppelte Länge der ersten Spule. Wie hoch ist die Induktivität der zweiten Spule?}{\qty{3}{\micro\H}}
+{\qty{24}{\micro\H}}
+{\qty{48}{\micro\H}}
+{\textbf{\textcolor{DARCgreen}{\qty{6}{\micro\H}}}}
+{\DARCimage{1.0\linewidth}{473include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EC305}{Wie kann man die Induktivität einer zylindrischen Spule vergrößern?}{Durch Einführen eines Kupferkerns in die Spule.}
+{Durch Auseinanderziehen der Spule in Längsrichtung.}
+{Durch Stauchen der Spule in Längsrichtung.}
+{Durch Einbau der Spule in einen Abschirmbecher.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EC305}{Wie kann man die Induktivität einer zylindrischen Spule vergrößern?}{Durch Einführen eines Kupferkerns in die Spule.}
+{Durch Auseinanderziehen der Spule in Längsrichtung.}
+{\textbf{\textcolor{DARCgreen}{Durch Stauchen der Spule in Längsrichtung.}}}
+{Durch Einbau der Spule in einen Abschirmbecher.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Stromfluss über eine Spule}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Strom braucht länger durch die Spule
+  \item Erst leuchtet Lampe<sub>1</sub>
+  \item Später leuchtet Lampe<sub>2</sub>
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{541include}
+    \caption{\scriptsize Stromkreis mit Spule}
+    \label{e_stromkreis_mit_spule}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{EC302}{Schaltet man zwei Leuchtmittel gleichzeitig an eine Gleichspannungsquelle, wobei ein Leuchtmittel, Lampe 1, zum Helligkeitsausgleich über einen Widerstand und das andere, Lampe 2, über eine Spule mit vielen Windungen und Eisenkern angeschlossen ist, so~...}{leuchtet Lampe 2 zuerst.}
+{leuchtet Lampe 1 zuerst.}
+{leuchten Lampe 1 und Lampe 2 genau gleichzeitig.}
+{leuchtet Lampe 2 kurz auf und geht wieder aus. Lampe 1 leuchtet.}
+{\DARCimage{1.0\linewidth}{541include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{EC302}{Schaltet man zwei Leuchtmittel gleichzeitig an eine Gleichspannungsquelle, wobei ein Leuchtmittel, Lampe 1, zum Helligkeitsausgleich über einen Widerstand und das andere, Lampe 2, über eine Spule mit vielen Windungen und Eisenkern angeschlossen ist, so~...}{leuchtet Lampe 2 zuerst.}
+{\textbf{\textcolor{DARCgreen}{leuchtet Lampe 1 zuerst.}}}
+{leuchten Lampe 1 und Lampe 2 genau gleichzeitig.}
+{leuchtet Lampe 2 kurz auf und geht wieder aus. Lampe 1 leuchtet.}
+{\DARCimage{1.0\linewidth}{541include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Einschaltkurve Spule}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Eine Spule wird an Gleichspannung angeschlossen
+  \item Die Spannung nimmt steil ab und gleicht sich mit der Zeit 0 an
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{186include}
+    \caption{\scriptsize Zeitlicher Verlauf einer Gleichspannung über eine Spule}
+    \label{e_einschaltkurve_spule}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{question2x2}{EC301}{An eine Spule wird über einen Widerstand eine Gleichspannung angelegt. Welches der nachfolgenden Diagramme zeigt den zeitlichen Verlauf der Spannung über der Spule?}{\DARCimage{1.0\linewidth}{185include}}
+{\DARCimage{1.0\linewidth}{186include}}
+{\DARCimage{1.0\linewidth}{188include}}
+{\DARCimage{1.0\linewidth}{187include}}
+\end{question2x2}
+
+}
+\only<2>{
+\begin{question2x2}{EC301}{An eine Spule wird über einen Widerstand eine Gleichspannung angelegt. Welches der nachfolgenden Diagramme zeigt den zeitlichen Verlauf der Spannung über der Spule?}{\DARCimage{1.0\linewidth}{185include}}
+{\textbf{\textcolor{DARCgreen}{\DARCimage{1.0\linewidth}{186include}}}}
+{\DARCimage{1.0\linewidth}{188include}}
+{\DARCimage{1.0\linewidth}{187include}}
+\end{question2x2}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Spule im Wechselstrom}
+\begin{itemize}
+  \item Im Gleichstromkreis wirkt eine Spule erst wie ein unendlich großer Widerstand, wird dann aber nach dem Einschaltvorgang so groß wie der Widerstand des Leiters
+  \item Bei Wechselstrom wird das Magnetfeld in der Spule ständig umgepolt
+  \item Dadurch entsteht eine Selbstinduktionspannung, die entgegengerichtet ist und stört
+  \item Je höher die Frequenz, umso höher ist der Wechselstromwiderstand der Spule
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EC303}{Welches Verhalten zeigt der Wechselstromwiderstand einer idealen Spule mit zunehmender Frequenz?}{Er steigt.}
+{Er sinkt.}
+{Er sinkt bis zu einem Minimum und steigt dann wieder.}
+{Er steigt bis zu einem Maximum und sinkt dann wieder.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EC303}{Welches Verhalten zeigt der Wechselstromwiderstand einer idealen Spule mit zunehmender Frequenz?}{\textbf{\textcolor{DARCgreen}{Er steigt.}}}
+{Er sinkt.}
+{Er sinkt bis zu einem Minimum und steigt dann wieder.}
+{Er steigt bis zu einem Maximum und sinkt dann wieder.}
+\end{QQuestion}
+
+}
+\end{frame}%ENDCONTENT

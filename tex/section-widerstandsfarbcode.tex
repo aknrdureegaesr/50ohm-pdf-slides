@@ -1,0 +1,223 @@
+
+\section{Widerstandsfarbcode}
+\label{section:widerstandsfarbcode}
+\begin{frame}%STARTCONTENT
+
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    
+\begin{figure}
+    \DARCimage{0.85\linewidth}{665include}
+    \caption{\scriptsize  Ein Widerstand mit 4 Farbringen}
+    \label{n_widerstandsfarbcodes}
+\end{figure}
+
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       \begin{table}
+\begin{DARCtabular}{Xlll}
+    Farbe  &Wert  &Multiplikator  &Toleranz   \\
+     Silber  & --  & 0,01  &  $\pm$ \qty{10}{\percent}   \\
+     Gold  & --  & 0,1 &  $\pm$ \qty{5}{\percent}   \\
+     Schwarz  & 0  & 1  & --   \\
+     Braun  & 1  & 10  &  $\pm$ \qty{1}{\percent}   \\
+     Rot  & 2  & 100  &  $\pm$ \qty{2}{\percent}   \\
+     Orange & 3  & 1000  & --   \\
+     Gelb  & 4  & 10000  & --   \\
+     Grün  & 5  & 100000  & --   \\
+     Blau  & 6  & 1000000  &  $\pm$ \qty{0,25}{\percent}  \\
+     Violett  & 7  & 10000000  &  $\pm$ \qty{0,1}{\percent}  \\
+     Grau  & 8  & 100000000  & --   \\
+     Weiß  & 9  & 1000000000  & --   \\
+     Keine  & --  & --  &  $\pm$ \qty{20}{\percent}  \\
+\end{DARCtabular}
+\caption{Widerstandsfarbcodes Tabelle}
+\label{n_widerstandsfarbcodes_tabelle}
+\end{table}
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Toleranz}
+\begin{itemize}
+  \item Abweichung vom tatsächlichen Wert
+  \item Beispiel: silber bedeutet  $\pm$ \qty{10}{\percent}
+  \item \qty{10}{\percent} von 47 kΩ = 4,7 kΩ
+  \item Widerstandswert zwischen 42,3 kΩ und 51,7 kΩ
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{NC107}{Die Farbringe gelb, violett und orange auf einem Widerstand mit 4 Farbringen bedeuten einen Widerstandswert von~...}{\qty{4,7}{\kohm}.}
+{\qty{47}{\kohm}.}
+{\qty{470}{\kohm}.}
+{\qty{4,7}{\Mohm}.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{NC107}{Die Farbringe gelb, violett und orange auf einem Widerstand mit 4 Farbringen bedeuten einen Widerstandswert von~...}{\qty{4,7}{\kohm}.}
+{\textbf{\textcolor{DARCgreen}{\qty{47}{\kohm}.}}}
+{\qty{470}{\kohm}.}
+{\qty{4,7}{\Mohm}.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{NC105}{Die Farbringe gelb, violett und rot auf einem Widerstand mit 4 Farbringen bedeuten einen Widerstandswert von~...}{\qty{4,7}{\Mohm}.}
+{\qty{47}{\kohm}.}
+{\qty{470}{\kohm}.}
+{\qty{4,7}{\kohm}.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{NC105}{Die Farbringe gelb, violett und rot auf einem Widerstand mit 4 Farbringen bedeuten einen Widerstandswert von~...}{\qty{4,7}{\Mohm}.}
+{\qty{47}{\kohm}.}
+{\qty{470}{\kohm}.}
+{\textbf{\textcolor{DARCgreen}{\qty{4,7}{\kohm}.}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{NC106}{Die Farbringe rot, violett und orange auf einem Widerstand mit 4 Farbringen bedeuten einen Widerstandswert von~...}{\qty{2,7}{\kohm}.}
+{\qty{27}{\kohm}.}
+{\qty{270}{\kohm}.}
+{\qty{2,7}{\Mohm}.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{NC106}{Die Farbringe rot, violett und orange auf einem Widerstand mit 4 Farbringen bedeuten einen Widerstandswert von~...}{\qty{2,7}{\kohm}.}
+{\textbf{\textcolor{DARCgreen}{\qty{27}{\kohm}.}}}
+{\qty{270}{\kohm}.}
+{\qty{2,7}{\Mohm}.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{NC104}{Die Farbringe rot, violett und rot auf einem Widerstand mit 4 Farbringen bedeuten einen Widerstandswert von~...}{\qty{27}{\kohm}.}
+{\qty{2,7}{\kohm}.}
+{\qty{270}{\kohm}.}
+{\qty{2,7}{\Mohm}.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{NC104}{Die Farbringe rot, violett und rot auf einem Widerstand mit 4 Farbringen bedeuten einen Widerstandswert von~...}{\qty{27}{\kohm}.}
+{\textbf{\textcolor{DARCgreen}{\qty{2,7}{\kohm}.}}}
+{\qty{270}{\kohm}.}
+{\qty{2,7}{\Mohm}.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{NC103}{Welche drei Farbringe hat ein \qty{1,2}{\kohm} Widerstand am Anfang, wenn vier Farbringe verwendet werden?}{Braun, rot, rot}
+{Rot, orange, braun}
+{Braun, rot, orange}
+{Rot, braun, rot}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{NC103}{Welche drei Farbringe hat ein \qty{1,2}{\kohm} Widerstand am Anfang, wenn vier Farbringe verwendet werden?}{\textbf{\textcolor{DARCgreen}{Braun, rot, rot}}}
+{Rot, orange, braun}
+{Braun, rot, orange}
+{Rot, braun, rot}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{NC102}{Welchem Multiplikator entspricht ein grüner Farbring auf einem Widerstand mit 4 Farbringen?}{\num{10000}}
+{\num{100000}}
+{\num{1000000}}
+{\num{10000000}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{NC102}{Welchem Multiplikator entspricht ein grüner Farbring auf einem Widerstand mit 4 Farbringen?}{\num{10000}}
+{\textbf{\textcolor{DARCgreen}{\num{100000}}}}
+{\num{1000000}}
+{\num{10000000}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{NC108}{Welche Toleranz weist ein Widerstand mit 4 Farbcodes auf, wenn der vierte Farbring ein silberner Farbring ist?}{ $\pm$\qty{5}{\percent}}
+{ $\pm$\qty{10}{\percent}}
+{ $\pm$\qty{0,1}{\percent}}
+{ $\pm$\qty{1}{\percent}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{NC108}{Welche Toleranz weist ein Widerstand mit 4 Farbcodes auf, wenn der vierte Farbring ein silberner Farbring ist?}{ $\pm$\qty{5}{\percent}}
+{\textbf{\textcolor{DARCgreen}{ $\pm$\qty{10}{\percent}}}}
+{ $\pm$\qty{0,1}{\percent}}
+{ $\pm$\qty{1}{\percent}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{NC109}{Welche Toleranz weist ein Widerstand mit 4 Farbcodes auf, wenn der vierte Farbring ein goldener Farbring ist?}{ $\pm$\qty{0,5}{\percent}}
+{ $\pm$\qty{5}{\percent}}
+{ $\pm$\qty{0,1}{\percent}}
+{ $\pm$\qty{1}{\percent}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{NC109}{Welche Toleranz weist ein Widerstand mit 4 Farbcodes auf, wenn der vierte Farbring ein goldener Farbring ist?}{ $\pm$\qty{0,5}{\percent}}
+{\textbf{\textcolor{DARCgreen}{ $\pm$\qty{5}{\percent}}}}
+{ $\pm$\qty{0,1}{\percent}}
+{ $\pm$\qty{1}{\percent}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{NC110}{Welche Toleranz weist ein Widerstand mit 4 Farbcodes auf, wenn der vierte Farbring braun ist?}{$\pm$\qty{5}{\percent}}
+{$\pm$\qty{0,1}{\percent}}
+{$\pm$\qty{1}{\percent}}
+{$\pm$\qty{10}{\percent}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{NC110}{Welche Toleranz weist ein Widerstand mit 4 Farbcodes auf, wenn der vierte Farbring braun ist?}{$\pm$\qty{5}{\percent}}
+{$\pm$\qty{0,1}{\percent}}
+{\textbf{\textcolor{DARCgreen}{$\pm$\qty{1}{\percent}}}}
+{$\pm$\qty{10}{\percent}}
+\end{QQuestion}
+
+}
+\end{frame}%ENDCONTENT

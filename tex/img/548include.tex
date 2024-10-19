@@ -1,0 +1,51 @@
+% Author: Stephan Kregel, DG1HXJ
+% Year: 2022
+% 3-TG313, 3-TG316, 3-TG318 gelöscht
+% 3-TG315 
+
+
+\usepackage{amssymb}
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{Fira Math}
+\setmathfont[range=up]{Roboto}
+\setmathfont[range=it]{Roboto-Italic}
+\setmathfont[range=\int]{Fira Math}
+\usepackage[euler]{textgreek}
+\usetikzlibrary{arrows, arrows.meta}
+
+\begin{document}
+	\begin{circuitikz}[european]
+        %\tikzstyle{help lines}=[blue!50];
+        %\draw[style=help lines, step=0.1] (-4,-8) grid (4,1);
+		\ctikzset{tubes/cathode right extend}
+		\ctikzset{tubes/cathode corners=0.25}
+		\coordinate (init) at (0,0);
+		\draw (init) node[triode,fullcathode, name=Tu,xscale=-1.12, yscale=1.08, rotate=90]{};
+		\draw (Tu.cathode 2) -- ++(-2,0) coordinate(dr1a) to [C, l_=$\text{C}_{3}$, *-o] ++(-2,0);
+		\draw (Tu.cathode 1) -- ++(-1,0) coordinate(dr2a) to [L, american, l_={$\text{Dr}_{2}$}, name=Dr2] ++(0,-2) coordinate(dr2b);
+		\draw (dr1a) -- ++(0,-0.6) to [L, american, -*, l_={$\text{Dr}_{1}$}, name=Dr1] ++(0,-2) coordinate(dr1b) -- ++(0,-3) coordinate(r1a);
+		\draw [densely dashed] (Dr1.south west) -- (Dr1.south east);
+		\draw [densely dashed] (Dr2.south west) -- (Dr2.south east);
+		\draw (Tu.control) -- (0,-2.3) coordinate(c6b) -- ++(0,-1.5) coordinate(c7b);
+		\draw (dr1b) -- (dr2b) to [C, l=$\text{C}_{6}$, -*] (c6b);
+		\draw (dr2b) -- ++(0,-1.5) coordinate(c7a) to [C, l=$\text{C}_{7}$, *-*] (c7b);
+		\draw (c7b) -- ++(0,-1.5) coordinate(r1b) to [R, l=$\text{R}_{1}$, *-] ++(-2,0) -- (r1a) to node[circ]{} ++(0,0);
+		\draw (r1a) -- ++(0,-1.5) to node[ocirc]{} ++(0,0);
+		\draw (c7a) -- ++(0,-3) to node[ocirc]{} ++(0,0);
+		\draw (r1b) -- ++(0,-1.5) to node[ocirc]{} ++(0,0);
+		\draw (c6b) -- ++(1.1,0) coordinate(dr3b) to [L, american, -*, l={$\text{Dr}_{3}$}, name=Dr3, mirror] (Tu.anode);
+		\draw [densely dashed] (Dr3.south west) -- (Dr3.south east);
+		\draw (dr3b) -- ++(0,-1.5) coordinate(c5b) to [C, l_=$\text{C}_{5}$, *-] (c7b);
+		\draw(Tu.anode) to [C, l_=$\text{C}_{4}$, -*] ++(2,0) coordinate(c4a) to [L, american, -*, l={$\text{L}_{1}$}, name=L1] ++(2,0) coordinate(c2a) -- ++(1.5,0) coordinate(ant) node[circ]{}++(0,0);
+		\draw (dr3b) -- ++(2,0) coordinate(c1b) -- ++(1,0) coordinate(gnd) to node[circ]{}++(0,0) to node[rground]{}++(0,0) -- ++(1,0) coordinate(c2b) -- ++(1.5,0) coordinate(dr4b);
+		\draw (c4a) to [vC, l=$\text{C}_{1}$, invert, tunable end arrow={Triangle}, -*] (c1b);
+		\draw (c2a) to [vC, l=$\text{C}_{2}$, invert, tunable end arrow={Triangle}, -*] (c2b);
+		\draw (ant) to [L, american, l={$\text{Dr}_{4}$}, name=Dr4] (dr4b);
+		\draw [densely dashed] (Dr4.south west) -- (Dr4.south east);
+		\draw (ant) to node[antenna]{}++(0,0);
+		\draw (c5b) to [rmeter] ++(0,-3) to node[ocirc]{}++(0,0);
+		\draw[-Triangle](1.35,-5.05-0.5) -- ++(-0.5,0.5);
+	\end{circuitikz}
+\end{document}

@@ -1,0 +1,51 @@
+% Author: Stephan Kregel, DG1HXJ
+% Year: 2022
+% 3-TD318D, 3-TD318F
+
+
+\usepackage{amssymb}
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{Fira Math}
+\setmathfont[range=up]{Roboto}
+\setmathfont[range=it]{Roboto-Italic}
+\setmathfont[range=\int]{Fira Math}
+\usepackage[euler]{textgreek}
+\usetikzlibrary{arrows, arrows.meta}
+
+\begin{document}
+	\begin{circuitikz}[european]
+		\coordinate (init) at (0,0);
+		\draw (init) ++(-4,0) node[ocirc](){} coordinate(in) 
+		to [short, i_=$\mathrm{I}_\mathrm{IN}$, -*] ++(1.5,0) coordinate(in1);
+		\draw (in1) to [ecapacitor, mirror, l=$\mathrm{C}_\mathrm{1}$] ++(0,-3) 
+		to node[rground]{} ++(0,0);
+		\draw (in) node[anchor=south]{$\mathrm{U}_\mathrm{IN}$};
+		\draw (init) to [Tnpn, invert, n=T1, l=T1] ++(2,0);
+		\draw (T1.E) -- ++(0,0) ;
+		\draw (init) ++(-0.5,-2) [very thick] rectangle (2.5,-1) node at (1,-1.5) {Regler};
+		\draw (1,-1) -- (T1.B);
+		\draw (T1.C) -- (in1);
+		\draw (init) ++(-1.5,-2.5) [very thick] rectangle (3.5,1) ;
+		\draw (init) ++(1,-2) -- ++(0,-1) to node[rground]{} ++(0,0);
+		\draw (init) ++(4.5,0) coordinate(init2) to [american inductor, inductors/coils=4 , inductors/width=1, l=$\mathrm{L}_\mathrm{1}$, name=L1, *-*] ++(2,0) coordinate(l1) 
+		to [ecapacitor, mirror, l=$\mathrm{C}_\mathrm{2}$] ++(0,-3) 
+		to node[rground]{} ++(0,0);
+		\draw [densely dashed] (L1.south west) -- (L1.south east);
+		\draw (init2) to [D-, l=$\mathrm{D}_\mathrm{1}$, invert] ++(0,-3)
+		to node[rground]{} ++(0,0);
+		\draw (init2) -- (T1.E);
+		\draw (l1) to [short, i_=$\mathrm{I}_\mathrm{OUT}$, -o] ++(1.5,0) coordinate(out) ;
+		\draw (out) node[anchor=south]{$\mathrm{U}_\mathrm{OUT}$};
+		\draw(1.325,-0.75) -- ++(0.2, 0.0)
+		-- ++(0.0, 0.4)
+		-- ++(0.125, 0.0)
+		-- ++(0.0,-0.4)
+		-- ++(0.125, 0.0)
+		-- ++(0.0, 0.4)
+		-- ++(0.125, 0.0)
+		-- ++(0.0,-0.4)
+		-- ++(0.2, 0.0);
+	\end{circuitikz}
+\end{document}

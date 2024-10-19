@@ -1,0 +1,106 @@
+% Author: Dr. Matthias Jung, DL9MJ
+% Year: 2020
+% TB601
+
+\usepackage{tikz,pgfplots}
+\usetikzlibrary{arrows}
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{Fira Math}
+\setmathfont[range=up]{Roboto}
+\setmathfont[range=it]{Roboto-Italic}
+\setmathfont[range=\int]{Fira Math}
+\usepackage[euler]{textgreek}
+
+\begin{document}
+
+\pgfplotsset{
+  every axis plot/.append style={line width=0.8pt},
+}
+
+\begin{circuitikz}[european]
+    %\tikzstyle{help lines}=[blue!50];
+    %\draw[style=help lines] (0,0) grid (8,7);
+    
+    \draw(0,0) to [short,o-*] ++(2,0) coordinate(c1)
+               to [short, -*] ++(2,0) coordinate(c2)
+               to [short, -*] ++(2,0) coordinate(c3)
+               to [short, -o] ++(2,0) coordinate(c4);
+
+    \draw(4,3) node[npn, tr circle](trans){};
+    \draw(0,3) coordinate(a1) 
+               to [C,o-*] ++(2,0) coordinate(d1)
+               to [short] (trans.B);
+    
+    \draw(d1) to [R] (c1);
+
+    \draw(trans.E) to [short] (c2);
+
+    \draw(c2) node[rground](){};
+
+    \draw(trans.C) to [R, -*] (4,6) coordinate(e2)
+                   to [short] ++(-3.5,0)
+                   to [C] ++(0,-1.0)
+                   node[rground](){}; 
+
+    \draw(trans.C) to [C,*-*] ++(2,0) coordinate(e3)
+                   to [short,-o] ++(2,0);
+
+    \draw(e3) to [R] (c3);
+
+    \draw(e2) to [short,-o] ++(4,0) coordinate(a2);
+    
+    \draw(a1) ++(0,0.25) node[](){E};
+    \draw(c4) ++(0.5,-0.05) node[](){0\,V};
+    \draw(a2) ++(0.75,0) node[](){+10\,V};
+
+    \draw[-Triangle](a1) ++(0,-0.5) -- (0,0.5);
+    \draw(-0.5,1.5) node[](){$\mathrm{U}_\mathrm{E}$};
+
+    \draw[-Triangle](8,3.5) -- (8,0.5);
+    \draw(8.5,2.0) node[](){$\mathrm{U}_\mathrm{A}$};
+
+\end{circuitikz}
+
+\begin{tikzpicture}
+    \draw (-0.5,4.5) node[]{$\mathrm{U}_\mathrm{A}$};
+    \draw ( 7.9,2.3) node[]{t};
+    %\tikzstyle{help lines}=[blue!50];
+    %\draw[style=help lines] (0,0) grid (6,4);
+
+    \begin{axis}[%
+        /pgf/number format/1000 sep={ },
+        /pgf/number format/use comma,        
+        axis lines=middle,
+        axis line style={-triangle 60},
+        width=3in,
+        height=1.8in,
+        scale only axis,
+        %yticklabel=\empty,
+        ytick={0,0.8},
+        every major tick/.append style={thick, black},
+        yticklabels={0,0.6~V},
+        %xtick={pi/2,pi,1.5*pi,2*pi,2.5*pi},
+        %xticklabels={$\mathrm{X}_1$,$\mathrm{X}_2$,$\mathrm{X}_3$,$~~\mathrm{X}_4$,$\mathrm{X}_5$},
+        grid=major,
+        grid style={line width=.1pt, draw=gray!10},
+        major grid style={line width=.2pt,draw=gray!50},
+        xticklabel=\empty,
+        %yticklabel=\empty,
+        %ticks=none,
+        xtick style={draw=none},
+        %ytick style={draw=none},
+        xmin=0,
+        xmax=4.2*pi,
+        ymin=-1.5,
+        ymax=1.5,
+        xmajorgrids=false,
+        %label style={font=\small},
+        tick label style={font=\footnotesize}
+    ]
+    \addplot[samples=500,domain=0:4.0*pi,smooth,black] {sin(deg(x))}; 
+\end{axis}
+\end{tikzpicture}%
+\end{document}
+

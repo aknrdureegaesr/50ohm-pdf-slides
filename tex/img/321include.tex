@@ -1,0 +1,35 @@
+% Author: Dr. Matthias Jung, DL9MJ
+% Year: 2021
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{Fira Math}
+\setmathfont[range=up]{Roboto}
+\setmathfont[range=it]{Roboto-Italic}
+\setmathfont[range=\int]{Fira Math}
+\usepackage[euler]{textgreek}
+\ctikzset{%
+    quadpoles/transformer core/height=2.15
+}%
+\begin{document}
+\begin{circuitikz}
+    %\tikzstyle{help lines}=[blue!50];
+    %\draw[style=help lines] (-6,-4) grid (16,4);
+    \draw(0,0) to [short] ++(6,0);
+    \draw(0,3) to [R] ++(4,0) 
+               node[circ](dc1){}
+               to [short] ++(2,0);
+               %node[circ](dc2){}
+               %to [short] ++(2,0);
+    \draw(dc1) node[circ]{} to [stroke Zener diode, mirror, -*] (4,0);
+    %\draw(dc2) to [stroke diode] ++(0,-3) node[circ]{};
+    \draw(0,3) node[ocirc] (U1A) {} ++(-0.75,0) node[](){-12 V};
+    \draw(0,0) node[ocirc] (U1B) {} ++(-0.75,0) node[](){0 V};
+    \draw(6,3) node[ocirc] (U2A) {} ++( 0.75,0) node[](){-4{,}7 V};
+    \draw(6,0) node[ocirc] (U2B) {};
+
+    %\draw(U1A) to[open, v=$\mbox{U}_1$] (U1B);
+    %\draw(U2A) to[open, v^=$\mbox{U}_2$] (U2B);
+\end{circuitikz}
+\end{document}
+

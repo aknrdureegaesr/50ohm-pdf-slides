@@ -1,0 +1,649 @@
+
+\section{Transistor II}
+\label{section:transistor_2}
+\begin{frame}%STARTCONTENT
+
+\frametitle{Bipolarer Transistor}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC501}{Ein bipolarer Transistor ist~...}{thermisch gesteuert.}
+{spannungsgesteuert.}
+{stromgesteuert.}
+{feldgesteuert.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC501}{Ein bipolarer Transistor ist~...}{thermisch gesteuert.}
+{spannungsgesteuert.}
+{\textbf{\textcolor{DARCgreen}{stromgesteuert.}}}
+{feldgesteuert.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC503}{Mit welchem Anschluss ist der p-dotierte Bereich eines NPN-Transistors verbunden?}{Gehäuse}
+{Kollektor}
+{Emitter}
+{Basis}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC503}{Mit welchem Anschluss ist der p-dotierte Bereich eines NPN-Transistors verbunden?}{Gehäuse}
+{Kollektor}
+{Emitter}
+{\textbf{\textcolor{DARCgreen}{Basis}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC504}{Mit welchem Anschluss ist der n-dotierte Bereich eines PNP-Transistors verbunden?}{Kollektor}
+{Emitter}
+{Basis}
+{Gehäuse}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC504}{Mit welchem Anschluss ist der n-dotierte Bereich eines PNP-Transistors verbunden?}{Kollektor}
+{Emitter}
+{\textbf{\textcolor{DARCgreen}{Basis}}}
+{Gehäuse}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC505}{Bei einem bipolaren Transistor in leitendem Zustand befindet sich der Basis-Emitter-PN-Übergang~...}{in Sperrrichtung.}
+{im Leerlauf.}
+{im Kurzschluss.}
+{in Durchlassrichtung.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC505}{Bei einem bipolaren Transistor in leitendem Zustand befindet sich der Basis-Emitter-PN-Übergang~...}{in Sperrrichtung.}
+{im Leerlauf.}
+{im Kurzschluss.}
+{\textbf{\textcolor{DARCgreen}{in Durchlassrichtung.}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Rechnungen}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AC515}{Die Betriebsspannung beträgt \qty{12}{\V}, der Kollektorstrom soll \qty{5}{\mA} betragen, die Gleichstromverstärkung des Transistors beträgt 298. Berechnen Sie den Vorwiderstand $R_1$.}{ca. \qty{680}{\kohm}}
+{ca. \qty{715}{\kohm}}
+{ca. \qty{68}{\kohm}}
+{ca. \qty{2,3}{\kohm}}
+{\DARCimage{1.0\linewidth}{360include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AC515}{Die Betriebsspannung beträgt \qty{12}{\V}, der Kollektorstrom soll \qty{5}{\mA} betragen, die Gleichstromverstärkung des Transistors beträgt 298. Berechnen Sie den Vorwiderstand $R_1$.}{\textbf{\textcolor{DARCgreen}{ca. \qty{680}{\kohm}}}}
+{ca. \qty{715}{\kohm}}
+{ca. \qty{68}{\kohm}}
+{ca. \qty{2,3}{\kohm}}
+{\DARCimage{1.0\linewidth}{360include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $U = 12V$
+  \item gegeben: $I_{\textrm{C}} = 5mA$
+  \item gegeben: $B = 298$
+  \item gegeben: $U_{\textrm{BE}} = 0,6V$
+  \item gesucht: $R_1$
+  \end{itemize}
+    \pause
+    $B = \frac{I_{\textrm{C}}}{I_{\textrm{B}}} \Rightarrow I_{\textrm{B}} = \frac{I_{\textrm{C}}}{B} = \frac{5mA}{298} = 16,779\mu A$
+    \pause
+    $R_1 = \frac{U-U_{\textrm{BE}}}{I_{\textrm{B}}} = \frac{12V -- 0,6V}{16,779\mu A} \approx 680k\Omega$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AC518}{Die Betriebsspannung beträgt \qty{10}{\V}, der Kollektorstrom soll \qty{2}{\mA} betragen, die Gleichstromverstärkung des Transistors beträgt 200. Durch den Querwiderstand $R_2$ soll der zehnfache Basisstrom fließen. Berechnen Sie den Vorwiderstand $R_1$.}{ca. \qty{76,4}{\kohm}}
+{ca. \qty{940}{\kohm}}
+{ca. \qty{85,5}{\kohm}}
+{ca. \qty{540}{\kohm}}
+{\DARCimage{1.0\linewidth}{361include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AC518}{Die Betriebsspannung beträgt \qty{10}{\V}, der Kollektorstrom soll \qty{2}{\mA} betragen, die Gleichstromverstärkung des Transistors beträgt 200. Durch den Querwiderstand $R_2$ soll der zehnfache Basisstrom fließen. Berechnen Sie den Vorwiderstand $R_1$.}{ca. \qty{76,4}{\kohm}}
+{ca. \qty{940}{\kohm}}
+{\textbf{\textcolor{DARCgreen}{ca. \qty{85,5}{\kohm}}}}
+{ca. \qty{540}{\kohm}}
+{\DARCimage{1.0\linewidth}{361include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item gegeben: $U = 10V$
+  \item gegeben: $I_{\textrm{C}} = 2mA$
+  \item gegeben: $B = 200$
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       \begin{itemize}
+  \item gegeben: $U_{\textrm{R2}} = 0,6$
+  \item gegeben: $I_{\textrm{R2}} = 10 \cdot I_{\textrm{B}}$
+  \item gesucht: $R_1$
+  \end{itemize}
+
+   \end{column}
+\end{columns}
+    \pause
+    $B = \frac{I_{\textrm{C}}}{I_{\textrm{B}}} \Rightarrow I_{\textrm{B}} = \frac{I_{\textrm{C}}}{B} = \frac{2mA}{200} = 10\mu A$
+    \pause
+    $U_{\textrm{R1}} = U -- U_{\textrm{R2}} = 10V -- 0,6V = 9,4V$
+    \pause
+    $I_{\textrm{R1}} = I_{\textrm{B}} + I_{\textrm{R2}} = I_{\textrm{B}} + 10 \cdot I_{\textrm{B}} = 110\mu A$
+    \pause
+    $R_1 = \frac{U_{\textrm{R1}}}{I_{\textrm{R1}}} = \frac{9,4V}{110\mu A} \approx 85,5k\Omega$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AC517}{Die Betriebsspannung beträgt \qty{10}{\V}, der Kollektorstrom soll \qty{2}{\mA} betragen, die Gleichstromverstärkung des Transistors beträgt 200. Durch den Querwiderstand $R_2$ soll der zehnfache Basisstrom fließen. Am Emitterwiderstand soll \qty{1}{\V} abfallen. Berechnen Sie den Vorwiderstand $R_1$.}{ca. \qty{540}{\kohm}}
+{ca. \qty{76,4}{\kohm}}
+{ca. \qty{85,5}{\kohm}}
+{ca. \qty{940}{\kohm}}
+{\DARCimage{1.0\linewidth}{362include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AC517}{Die Betriebsspannung beträgt \qty{10}{\V}, der Kollektorstrom soll \qty{2}{\mA} betragen, die Gleichstromverstärkung des Transistors beträgt 200. Durch den Querwiderstand $R_2$ soll der zehnfache Basisstrom fließen. Am Emitterwiderstand soll \qty{1}{\V} abfallen. Berechnen Sie den Vorwiderstand $R_1$.}{ca. \qty{540}{\kohm}}
+{\textbf{\textcolor{DARCgreen}{ca. \qty{76,4}{\kohm}}}}
+{ca. \qty{85,5}{\kohm}}
+{ca. \qty{940}{\kohm}}
+{\DARCimage{1.0\linewidth}{362include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item gegeben: $U = 10V$
+  \item gegeben: $I_{\textrm{C}} = 2mA$
+  \item gegeben: $B = 200$
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       \begin{itemize}
+  \item gegeben: $U_{\textrm{BE}} = 0,6V$
+  \item gegeben: $U_{\textrm{RE}} = 1V$
+  \item gegeben: $I_{\textrm{R2}} = 10 \cdot I_{\textrm{B}}$
+  \end{itemize}
+
+   \end{column}
+\end{columns}
+
+\begin{itemize}
+  \item gesucht: $R_1$
+  \end{itemize}
+    \pause
+    $B = \frac{I_{\textrm{C}}}{I_{\textrm{B}}} \Rightarrow I_{\textrm{B}} = \frac{I_{\textrm{C}}}{B} = \frac{2mA}{200} = 10\mu A$
+    \pause
+    $U_{\textrm{R2}} = U_{\textrm{BE}} + U_{R_{\textrm{E}}} = 0,6V + 1V = 1,6V$
+    \pause
+    $U_{\textrm{R1}} = U -- U_{\textrm{R2}} = 10V -- 1,6V = 8,4V$
+    \pause
+    $I_{\textrm{R1}} = I_{\textrm{B}} + I_{\textrm{R2}} = I_{\textrm{B}} + 10 \cdot I_{\textrm{B}} = 110\mu A$
+    \pause
+    $R_1 = \frac{U_{\textrm{R1}}}{I_{\textrm{R1}}} = \frac{8,4V}{110\mu A} \approx 76,4k\Omega$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AC516}{Warum soll bei dem gezeigten Basisspannungsteiler der Strom durch $R_2$ etwa 10-mal größer als der Basisstrom sein?}{Damit sich der Basisstrom bei Erwärmung nicht ändert.}
+{Damit der Arbeitspunkt stabil bleibt.}
+{Damit $R_2$ eine Stromgegenkopplung bewirkt.}
+{Damit $R_2$ eine Spannungsgegenkopplung bewirkt}
+{\DARCimage{1.0\linewidth}{361include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AC516}{Warum soll bei dem gezeigten Basisspannungsteiler der Strom durch $R_2$ etwa 10-mal größer als der Basisstrom sein?}{Damit sich der Basisstrom bei Erwärmung nicht ändert.}
+{\textbf{\textcolor{DARCgreen}{Damit der Arbeitspunkt stabil bleibt.}}}
+{Damit $R_2$ eine Stromgegenkopplung bewirkt.}
+{Damit $R_2$ eine Spannungsgegenkopplung bewirkt}
+{\DARCimage{1.0\linewidth}{361include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AC519}{Was passiert, wenn der Widerstand $R_1$ durch eine fehlerhafte Lötstelle an einer Seite keinen Kontakt mehr zur Schaltung hat? Welche Beschreibung trifft zu?}{Es fließt Kurzschlussstrom. Der Transistor wird zerstört.}
+{Es fließt kein Kollektorstrom mehr. Die Kollektorspannung steigt auf die Betriebsspannung an.}
+{Der Kollektorstrom wird nur durch $R_{\symup{C}}$ begrenzt. Die Kollektorspannung sinkt auf zirka \qty{0,1}{\V}.}
+{Der Kollektorstrom steigt stark an. Die Kollektorspannung erhöht sich.}
+{\DARCimage{1.0\linewidth}{365include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AC519}{Was passiert, wenn der Widerstand $R_1$ durch eine fehlerhafte Lötstelle an einer Seite keinen Kontakt mehr zur Schaltung hat? Welche Beschreibung trifft zu?}{Es fließt Kurzschlussstrom. Der Transistor wird zerstört.}
+{\textbf{\textcolor{DARCgreen}{Es fließt kein Kollektorstrom mehr. Die Kollektorspannung steigt auf die Betriebsspannung an.}}}
+{Der Kollektorstrom wird nur durch $R_{\symup{C}}$ begrenzt. Die Kollektorspannung sinkt auf zirka \qty{0,1}{\V}.}
+{Der Kollektorstrom steigt stark an. Die Kollektorspannung erhöht sich.}
+{\DARCimage{1.0\linewidth}{365include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AC520}{Was passiert, wenn der Widerstand $R_2$ durch eine fehlerhafte Lötstelle an einer Seite keinen Kontakt mehr zur Schaltung hat? In welcher Antwort sind beide Aussagen richtig?}{Es fließt kein Kollektorstrom mehr. Die Kollektorspannung steigt auf die Betriebsspannung an.}
+{Es fließt Kurzschlussstrom. Der Transistor wird zerstört.}
+{Der Kollektorstrom wird nur durch $R_{\symup{C}}$ begrenzt. Die Kollektorspannung sinkt auf zirka \qty{0,1}{\V}.}
+{Der Kollektorstrom steigt stark an. Die Kollektorspannung erhöht sich.}
+{\DARCimage{1.0\linewidth}{364include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AC520}{Was passiert, wenn der Widerstand $R_2$ durch eine fehlerhafte Lötstelle an einer Seite keinen Kontakt mehr zur Schaltung hat? In welcher Antwort sind beide Aussagen richtig?}{Es fließt kein Kollektorstrom mehr. Die Kollektorspannung steigt auf die Betriebsspannung an.}
+{Es fließt Kurzschlussstrom. Der Transistor wird zerstört.}
+{\textbf{\textcolor{DARCgreen}{Der Kollektorstrom wird nur durch $R_{\symup{C}}$ begrenzt. Die Kollektorspannung sinkt auf zirka \qty{0,1}{\V}.}}}
+{Der Kollektorstrom steigt stark an. Die Kollektorspannung erhöht sich.}
+{\DARCimage{1.0\linewidth}{364include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Feldeffekttransistor}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC502}{Ein Feldeffekttransistor ist~...}{stromgesteuert.}
+{spannungsgesteuert.}
+{leistungsgesteuert.}
+{optisch gesteuert.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC502}{Ein Feldeffekttransistor ist~...}{stromgesteuert.}
+{\textbf{\textcolor{DARCgreen}{spannungsgesteuert.}}}
+{leistungsgesteuert.}
+{optisch gesteuert.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AC506}{Welches Bauteil wird durch das Schaltzeichen symbolisiert?}{Lautsprecher}
+{Bipolartransistor}
+{Diode}
+{Feldeffekttransistor}
+{\DARCimage{0.25\linewidth}{561include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AC506}{Welches Bauteil wird durch das Schaltzeichen symbolisiert?}{Lautsprecher}
+{Bipolartransistor}
+{Diode}
+{\textbf{\textcolor{DARCgreen}{Feldeffekttransistor}}}
+{\DARCimage{0.25\linewidth}{561include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AC513}{Wie bezeichnet man die Anschlüsse des abgebildeten Transistors?}{1: Drain, 2: Source, 3: Gate}
+{1: Anode, 2: Kollektor, 3: Gate}
+{1: Anode, 2: Kathode, 3: Gate}
+{1: Kollektor, 2: Emitter, 3: Basis}
+{\DARCimage{0.25\linewidth}{376include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AC513}{Wie bezeichnet man die Anschlüsse des abgebildeten Transistors?}{\textbf{\textcolor{DARCgreen}{1: Drain, 2: Source, 3: Gate}}}
+{1: Anode, 2: Kollektor, 3: Gate}
+{1: Anode, 2: Kathode, 3: Gate}
+{1: Kollektor, 2: Emitter, 3: Basis}
+{\DARCimage{0.25\linewidth}{376include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC512}{Wie lauten die Bezeichnungen der Anschlüsse eines Feldeffekttransistors?}{Emitter, Basis, Kollektor}
+{Drain, Gate, Source}
+{Emitter, Drain, Source}
+{Gate, Source, Kollektor}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC512}{Wie lauten die Bezeichnungen der Anschlüsse eines Feldeffekttransistors?}{Emitter, Basis, Kollektor}
+{\textbf{\textcolor{DARCgreen}{Drain, Gate, Source}}}
+{Emitter, Drain, Source}
+{Gate, Source, Kollektor}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC514}{Wie erfolgt die Steuerung des Stroms im Feldeffekttransistor (FET)?}{Die Gate-Source-Spannung steuert den Widerstand des Kanals zwischen Source und Drain.}
+{Die Gate-Source-Spannung steuert den Gatestrom.}
+{Der Gatestrom steuert den Drainstrom.}
+{Der Gatestrom steuert den Widerstand des Kanals zwischen Source und Drain.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC514}{Wie erfolgt die Steuerung des Stroms im Feldeffekttransistor (FET)?}{\textbf{\textcolor{DARCgreen}{Die Gate-Source-Spannung steuert den Widerstand des Kanals zwischen Source und Drain.}}}
+{Die Gate-Source-Spannung steuert den Gatestrom.}
+{Der Gatestrom steuert den Drainstrom.}
+{Der Gatestrom steuert den Widerstand des Kanals zwischen Source und Drain.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Bauarten FET}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AC507}{Welche Bezeichnungen für die Bauelemente sind richtig?}{1: Selbstleitender N-Kanal-Sperrschicht-FET
+2: Selbstleitender P-Kanal-Sperrschicht-FET}
+{1: Selbstsperrender N-Kanal-Sperrschicht-FET
+2: Selbstsperrender P-Kanal-Sperrschicht-FET}
+{1: Selbstleitender P-Kanal-Sperrschicht-FET
+2: Selbstleitender N-Kanal-Sperrschicht-FET}
+{1: Selbstsperrender P-Kanal-Sperrschicht-FET
+2: Selbstsperrender N-Kanal-Sperrschicht-FET}
+{\DARCimage{1.0\linewidth}{271include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AC507}{Welche Bezeichnungen für die Bauelemente sind richtig?}{\textbf{\textcolor{DARCgreen}{1: Selbstleitender N-Kanal-Sperrschicht-FET
+2: Selbstleitender P-Kanal-Sperrschicht-FET}}}
+{1: Selbstsperrender N-Kanal-Sperrschicht-FET
+2: Selbstsperrender P-Kanal-Sperrschicht-FET}
+{1: Selbstleitender P-Kanal-Sperrschicht-FET
+2: Selbstleitender N-Kanal-Sperrschicht-FET}
+{1: Selbstsperrender P-Kanal-Sperrschicht-FET
+2: Selbstsperrender N-Kanal-Sperrschicht-FET}
+{\DARCimage{1.0\linewidth}{271include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AC508}{Der folgende Transistor ist ein~...}{Selbstleitender P-Kanal-Isolierschicht-FET (MOSFET).}
+{Selbstsperrender P-Kanal-Isolierschicht-FET (MOSFET).}
+{Selbstleitender N-Kanal-Isolierschicht-FET (MOSFET).}
+{Selbstsperrender N-Kanal-Isolierschicht-FET (MOSFET).}
+{\DARCimage{0.25\linewidth}{272include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AC508}{Der folgende Transistor ist ein~...}{Selbstleitender P-Kanal-Isolierschicht-FET (MOSFET).}
+{Selbstsperrender P-Kanal-Isolierschicht-FET (MOSFET).}
+{Selbstleitender N-Kanal-Isolierschicht-FET (MOSFET).}
+{\textbf{\textcolor{DARCgreen}{Selbstsperrender N-Kanal-Isolierschicht-FET (MOSFET).}}}
+{\DARCimage{0.25\linewidth}{272include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{question2x2}{AC509}{Welcher der folgenden Transistoren ist ein selbstsperrender N-Kanal-MOSFET?}{\DARCimage{1.0\linewidth}{275include}}
+{\DARCimage{1.0\linewidth}{274include}}
+{\DARCimage{1.0\linewidth}{273include}}
+{\DARCimage{1.0\linewidth}{276include}}
+\end{question2x2}
+
+}
+\only<2>{
+\begin{question2x2}{AC509}{Welcher der folgenden Transistoren ist ein selbstsperrender N-Kanal-MOSFET?}{\DARCimage{1.0\linewidth}{275include}}
+{\DARCimage{1.0\linewidth}{274include}}
+{\DARCimage{1.0\linewidth}{273include}}
+{\textbf{\textcolor{DARCgreen}{\DARCimage{1.0\linewidth}{276include}}}}
+\end{question2x2}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{question2x2}{AC510}{Welcher der folgenden Transistoren ist ein selbstleitender N-Kanal-MOSFET?}{\DARCimage{1.0\linewidth}{275include}}
+{\DARCimage{1.0\linewidth}{273include}}
+{\DARCimage{1.0\linewidth}{274include}}
+{\DARCimage{1.0\linewidth}{276include}}
+\end{question2x2}
+
+}
+\only<2>{
+\begin{question2x2}{AC510}{Welcher der folgenden Transistoren ist ein selbstleitender N-Kanal-MOSFET?}{\DARCimage{1.0\linewidth}{275include}}
+{\DARCimage{1.0\linewidth}{273include}}
+{\textbf{\textcolor{DARCgreen}{\DARCimage{1.0\linewidth}{274include}}}}
+{\DARCimage{1.0\linewidth}{276include}}
+\end{question2x2}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{question2x2}{AC511}{Welcher der folgenden Transistoren ist ein selbstleitender P-Kanal-MOSFET?}{\DARCimage{1.0\linewidth}{274include}}
+{\DARCimage{1.0\linewidth}{273include}}
+{\DARCimage{1.0\linewidth}{276include}}
+{\DARCimage{1.0\linewidth}{275include}}
+\end{question2x2}
+
+}
+\only<2>{
+\begin{question2x2}{AC511}{Welcher der folgenden Transistoren ist ein selbstleitender P-Kanal-MOSFET?}{\DARCimage{1.0\linewidth}{274include}}
+{\textbf{\textcolor{DARCgreen}{\DARCimage{1.0\linewidth}{273include}}}}
+{\DARCimage{1.0\linewidth}{276include}}
+{\DARCimage{1.0\linewidth}{275include}}
+\end{question2x2}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Rechnungen}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AC521}{Wie groß ist die Gate-Source-Spannung in der gezeichneten Schaltung? $U_{\symup{B}} = \qty{44}{\V}$; $R_1 = 10~k\Omega$; $R_2 = 1~k\Omega$; $R_3 = 2,2~k\Omega$~...}{\qty{4}{\V}}
+{\qty{8}{\V}}
+{\qty{0,7}{\V} }
+{\qty{4,4}{\V}}
+{\DARCimage{0.5\linewidth}{345include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AC521}{Wie groß ist die Gate-Source-Spannung in der gezeichneten Schaltung? $U_{\symup{B}} = \qty{44}{\V}$; $R_1 = 10~k\Omega$; $R_2 = 1~k\Omega$; $R_3 = 2,2~k\Omega$~...}{\textbf{\textcolor{DARCgreen}{\qty{4}{\V}}}}
+{\qty{8}{\V}}
+{\qty{0,7}{\V} }
+{\qty{4,4}{\V}}
+{\DARCimage{0.5\linewidth}{345include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item gegeben: $U_{\textrm{B}} = 44V$
+  \item gegeben: $R_1 = 10k\Omega$
+  \item gegeben: $R_2 = 1k\Omega$
+  \item gegeben: $R_3 = 2,2k\Omega$
+  \item gesucht: $U_{\textrm{GS}}$
+  \item Ansatz: Spannungsteiler über $R_1$ und $R_2$, mit $U_{\textrm{GS}} = U_{\textrm{R2}}$
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+    \pause
+    \begin{equation}\begin{align}\nonumber \frac{U_{\textrm{R2}}}{U_{\textrm{B}}} &= \frac{R_2}{R_1+R_2}\\ \nonumber \Rightarrow U_{\textrm{R2}} &= \frac{R_2}{R_1+R_2} \cdot U_{\textrm{G}}\\ \nonumber &= \frac{1k\Omega}{10k\Omega+1k\Omega} \cdot 44V\\ \nonumber &= \frac{1}{11} \cdot 44V = 4V \end{align}\end{equation}
+
+
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AC522}{Wie groß muss $R_2$ gewählt werden, damit sich eine Spannung von \qty{2,8}{\V} zwischen Gate und Source einstellt? $U_{\symup{B}}$=\qty{44}{\V}; $R_1$=\qty{10}{\kohm}; $R_3$=\qty{2,2}{\kohm}~...}{ca. \qty{820}{\ohm}}
+{ca. \qty{1405}{\ohm}}
+{ca. \qty{68}{\ohm}}
+{ca. \qty{680}{\ohm}}
+{\DARCimage{0.5\linewidth}{345include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AC522}{Wie groß muss $R_2$ gewählt werden, damit sich eine Spannung von \qty{2,8}{\V} zwischen Gate und Source einstellt? $U_{\symup{B}}$=\qty{44}{\V}; $R_1$=\qty{10}{\kohm}; $R_3$=\qty{2,2}{\kohm}~...}{ca. \qty{820}{\ohm}}
+{ca. \qty{1405}{\ohm}}
+{ca. \qty{68}{\ohm}}
+{\textbf{\textcolor{DARCgreen}{ca. \qty{680}{\ohm}}}}
+{\DARCimage{0.5\linewidth}{345include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item gegeben: $U_{\textrm{B}} = 44V$
+  \item gegeben: $R_1 = 10k\Omega$
+  \item gegeben: $R_3 = 2,2k\Omega$
+  \item gegeben: $U_{\textrm{GS}} = U_{\textrm{R2}} = 2,8V$
+  \item gegeben: $U_{\textrm{B}} = U_{\textrm{R1}} + U_{\textrm{R2}}$
+  \item gesucht: $R_2$
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+    \pause
+    \begin{equation}\begin{align}\nonumber \frac{U_{\textrm{R1}}}{U_{\textrm{R2}}} &= \frac{R_1}{R_2}\\ \nonumber \Rightarrow R_2 &= R_1 \cdot \frac{U_{\textrm{R2}}}{U_{\textrm{R1}}}\\ \nonumber &= R_1 \cdot \frac{U_{\textrm{R2}}}{U_{\textrm{B}}-U_{\textrm{GS}}}\\ \nonumber &= 10k\Omega \cdot \frac{2,8V}{44V-2,8V}\\ \nonumber &\approx 680\Omega \end{align}\end{equation}
+
+
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC523}{Welche Verlustleistung erzeugt ein Power-MOS-FET mit $R_{\symup{DSon}}$ = \qty{4}{\m\ohm} bei einem Strom von \qty{25}{\A}?}{\qty{2,5}{\W}}
+{\qty{1}{\W}}
+{\qty{0,1}{\W}}
+{\qty{6,25}{\W}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC523}{Welche Verlustleistung erzeugt ein Power-MOS-FET mit $R_{\symup{DSon}}$ = \qty{4}{\m\ohm} bei einem Strom von \qty{25}{\A}?}{\textbf{\textcolor{DARCgreen}{\qty{2,5}{\W}}}}
+{\qty{1}{\W}}
+{\qty{0,1}{\W}}
+{\qty{6,25}{\W}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $R_{\textrm{DSon}} = 4m\Omega$
+  \item gegeben: $I = 25A$
+  \item gesucht: $P$
+  \end{itemize}
+    \pause
+    $P = I^2 \cdot R = 25^2A \cdot 4m\Omega = 2,5W$
+
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Freilaufdiode}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{question2x2}{AC524}{In welcher der folgenden Schaltungen ist die Freilaufdiode richtig eingesetzt?}{\DARCimage{1.0\linewidth}{429include}}
+{\DARCimage{1.0\linewidth}{427include}}
+{\DARCimage{1.0\linewidth}{428include}}
+{\DARCimage{1.0\linewidth}{426include}}
+\end{question2x2}
+
+}
+\only<2>{
+\begin{question2x2}{AC524}{In welcher der folgenden Schaltungen ist die Freilaufdiode richtig eingesetzt?}{\DARCimage{1.0\linewidth}{429include}}
+{\DARCimage{1.0\linewidth}{427include}}
+{\DARCimage{1.0\linewidth}{428include}}
+{\textbf{\textcolor{DARCgreen}{\DARCimage{1.0\linewidth}{426include}}}}
+\end{question2x2}
+
+}
+\end{frame}%ENDCONTENT

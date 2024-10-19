@@ -1,0 +1,203 @@
+
+\section{Ohmsches Gesetz}
+\label{section:ohmsches_gesetz}
+\begin{frame}%STARTCONTENT
+Kurze Wiederholung:
+
+\begin{itemize}
+  \item Elektrische Ladungen werden in Spannungesquellen getrennt, wodurch elektrische Spannung entsteht. Buchstabe $U$, Einheit Volt (V).
+  \item Elektrische Spannung sorgt für elektrischen Stromfluss in geschlossenem Stromkreis. Buchstabe $I$, Einheit Ampere (A).
+  \item Verbraucher üben in einem Stromkreis einen Widerstand aus und bremsen den Stromfluß. Buchstabe $R$, Einheit Ohm (Ω).
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{NA203}{Welche Einheit wird üblicherweise für den elektrische Widerstand verwendet?}{Volt (V)}
+{Ohm ($\Omega$)}
+{Ampere (A)}
+{Watt (W)}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{NA203}{Welche Einheit wird üblicherweise für den elektrische Widerstand verwendet?}{Volt (V)}
+{\textbf{\textcolor{DARCgreen}{Ohm ($\Omega$)}}}
+{Ampere (A)}
+{Watt (W)}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Zusammenhang}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    
+\begin{figure}
+    \DARCimage{0.85\linewidth}{664include}
+    \caption{\scriptsize Stromkreis mit Batterie}
+    \label{n_ohmsches_gesetz_stromkreis_mit_batterie}
+\end{figure}
+
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       \begin{itemize}
+  \item Spannung 10 V
+  \item Strom 1 mA
+  \end{itemize}
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}\begin{itemize}
+  \item Bei 20 V erhöht sich der Strom auf 2 mA
+  \item Bei 5 V verringert sich der Strom auf 0,5 mA
+  \end{itemize}
+    \pause
+    $\dfrac{U}{I} = \dfrac{10 \ \text{V}}{0,001 \ \text{A}} = \dfrac{20 \ \text{V}}{0,002 \ \text{A}} = \dfrac{5 \ \text{V}}{0,0005 \ \text{A}} = 10000 \frac{\text{V}}{\text{A}}$
+    \pause
+    Proportionalität: $I$ ist proportional zu $U$ mit \emph{Proportionalitätsfaktor} 10000
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Widerstand}
+\begin{itemize}
+  \item Der Proportionalitätsfaktor von 10000 aus dem Beispiel ist der Widerstand $R$
+  \item Einheit: $1 \ Ω = 1 \frac{\text{V}}{\text{A}}$
+  \item Der Widerstand aus dem Beispiel beträgt 10000 Ω oder 10 kΩ
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Ohmsches Gesetz}
+Der Widerstand ist das \emph{Verhältnis von Spannung und Strom}
+
+$ R = \dfrac{U}{I} $
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{NB505}{Welcher Widerstandswert liegt vor?}{\qty{3,600}{\ohm}}
+{\qty{40,000}{\ohm}}
+{\qty{0,025}{\ohm}}
+{\qty{0,200}{\ohm}}
+{\DARCimage{0.75\linewidth}{508include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{NB505}{Welcher Widerstandswert liegt vor?}{\qty{3,600}{\ohm}}
+{\textbf{\textcolor{DARCgreen}{\qty{40,000}{\ohm}}}}
+{\qty{0,025}{\ohm}}
+{\qty{0,200}{\ohm}}
+{\DARCimage{0.75\linewidth}{508include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Formelumstellung}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Spannung und Widerstand bekannt
+  \item Strom unbekannt
+  \end{itemize}
+$ I = \dfrac{U}{R} $
+
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       \begin{itemize}
+  \item Strom und Widerstand bekannt
+  \item Spannung unbekannt
+  \end{itemize}
+$ U = R\cdot I $
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{NB504}{Welche Spannung lässt einen Strom von \qty{90}{\mA} durch den Widerstand fließen?}{\qty{1,111}{\kV}}
+{\qty{9,000}{\V}}
+{\qty{9,000}{\kV}}
+{\qty{1,111}{\V}}
+{\DARCimage{0.75\linewidth}{507include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{NB504}{Welche Spannung lässt einen Strom von \qty{90}{\mA} durch den Widerstand fließen?}{\qty{1,111}{\kV}}
+{\textbf{\textcolor{DARCgreen}{\qty{9,000}{\V}}}}
+{\qty{9,000}{\kV}}
+{\qty{1,111}{\V}}
+{\DARCimage{0.75\linewidth}{507include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{NB502}{Welcher der nachfolgenden Ausdrücke stellt den Zusammenhang zwischen Strom, Spannung und Widerstand korrekt dar?}{$R = U \cdot I$}
+{$I = \dfrac{U}{R}$}
+{$R = \dfrac{I}{U}$}
+{$I =R \cdot U$}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{NB502}{Welcher der nachfolgenden Ausdrücke stellt den Zusammenhang zwischen Strom, Spannung und Widerstand korrekt dar?}{$R = U \cdot I$}
+{\textbf{\textcolor{DARCgreen}{$I = \dfrac{U}{R}$}}}
+{$R = \dfrac{I}{U}$}
+{$I =R \cdot U$}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{NB503}{Welcher der nachfolgenden Ausdrücke stellt den Zusammenhang zwischen Strom, Spannung und Widerstand korrekt dar?}{$R = \dfrac{U}{I}$}
+{$R = U \cdot I$}
+{$R = \dfrac{I}{U}$}
+{$I =R \cdot U$}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{NB503}{Welcher der nachfolgenden Ausdrücke stellt den Zusammenhang zwischen Strom, Spannung und Widerstand korrekt dar?}{\textbf{\textcolor{DARCgreen}{$R = \dfrac{U}{I}$}}}
+{$R = U \cdot I$}
+{$R = \dfrac{I}{U}$}
+{$I =R \cdot U$}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{NB501}{Welcher der nachfolgenden Ausdrücke stellt den Zusammenhang zwischen Strom, Spannung und Widerstand korrekt dar?}{$R = U \cdot I$}
+{$U = R \cdot I $}
+{$R = \dfrac{I}{U}$}
+{$I =R \cdot U$}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{NB501}{Welcher der nachfolgenden Ausdrücke stellt den Zusammenhang zwischen Strom, Spannung und Widerstand korrekt dar?}{$R = U \cdot I$}
+{\textbf{\textcolor{DARCgreen}{$U = R \cdot I $}}}
+{$R = \dfrac{I}{U}$}
+{$I =R \cdot U$}
+\end{QQuestion}
+
+}
+\end{frame}%ENDCONTENT

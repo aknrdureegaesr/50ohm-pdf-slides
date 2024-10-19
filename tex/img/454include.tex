@@ -1,0 +1,20 @@
+% Author: Dr. Matthias Jung, DL9MJ
+% Year: 2021
+\begin{circuitikz}
+    \draw(0,6) node[ocirc]{} to [short] ++(2,0)
+               to [R,l=$\qty{100}{\kilo\ohm}$,-*] ++(0,-3) coordinate(n1)
+               to [R,l=$\qty{200}{\kilo\ohm}$,-*] ++(0,-3) coordinate(n2)
+               to [short,-o] ++(-2,0);
+
+    \draw(-0.25,6) node[]{+};
+    \draw( 0.00,3) node[]{10~V};
+    \draw(-0.25,0) node[]{-};
+
+    \draw(n1) to [short, -o] ++(2,0) 
+              to [short] ++(1,0) 
+              to [rmeter] ++(0,-3)
+              to [short,-o] ++(-1,0)
+              to [short, -*] ++(-2,0);
+
+    \draw[-Triangle] (4.5,1.0) -- ++(1,1);
+\end{circuitikz}

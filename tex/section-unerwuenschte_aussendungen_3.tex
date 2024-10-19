@@ -1,0 +1,259 @@
+
+\section{Unerwünschte Aussendungen III}
+\label{section:unerwuenschte_aussendungen_3}
+\begin{frame}%STARTCONTENT
+
+\only<1>{
+\begin{QQuestion}{AJ211}{Wie wird vermieden, dass unerwünschte Mischprodukte aus dem Mischer in die Senderausgangsstufe gelangen?}{Das Ausgangssignal des Mischers wird über einen Hochpass ausgekoppelt.}
+{Das Ausgangssignal des Mischers wird über einen Bandpass ausgekoppelt.}
+{Das Ausgangssignal des Mischers wird über ein breitbandiges Dämpfungsglied ausgekoppelt.}
+{Das Ausgangssignal des Mischers wird von einer linearen Klasse-A-Treiberstufe verstärkt.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AJ211}{Wie wird vermieden, dass unerwünschte Mischprodukte aus dem Mischer in die Senderausgangsstufe gelangen?}{Das Ausgangssignal des Mischers wird über einen Hochpass ausgekoppelt.}
+{\textbf{\textcolor{DARCgreen}{Das Ausgangssignal des Mischers wird über einen Bandpass ausgekoppelt.}}}
+{Das Ausgangssignal des Mischers wird über ein breitbandiges Dämpfungsglied ausgekoppelt.}
+{Das Ausgangssignal des Mischers wird von einer linearen Klasse-A-Treiberstufe verstärkt.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AJ209}{Welches Filter sollte hinter einen VHF-Sender geschaltet werden, um die unerwünschte Aussendung von Subharmonischen und Harmonischen auf ein Mindestmaß zu begrenzen? }{Hochpassfilter}
+{Tiefpassfilter}
+{Bandpass}
+{Notchfilter}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AJ209}{Welches Filter sollte hinter einen VHF-Sender geschaltet werden, um die unerwünschte Aussendung von Subharmonischen und Harmonischen auf ein Mindestmaß zu begrenzen? }{Hochpassfilter}
+{Tiefpassfilter}
+{\textbf{\textcolor{DARCgreen}{Bandpass}}}
+{Notchfilter}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{question2x2}{AJ208}{Die Oberschwingungen eines Einbandsenders sollen mit einem Ausgangsfilter ünterdrückt werden. Welcher Filterkurventyp wird benötigt?}{\DARCimage{1.0\linewidth}{255include}}
+{\DARCimage{1.0\linewidth}{243include}}
+{\DARCimage{1.0\linewidth}{256include}}
+{\DARCimage{1.0\linewidth}{257include}}
+\end{question2x2}
+
+}
+\only<2>{
+\begin{question2x2}{AJ208}{Die Oberschwingungen eines Einbandsenders sollen mit einem Ausgangsfilter ünterdrückt werden. Welcher Filterkurventyp wird benötigt?}{\DARCimage{1.0\linewidth}{255include}}
+{\textbf{\textcolor{DARCgreen}{\DARCimage{1.0\linewidth}{243include}}}}
+{\DARCimage{1.0\linewidth}{256include}}
+{\DARCimage{1.0\linewidth}{257include}}
+\end{question2x2}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AJ204}{Die dritte Harmonische einer \qty{29,5}{\MHz}-Aussendung fällt in~...}{den FM-Rundfunkbereich.}
+{den D-Netz-Mobilfunkbereich.}
+{den UKW-Betriebsfunk-Bereich.}
+{den \qty{2}{\m}-Amateurfunkbereich.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AJ204}{Die dritte Harmonische einer \qty{29,5}{\MHz}-Aussendung fällt in~...}{\textbf{\textcolor{DARCgreen}{den FM-Rundfunkbereich.}}}
+{den D-Netz-Mobilfunkbereich.}
+{den UKW-Betriebsfunk-Bereich.}
+{den \qty{2}{\m}-Amateurfunkbereich.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $f = 29,5MHz$
+  \item gegeben: $n = 3$
+  \item gegeben: Radiobereich: 88,5MHz -- 108,0MHz
+  \end{itemize}
+    \pause
+    $f \cdot n = 29,5MHz \cdot 3 = 88,5MHz$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AJ203}{Auf welche Frequenz müsste ein Empfänger eingestellt werden, um die dritte Oberwelle einer \qty{7,20}{\MHz}-Aussendung erkennen zu können?}{\qty{21,60}{\MHz}}
+{\qty{28,80}{\MHz}}
+{\qty{36,00}{\MHz}}
+{\qty{14,40}{\MHz}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AJ203}{Auf welche Frequenz müsste ein Empfänger eingestellt werden, um die dritte Oberwelle einer \qty{7,20}{\MHz}-Aussendung erkennen zu können?}{\qty{21,60}{\MHz}}
+{\textbf{\textcolor{DARCgreen}{\qty{28,80}{\MHz}}}}
+{\qty{36,00}{\MHz}}
+{\qty{14,40}{\MHz}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $f = 7,20MHz$
+  \item gegeben: $n = 4$
+  \item gesucht: 3. Oberwelle
+  \end{itemize}
+    \pause
+    $f \cdot n = 7,20MHz \cdot 4 = 28,80MHz$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AJ207}{Worauf deutet die folgende Wellenform der Ausgangsspannung eines Leistungsverstärkers hin?}{Vor dem Modulator erfolgt eine Hubbegrenzung.}
+{Der Verstärker wird übersteuert und erzeugt Oberschwingungen.}
+{Das Ansteuersignal ist zu schwach, um den Verstärker voll auszusteuern.}
+{Die Schutzdioden im Empfängerzweig begrenzen das Ausgangssignal.}
+{\DARCimage{1.0\linewidth}{106include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AJ207}{Worauf deutet die folgende Wellenform der Ausgangsspannung eines Leistungsverstärkers hin?}{Vor dem Modulator erfolgt eine Hubbegrenzung.}
+{\textbf{\textcolor{DARCgreen}{Der Verstärker wird übersteuert und erzeugt Oberschwingungen.}}}
+{Das Ansteuersignal ist zu schwach, um den Verstärker voll auszusteuern.}
+{Die Schutzdioden im Empfängerzweig begrenzen das Ausgangssignal.}
+{\DARCimage{1.0\linewidth}{106include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AJ210}{Was wird eingesetzt, um die Abstrahlung einer spezifischen Harmonischen wirkungsvoll zu begrenzen?}{Eine Gegentaktendstufe}
+{Ein Sperrkreis am Senderausgang}
+{Ein Hochpassfilter am Senderausgang}
+{Ein Hochpassfilter am Eingang der Senderendstufe}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AJ210}{Was wird eingesetzt, um die Abstrahlung einer spezifischen Harmonischen wirkungsvoll zu begrenzen?}{Eine Gegentaktendstufe}
+{\textbf{\textcolor{DARCgreen}{Ein Sperrkreis am Senderausgang}}}
+{Ein Hochpassfilter am Senderausgang}
+{Ein Hochpassfilter am Eingang der Senderendstufe}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AJ219}{Was passiert, wenn bei einem SSB-Sender die Mikrofonverstärkung zu hoch eingestellt wurde?}{Es werden mehr Nebenprodukte der Sendefrequenz erzeugt, die als unerwünschte Ausstrahlung Störungen hervorrufen.}
+{Die Gleichspannungskomponente des Ausgangssignals erhöht sich, wodurch der Wirkungsgrad des Senders abnimmt.}
+{Es werden mehr Subharmonische der Sendefrequenz erzeugt, die als unerwünschte Ausstrahlung Splattern auf den benachbarten Frequenzen hervorrufen.}
+{Es werden mehr Oberschwingungen der Sendefrequenz erzeugt, die als unerwünschte Ausstrahlung Splattern auf den benachbarten Frequenzen hervorrufen.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AJ219}{Was passiert, wenn bei einem SSB-Sender die Mikrofonverstärkung zu hoch eingestellt wurde?}{\textbf{\textcolor{DARCgreen}{Es werden mehr Nebenprodukte der Sendefrequenz erzeugt, die als unerwünschte Ausstrahlung Störungen hervorrufen.}}}
+{Die Gleichspannungskomponente des Ausgangssignals erhöht sich, wodurch der Wirkungsgrad des Senders abnimmt.}
+{Es werden mehr Subharmonische der Sendefrequenz erzeugt, die als unerwünschte Ausstrahlung Splattern auf den benachbarten Frequenzen hervorrufen.}
+{Es werden mehr Oberschwingungen der Sendefrequenz erzeugt, die als unerwünschte Ausstrahlung Splattern auf den benachbarten Frequenzen hervorrufen.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AJ222}{Durch Addition eines Störsignals zur Versorgungsspannung der Senderendstufe wird~...}{NBFM erzeugt.}
+{FM erzeugt.}
+{AM erzeugt.}
+{PM erzeugt.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AJ222}{Durch Addition eines Störsignals zur Versorgungsspannung der Senderendstufe wird~...}{NBFM erzeugt.}
+{FM erzeugt.}
+{\textbf{\textcolor{DARCgreen}{AM erzeugt.}}}
+{PM erzeugt.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AJ223}{Wenn der Stromversorgung einer HF-Endstufe NF-Signale überlagert sind, kann dies eine (zusätzliche) unerwünschte Modulation der Sendefrequenz erzeugen. Um welche unerwünschte Modulation handelt es sich?}{AM}
+{FM}
+{NBFM}
+{SSB}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AJ223}{Wenn der Stromversorgung einer HF-Endstufe NF-Signale überlagert sind, kann dies eine (zusätzliche) unerwünschte Modulation der Sendefrequenz erzeugen. Um welche unerwünschte Modulation handelt es sich?}{\textbf{\textcolor{DARCgreen}{AM}}}
+{FM}
+{NBFM}
+{SSB}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AJ224}{Was gilt beim Sendebetrieb für unerwünschte Aussendungen im Frequenzbereich zwischen \num{1,7} und \qty{35}{\MHz}? Sofern die Leistung einer unerwünschten Aussendung~...}{\qty{0,25}{\micro\W} überschreitet, sollte sie um mindestens \qty{40}{\decibel} gegenüber der maximalen PEP des Senders gedämpft werden.}
+{\qty{0,25}{\micro\W} überschreitet, sollte sie um mindestens \qty{60}{\decibel} gegenüber der maximalen PEP des Senders gedämpft werden.}
+{\qty{1}{\micro\W} überschreitet, sollte sie um mindestens \qty{60}{\decibel} gegenüber der maximalen PEP des Senders gedämpft werden.}
+{\qty{1}{\micro\W} überschreitet, sollte sie um mindestens \qty{50}{\decibel} gegenüber der maximalen PEP des Senders gedämpft werden.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AJ224}{Was gilt beim Sendebetrieb für unerwünschte Aussendungen im Frequenzbereich zwischen \num{1,7} und \qty{35}{\MHz}? Sofern die Leistung einer unerwünschten Aussendung~...}{\textbf{\textcolor{DARCgreen}{\qty{0,25}{\micro\W} überschreitet, sollte sie um mindestens \qty{40}{\decibel} gegenüber der maximalen PEP des Senders gedämpft werden.}}}
+{\qty{0,25}{\micro\W} überschreitet, sollte sie um mindestens \qty{60}{\decibel} gegenüber der maximalen PEP des Senders gedämpft werden.}
+{\qty{1}{\micro\W} überschreitet, sollte sie um mindestens \qty{60}{\decibel} gegenüber der maximalen PEP des Senders gedämpft werden.}
+{\qty{1}{\micro\W} überschreitet, sollte sie um mindestens \qty{50}{\decibel} gegenüber der maximalen PEP des Senders gedämpft werden.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AJ225}{Was gilt beim Sendebetrieb für unerwünschte Aussendungen im Frequenzbereich zwischen \num{50} und \qty{1000}{\MHz}? Sofern die Leistung einer unerwünschten Aussendung~...}{\qty{0,25}{\micro\W} überschreitet, sollte sie um mindestens \qty{60}{\decibel} gegenüber der maximalen PEP des Senders gedämpft werden.}
+{\qty{0,25}{\micro\W} überschreitet, sollte sie um mindestens \qty{40}{\decibel} gegenüber der maximalen PEP des Senders gedämpft werden.}
+{\qty{1}{\micro\W} überschreitet, sollte sie um mindestens \qty{60}{\decibel} gegenüber der maximalen PEP des Senders gedämpft werden.}
+{\qty{1}{\micro\W} überschreitet, sollte sie um mindestens \qty{50}{\decibel} gegenüber der maximalen PEP des Senders gedämpft werden.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AJ225}{Was gilt beim Sendebetrieb für unerwünschte Aussendungen im Frequenzbereich zwischen \num{50} und \qty{1000}{\MHz}? Sofern die Leistung einer unerwünschten Aussendung~...}{\textbf{\textcolor{DARCgreen}{\qty{0,25}{\micro\W} überschreitet, sollte sie um mindestens \qty{60}{\decibel} gegenüber der maximalen PEP des Senders gedämpft werden.}}}
+{\qty{0,25}{\micro\W} überschreitet, sollte sie um mindestens \qty{40}{\decibel} gegenüber der maximalen PEP des Senders gedämpft werden.}
+{\qty{1}{\micro\W} überschreitet, sollte sie um mindestens \qty{60}{\decibel} gegenüber der maximalen PEP des Senders gedämpft werden.}
+{\qty{1}{\micro\W} überschreitet, sollte sie um mindestens \qty{50}{\decibel} gegenüber der maximalen PEP des Senders gedämpft werden.}
+\end{QQuestion}
+
+}
+\end{frame}%ENDCONTENT

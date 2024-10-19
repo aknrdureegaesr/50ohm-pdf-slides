@@ -1,0 +1,158 @@
+
+\section{Mehrwertige Verfahren}
+\label{section:mehrwertige_verfahren}
+\begin{frame}%STARTCONTENT
+\begin{itemize}
+  \item Viele digitale Modulationsverfahren verwenden mehr als zwei Symbole.
+  \item So funktioniert zum Beispiel die 4-Fach-Amplitudenumtastung (4ASK) mit vier unterschiedlichen Amplituden, 25 %, 50 %, 75 %, 100 % des Maximums.
+  \item So lassen sich zwei Bits zu einem Symbol zusammenfassen und gleichzeitig übertragen.
+  \end{itemize}
+
+\begin{figure}
+    \DARCimage{0.85\linewidth}{701include}
+    \caption{\scriptsize Quaternäre Amplitudenumtastung (Quaternary Amplitude-shift Keying)}
+    \label{4ask}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}\begin{itemize}
+  \item Dieses Prinzip lässt sich auf die Frequenz- und Phasenumtastung übertragen.
+  \item Eine einfache Phasenumtastung (Binary Phase-Shift Keying, BPSK) verwendet nur zwei verschiedene Phasenlagen und kann daher nur ein Bit gleichzeitig senden.
+  \item Die Quadraturphasenumtastung (Quadrature Phase-Shift Keying, QPSK) hingegen nutzt vier verschiedene Phasenlagen (0 °, 90 °, 180 ° und 270 °) und überträgt somit zwei Bits in jedem Schritt.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AE402}{Was unterscheidet BPSK- und QPSK-Modulation?}{Mit BPSK wird ein Bit pro Symbol übertragen, mit QPSK zwei Bit pro Symbol.}
+{Mit QPSK wird ein Bit pro Symbol übertragen, mit BPSK zwei Bit pro Symbol.}
+{Bei BPSK werden der I- und der Q-Anteil eines I/Q-Signals vertauscht, bei QPSK nicht.}
+{Bei QPSK werden der I- und der Q-Anteil eines I/Q-Signals vertauscht, bei BPSK nicht.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AE402}{Was unterscheidet BPSK- und QPSK-Modulation?}{\textbf{\textcolor{DARCgreen}{Mit BPSK wird ein Bit pro Symbol übertragen, mit QPSK zwei Bit pro Symbol.}}}
+{Mit QPSK wird ein Bit pro Symbol übertragen, mit BPSK zwei Bit pro Symbol.}
+{Bei BPSK werden der I- und der Q-Anteil eines I/Q-Signals vertauscht, bei QPSK nicht.}
+{Bei QPSK werden der I- und der Q-Anteil eines I/Q-Signals vertauscht, bei BPSK nicht.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}\begin{itemize}
+  \item Da bei Verfahren wie QPSK mehr als ein Bit pro Symbol übertragen wird, müssen wir mit den Einheiten aufpassen.
+  \item Werden nur zwei Symbole verwendet und somit jedes Bit einzeln gesendet, entspricht die Symbolrate in Baud der Datenrate in Bit/s.
+  \item Werden jedoch mehr Symbole verwendet und somit mehrere Bits gleichzeitig übertragen, ist die Datenrate höher als die Symbolrate.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\begin{itemize}
+  \item Die Formel $C = R_{ s } \cdot n$ stellt den Zusammenhang dar:
+  \end{itemize}
+C → Datenübertragungsrate in Bit/s
+
+$R_{ s }$ → Symbolrate in Baud
+
+n → Symbolgröße in Bit/Symbol
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AA104}{Welche Einheit wird üblicherweise für die Symbolrate verwendet?}{Bit pro Sekunde (Bit/s)}
+{Baud (Bd)}
+{Hertz (Hz)}
+{Dezibel (dB)}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AA104}{Welche Einheit wird üblicherweise für die Symbolrate verwendet?}{Bit pro Sekunde (Bit/s)}
+{\textbf{\textcolor{DARCgreen}{Baud (Bd)}}}
+{Hertz (Hz)}
+{Dezibel (dB)}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}Beispiele:
+
+\emph{RTTY}: Umschaltung zwischen zwei Symbolfrequenzen, so dass pro Symbol ein Bit (0 oder 1) übertragen werden kann.
+
+→ Datenrate = Symbolrate
+
+\emph{FT4}: Umschaltung zwischen vier Symbolfrequenzen, so dass pro Symbol zwei Bit (00, 01, 10 oder 11) übertragen werden können.
+
+→ Datenrate = 2 $\cdot$ Symbolrate
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AE405}{Bei einem digitalen Übertragungsverfahren (z.~B. RTTY) wird die Frequenz eines Senders zwischen zwei Symbolfrequenzen (z.~B. \qty{14072,43}{\kHz} und \qty{14072,60}{\kHz}) umgetastet, so dass pro Symbol ein Bit (0 oder 1) übertragen werden kann. Die Symbolrate beträgt \qty{45,45}{\baud}. Welcher Datenrate entspricht das?}{\qty[per-mode=symbol]{22,725}{\bit\per\s}}
+{\qty[per-mode=symbol]{90,9}{\bit\per\s}}
+{\qty[per-mode=symbol]{45,45}{\bit\per\s}}
+{\qty[per-mode=symbol]{181,8}{\bit\per\s}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AE405}{Bei einem digitalen Übertragungsverfahren (z.~B. RTTY) wird die Frequenz eines Senders zwischen zwei Symbolfrequenzen (z.~B. \qty{14072,43}{\kHz} und \qty{14072,60}{\kHz}) umgetastet, so dass pro Symbol ein Bit (0 oder 1) übertragen werden kann. Die Symbolrate beträgt \qty{45,45}{\baud}. Welcher Datenrate entspricht das?}{\qty[per-mode=symbol]{22,725}{\bit\per\s}}
+{\qty[per-mode=symbol]{90,9}{\bit\per\s}}
+{\textbf{\textcolor{DARCgreen}{\qty[per-mode=symbol]{45,45}{\bit\per\s}}}}
+{\qty[per-mode=symbol]{181,8}{\bit\per\s}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $R_S = 45,45Bd$
+  \item gegeben: $n=1\frac{Bit}{Symbol}$
+  \item gesucht: $C$
+  \end{itemize}
+    \pause
+    $C = R_S \cdot n = 45,45Bd \cdot 1 = 45,45\frac{Bit}{s}$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AE406}{Bei einem digitalen Übertragungsverfahren (z.~B. FT4) wird die Frequenz eines Senders zwischen vier Symbolfrequenzen (z.~B. \qty{14081,20}{\kHz}, \qty{14081,40}{\kHz}, \qty{14081,61}{\kHz} und \qty{14081,83}{\kHz}) umgetastet, so dass pro Symbol zwei Bit (00, 01, 10 oder 11) übertragen werden können. Die Symbolrate beträgt \qty{23,4}{\baud}. Welcher Datenrate entspricht das?}{\qty[per-mode=symbol]{93,6}{\bit\per\s}}
+{\qty[per-mode=symbol]{11,7}{\bit\per\s}}
+{\qty[per-mode=symbol]{23,4}{\bit\per\s}}
+{\qty[per-mode=symbol]{46,8}{\bit\per\s}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AE406}{Bei einem digitalen Übertragungsverfahren (z.~B. FT4) wird die Frequenz eines Senders zwischen vier Symbolfrequenzen (z.~B. \qty{14081,20}{\kHz}, \qty{14081,40}{\kHz}, \qty{14081,61}{\kHz} und \qty{14081,83}{\kHz}) umgetastet, so dass pro Symbol zwei Bit (00, 01, 10 oder 11) übertragen werden können. Die Symbolrate beträgt \qty{23,4}{\baud}. Welcher Datenrate entspricht das?}{\qty[per-mode=symbol]{93,6}{\bit\per\s}}
+{\qty[per-mode=symbol]{11,7}{\bit\per\s}}
+{\qty[per-mode=symbol]{23,4}{\bit\per\s}}
+{\textbf{\textcolor{DARCgreen}{\qty[per-mode=symbol]{46,8}{\bit\per\s}}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $R_S = 23,4Bd$
+  \item gegeben: $n=2\frac{Bit}{Symbol}$
+  \item gesucht: $C$
+  \end{itemize}
+    \pause
+    $C = R_S \cdot n = 23,4 \cdot 2 = 46,8\frac{Bit}{s}$
+
+
+
+\end{frame}%ENDCONTENT

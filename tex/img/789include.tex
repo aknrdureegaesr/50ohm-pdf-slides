@@ -1,0 +1,31 @@
+% Author: Prof. Dr. Matthias Jung, DL9MJ
+% Year: 2023
+\begin{circuitikz}[european]
+    \draw(0.0,0.0) -- (4.5,0.0) coordinate(k1);
+    \draw[-Triangle](4.75,0.0) coordinate(k2) -- (12,0.0)  node[right]{$f$};
+    %
+    \draw(k1) -- ++(+0.25,+0.25);
+    \draw(k1) -- ++(-0.25,-0.25);
+    \draw(k2) -- ++(+0.25,+0.25);
+    \draw(k2) -- ++(-0.25,-0.25);
+    %
+    \draw[-Triangle](0.0,0.0) -- (0.0,1.75) node[above left, rotate=90] () {Leistung};
+    \draw[thick, DARCred](0.3,0.0) coordinate(c1) -- ++ (0,1.25) -- ++ (2.4,-0.5) -- (2.7,0) coordinate(c2);
+    %
+    \draw[thick, DARCred](5.5+3.5,0.0) -- ++ (0,1.75) coordinate(foo);
+    \draw(5.5+3.5,-0.5) node[] () {$f_\text{T}$};
+    %
+    \draw[thick, DARCred](9.2,0.0) coordinate(c3) -- ++ (0,+1.25) -- ++ (+2.4,-0.5) -- ++(0,-0.75) coordinate(c4);
+    \draw[thick, DARCred](8.8,0.0) coordinate(c5) -- ++ (0,+1.25) -- ++ (-2.4,-0.5) -- ++(0,-0.75) coordinate(c6);
+    %
+    \draw(c1) node[below]{$f_\text{min}$};
+    \draw(c2) node[below]{$f_\text{max}$};
+    \draw(c4) node[below]{$f_\text{T} - f_\text{max}$};
+    \draw(c6) node[below]{$f_\text{T} + f_\text{max}$};
+    %
+    \draw(foo) ++(0,0.25) coordinate(h);
+    \draw[-Triangle] (h) to [short, name={h1}] (h-|c6);
+    \draw[-Triangle] (h) to [short, name={h1}] (h-|c4);
+    \draw(h) node[above](){Bandbreite $B$};
+    %
+\end{circuitikz}

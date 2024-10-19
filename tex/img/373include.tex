@@ -1,0 +1,49 @@
+% Author: Stephan Kregel, DG1HXJ
+% Year: 2021
+% TD318E, TD318G
+
+
+\usepackage{amssymb}
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{Fira Math}
+\setmathfont[range=up]{Roboto}
+\setmathfont[range=it]{Roboto-Italic}
+\setmathfont[range=\int]{Fira Math}
+\usepackage[euler]{textgreek}
+\usetikzlibrary{arrows, arrows.meta}
+
+\begin{document}
+	\begin{circuitikz}[european]
+		\coordinate (init) at (0,0);
+		\draw (init) ++(-5,0) node[ocirc](){} coordinate(in) 
+		to [short, i_=$\mathrm{I}_\mathrm{IN}$, -*] ++(2,0) coordinate(in1);
+		\draw (in1) to [ecapacitor, mirror, l=$\mathrm{C1}$] ++(0,-2) 
+		to node[rground]{} ++(0,0);
+		\draw (in) node[anchor=south]{$\mathrm{U}_\mathrm{IN}$};
+		\draw (in1) -- ++(0,3) -- ++(1.5,0) 
+		to [american inductor, inductors/coils=4 , inductors/width=1, l=$\mathrm{L}_\mathrm{1}$, name=L1] ++ (2,0) -- ++(0.5,0) 
+		to [short, -*] ++(0,-1);
+		\draw [densely dashed] (L1.south west) -- (L1.south east);
+		\draw (init) ++(0,2) node[nigfete,solderdot, rotate=90, yscale=-1](T1){} ;
+		\draw (init) ++(2,2) node[nigfete,solderdot, rotate=90, yscale=-1](T2){} ;
+		\draw (T1.D) -- (T2.S);
+		\draw (T1.S) -- ++(-0.25,0) to node[rground]{} ++(0,0); 
+		\draw (T1.G) |- ++(0,-0.5);
+		\draw (T2.G) |- ++(0,-0.5);
+		\draw (init) ++(-0.5,-0.5) [very thick] rectangle (2,0.5) 
+		node at (0.75,0) {Regler};
+		\draw (init) ++(-1.5,-1) [very thick] rectangle (3,2.5) ;
+		\draw (init) ++(0.75,-1) -- ++(0,-1) to node[rground]{} ++(0,0);
+		\draw (init) ++(2,0) -- ++(2,0) coordinate(r2) 
+		to [R, l=$\mathrm{R2}$, *-] ++(0,-2) 
+		to node[rground]{} ++(0,0);
+		\draw (r2) to [R, l_=$\mathrm{R1}$, -*] ++(0,2) coordinate(r1) -| (T2.D);
+		\draw (r1) -- ++(1.5,0) to [short, -*] ++(0,-2) coordinate(c2) 
+		to [ecapacitor, mirror, l=$\mathrm{C2}$] ++(0,-2) 
+		to node[rground]{} ++(0,0);
+		\draw (c2) to [short, i_=$\mathrm{I}_\mathrm{OUT}$, -o] ++(2,0) coordinate(out) ;
+		\draw (out) node[anchor=south]{$\mathrm{U}_\mathrm{OUT}$};
+	\end{circuitikz}
+\end{document}

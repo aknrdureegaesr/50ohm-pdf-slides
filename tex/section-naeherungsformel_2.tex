@@ -1,0 +1,222 @@
+
+\section{Näherungsformel II}
+\label{section:naeherungsformel_2}
+\begin{frame}%STARTCONTENT
+
+\only<1>{
+\begin{QQuestion}{AK106}{Sie möchten den Personenschutz-Sicherheitsabstand für die Antenne Ihrer Amateurfunkstelle für das \qty{10}{\m}-Band und das Übertragungsverfahren RTTY berechnen. Der Grenzwert im Fall des Personenschutzes beträgt \qty{28}{\V}/m. Sie betreiben einen Dipol, der von einem Sender mit einer Leistung von \qty{100}{\W} über ein Koaxialkabel gespeist wird. Die Kabeldämpfung sei vernachlässigbar. Wie groß muss der Sicherheitsabstand sein?}{\qty{2,50}{\m}}
+{\qty{1,96}{\m}}
+{\qty{5,01}{\m}}
+{\qty{13,7}{\m}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AK106}{Sie möchten den Personenschutz-Sicherheitsabstand für die Antenne Ihrer Amateurfunkstelle für das \qty{10}{\m}-Band und das Übertragungsverfahren RTTY berechnen. Der Grenzwert im Fall des Personenschutzes beträgt \qty{28}{\V}/m. Sie betreiben einen Dipol, der von einem Sender mit einer Leistung von \qty{100}{\W} über ein Koaxialkabel gespeist wird. Die Kabeldämpfung sei vernachlässigbar. Wie groß muss der Sicherheitsabstand sein?}{\textbf{\textcolor{DARCgreen}{\qty{2,50}{\m}}}}
+{\qty{1,96}{\m}}
+{\qty{5,01}{\m}}
+{\qty{13,7}{\m}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $E = 28\frac{V}{m}$
+  \item gegeben: $P_S = P_A = 100W$
+  \item gegeben: $G_i = 1,64$
+  \item gesucht: $d$
+  \end{itemize}
+    \pause
+    $E = \frac{\sqrt{30Ω \cdot P_A \cdot G_i}}{d} \Rightarrow d = \frac{\sqrt{30Ω \cdot P_A \cdot G_i}}{E} = \frac{\sqrt{30Ω \cdot 100W \cdot 1,64}}{28\frac{V}{m}} = 2,5m$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AK108}{Sie möchten den Personenschutz-Sicherheitsabstand für die Antenne Ihrer Amateurfunkstelle für das \qty{20}{\m}-Band und das Übertragungsverfahren RTTY berechnen. Der Grenzwert im Fall des Personenschutzes beträgt \qty{28}{\V}/m. Sie betreiben einen Dipol, der von einem Sender mit einer Leistung von \qty{300}{\W} über ein Koaxialkabel gespeist wird. Die Kabeldämpfung beträgt \qty{0,5}{\decibel}. Wie groß ist der Sicherheitsabstand?}{\qty{4,97}{\m}}
+{\qty{4,10}{\m}}
+{\qty{3,20}{\m}}
+{\qty{2,39}{\m}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AK108}{Sie möchten den Personenschutz-Sicherheitsabstand für die Antenne Ihrer Amateurfunkstelle für das \qty{20}{\m}-Band und das Übertragungsverfahren RTTY berechnen. Der Grenzwert im Fall des Personenschutzes beträgt \qty{28}{\V}/m. Sie betreiben einen Dipol, der von einem Sender mit einer Leistung von \qty{300}{\W} über ein Koaxialkabel gespeist wird. Die Kabeldämpfung beträgt \qty{0,5}{\decibel}. Wie groß ist der Sicherheitsabstand?}{\qty{4,97}{\m}}
+{\textbf{\textcolor{DARCgreen}{\qty{4,10}{\m}}}}
+{\qty{3,20}{\m}}
+{\qty{2,39}{\m}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $E = 28\frac{V}{m}$
+  \item gegeben: $P_S = 300W$
+  \item gegeben: $a = 0,5dB$
+  \item gegeben: $g_d = 0dBd$
+  \item gesucht: $d$
+  \end{itemize}
+    \pause
+    $P_{EIRP} = P_S \cdot 10^{\frac{g_d -a + 2,15dB}{10dB}} = 300W \cdot 10^{\frac{0dBd -- 0,5dB + 2,15dB}{10dB}} = 438,7W$
+    \pause
+    $E = \frac{\sqrt{30Ω \cdot P_{EIRP}}}{d} \Rightarrow d = \frac{\sqrt{30Ω \cdot P_{EIRP}}}{E} = \frac{\sqrt{30Ω \cdot 438,7W}}{28\frac{V}{m}} = 4,10m$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AK109}{Sie möchten den Personenschutz-Sicherheitsabstand für die Antenne Ihrer Amateurfunkstelle für das \qty{20}{\m}-Band und das Übertragungsverfahren RTTY berechnen. Der Grenzwert im Fall des Personenschutzes beträgt \qty{28}{\V}/m. Sie betreiben einen Dipol, der von einem Sender mit einer Leistung von \qty{700}{\W} über ein Koaxialkabel gespeist wird. Die Kabeldämpfung beträgt \qty{0,5}{\decibel}. Wie groß ist der Sicherheitsabstand?}{\qty{6,26}{\m}}
+{\qty{7,36}{\m}}
+{\qty{4,87}{\m}}
+{\qty{5,62}{\m}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AK109}{Sie möchten den Personenschutz-Sicherheitsabstand für die Antenne Ihrer Amateurfunkstelle für das \qty{20}{\m}-Band und das Übertragungsverfahren RTTY berechnen. Der Grenzwert im Fall des Personenschutzes beträgt \qty{28}{\V}/m. Sie betreiben einen Dipol, der von einem Sender mit einer Leistung von \qty{700}{\W} über ein Koaxialkabel gespeist wird. Die Kabeldämpfung beträgt \qty{0,5}{\decibel}. Wie groß ist der Sicherheitsabstand?}{\textbf{\textcolor{DARCgreen}{\qty{6,26}{\m}}}}
+{\qty{7,36}{\m}}
+{\qty{4,87}{\m}}
+{\qty{5,62}{\m}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $E = 28\frac{V}{m}$
+  \item gegeben: $P_S = 700W$
+  \item gegeben: $a = 0,5dB$
+  \item gegeben: $g_d = 0dBd$
+  \item gesucht: $d$
+  \end{itemize}
+    \pause
+    $P_{EIRP} = P_S \cdot 10^{\frac{g_d -a + 2,15dB}{10dB}} = 700W \cdot 10^{\frac{0dBd -- 0,5dB + 2,15dB}{10dB}} = 1023,5W$
+    \pause
+    $E = \frac{\sqrt{30Ω \cdot P_{EIRP}}}{d} \Rightarrow d = \frac{\sqrt{30Ω \cdot P_{EIRP}}}{E} = \frac{\sqrt{30Ω \cdot 1023,5W}}{28\frac{V}{m}} = 6,26m$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AK110}{Sie möchten den Personenschutz-Sicherheitsabstand für die Antenne Ihrer Amateurfunkstelle in Hauptstrahlrichtung für das \qty{2}{\m}-Band und die Modulationsverfahren FM berechnen. Der Grenzwert im Fall des Personenschutzes beträgt \qty{28}{\V}/m. Sie betreiben eine Yagi-Uda-Antenne mit einem Gewinn von $11,5~$dBd. Die Antenne wird von einem Sender mit einer Leistung von \qty{75}{\W} über ein Koaxialkabel gespeist. Die Kabeldämpfung beträgt \qty{1,5}{\decibel}. Wie groß muss der Sicherheitsabstand sein?}{\qty{6,86}{\m}}
+{\qty{5,35}{\m}}
+{\qty{2,17}{\m}}
+{\qty{22,09}{\m}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AK110}{Sie möchten den Personenschutz-Sicherheitsabstand für die Antenne Ihrer Amateurfunkstelle in Hauptstrahlrichtung für das \qty{2}{\m}-Band und die Modulationsverfahren FM berechnen. Der Grenzwert im Fall des Personenschutzes beträgt \qty{28}{\V}/m. Sie betreiben eine Yagi-Uda-Antenne mit einem Gewinn von $11,5~$dBd. Die Antenne wird von einem Sender mit einer Leistung von \qty{75}{\W} über ein Koaxialkabel gespeist. Die Kabeldämpfung beträgt \qty{1,5}{\decibel}. Wie groß muss der Sicherheitsabstand sein?}{\textbf{\textcolor{DARCgreen}{\qty{6,86}{\m}}}}
+{\qty{5,35}{\m}}
+{\qty{2,17}{\m}}
+{\qty{22,09}{\m}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $E = 28\frac{V}{m}$
+  \item gegeben: $P_S = 75W$
+  \item gegeben: $a = 1,5dB$
+  \item gegeben: $g_d = 11,5dBd$
+  \item gesucht: $d$
+  \end{itemize}
+    \pause
+    $P_{EIRP} = P_S \cdot 10^{\frac{g_d -a + 2,15dB}{10dB}} = 75W \cdot 10^{\frac{11,5dBd -- 1,5dB + 2,15dB}{10dB}} = 1230,4W$
+    \pause
+    $E = \frac{\sqrt{30Ω \cdot P_{EIRP}}}{d} \Rightarrow d = \frac{\sqrt{30Ω \cdot P_{EIRP}}}{E} = \frac{\sqrt{30Ω \cdot 1230,4W}}{28\frac{V}{m}} = 6,86m$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AK111}{Sie möchten den Personenschutz-Sicherheitsabstand für die Antenne Ihrer Amateurfunkstelle für das \qty{2}{\m}-Band und das Modulationsverfahren FM berechnen. Der Grenzwert im Fall des Personenschutzes beträgt \qty{28}{\V}/m. Sie betreiben eine Yagi-Uda-Antenne mit einem Gewinn von 10,5 dBd. Die Antenne wird von einem Sender mit einer Leistung von \qty{100}{\W} über ein Koaxialkabel gespeist. Die Kabeldämpfung beträgt \qty{1,5}{\decibel}. Wie groß ist der Sicherheitsabstand?}{\qty{7,1}{\m}}
+{\qty{6,6}{\m}}
+{\qty{8,4}{\m}}
+{\qty{5,6}{\m}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AK111}{Sie möchten den Personenschutz-Sicherheitsabstand für die Antenne Ihrer Amateurfunkstelle für das \qty{2}{\m}-Band und das Modulationsverfahren FM berechnen. Der Grenzwert im Fall des Personenschutzes beträgt \qty{28}{\V}/m. Sie betreiben eine Yagi-Uda-Antenne mit einem Gewinn von 10,5 dBd. Die Antenne wird von einem Sender mit einer Leistung von \qty{100}{\W} über ein Koaxialkabel gespeist. Die Kabeldämpfung beträgt \qty{1,5}{\decibel}. Wie groß ist der Sicherheitsabstand?}{\textbf{\textcolor{DARCgreen}{\qty{7,1}{\m}}}}
+{\qty{6,6}{\m}}
+{\qty{8,4}{\m}}
+{\qty{5,6}{\m}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $E = 28\frac{V}{m}$
+  \item gegeben: $P_S = 100W$
+  \item gegeben: $a = 1,5dB$
+  \item gegeben: $g_d = 10,5dBd$
+  \item gesucht: $d$
+  \end{itemize}
+    \pause
+    $P_{EIRP} = P_S \cdot 10^{\frac{g_d -a + 2,15dB}{10dB}} = 100W \cdot 10^{\frac{10,5dBd -- 1,5dB + 2,15dB}{10dB}} = 1303,2W$
+    \pause
+    $E = \frac{\sqrt{30Ω \cdot P_{EIRP}}}{d} \Rightarrow d = \frac{\sqrt{30Ω \cdot P_{EIRP}}}{E} = \frac{\sqrt{30Ω \cdot 1303,2W}}{28\frac{V}{m}} = 7,1m$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AK112}{Sie möchten den Personenschutz-Sicherheitsabstand für das \qty{13}{\cm}-Band und das Modulationsverfahren FM berechnen. Der Grenzwert im Fall des Personenschutzes beträgt \qty{61}{\V}/m. Sie betreiben einen Parabolspiegel mit einem Gewinn von 18~dBd. Die Antenne wird von einem Sender mit einer Leistung von \qty{40}{\W} über ein PE-Schaum-Massivschirm-Kabel mit einer Dämpfung von \qty{2}{\decibel} gespeist. Wie groß muss der Personenschutz-Sicherheitsabstand in Hauptstrahlrichtung sein?}{\qty{14,5}{\m}}
+{\qty{5,8}{\m}}
+{\qty{4,6}{\m}}
+{\qty{3,6}{\m}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AK112}{Sie möchten den Personenschutz-Sicherheitsabstand für das \qty{13}{\cm}-Band und das Modulationsverfahren FM berechnen. Der Grenzwert im Fall des Personenschutzes beträgt \qty{61}{\V}/m. Sie betreiben einen Parabolspiegel mit einem Gewinn von 18~dBd. Die Antenne wird von einem Sender mit einer Leistung von \qty{40}{\W} über ein PE-Schaum-Massivschirm-Kabel mit einer Dämpfung von \qty{2}{\decibel} gespeist. Wie groß muss der Personenschutz-Sicherheitsabstand in Hauptstrahlrichtung sein?}{\qty{14,5}{\m}}
+{\qty{5,8}{\m}}
+{\textbf{\textcolor{DARCgreen}{\qty{4,6}{\m}}}}
+{\qty{3,6}{\m}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $E = 61\frac{V}{m}$
+  \item gegeben: $P_S = 40W$
+  \item gegeben: $a = 2dB$
+  \item gegeben: $g_d = 18dBd$
+  \item gesucht: $d$
+  \end{itemize}
+    \pause
+    $P_{EIRP} = P_S \cdot 10^{\frac{g_d -a + 2,15dB}{10dB}} = 40W \cdot 10^{\frac{18dBd -- 2dB + 2,15dB}{10dB}} = 2612,5W$
+    \pause
+    $E = \frac{\sqrt{30Ω \cdot P_{EIRP}}}{d} \Rightarrow d = \frac{\sqrt{30Ω \cdot P_{EIRP}}}{E} = \frac{\sqrt{30Ω \cdot 2612,5W}}{61\frac{V}{m}} = 4,6m$
+
+
+
+\end{frame}%ENDCONTENT

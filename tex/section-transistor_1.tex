@@ -1,0 +1,459 @@
+
+\section{Transistor I}
+\label{section:transistor_1}
+\begin{frame}%STARTCONTENT
+
+\frametitle{Von der Diode zum Transistor}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    Die Funktion kann man sich so vorstellen:
+
+\begin{itemize}
+  \item Mittels eines Steuerkanals wird der Durchfluss eines Wehrs geregelt
+  \item Fließt kein Wasser im Steuerkanal ist das Wehr geschlossen
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{835include}
+    \caption{\scriptsize Steuerkanal schließt Wehr komplett}
+    \label{e_transistor_wehr_geschlossen}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Von der Diode zum Transistor}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    Die Funktion kann man sich so vorstellen:
+
+\begin{itemize}
+  \item Fließt etwas Wasser im Steuerkanal, öffnet das Wehr zur Hälfte
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{837include}
+    \caption{\scriptsize Steuerkanal öffnet Wehr halb}
+    \label{e_transistor_wehr_halb_offen}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Von der Diode zum Transistor}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    Die Funktion kann man sich so vorstellen:
+
+\begin{itemize}
+  \item Fließt mehr Wasser im Steuerkanal, ist das Wehr ganz geöffnet
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{836include}
+    \caption{\scriptsize Steuerkanal öffnet Wehr komplett}
+    \label{e_transistor_wehr_geoeffnet}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EC602}{Ein Transistor ist~...}{ein Nichtleiterbauelement.}
+{ein Laserbauelement.}
+{ein Halbleiterbauelement.}
+{ein Kaltleiterbauelement.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EC602}{Ein Transistor ist~...}{ein Nichtleiterbauelement.}
+{ein Laserbauelement.}
+{\textbf{\textcolor{DARCgreen}{ein Halbleiterbauelement.}}}
+{ein Kaltleiterbauelement.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EC608}{Wie lauten die Bezeichnungen der Anschlüsse eines bipolaren Transistors?}{Emitter, Basis, Kollektor}
+{Emitter, Drain, Source}
+{Gate, Source, Kollektor}
+{Drain, Gate, Source}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EC608}{Wie lauten die Bezeichnungen der Anschlüsse eines bipolaren Transistors?}{\textbf{\textcolor{DARCgreen}{Emitter, Basis, Kollektor}}}
+{Emitter, Drain, Source}
+{Gate, Source, Kollektor}
+{Drain, Gate, Source}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Bipolarer Transistor und Schaltbild}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    Merksatz für PNP $\rightarrow$ Pfeil Nach Platte
+
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{374include}
+    \caption{\scriptsize Schaltbild NPN-Transistor}
+    \label{e_schaltbild_npn_transistor}
+\end{figure}
+
+
+\begin{figure}
+    \DARCimage{0.85\linewidth}{375include}
+    \caption{\scriptsize Schaltbild PNP-Transistor}
+    \label{e_schaltbild_pnp_transistor}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{EC607}{Bei diesem Bauelement handelt es sich um einen }{PNP-Transistor.}
+{NPN-Transistor.}
+{P-Kanal-FET.}
+{N-Kanal-FET.}
+{\DARCimage{0.25\linewidth}{375include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{EC607}{Bei diesem Bauelement handelt es sich um einen }{\textbf{\textcolor{DARCgreen}{PNP-Transistor.}}}
+{NPN-Transistor.}
+{P-Kanal-FET.}
+{N-Kanal-FET.}
+{\DARCimage{0.25\linewidth}{375include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{EC606}{Bei diesem Bauelement handelt es sich um einen }{PNP-Transistor.}
+{NPN-Transistor.}
+{N-Kanal-FET.}
+{P-Kanal-FET.}
+{\DARCimage{0.25\linewidth}{374include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{EC606}{Bei diesem Bauelement handelt es sich um einen }{PNP-Transistor.}
+{\textbf{\textcolor{DARCgreen}{NPN-Transistor.}}}
+{N-Kanal-FET.}
+{P-Kanal-FET.}
+{\DARCimage{0.25\linewidth}{374include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{question2x2}{EC605}{Welches Schaltzeichen stellt einen bipolaren Transistor dar?}{\DARCimage{1.0\linewidth}{433include}}
+{\DARCimage{1.0\linewidth}{381include}}
+{\DARCimage{1.0\linewidth}{374include}}
+{\DARCimage{1.0\linewidth}{432include}}
+\end{question2x2}
+
+}
+\only<2>{
+\begin{question2x2}{EC605}{Welches Schaltzeichen stellt einen bipolaren Transistor dar?}{\DARCimage{1.0\linewidth}{433include}}
+{\DARCimage{1.0\linewidth}{381include}}
+{\textbf{\textcolor{DARCgreen}{\DARCimage{1.0\linewidth}{374include}}}}
+{\DARCimage{1.0\linewidth}{432include}}
+\end{question2x2}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{EC609}{Wie bezeichnet man die Anschlüsse des abgebildeten Transistors?}{1~=~Kollektor, 2~=~Basis, 3~=~Emitter}
+{1~=~Emitter, 2~=~Basis, 3~=~Kollektor}
+{1~=~Kollektor, 2~=~Emitter, 3~=~Basis}
+{1~=~Basis, 2~=~Emitter, 3~=~Kollektor}
+{\DARCimage{0.25\linewidth}{502include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{EC609}{Wie bezeichnet man die Anschlüsse des abgebildeten Transistors?}{\textbf{\textcolor{DARCgreen}{1~=~Kollektor, 2~=~Basis, 3~=~Emitter}}}
+{1~=~Emitter, 2~=~Basis, 3~=~Kollektor}
+{1~=~Kollektor, 2~=~Emitter, 3~=~Basis}
+{1~=~Basis, 2~=~Emitter, 3~=~Kollektor}
+{\DARCimage{0.25\linewidth}{502include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Schalter oder Verstärker?}
+\begin{itemize}
+  \item Die Ansteuerung kann so eingestellt werden, dass der Transistor sperrt oder voll durchsteuert, dann spricht man von einem Schalttransistor.
+  \item Die Ansteuerung kann so eingestellt werden, dass der Transistor stufenlos gesteuert wird, dann spricht man von einem Verstärker.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EC601}{Welches Bauteil kann als Schalter, Verstärker oder Widerstand eingesetzt werden?}{Diode}
+{Transformator}
+{Kondensator}
+{Transistor}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EC601}{Welches Bauteil kann als Schalter, Verstärker oder Widerstand eingesetzt werden?}{Diode}
+{Transformator}
+{Kondensator}
+{\textbf{\textcolor{DARCgreen}{Transistor}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EC603}{Was versteht man unter Stromverstärkung beim Transistor?}{Mit einem geringen Kollektorstrom wird ein großer Emitterstrom gesteuert.}
+{Mit einem geringen Emitterstrom wird ein großer Kollektorstrom gesteuert.}
+{Mit einem geringen Emitterstrom wird ein großer Basisstrom gesteuert.}
+{Mit einem geringen Basisstrom wird ein großer Kollektorstrom gesteuert.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EC603}{Was versteht man unter Stromverstärkung beim Transistor?}{Mit einem geringen Kollektorstrom wird ein großer Emitterstrom gesteuert.}
+{Mit einem geringen Emitterstrom wird ein großer Kollektorstrom gesteuert.}
+{Mit einem geringen Emitterstrom wird ein großer Basisstrom gesteuert.}
+{\textbf{\textcolor{DARCgreen}{Mit einem geringen Basisstrom wird ein großer Kollektorstrom gesteuert.}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Ansteuerspannung und deren Polarität}
+Je Art des bipolaren Transistor hat man verschiedene Polaritäten.
+
+\begin{itemize}
+  \item Bei einem NPN-Transistor benötigt man zum Durchschalten eine positive Steuerspannung.
+  \item Bei einem PNP-Transistor benötigt man zum Durchschalten eine negative Steuerspannung.
+  \end{itemize}
+Die Steuerspannung liegt wie bei einer Siliziumdiode bei etwa \qty{0,6}{\volt}.
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{EC610}{Wie groß muss die Spannung $U_{BE}$ in etwa sein, sodass sich der Transistor im leitenden Betriebszustand befindet?}{\qty{-0,6}{\V}}
+{\qty{0,6}{\V}}
+{\qty{0,6}{\V} oder \qty{-0,6}{\V}}
+{\qty{0}{\V}}
+{\DARCimage{0.5\linewidth}{559include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{EC610}{Wie groß muss die Spannung $U_{BE}$ in etwa sein, sodass sich der Transistor im leitenden Betriebszustand befindet?}{\qty{-0,6}{\V}}
+{\textbf{\textcolor{DARCgreen}{\qty{0,6}{\V}}}}
+{\qty{0,6}{\V} oder \qty{-0,6}{\V}}
+{\qty{0}{\V}}
+{\DARCimage{0.5\linewidth}{559include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}Da neben dem Kollektorstrom auch der Basisstrom durch den Transistor fließt, fließt durch den Emitteranschluss der größte Strom.
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EC611}{Durch welchen Transistoranschluss fliesst im leitenden Zustand der größte Strom?}{Gehäuse}
+{Kollektor}
+{Basis}
+{Emitter}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EC611}{Durch welchen Transistoranschluss fliesst im leitenden Zustand der größte Strom?}{Gehäuse}
+{Kollektor}
+{Basis}
+{\textbf{\textcolor{DARCgreen}{Emitter}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{ Wann schaltet der NPN Transistor durch?}
+Ist die Basis-Emitter-Spannung ausreichend und liegt sie im positiven Potential vor?
+
+Hier muss man auf die Vorzeichen achten und bei negativen Vorzeichen umdenken, Beispiele:
+
+\begin{itemize}
+  \item Basis +\qty{2}{\volt} und Emitter +\qty{1,4}{\volt}<br/> $\rightarrow$ Die Basis-Emitter-Spannung ist positiv und beträgt +\qty{0,6}{\volt}
+  \item Basis -\qty{5,6}{\volt} und Emitter -\qty{6,2}{\volt}<br/> $\rightarrow$ Die Basis-Emitter-Spannung ist positiv und beträgt +\qty{0,6}{\volt}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}Entweder erkennet man das intuitiv oder man rechnet es (unter Beachtung der Vorzeichen) aus.
+
+$U_{ BE } = U_{ B } -- U_{ E }$
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{question2x2}{EC612}{In einer Schaltung wurden die Spannungen der Transistoranschlüsse gegenüber Massepotential gemessen. Bei welchem der folgenden Transistoren fließt Kollektorstrom?}{\DARCimage{1.0\linewidth}{278include}}
+{\DARCimage{1.0\linewidth}{279include}}
+{\DARCimage{1.0\linewidth}{280include}}
+{\DARCimage{1.0\linewidth}{281include}}
+\end{question2x2}
+
+}
+\only<2>{
+\begin{question2x2}{EC612}{In einer Schaltung wurden die Spannungen der Transistoranschlüsse gegenüber Massepotential gemessen. Bei welchem der folgenden Transistoren fließt Kollektorstrom?}{\textbf{\textcolor{DARCgreen}{\DARCimage{1.0\linewidth}{278include}}}}
+{\DARCimage{1.0\linewidth}{279include}}
+{\DARCimage{1.0\linewidth}{280include}}
+{\DARCimage{1.0\linewidth}{281include}}
+\end{question2x2}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{question2x2}{EC613}{In einer Schaltung wurden die Spannungen der Transistoranschlüsse gegenüber Massepotential gemessen. Bei welchem der folgenden Transistoren fließt Kollektorstrom?}{\DARCimage{1.0\linewidth}{284include}}
+{\DARCimage{1.0\linewidth}{283include}}
+{\DARCimage{1.0\linewidth}{282include}}
+{\DARCimage{1.0\linewidth}{285include}}
+\end{question2x2}
+
+}
+\only<2>{
+\begin{question2x2}{EC613}{In einer Schaltung wurden die Spannungen der Transistoranschlüsse gegenüber Massepotential gemessen. Bei welchem der folgenden Transistoren fließt Kollektorstrom?}{\DARCimage{1.0\linewidth}{284include}}
+{\DARCimage{1.0\linewidth}{283include}}
+{\textbf{\textcolor{DARCgreen}{\DARCimage{1.0\linewidth}{282include}}}}
+{\DARCimage{1.0\linewidth}{285include}}
+\end{question2x2}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Wann schaltet der PNP Transistor durch?}
+Ist die Basis-Emitter-Spannung ausreichend und liegt sie im negativen Potential vor?
+
+Hier muss man auf die Vorzeichen achten und bei negativen Vorzeichen umdenken, Beispiele:
+
+\begin{itemize}
+  \item Basis +\qty{5,6}{\volt} und Emitter +\qty{6,2}{\volt}<br/> $\rightarrow$ Die Basis-Emitter-Spannung ist ist negativ und beträgt -\qty{0,6}{\volt}
+  \item Basis -\qty{2}{\volt} und Emitter -\qty{1,4}{\volt}<br/> $\rightarrow$ Die Basis-Emitter-Spannung ist negativ und beträgt -\qty{0,6}{\volt}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}Entweder erkennet man das intuitiv oder man rechnet es (unter Beachtung der Vorzeichen) aus.
+
+$U_{ BE } = U_{ B } -- U_{ E }$
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{question2x2}{EC614}{In einer Schaltung wurden die Spannungen der Transistoranschlüsse gegenüber Massepotential gemessen. Bei welchem der folgenden Transistoren fließt Kollektorstrom?}{\DARCimage{1.0\linewidth}{289include}}
+{\DARCimage{1.0\linewidth}{287include}}
+{\DARCimage{1.0\linewidth}{286include}}
+{\DARCimage{1.0\linewidth}{288include}}
+\end{question2x2}
+
+}
+\only<2>{
+\begin{question2x2}{EC614}{In einer Schaltung wurden die Spannungen der Transistoranschlüsse gegenüber Massepotential gemessen. Bei welchem der folgenden Transistoren fließt Kollektorstrom?}{\DARCimage{1.0\linewidth}{289include}}
+{\DARCimage{1.0\linewidth}{287include}}
+{\textbf{\textcolor{DARCgreen}{\DARCimage{1.0\linewidth}{286include}}}}
+{\DARCimage{1.0\linewidth}{288include}}
+\end{question2x2}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{question2x2}{EC615}{In einer Schaltung wurden die Spannungen der Transistoranschlüsse gegenüber Massepotential gemessen. Bei welchem der folgenden Transistoren fließt Kollektorstrom?}{\DARCimage{1.0\linewidth}{293include}}
+{\DARCimage{1.0\linewidth}{291include}}
+{\DARCimage{1.0\linewidth}{292include}}
+{\DARCimage{1.0\linewidth}{290include}}
+\end{question2x2}
+
+}
+\only<2>{
+\begin{question2x2}{EC615}{In einer Schaltung wurden die Spannungen der Transistoranschlüsse gegenüber Massepotential gemessen. Bei welchem der folgenden Transistoren fließt Kollektorstrom?}{\DARCimage{1.0\linewidth}{293include}}
+{\DARCimage{1.0\linewidth}{291include}}
+{\DARCimage{1.0\linewidth}{292include}}
+{\textbf{\textcolor{DARCgreen}{\DARCimage{1.0\linewidth}{290include}}}}
+\end{question2x2}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Typen von Transistoren}
+Die bisher behandelten Transistoren nennt man \emph{Bipolare Transistoren}. Sie sind die Art der Transistoren, die in den 50er Jahren eine technische Revolution einläuteten und die Elektronenröhre ablösten. Im Gegensatz zu den stromgesteuerten Bipolartransistoren sind \emph{Feldeffekttransistoren (FET)} spannungsgesteuert, es fließt also kein Steuerstrom in ihn hinein. Mit diesen werden wir uns im Klasse~A Kurs intensiver auseinandersetzen.
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EC604}{Welche Transistortypen sind bipolare Transistoren?}{Isolierschicht-FETs}
+{Dual-Gate-MOS-FETs}
+{NPN- und PNP-Transistoren}
+{Sperrschicht-FETs}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EC604}{Welche Transistortypen sind bipolare Transistoren?}{Isolierschicht-FETs}
+{Dual-Gate-MOS-FETs}
+{\textbf{\textcolor{DARCgreen}{NPN- und PNP-Transistoren}}}
+{Sperrschicht-FETs}
+\end{QQuestion}
+
+}
+\end{frame}%ENDCONTENT

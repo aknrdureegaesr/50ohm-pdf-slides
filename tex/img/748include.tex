@@ -1,0 +1,13 @@
+% Author: Prof. Dr. Matthias Jung, DL9MJ
+% Year: 2023
+\begin{circuitikz}[background rectangle/.style={fill=white}, show background rectangle]
+    \node(0,0) {\includegraphics[width=200pt]{foto/168}};
+    
+    \draw(1.5,-3.5) to [battery2, l={G}] ++(1.5,0);
+
+    % Beschriftung:
+    \draw(-2.5,+3.50) node {\small AAA \qty{1.5}{\volt}};
+    \draw(-2.5,-3.85) node {\small LR41 \qty{1.5}{\volt}};
+    \draw(-1.0,-3.15) node {\small AA \qty{1.5}{\volt}};
+    \draw(+1.0,-2.85) node {\small \qty{9}{\volt} Block};
+\end{circuitikz}

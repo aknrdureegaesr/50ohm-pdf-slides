@@ -1,0 +1,96 @@
+
+\section{Konverter und Transverter II}
+\label{section:transverter_2}
+\begin{frame}%STARTCONTENT
+
+\only<1>{
+\begin{QQuestion}{AF301}{Mit welchen der folgenden Baugruppen kann aus einem \qty{5,3}{\MHz}-Signal ein \qty{14,3}{\MHz}-Signal erzeugt werden?}{Ein Mischer, ein \qty{9}{\MHz}-Oszillator und ein Bandfilter.}
+{Ein Vervielfacher, ein selektiver Verstärker und ein Tiefpass.}
+{Ein Phasenvergleicher, ein Oberwellenmischer und ein Hochpass.}
+{Ein Frequenzteiler durch 3, ein Verachtfacher und ein Notchfilter.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AF301}{Mit welchen der folgenden Baugruppen kann aus einem \qty{5,3}{\MHz}-Signal ein \qty{14,3}{\MHz}-Signal erzeugt werden?}{\textbf{\textcolor{DARCgreen}{Ein Mischer, ein \qty{9}{\MHz}-Oszillator und ein Bandfilter.}}}
+{Ein Vervielfacher, ein selektiver Verstärker und ein Tiefpass.}
+{Ein Phasenvergleicher, ein Oberwellenmischer und ein Hochpass.}
+{Ein Frequenzteiler durch 3, ein Verachtfacher und ein Notchfilter.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AF501}{Zwischen welchen Frequenzen muss der Quarzoszillator umschaltbar sein, damit im \qty{70}{\cm}-Bereich die oberen \qty{4}{\MHz} durch diesen Konverter empfangen werden können? Die Oszillatorfrequenz $f_{\symup{OSZ}}$ soll jeweils unterhalb des Nutzsignals liegen.}{\qty{45,111}{\MHz} und \qty{45,333}{\MHz}}
+{\qty{45,556}{\MHz} und \qty{45,778}{\MHz}}
+{\qty{45,333}{\MHz} und \qty{45,556}{\MHz}}
+{\qty{44,889}{\MHz} und \qty{45,111}{\MHz}}
+{\DARCimage{1.0\linewidth}{85include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AF501}{Zwischen welchen Frequenzen muss der Quarzoszillator umschaltbar sein, damit im \qty{70}{\cm}-Bereich die oberen \qty{4}{\MHz} durch diesen Konverter empfangen werden können? Die Oszillatorfrequenz $f_{\symup{OSZ}}$ soll jeweils unterhalb des Nutzsignals liegen.}{\qty{45,111}{\MHz} und \qty{45,333}{\MHz}}
+{\qty{45,556}{\MHz} und \qty{45,778}{\MHz}}
+{\textbf{\textcolor{DARCgreen}{\qty{45,333}{\MHz} und \qty{45,556}{\MHz}}}}
+{\qty{44,889}{\MHz} und \qty{45,111}{\MHz}}
+{\DARCimage{1.0\linewidth}{85include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $\Delta f_o = 440MHz -- 30MHz = 410MHz$
+  \item gegeben: $\Delta f_u = 436MHz -- 28MHz = 408MHz$
+  \item gegeben: $n = 9$
+  \item gesucht: $f_{Osc,1}, f_{Osc,2}$
+  \end{itemize}
+    \pause
+    $f_{Osc,1} = \frac{\Delta f_u}{n} = \frac{408MHz}{9} = 45,333MHz$
+
+$f_{Osc,2} = \frac{\Delta f_o}{n} = \frac{410MHz}{9} = 45,556MHz$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AF502}{Zwischen welchen Frequenzen muss der Quarzoszillator umschaltbar sein, damit im \qty{70}{\cm}-Bereich die unteren \qty{4}{\MHz} durch diesen Konverter empfangen werden können? Die Oszillatorfrequenz $f_{\symup{OSZ}}$ soll jeweils unterhalb des Nutzsignals liegen.}{\qty{44,444}{\MHz} und 
+\qty{44,667}{\MHz}}
+{\qty{44,667}{\MHz} und \qty{44,889}{\MHz}}
+{\qty{44,889}{\MHz} und \qty{45,111}{\MHz}}
+{\qty{45,111}{\MHz} und \qty{45,333}{\MHz}}
+{\DARCimage{1.0\linewidth}{86include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AF502}{Zwischen welchen Frequenzen muss der Quarzoszillator umschaltbar sein, damit im \qty{70}{\cm}-Bereich die unteren \qty{4}{\MHz} durch diesen Konverter empfangen werden können? Die Oszillatorfrequenz $f_{\symup{OSZ}}$ soll jeweils unterhalb des Nutzsignals liegen.}{\qty{44,444}{\MHz} und 
+\qty{44,667}{\MHz}}
+{\textbf{\textcolor{DARCgreen}{\qty{44,667}{\MHz} und \qty{44,889}{\MHz}}}}
+{\qty{44,889}{\MHz} und \qty{45,111}{\MHz}}
+{\qty{45,111}{\MHz} und \qty{45,333}{\MHz}}
+{\DARCimage{1.0\linewidth}{86include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $\Delta f_o = 434MHz -- 30MHz = 404MHz$
+  \item gegeben: $\Delta f_u = 430MHz -- 28MHz = 402MHz$
+  \item gegeben: $n = 9$
+  \item gesucht: $f_{Osc,1}, f_{Osc,2}$
+  \end{itemize}
+    \pause
+    $f_{Osc,1} = \frac{\Delta f_u}{n} = \frac{402MHz}{9} = 44,6667MHz$
+
+$f_{Osc,2} = \frac{\Delta f_o}{n} = \frac{404MHz}{9} = 44,889MHz$
+
+
+
+\end{frame}%ENDCONTENT

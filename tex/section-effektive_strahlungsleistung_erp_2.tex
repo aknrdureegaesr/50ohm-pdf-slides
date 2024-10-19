@@ -1,0 +1,75 @@
+
+\section{Effektive Strahlungsleistung (ERP) II}
+\label{section:effektive_strahlungsleistung_erp_2}
+\begin{frame}%STARTCONTENT
+
+\only<1>{
+\begin{QQuestion}{AG501}{Die äquivalente (effektive) Strahlungsleistung (ERP) ist~...}{das Produkt aus der Leistung, die unmittelbar der Antenne zugeführt wird, und ihrem Gewinnfaktor in einer Richtung, bezogen auf den isotropen Strahler.}
+{das Produkt aus der Leistung, die unmittelbar der Antenne zugeführt wird, und ihrem Gewinnfaktor in einer Richtung, bezogen auf den Halbwellendipol.}
+{die durchschnittliche Leistung, die ein Sender unter normalen Betriebsbedingungen während einer Periode der Hochfrequenzschwingung bei der höchsten Spitze der Modulationshüllkurve der Antennenspeiseleitung zuführt.}
+{die durchschnittliche Leistung, die ein Sender unter normalen Betriebsbedingungen an die Antennenspeiseleitung während eines Zeitintervalls abgibt, das im Verhältnis zur Periode der tiefsten Modulationsfrequenz ausreichend lang ist.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AG501}{Die äquivalente (effektive) Strahlungsleistung (ERP) ist~...}{das Produkt aus der Leistung, die unmittelbar der Antenne zugeführt wird, und ihrem Gewinnfaktor in einer Richtung, bezogen auf den isotropen Strahler.}
+{\textbf{\textcolor{DARCgreen}{das Produkt aus der Leistung, die unmittelbar der Antenne zugeführt wird, und ihrem Gewinnfaktor in einer Richtung, bezogen auf den Halbwellendipol.}}}
+{die durchschnittliche Leistung, die ein Sender unter normalen Betriebsbedingungen während einer Periode der Hochfrequenzschwingung bei der höchsten Spitze der Modulationshüllkurve der Antennenspeiseleitung zuführt.}
+{die durchschnittliche Leistung, die ein Sender unter normalen Betriebsbedingungen an die Antennenspeiseleitung während eines Zeitintervalls abgibt, das im Verhältnis zur Periode der tiefsten Modulationsfrequenz ausreichend lang ist.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AG502}{Nach welcher der Antworten kann die ERP (Effective Radiated Power) berechnet werden?}{$P_{\symup{ERP}} = (P_{\symup{Sender}} - P_{\symup{Verluste}}) + G_{\symup{Antenne}}$ bezogen auf einen Halbwellendipol}
+{$P_{\symup{ERP}} = (P_{\symup{Sender}} \cdot P_{\symup{Verluste}}) \cdot G_{\symup{Antenne}}$ bezogen auf einen isotropen Strahler}
+{$P_{\symup{ERP}} = (P_{\symup{Sender}} - P_{\symup{Verluste}}) \cdot G_{\symup{Antenne}}$ bezogen auf einen Halbwellendipol}
+{$P_{\symup{ERP}} = (P_{\symup{Sender}} + P_{\symup{Verluste}}) + G_{\symup{Antenne}}$ bezogen auf einen isotropen Strahler}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AG502}{Nach welcher der Antworten kann die ERP (Effective Radiated Power) berechnet werden?}{$P_{\symup{ERP}} = (P_{\symup{Sender}} - P_{\symup{Verluste}}) + G_{\symup{Antenne}}$ bezogen auf einen Halbwellendipol}
+{$P_{\symup{ERP}} = (P_{\symup{Sender}} \cdot P_{\symup{Verluste}}) \cdot G_{\symup{Antenne}}$ bezogen auf einen isotropen Strahler}
+{\textbf{\textcolor{DARCgreen}{$P_{\symup{ERP}} = (P_{\symup{Sender}} - P_{\symup{Verluste}}) \cdot G_{\symup{Antenne}}$ bezogen auf einen Halbwellendipol}}}
+{$P_{\symup{ERP}} = (P_{\symup{Sender}} + P_{\symup{Verluste}}) + G_{\symup{Antenne}}$ bezogen auf einen isotropen Strahler}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AG503}{Ein Sender für das \qty{630}{\m}-Band mit \qty{50}{\W} Ausgangsleistung ist mittels eines kurzen Koaxialkabels an eine Antenne mit 20~dBd Verlust angeschlossen. Welche ERP wird von der Antenne abgestrahlt?}{\qty{2,5}{\W}}
+{\qty{5,0}{\W}}
+{\qty{0,5}{\W}}
+{\qty{50}{\W}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AG503}{Ein Sender für das \qty{630}{\m}-Band mit \qty{50}{\W} Ausgangsleistung ist mittels eines kurzen Koaxialkabels an eine Antenne mit 20~dBd Verlust angeschlossen. Welche ERP wird von der Antenne abgestrahlt?}{\qty{2,5}{\W}}
+{\qty{5,0}{\W}}
+{\textbf{\textcolor{DARCgreen}{\qty{0,5}{\W}}}}
+{\qty{50}{\W}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $P_S = 50W$
+  \item gegeben: $a \approx 0W$
+  \item gegeben: $g_d = -20dBd$
+  \item gesucht: $P_{\textrm{ERP}}$
+  \end{itemize}
+    \pause
+    $P_{\textrm{ERP}} = P_S \cdot 10^{\frac{g_d -- a}{10dB}} = 50W \cdot 10^{\frac{-20dBd -- 0W}{10dB}} = 50W \cdot 10^{-2} = 0,5W$
+
+
+
+\end{frame}%ENDCONTENT

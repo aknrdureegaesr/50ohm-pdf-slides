@@ -1,0 +1,25 @@
+% Author: Dr. Matthias Jung, DL9MJ
+% Year: 2021
+% 3-TD110A
+
+\usetikzlibrary{calc, positioning}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{Fira Math}
+\setmathfont[range=up]{Roboto}
+\setmathfont[range=it]{Roboto-Italic}
+\setmathfont[range=\int]{Fira Math}
+\usepackage[euler]{textgreek}
+\usetikzlibrary{decorations.markings,patterns,bending}
+
+\begin{document}
+\begin{circuitikz}
+    \draw[-Triangle] (0,0) -- (3,0); 
+    \draw[-Triangle] (0,0) -- (0,2); 
+    \draw (1.5,-0.25) node[]{U};
+    \draw (-0.25,1) node[]{I};
+	\draw (2.5,1.25) node[]{Drehrichtung};
+    \draw[dashed, -Triangle](2.75,0.25) to[bend right] (2,1);
+    
+\end{circuitikz}
+\end{document}

@@ -1,0 +1,119 @@
+
+\section{Phasenregelschleife (PLL)}
+\label{section:oszillator_pll}
+\begin{frame}%STARTCONTENT
+
+\only<1>{
+\begin{QQuestion}{AD701}{Welche Baugruppen muss eine Phasenregelschleife (PLL) mindestens enthalten?}{Einen Phasenvergleicher, einen Hochpass und einen Frequenzteiler}
+{Einen VCO, einen Hochpass und einen Phasenvergleicher}
+{Einen Phasenvergleicher, einen Tiefpass und einen Frequenzteiler}
+{Einen VCO, einen Tiefpass und einen Phasenvergleicher}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AD701}{Welche Baugruppen muss eine Phasenregelschleife (PLL) mindestens enthalten?}{Einen Phasenvergleicher, einen Hochpass und einen Frequenzteiler}
+{Einen VCO, einen Hochpass und einen Phasenvergleicher}
+{Einen Phasenvergleicher, einen Tiefpass und einen Frequenzteiler}
+{\textbf{\textcolor{DARCgreen}{Einen VCO, einen Tiefpass und einen Phasenvergleicher}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AD702}{Welche der nachfolgenden Aussagen ist richtig, wenn die im Bild dargestellte Regelschleife in stabilem Zustand ist?}{Die Frequenzen an den Punkten A und B sind gleich.}
+{Die Frequenz an Punkt A ist höher als die Frequenz an Punkt B.}
+{Die Frequenzen an den Punkten A und C sind gleich.}
+{Die Frequenz an Punkt B ist höher als die Frequenz an Punkt C.}
+{\DARCimage{1.0\linewidth}{45include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AD702}{Welche der nachfolgenden Aussagen ist richtig, wenn die im Bild dargestellte Regelschleife in stabilem Zustand ist?}{\textbf{\textcolor{DARCgreen}{Die Frequenzen an den Punkten A und B sind gleich.}}}
+{Die Frequenz an Punkt A ist höher als die Frequenz an Punkt B.}
+{Die Frequenzen an den Punkten A und C sind gleich.}
+{Die Frequenz an Punkt B ist höher als die Frequenz an Punkt C.}
+{\DARCimage{1.0\linewidth}{45include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AD705}{Ein Frequenzsynthesizer soll eine einstellbare Frequenz mit hoher Frequenzgenauigkeit erzeugen. Die Genauigkeit und Stabilität der Ausgangsfrequenz eines Frequenzsynthesizers wird hauptsächlich bestimmt von~...}{den Eigenschaften des eingesetzten Quarzgenerators.}
+{den Eigenschaften des spannungsgesteuerten Oszillators (VCO).}
+{den Eigenschaften der eingesetzten Frequenzteiler.}
+{den Eigenschaften des eingesetzten Phasenvergleichers.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AD705}{Ein Frequenzsynthesizer soll eine einstellbare Frequenz mit hoher Frequenzgenauigkeit erzeugen. Die Genauigkeit und Stabilität der Ausgangsfrequenz eines Frequenzsynthesizers wird hauptsächlich bestimmt von~...}{\textbf{\textcolor{DARCgreen}{den Eigenschaften des eingesetzten Quarzgenerators.}}}
+{den Eigenschaften des spannungsgesteuerten Oszillators (VCO).}
+{den Eigenschaften der eingesetzten Frequenzteiler.}
+{den Eigenschaften des eingesetzten Phasenvergleichers.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AD703}{Wie groß muss bei der folgenden Schaltung die Frequenz an Punkt A sein, wenn ein Kanalabstand von \qty{12,5}{\kHz} benötigt wird?}{\qty{11,64}{\Hz}}
+{\qty{25}{\kHz}}
+{\qty{1,25}{\kHz}}
+{\qty{12,5}{\kHz}}
+{\DARCimage{1.0\linewidth}{45include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AD703}{Wie groß muss bei der folgenden Schaltung die Frequenz an Punkt A sein, wenn ein Kanalabstand von \qty{12,5}{\kHz} benötigt wird?}{\qty{11,64}{\Hz}}
+{\qty{25}{\kHz}}
+{\qty{1,25}{\kHz}}
+{\textbf{\textcolor{DARCgreen}{\qty{12,5}{\kHz}}}}
+{\DARCimage{1.0\linewidth}{45include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AD704}{Die Frequenz an Punkt A beträgt \qty{12,5}{\kHz}. Es sollen Ausgangsfrequenzen im Bereich von \qty{12,000}{\MHz} bis \qty{14,000}{\MHz} erzeugt werden. In welchem Bereich bewegt sich dabei das Teilerverhältnis n?}{960 bis 1120}
+{300 bis 857}
+{960 bis 857}
+{300 bis 1120}
+{\DARCimage{1.0\linewidth}{45include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AD704}{Die Frequenz an Punkt A beträgt \qty{12,5}{\kHz}. Es sollen Ausgangsfrequenzen im Bereich von \qty{12,000}{\MHz} bis \qty{14,000}{\MHz} erzeugt werden. In welchem Bereich bewegt sich dabei das Teilerverhältnis n?}{\textbf{\textcolor{DARCgreen}{960 bis 1120}}}
+{300 bis 857}
+{960 bis 857}
+{300 bis 1120}
+{\DARCimage{1.0\linewidth}{45include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $f_{Osc} = 12,5kHz$
+  \item gegeben: $f_{Out,low} = 12,000MHz$
+  \item gegeben: $f_{Out,high} = 14,000MHz$
+  \item gesucht: $:n$
+  \end{itemize}
+    \pause
+    Bei $f_{Out,low} = 12,000MHz$:
+
+$n = \frac{f_{Out,low}}{f_{Osc}} = \frac{12,000MHz}{12,5kHz} = 960$
+    \pause
+    Bei $f_{Out,high} = 14,000MHz$:
+
+$n = \frac{f_{Out,high}}{f_{Osc}} = \frac{14,000MHz}{12,5kHz} = 1120$
+
+
+
+\end{frame}%ENDCONTENT

@@ -1,0 +1,453 @@
+
+\section{Relaisfunkstellen}
+\label{section:relaisfunkstellen}
+\begin{frame}%STARTCONTENT
+
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    
+\begin{figure}
+    \DARCimage{0.85\linewidth}{648include}
+    \caption{\scriptsize Schematische Darstellung einer Relaisfunkstelle mit Nutzern}
+    \label{n_relaisfunkstellen_aufbau}
+\end{figure}
+
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       \begin{itemize}
+  \item Ermöglicht eine größere Reichweite als bei direkter Verbindung
+  \item Meist an exponierten Standorten, z.B. Berggipfeln, Hochhäusern, (Kirch-)Türmen
+  \item Oder in Satelliten
+  \end{itemize}
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Definition Relaisfunkstelle}
+eine fernbediente Amateurfunkstelle (auch in Satelliten), die empfangene Amateurfunkaussendungen, Teile davon oder sonstige eingespeiste oder eingespeicherte Signale fern ausgelöst aussendet und dabei zur Erhöhung der Erreichbarkeit von Amateurfunkstellen dient
+
+\end{frame}
+
+\begin{frame}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Auch kurz genannt: Relais oder Repeater
+  \item Senden regelmäßig ihr Rufzeichen aus
+  \item Rufzeichen beginnt in der Regel mit DB0, DM0 oder DO0
+  \end{itemize}
+
+    \end{column}
+    \pause
+    
+   \begin{column}{0.48\textwidth}
+       \begin{itemize}
+  \item Relaisfunkstellen werden nicht mit persönlichen Rufzeichen betrieben.
+  \item Relaisfunkstellen sind üblicherweise nicht ständig besetzt.
+  \item Relaisfunkstellen müssen nicht zwingend an geografisch exponierten Standorten betrieben werden.
+  \end{itemize}
+
+   \end{column}
+\end{columns}
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{NF118}{Was wird unter einem Digipeater verstanden?}{Ein Lineartransponder, der empfangene Datenpakete auf ein anderes Frequenzband umsetzt. Hierbei bleiben die verwendete Modulationsart sowie der Inhalt des Pakets erhalten.}
+{Eine Funkstation, die empfangene Datenpakete oder Teile davon automatisch erneut aussendet, ggf. auch zeitversetzt oder wiederholt. Hierbei können einzelne Datenfelder geändert werden.}
+{Ein integrierter Schaltkreis, der digitale Signale für die Modulation im Funkgerät vorbereitet. Hierbei wird das Rufzeichen der Station regelmäßig in den Datenstrom eingefügt.}
+{Eine Relaisstation, die Sprachübertragungen auf einer anderen Frequenz erneut aussendet. Hierbei wird die Lautstärke adaptiv mittels digitaler Signalverarbeitung angepasst.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{NF118}{Was wird unter einem Digipeater verstanden?}{Ein Lineartransponder, der empfangene Datenpakete auf ein anderes Frequenzband umsetzt. Hierbei bleiben die verwendete Modulationsart sowie der Inhalt des Pakets erhalten.}
+{\textbf{\textcolor{DARCgreen}{Eine Funkstation, die empfangene Datenpakete oder Teile davon automatisch erneut aussendet, ggf. auch zeitversetzt oder wiederholt. Hierbei können einzelne Datenfelder geändert werden.}}}
+{Ein integrierter Schaltkreis, der digitale Signale für die Modulation im Funkgerät vorbereitet. Hierbei wird das Rufzeichen der Station regelmäßig in den Datenstrom eingefügt.}
+{Eine Relaisstation, die Sprachübertragungen auf einer anderen Frequenz erneut aussendet. Hierbei wird die Lautstärke adaptiv mittels digitaler Signalverarbeitung angepasst.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Funktionsweise}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Empfängt auf der Eingangsfrequenz das Signal einer Amateurfunkstation
+  \item Stahlt es zeitgleich auf der Ausgabefrequenz aus
+  \item Damit der Sender nicht stört, sind die Frequenzen meistens unterschiedlich
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+    \pause
+    Den Abstand nennt man \emph{Frequenzablage} oder kurz \emph{Ablage}
+
+\begin{table}
+\begin{DARCtabular}{rr}
+     Band  & Ablage   \\
+     \qty{10}{\metre}  & \qty{100}{\kilo\hertz}   \\
+     \qty{2}{\metre}  & \qty{600}{\kilo\hertz}   \\
+     \qty{70}{\centi\metre}  & 7.\qty{6}{\mega\hertz}   \\
+     \qty{23}{\centi\metre}  & \qty{28}{\mega\hertz}   \\
+\end{DARCtabular}
+\caption{Frequenzablage}
+\label{n_relaisfunkstellen_ablage}
+\end{table}
+
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}Beispiel eines 70cm-Relais:
+
+\begin{itemize}
+  \item Ausgabefrequenz: 438.\qty{875}{\mega\hertz}
+  \item Ablage: -7.\qty{600}{\mega\hertz}
+  \item Eingabefrequenz: 431.\qty{275}{\mega\hertz}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{BE401}{Was ist damit gemeint, wenn man sagt, die Relaisfunkstelle hat eine Eingabe- und eine Ausgabefrequenz?}{Die Relaisfunkstelle empfängt auf der Eingabefrequenz und sendet auf der Ausgabefrequenz.}
+{Die Relaisfunkstelle stellt bei starker Belegung der Eingabefrequenz eine zusätzliche Ausgabefrequenz zur Verfügung.}
+{Die Relaisfunkstelle benutzt eine Eingabefrequenz zur Umsetzung des empfangenen Signals und die Ausgabefrequenz zur Fernsteuerung.}
+{Die Relaisfunkstelle muss auf der Ausgabefrequenz mit einem Tonruf geöffnet werden, bevor sie auf der Eingabefrequenz in Betrieb gehen kann.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{BE401}{Was ist damit gemeint, wenn man sagt, die Relaisfunkstelle hat eine Eingabe- und eine Ausgabefrequenz?}{\textbf{\textcolor{DARCgreen}{Die Relaisfunkstelle empfängt auf der Eingabefrequenz und sendet auf der Ausgabefrequenz.}}}
+{Die Relaisfunkstelle stellt bei starker Belegung der Eingabefrequenz eine zusätzliche Ausgabefrequenz zur Verfügung.}
+{Die Relaisfunkstelle benutzt eine Eingabefrequenz zur Umsetzung des empfangenen Signals und die Ausgabefrequenz zur Fernsteuerung.}
+{Die Relaisfunkstelle muss auf der Ausgabefrequenz mit einem Tonruf geöffnet werden, bevor sie auf der Eingabefrequenz in Betrieb gehen kann.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{BE402}{Bei deutschen \qty{2}{\m}-Relaisfunkstellen liegt die Eingabefrequenz üblicherweise~...}{\qty{7,6}{\MHz} höher die Ausgabefrequenz.}
+{\qty{600}{\kHz} höher als die Ausgabefrequenz.}
+{\qty{7,6}{\MHz} niedriger als die Ausgabefrequenz.}
+{\qty{600}{\kHz} niedriger als die Ausgabefrequenz.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{BE402}{Bei deutschen \qty{2}{\m}-Relaisfunkstellen liegt die Eingabefrequenz üblicherweise~...}{\qty{7,6}{\MHz} höher die Ausgabefrequenz.}
+{\qty{600}{\kHz} höher als die Ausgabefrequenz.}
+{\qty{7,6}{\MHz} niedriger als die Ausgabefrequenz.}
+{\textbf{\textcolor{DARCgreen}{\qty{600}{\kHz} niedriger als die Ausgabefrequenz.}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{BE403}{Bei deutschen \qty{70}{\cm}-Relaisfunkstellen liegt die Eingabefrequenz üblicherweise~...}{\qty{600}{\kHz} niedriger als die Ausgabefrequenz.}
+{\qty{600}{\kHz} höher als die Ausgabefrequenz.}
+{\qty{7,6}{\MHz} niedriger als die Ausgabefrequenz.}
+{\qty{7,6}{\MHz} höher als die Ausgabefrequenz.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{BE403}{Bei deutschen \qty{70}{\cm}-Relaisfunkstellen liegt die Eingabefrequenz üblicherweise~...}{\qty{600}{\kHz} niedriger als die Ausgabefrequenz.}
+{\qty{600}{\kHz} höher als die Ausgabefrequenz.}
+{\textbf{\textcolor{DARCgreen}{\qty{7,6}{\MHz} niedriger als die Ausgabefrequenz.}}}
+{\qty{7,6}{\MHz} höher als die Ausgabefrequenz.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Crossband-Betrieb}
+\begin{itemize}
+  \item Sendet und empfängt gleichzeitig auf zwei verschiedenen Bändern, z.B. 2m und 70cm
+  \item Umsetzung der Sendeart auch möglich, z.B. SSB auf FM
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Digipeater}
+\begin{itemize}
+  \item Vermittelt Daten statt Sprache
+  \item Empfängt und sendet Datenpakete
+  \item Aussendung kann nur in Teilen oder zeitversetzt geschehen
+  \item Datenpakete können wiederholt werden
+  \item Einzelne Datenfelder können geändert werden
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Besondere Einstellungen}
+\begin{itemize}
+  \item Ggf. sind weitere Einstellungen für die Verbindung zum Relais notwendig
+  \item Diese Informationen sind in Repeaterverzeichnissen, auf Webseiten oder beim Relaisverantwortlichen erhältlich
+  \item Neben FM-Repeatern gibt es welche für digitale Sprache wie DMR oder D-Star
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{NE309}{Welche Modulationsart wird üblicherweise bei analogen VHF/UHF-Relaisfunkstellen für Sprache verwendet?}{FM}
+{AM}
+{SSB}
+{DMR}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{NE309}{Welche Modulationsart wird üblicherweise bei analogen VHF/UHF-Relaisfunkstellen für Sprache verwendet?}{\textbf{\textcolor{DARCgreen}{FM}}}
+{AM}
+{SSB}
+{DMR}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{NE308}{Welche Übertragungsverfahren werden bei VHF/UHF-Relaisfunkstellen für Sprache benutzt?}{SSB-Sprechfunk, DMR, RTTY}
+{CW-Morsetelegrafie, FT8, D-STAR}
+{FM-Sprechfunk, DMR, D-STAR}
+{AM-Sprechfunk, C4FM, FT8 }
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{NE308}{Welche Übertragungsverfahren werden bei VHF/UHF-Relaisfunkstellen für Sprache benutzt?}{SSB-Sprechfunk, DMR, RTTY}
+{CW-Morsetelegrafie, FT8, D-STAR}
+{\textbf{\textcolor{DARCgreen}{FM-Sprechfunk, DMR, D-STAR}}}
+{AM-Sprechfunk, C4FM, FT8 }
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Kanalbandbreite}
+\begin{itemize}
+  \item Der benötigte Platz im Frequenzspektrum
+  \item Wide-FM: \qty{25}{\kilo\hertz}
+  \item Narrow-FM: \qty{12,5}{\kilo\hertz}
+  \item Repeater mögen Narrow-FM, da sonst Signale verzerrt sind und benachbarte Frequenzen gestört werden
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{BE407}{Warum sollten Sie bei Nutzung eines FM-Repeaters darauf achten, Schmalband-FM (Narrow-FM) an Ihrem Handfunkgerät einzustellen? Da ansonsten~...}{zu starke Oberwellen entstehen können und Funkdienste auf anderen Bändern durch Spiegelfrequenzen gestört werden könnten.}
+{eine übermäßige Abnutzung des Vorverstärkers des Repeaters durch Überlastung eintreten könnte und der Repeater dann ausfallen würde.}
+{Repeater-Eingaben auf benachbarten Frequenzen gestört werden können und der verwendete Repeater das Signal verzerrt ausgeben könnte.}
+{die Batterien der Notstromversorgung des Repeaters übermäßig belastet werden könnten und dann im Notfall nicht mehr nutzbar wären.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{BE407}{Warum sollten Sie bei Nutzung eines FM-Repeaters darauf achten, Schmalband-FM (Narrow-FM) an Ihrem Handfunkgerät einzustellen? Da ansonsten~...}{zu starke Oberwellen entstehen können und Funkdienste auf anderen Bändern durch Spiegelfrequenzen gestört werden könnten.}
+{eine übermäßige Abnutzung des Vorverstärkers des Repeaters durch Überlastung eintreten könnte und der Repeater dann ausfallen würde.}
+{\textbf{\textcolor{DARCgreen}{Repeater-Eingaben auf benachbarten Frequenzen gestört werden können und der verwendete Repeater das Signal verzerrt ausgeben könnte.}}}
+{die Batterien der Notstromversorgung des Repeaters übermäßig belastet werden könnten und dann im Notfall nicht mehr nutzbar wären.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Störungsfreier Betrieb}
+\begin{itemize}
+  \item Grundsätzlich können alle Funkamateure mit ihrem zugeteilten Rufzeichen fernbediente Amateurfunkstellen nutzen
+  \item Betreiber kann zur Sicherstellung des störungsfreien Betriebs Funkamateure ausschließen
+  \item Die BNetzA ist hiervon zu unterrichten
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{VD504}{Wann kann ein verantwortlicher Funkamateur einen bestimmten Funkamateur vom Betrieb über die von ihm betreute Relaisfunkstelle ausschließen?}{Wenn ein Funkamateur die Relaisfunkstelle zu häufig benutzt}
+{Wenn dies dazu dient, den störungsfreien Betrieb der Relaisfunkstelle sicherzustellen}
+{Wenn die Relaisnutzungsgebühr nicht entrichtet wurde}
+{Wenn ein Funkamateur das Mindestalter noch nicht erreicht hat}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{VD504}{Wann kann ein verantwortlicher Funkamateur einen bestimmten Funkamateur vom Betrieb über die von ihm betreute Relaisfunkstelle ausschließen?}{Wenn ein Funkamateur die Relaisfunkstelle zu häufig benutzt}
+{\textbf{\textcolor{DARCgreen}{Wenn dies dazu dient, den störungsfreien Betrieb der Relaisfunkstelle sicherzustellen}}}
+{Wenn die Relaisnutzungsgebühr nicht entrichtet wurde}
+{Wenn ein Funkamateur das Mindestalter noch nicht erreicht hat}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Funkbetrieb auf Repeatern}
+\begin{itemize}
+  \item Kurze Durchgänge
+  \item Mobile und portable Stationen sind oft nur kurzzeitig in Empfangsreichweite
+  \item Pause zwischen den Durchgängen zum Reinmelden anderer Stationen
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{BE406}{Warum sollten bei Relaisfunkbetrieb die Durchgänge möglichst kurz gehalten werden?}{Die Sprachspeicher einer Relaisfunkstelle haben eine zeitlich begrenzte Kapazität.}
+{Um zeitweilig Simplex-Verkehr zu ermöglichen.}
+{Nach der Amateurfunkverordnung darf ein Durchgang höchstens 60 Sekunden betragen.}
+{Damit es besonders Mobil- und Portabelstationen leichter möglich ist, die Relaisfunkstelle zu nutzen.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{BE406}{Warum sollten bei Relaisfunkbetrieb die Durchgänge möglichst kurz gehalten werden?}{Die Sprachspeicher einer Relaisfunkstelle haben eine zeitlich begrenzte Kapazität.}
+{Um zeitweilig Simplex-Verkehr zu ermöglichen.}
+{Nach der Amateurfunkverordnung darf ein Durchgang höchstens 60 Sekunden betragen.}
+{\textbf{\textcolor{DARCgreen}{Damit es besonders Mobil- und Portabelstationen leichter möglich ist, die Relaisfunkstelle zu nutzen.}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{BE404}{Wodurch sollte es Stationen erleichtert werden, sich in eine laufende Funkrunde oder ein Gespräch auf einem Repeater hereinzumelden?}{Durch Freihalten der Eingabefrequenz}
+{Durch Verwendung eines Auftasttons}
+{Durch eine kurze Pause vor jedem Durchgang}
+{Durch Freihalten der Ausgabefrequenz}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{BE404}{Wodurch sollte es Stationen erleichtert werden, sich in eine laufende Funkrunde oder ein Gespräch auf einem Repeater hereinzumelden?}{Durch Freihalten der Eingabefrequenz}
+{Durch Verwendung eines Auftasttons}
+{\textbf{\textcolor{DARCgreen}{Durch eine kurze Pause vor jedem Durchgang}}}
+{Durch Freihalten der Ausgabefrequenz}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Doppeln}
+\begin{itemize}
+  \item Bei gleichzeitiger Spracheingabe wird die Aussendung bis zur Unlesbarkeit gestört
+  \item \enquote{Doppeln} durch ordentliche Übergabe vermeiden
+  \item Aussendung erst dann beginnen, wenn die vorige Station beendet hat
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{NE310}{Wie sind zwei FM-Stationen auf der Relaisausgabe zu hören, wenn sie gleich stark und gleichzeitig auf der Relaiseingabe empfangen werden?}{Sie stören sich gegenseitig bis zur Unlesbarkeit.}
+{Sie stören sich nicht, jede Station ist mit halber Lautstärke zu hören.}
+{Sie sind auf der Ausgabe abwechselnd  zu empfangen.}
+{Es ist nur die Station zu hören, die zuerst mit der Sendung begonnen hat.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{NE310}{Wie sind zwei FM-Stationen auf der Relaisausgabe zu hören, wenn sie gleich stark und gleichzeitig auf der Relaiseingabe empfangen werden?}{\textbf{\textcolor{DARCgreen}{Sie stören sich gegenseitig bis zur Unlesbarkeit.}}}
+{Sie stören sich nicht, jede Station ist mit halber Lautstärke zu hören.}
+{Sie sind auf der Ausgabe abwechselnd  zu empfangen.}
+{Es ist nur die Station zu hören, die zuerst mit der Sendung begonnen hat.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{BE405}{Wodurch sollte gleichzeitiges Sprechen (Doppeln) bei Nutzung eines Repeaters und in Funkrunden vermieden werden?}{Durch Nutzung eines Sendezeitbegrenzers}
+{Durch ordentliche Übergabe nach jedem Durchgang}
+{Durch Senden mit möglichst großer Sendeleistung}
+{Durch leichte Verstimmung der Sendefrequenz}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{BE405}{Wodurch sollte gleichzeitiges Sprechen (Doppeln) bei Nutzung eines Repeaters und in Funkrunden vermieden werden?}{Durch Nutzung eines Sendezeitbegrenzers}
+{\textbf{\textcolor{DARCgreen}{Durch ordentliche Übergabe nach jedem Durchgang}}}
+{Durch Senden mit möglichst großer Sendeleistung}
+{Durch leichte Verstimmung der Sendefrequenz}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Sendeleistung}
+\begin{itemize}
+  \item Nach Anlage 1 der AFuV
+  \item Für automatische Station oberhalb von \qty{30}{\mega\hertz} mit \qty{50}{\watt} ERP
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{VD503}{Wie hoch ist die maximal zulässige Strahlungsleistung einer Relaisfunkstelle oberhalb \qty{30}{\MHz}?}{\qty{100}{\W} PEP}
+{\qty{750}{\W} PEP für Klasse A, \qty{75}{\W} PEP für Klasse E und \qty{10}{\W} PEP für Klasse N}
+{\qty{50}{\W} ERP}
+{\qty{150}{\W} ERP}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{VD503}{Wie hoch ist die maximal zulässige Strahlungsleistung einer Relaisfunkstelle oberhalb \qty{30}{\MHz}?}{\qty{100}{\W} PEP}
+{\qty{750}{\W} PEP für Klasse A, \qty{75}{\W} PEP für Klasse E und \qty{10}{\W} PEP für Klasse N}
+{\textbf{\textcolor{DARCgreen}{\qty{50}{\W} ERP}}}
+{\qty{150}{\W} ERP}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Rapport}
+\begin{itemize}
+  \item Empfangene Signalstärke (S) ist die des Relais
+  \item Es wird darauf verzichtet
+  \item Nur die Lesbarkeit (R) wird im Rapport beurteilt
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{BE408}{Wie wird eine Funkverbindung beurteilt, wenn über eine Relaisfunkstelle gearbeitet wird?}{Es wird nur die Lesbarkeit \glqq R\grqq{} beurteilt, weil sich die Signalstärke \glqq S\grqq{} auf die Relaisfunkstelle bezieht.}
+{Es werden die Lesbarkeit \glqq R\grqq{} und die Signalstärke  \glqq S\grqq{} beurteilt, weil das zu einem vollständigen Rapport dazugehört.}
+{Es wird nur die Signalstärke  \glqq S\grqq{} beurteilt, weil die Lesbarkeit \glqq R\grqq{} bei einem Relais immer gleich gut ist.}
+{Es werden nur verbale Aussagen gemacht, da die exakte Einschätzung bei Betrieb über eine Relaisfunkstelle nicht möglich ist.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{BE408}{Wie wird eine Funkverbindung beurteilt, wenn über eine Relaisfunkstelle gearbeitet wird?}{\textbf{\textcolor{DARCgreen}{Es wird nur die Lesbarkeit \glqq R\grqq{} beurteilt, weil sich die Signalstärke \glqq S\grqq{} auf die Relaisfunkstelle bezieht.}}}
+{Es werden die Lesbarkeit \glqq R\grqq{} und die Signalstärke  \glqq S\grqq{} beurteilt, weil das zu einem vollständigen Rapport dazugehört.}
+{Es wird nur die Signalstärke  \glqq S\grqq{} beurteilt, weil die Lesbarkeit \glqq R\grqq{} bei einem Relais immer gleich gut ist.}
+{Es werden nur verbale Aussagen gemacht, da die exakte Einschätzung bei Betrieb über eine Relaisfunkstelle nicht möglich ist.}
+\end{QQuestion}
+
+}
+\end{frame}%ENDCONTENT

@@ -1,0 +1,40 @@
+% Author: Dr. Matthias Jung, DL9MJ
+% Year: 2020
+\documentclass[convert=false]{standalone}
+\input{../common/settings.tex}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{Fira Math}
+\setmathfont[range=up]{Roboto}
+\setmathfont[range=it]{Roboto-Italic}
+\setmathfont[range=\int]{Fira Math}
+\usepackage[euler]{textgreek}
+
+\begin{document}
+\ctikzset{%
+}%
+
+\begin{circuitikz}[american]
+    %\tikzstyle{help lines}=[blue!50];
+    %\draw[style=help lines] (-6,-4) grid (16,4);
+    \draw (0,0) node[transformer, yscale=0.95](T){};
+    %%
+    \draw (T.A1) node [ocirc](I1){};
+    \draw (T.A2) node [ocirc](I2){};
+    \draw (T.B1) to [stroke diode] ++(2,0) node[circ](C1){};
+    \draw (C1) to [short] ++(1,0) node[circ](R1){};
+    \draw (R1) to [short, -o] ++(1,0);
+    %
+    %\draw(C1) to [short] ++(0,-2)
+    %          to [stroke diode] (T.B2);
+    \draw(T.B2) to [short, -o] (5,-1);
+    %
+    \draw(-1.0, 0) node[]{ZF};
+    \draw(2.10,1.7) node[]{Germaniumdiode};
+    %
+    \draw (0,0.5) to [short] (0,-0.5);
+    %
+    \draw(C1) to [C, -*] ++(0,-2);
+    \draw(R1) to [european resistor, -*] ++(0,-2);
+\end{circuitikz}
+\end{document}

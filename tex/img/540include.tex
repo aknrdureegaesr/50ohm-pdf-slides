@@ -1,0 +1,63 @@
+% Dr. Matthias Jung
+% 2022
+% TD432
+
+\usepackage{amssymb}
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{Fira Math}
+\setmathfont[range=up]{Roboto}
+\setmathfont[range=it]{Roboto-Italic}
+\setmathfont[range=\int]{Fira Math}
+\usepackage[euler]{textgreek}
+
+\usetikzlibrary{arrows, arrows.meta}
+\usepackage{siunitx}
+
+\begin{document}
+\begin{circuitikz}[european]
+    %\tikzstyle{help lines}=[blue!50];
+    %\draw[style=help lines] (0,0) grid (8,7);
+    
+    \draw(0,0) to [short, -*] ++(2,0) coordinate(c1)
+               to [short, -*] ++(2,0) coordinate(c2)
+               to [short, -*] ++(2,0) coordinate(c3)
+               to [short, -o] ++(2,0) coordinate(c4);
+
+    \draw(0,0) to [vC, tunable end arrow={Triangle}, l={$\mathrm{C}_1$}] ++(0,4);
+    \draw(c1)  to [american inductor, l={L},-*] ++(0,4) coordinate(d1)
+               to [short] ++(-2,0);
+
+    \draw(6,4) node[npn, tr circle, name={$\mathrm{T}_1$}](trans){};
+    
+    \draw(d1) to [C, l={$\mathrm{C}_2$}, -*] ++(2,0) coordinate(d2)
+              to [short] (trans.B);
+
+    \draw(c2) to [R, l={$\mathrm{R}_3$}] ++(0,2)
+              to [short] (d2);
+
+    \draw(2,2) to [C, l={$\mathrm{C}_3$}] ++(2,0)
+               to [short,-*] ++(2,0) coordinate(d3)
+               to [C, l={$\mathrm{C}_4$},-o] ++(2,0); 
+
+    \draw(trans.E) to [short] (d3)
+                   to [R, l={$\mathrm{R}_2$}] (c3);
+
+    \draw(trans.C) to [short, -*] (6,6) coordinate(d4)
+                   to [R, l={$\mathrm{R}_1$},-o] ++(2,0) coordinate(d5);
+
+    \draw(d4) to [short,-*] ++(-2,0) coordinate(d6)
+              to [R, l={$\mathrm{R}_4$}] (d2);
+
+    \draw(d6) to [short] ++(-2,0)
+              to [C, l={$\mathrm{C}_5$}] ++(0,-1)
+              node[rground](){};
+
+    \draw(c3) node[rground](){};
+
+    \draw(c4) ++(0.5,-0.05) node[](){--};
+    \draw(d5) ++(0.75,0) node[](){+};
+
+\end{circuitikz}
+\end{document}

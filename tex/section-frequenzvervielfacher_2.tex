@@ -1,0 +1,102 @@
+
+\section{Frequenzvervielfacher II}
+\label{section:frequenzvervielfacher_2}
+\begin{frame}%STARTCONTENT
+
+\only<1>{
+\begin{QQuestion}{AF311}{Nach welchem Prinzip arbeitet die analoge Frequenzvervielfachung?}{Das jeweils um plus und minus \qty{90}{\degree} phasenverschobene Signal wird einem additiven Mischer zugeführt, der die gewünschte Oberschwingungen erzeugt.}
+{Das Signal wird einer nicht linearen Verzerrerstufe zugeführt und die gewünschte Oberschwingungen ausgefiltert.}
+{Das Signal wird gefiltert und einem Ringmischer zugeführt, der die gewünschte Oberschwingungen erzeugt.}
+{Das jeweils um plus und minus \qty{90}{\degree} phasenverschobene Signal wird einem multiplikativen Mischer zugeführt, der die gewünschte Oberschwingungen erzeugt.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AF311}{Nach welchem Prinzip arbeitet die analoge Frequenzvervielfachung?}{Das jeweils um plus und minus \qty{90}{\degree} phasenverschobene Signal wird einem additiven Mischer zugeführt, der die gewünschte Oberschwingungen erzeugt.}
+{\textbf{\textcolor{DARCgreen}{Das Signal wird einer nicht linearen Verzerrerstufe zugeführt und die gewünschte Oberschwingungen ausgefiltert.}}}
+{Das Signal wird gefiltert und einem Ringmischer zugeführt, der die gewünschte Oberschwingungen erzeugt.}
+{Das jeweils um plus und minus \qty{90}{\degree} phasenverschobene Signal wird einem multiplikativen Mischer zugeführt, der die gewünschte Oberschwingungen erzeugt.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AF313}{Wie sollten Frequenzvervielfacher in einer Sendeeinrichtung aufgebaut und betrieben werden?}{Sie sollten am Ausgang ein Hochpassfilter für das vervielfachte Signal besitzen.}
+{Sie sollten gut abgeschirmt sein, um unerwünschte Abstrahlungen zu minimieren.}
+{Sie sollten unbedingt im linearen Kennlinienabschnitt betrieben werden}
+{Sie sollten sehr gut gekühlt werden.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AF313}{Wie sollten Frequenzvervielfacher in einer Sendeeinrichtung aufgebaut und betrieben werden?}{Sie sollten am Ausgang ein Hochpassfilter für das vervielfachte Signal besitzen.}
+{\textbf{\textcolor{DARCgreen}{Sie sollten gut abgeschirmt sein, um unerwünschte Abstrahlungen zu minimieren.}}}
+{Sie sollten unbedingt im linearen Kennlinienabschnitt betrieben werden}
+{Sie sollten sehr gut gekühlt werden.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AF312}{Worum handelt es sich bei dieser Schaltung?}{Oszillator}
+{Frequenzvervielfacher}
+{Frequenzteiler}
+{Selbstschwingende Mischstufe}
+{\DARCimage{1.0\linewidth}{489include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AF312}{Worum handelt es sich bei dieser Schaltung?}{Oszillator}
+{\textbf{\textcolor{DARCgreen}{Frequenzvervielfacher}}}
+{Frequenzteiler}
+{Selbstschwingende Mischstufe}
+{\DARCimage{1.0\linewidth}{489include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AF314}{Ein quarzgesteuertes Funkgerät mit einer Ausgangsfrequenz von \qty{432}{\MHz} verursacht Störungen bei \qty{144}{\MHz}. Der Quarzoszillator des Funkgeräts schwingt auf einer Grundfrequenz bei \qty{12}{\MHz}.  Bei welcher Vervielfachungskombination kann die Störfrequenz von \qty{144}{\MHz} auftreten?  }{Grundfrequenz $\cdot 2 \cdot 3 \cdot 3 \cdot 2$}
+{Grundfrequenz $\cdot 2 \cdot 2 \cdot 3 \cdot 3$}
+{Grundfrequenz $\cdot 3 \cdot 3 \cdot 2\cdot 2$}
+{Grundfrequenz $\cdot 3 \cdot 2 \cdot 3 \cdot 2$}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AF314}{Ein quarzgesteuertes Funkgerät mit einer Ausgangsfrequenz von \qty{432}{\MHz} verursacht Störungen bei \qty{144}{\MHz}. Der Quarzoszillator des Funkgeräts schwingt auf einer Grundfrequenz bei \qty{12}{\MHz}.  Bei welcher Vervielfachungskombination kann die Störfrequenz von \qty{144}{\MHz} auftreten?  }{Grundfrequenz $\cdot 2 \cdot 3 \cdot 3 \cdot 2$}
+{\textbf{\textcolor{DARCgreen}{Grundfrequenz $\cdot 2 \cdot 2 \cdot 3 \cdot 3$}}}
+{Grundfrequenz $\cdot 3 \cdot 3 \cdot 2\cdot 2$}
+{Grundfrequenz $\cdot 3 \cdot 2 \cdot 3 \cdot 2$}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $f_{Sender} = 432MHz$
+  \item gegeben: $f_{Grund} = 12MHz$
+  \item gegeben: $f_{QRM} = 144MHz$
+  \item gesucht: Vervielfachungskombination
+  \end{itemize}
+    \pause
+    $n = \frac{f_{Sender}}{f_{QRM}} = \frac{432MHz}{144MHz} = 3$
+    \pause
+    Es ist nur die Kombination aus $\textrm{Grundfrequenz}\,\cdot 2\cdot 2\cdot 3\cdot 3$ möglich, da diese als letzte eine Verdreifachung der Frequenz vornimmt.
+
+
+
+\end{frame}
+
+\begin{frame}Gegenprobe:
+
+$$\begin{split}f_{Sender} &= f_{Grund}\cdot 2\cdot 2\cdot 3\cdot 3\\ &= 12MHz\cdot 2\cdot 2\cdot 3\cdot 3\\ &= 24MHz\cdot 2\cdot 3\cdot 3\\ &= 48MHz\cdot 3\cdot 3\\ &= \bold{144MHz}\cdot 3\\ &= 432MHz\end{split}\end{equation}
+
+\end{frame}%ENDCONTENT

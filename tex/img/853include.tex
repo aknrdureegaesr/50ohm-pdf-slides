@@ -1,0 +1,62 @@
+% Author: Prof. Dr. Matthias Jung, DL9MJ
+% Year: 2023
+\begin{circuitikz}[american]
+    \ctikzset{
+        transformer L1/.style={inductors/width=1.5, inductors/coils=6},
+        transformer L2/.style={inductors/width=1.5, inductors/coils=6},
+        quadpoles/transformer core/inner=1,
+        quadpoles/transformer core/width=0.6,
+        quadpoles/transformer core/height=1.5,
+        quadpoles/transformer core/height=2,
+    }
+    % Core 1:
+    \draw(0,0) coordinate(start)
+        to [short, o-] ++(0.5,0)
+        node [transformer core, anchor=A1](T1){};
+    \draw(T1.A2) node[rground](){};
+    \draw(T1-L2.midtap) to [short,*-] ++(0.5,0) node[rground](){};
+
+    % Mixer:
+    \draw(T1.B1)
+        to [short] ++(2,0)
+        to [short,-*] ++(0,-0.25) coordinate(top);
+    \draw(T1.B2)
+        to [short] ++(0,-0.25)
+        to [short] ++(2,0)
+        to [short,-*] ++(0,+0.5) coordinate(bottom);
+    \draw(top)
+        to [open, name={h}] (bottom);
+    \draw(h.center)
+        to [open] ++(-1/\getDarcImageFactor,0) coordinate(left);
+    \draw(h.center)
+        to [open] ++(+1/\getDarcImageFactor,0) coordinate(right);
+    \draw(top) % Left
+        to [stroke diode, -*, l_={$D_3$}] (left)
+        to [stroke diode, -*, l_={$D_4$}] (bottom);
+    \draw(top) % Right
+        to [stroke diode, -*, invert, l={$D_1$}] (right)
+        to [stroke diode, -*, invert, l={$D_2$}] (bottom);
+    % Core 2:
+    \draw(T1.B1) 
+        to [open] ++(4,0)
+        node [transformer core, anchor=A1](T2){};
+    \draw(T2.B2) node[rground](gnd){};
+    \draw[gray](T2.A1) % Deactivated if Left is Active
+        to [short] ++(-0.5,0)
+        |- (right);
+    \draw(T2.A1) % Deactivated if Left is Active
+        to [short] ++(-0.5,0)
+        |- (right);
+    \draw(left) % Deactivated if Right is Active
+        to [short] ++(-0.25,0)
+        |- (T2.A2);
+    \draw(T2.B1)
+        to [short, -o] ++(0.5,0) coordinate(end);
+    \draw(T2-L1.midtap)
+        to [short, *-] ++(-0.25,0) coordinate(h)
+        to [short, -o] (h|-gnd.south) coordinate(res);
+    % Caption
+    \draw(start) node[anchor=south](){$f_\text{OSZ}$};
+    \draw(end) node[anchor=south](){$f_\text{OSB}$};
+    \draw(res) node[anchor=north](){NF};
+\end{circuitikz}

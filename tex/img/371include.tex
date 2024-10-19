@@ -1,0 +1,18 @@
+% Author: Stephan Kregel, DG1HXJ
+% Year: 2021
+\begin{circuitikz}[european]
+    \coordinate (init) at (0,0);
+    \draw[thick] (init) ++(-1,-1) rectangle (2,3);
+    \draw (init) ++(0.5,3.25) node[]{Computer};
+    \draw (init) to[sV, name=SV] ++(0,2) to [R=\qty{600}{\ohm}] ++(2,0) -- ++(2,0) coordinate (Rx);
+    \draw (Rx) -- ++(3,0) to [R] ++(0,-2) -- ++(-2,0) -| (SV);
+    \draw (Rx) to [R=$\mathrm{R}_\mathrm{X}$, *-*] ++(0,-2) to node[rground]{} ++(0,0);
+    \draw[thick] (init) ++(6,-1) rectangle (9.2,3);
+    \draw (init) ++(7.5,3.25) node[]{Funkgerät};
+    \draw (init) ++(8.1,1.2) node[]{Eingangs-};
+    \draw (init) ++(8.18,0.8) node[]{widerstand};
+    \draw (init) ++(2.1,2.7) node[anchor=west]{Line};
+    \draw (init) ++(2.1,2.3) node[anchor=west]{out};
+    \draw (init) ++(4.9,2.7) node[anchor=west]{ext.};
+    \draw (init) ++(4.9,2.3) node[anchor=west]{NF in};
+\end{circuitikz}

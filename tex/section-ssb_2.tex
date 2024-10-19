@@ -1,0 +1,376 @@
+
+\section{Einseitenbandmodulation (SSB) II}
+\label{section:ssb_2}
+\begin{frame}%STARTCONTENT
+
+\frametitle{Bandbreite}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Im Gegensatz zu AM wird weniger als die halbe Bandbreite verwendet
+  \item Maximal \qty{2,7}{\kilo\hertz}
+  \item Entspricht dem NF-Signal
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{743include}
+    \caption{\scriptsize Bandbreite von AM, USB und LSB}
+    \label{e_bandbreite_am_ssb}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EE201}{Wie unterscheidet sich SSB von AM in Bezug auf die Bandbreite?}{SSB beansprucht etwa 1/4 Bandbreite der Modulationsart AM.}
+{SSB beansprucht etwas mehr als die halbe Bandbreite der Modulationsart AM.}
+{SSB beansprucht weniger als die halbe Bandbreite der Modulationsart AM.}
+{SSB und AM lassen keinen Vergleich zu, da sie grundverschieden erzeugt werden.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EE201}{Wie unterscheidet sich SSB von AM in Bezug auf die Bandbreite?}{SSB beansprucht etwa 1/4 Bandbreite der Modulationsart AM.}
+{SSB beansprucht etwas mehr als die halbe Bandbreite der Modulationsart AM.}
+{\textbf{\textcolor{DARCgreen}{SSB beansprucht weniger als die halbe Bandbreite der Modulationsart AM.}}}
+{SSB und AM lassen keinen Vergleich zu, da sie grundverschieden erzeugt werden.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EE202}{Wie groß ist in etwa die HF-Bandbreite, die für die Übertragung eines SSB-Signals erforderlich ist?}{Sie entspricht der Hälfte der Bandbreite des NF-Signals.}
+{Sie entspricht der Bandbreite des NF-Signals.}
+{Sie entspricht der doppelten Bandbreite des NF-Signals.}
+{Sie ist Null, weil bei SSB-Modulation der HF-Träger unterdrückt wird.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EE202}{Wie groß ist in etwa die HF-Bandbreite, die für die Übertragung eines SSB-Signals erforderlich ist?}{Sie entspricht der Hälfte der Bandbreite des NF-Signals.}
+{\textbf{\textcolor{DARCgreen}{Sie entspricht der Bandbreite des NF-Signals.}}}
+{Sie entspricht der doppelten Bandbreite des NF-Signals.}
+{Sie ist Null, weil bei SSB-Modulation der HF-Träger unterdrückt wird.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EJ210}{Um Störungen auf benachbarten Frequenzen zu minimieren, sollte die Übertragungsbandbreite bei SSB~...}{höchstens \qty{1,8}{\kHz} betragen.}
+{höchstens \qty{2,7}{\kHz} betragen.}
+{höchstens \qty{3,1}{\kHz} betragen.}
+{höchstens \qty{15,0}{\kHz} betragen.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EJ210}{Um Störungen auf benachbarten Frequenzen zu minimieren, sollte die Übertragungsbandbreite bei SSB~...}{höchstens \qty{1,8}{\kHz} betragen.}
+{\textbf{\textcolor{DARCgreen}{höchstens \qty{2,7}{\kHz} betragen.}}}
+{höchstens \qty{3,1}{\kHz} betragen.}
+{höchstens \qty{15,0}{\kHz} betragen.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Modulation}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Durch Mischung und Filterung
+  \item Mit der Vorauswahl von USB und LSB wird die Trägerfrequenz gewählt
+  \item Durch den Mischer entstehen zwei Frequenzen
+  \item Im Bandfilter wird nur eine Frequenz durchgelassen
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{500include}
+    \caption{\scriptsize Blockschaltbild zur Modulation von SSB mit der Filtermethode}
+    \label{e_ssb_modulation}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Der Trick ist hier, dass das Bandfilter nur eine Resonanzfrequenz hat
+  \item Durch die Verschiebung der Trägerfrequenz im Oszillator wird dann das gewünschte Seitenband durchgelassen
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{500include}
+    \caption{\scriptsize Blockschaltbild zur Modulation von SSB mit der Filtermethode}
+    \label{e_ssb_modulation}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    Beispiel LSB:
+
+\begin{itemize}
+  \item Mikrofon: \qty{300}{\hertz} -- \qty{3}{\kilo\hertz}
+  \item LSB-Oszillator: \qty{9001,5}{\kilo\hertz}
+  \item DSB-Signal:<br/> a) 8998,5 -- 9001,2<br/> b) 9001,8 -- 9004,5 
+  \item Filter: \qty{9000}{\kilo\hertz}  $\pm$  \qty{1,5}{\kilo\hertz}
+  \item SSB-Signal:<br/> \qtyrange{8998,5}{9001,2}{\kilo\hertz}
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{831include}
+    \caption{\scriptsize Frequenzen mit der Filtermethode bei LSB}
+    \label{e_ssb_modulation_lsb}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    Beispiel USB:
+
+\begin{itemize}
+  \item Mikrofon: \qty{300}{\hertz} -- \qty{3}{\kilo\hertz}
+  \item USB-Oszillator: \qty{8998,5}{\kilo\hertz}
+  \item DSB-Signal:<br/> a) \qtyrange{8995,5}{8998,2}{\kilo\hertz}<br/> b) \qtyrange{8998,8}{9001,5}{\kilo\hertz}
+  \item Filter: \qty{9000}{\kilo\hertz}  $\pm$  \qty{1,5}{\kilo\hertz}
+  \item SSB-Signal:<br/> \qtyrange{8998,8}{9001,5}{\kilo\hertz}
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{832include}
+    \caption{\scriptsize Frequenzen mit der Filtermethode bei USB}
+    \label{e_ssb_modulation_usb}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EE203}{Ein Träger von \qty{21,250}{\MHz} wird mit der NF-Frequenz von \qty{1}{\kHz} in SSB (USB) moduliert. Welche Frequenz tritt im ideal modulierten HF-Signal auf?}{\qty{21,260}{\MHz}}
+{\qty{21,250}{\MHz}}
+{\qty{21,249}{\MHz}}
+{\qty{21,251}{\MHz}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EE203}{Ein Träger von \qty{21,250}{\MHz} wird mit der NF-Frequenz von \qty{1}{\kHz} in SSB (USB) moduliert. Welche Frequenz tritt im ideal modulierten HF-Signal auf?}{\qty{21,260}{\MHz}}
+{\qty{21,250}{\MHz}}
+{\qty{21,249}{\MHz}}
+{\textbf{\textcolor{DARCgreen}{\qty{21,251}{\MHz}}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EE204}{Ein Träger von \qty{3,65}{\MHz} wird mit der NF-Frequenz von \qty{2}{\kHz} in SSB (LSB) moduliert. Welche Frequenz/Frequenzen treten im modulierten HF-Signal hauptsächlich auf?}{\qty{3,648}{\MHz} und \qty{3,650}{\MHz}}
+{\qty{3,648}{\MHz}}
+{\qty{3,652}{\MHz}}
+{\qty{3,648}{\MHz} und \qty{3,652}{\MHz}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EE204}{Ein Träger von \qty{3,65}{\MHz} wird mit der NF-Frequenz von \qty{2}{\kHz} in SSB (LSB) moduliert. Welche Frequenz/Frequenzen treten im modulierten HF-Signal hauptsächlich auf?}{\qty{3,648}{\MHz} und \qty{3,650}{\MHz}}
+{\textbf{\textcolor{DARCgreen}{\qty{3,648}{\MHz}}}}
+{\qty{3,652}{\MHz}}
+{\qty{3,648}{\MHz} und \qty{3,652}{\MHz}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{NF-Signal}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Für Sprache reicht zwischen 300 und \qty{3000}{\hertz}
+  \item Entspricht \qty{2,7}{\kilo\hertz}
+  \item Es werden auch kleinere Filter, z.B. \qty{2,4}{\kilo\hertz} verwendet
+  \item An vielen TRX lassen sich die Filter einstellen
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       \begin{itemize}
+  \item Wird ein NF-Signal mit größerer Bandbreite verwendet, steigt die HF-Bandbreite
+  \item Sollte vermieden werden, um benachbarte Signale nicht zu stören
+  \item Auf maximale Bandbreite im Bandplan achten
+  \end{itemize}
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EJ211}{Um etwaige Funkstörungen auf Nachbarfrequenzen zu begrenzen, sollte bei SSB-Telefonie die höchste zu übertragende NF-Frequenz~...}{unter \qty{3}{\kHz} liegen.}
+{unter \qty{1}{\kHz} liegen.}
+{unter \qty{5}{\kHz} liegen.}
+{unter \qty{10}{\kHz} liegen.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EJ211}{Um etwaige Funkstörungen auf Nachbarfrequenzen zu begrenzen, sollte bei SSB-Telefonie die höchste zu übertragende NF-Frequenz~...}{\textbf{\textcolor{DARCgreen}{unter \qty{3}{\kHz} liegen.}}}
+{unter \qty{1}{\kHz} liegen.}
+{unter \qty{5}{\kHz} liegen.}
+{unter \qty{10}{\kHz} liegen.}
+\end{QQuestion}
+
+}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EF310}{Welche Bandbreite sollte das nachgeschaltete Filter zur Unterdrückung eines Seitenbandes bei der Erzeugung eines SSB-Telefoniesignals haben?}{\qty{455}{\kHz} }
+{\qty{800}{\Hz} }
+{\qty{2,4}{\kHz} }
+{\qty{10,7}{\MHz} }
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EF310}{Welche Bandbreite sollte das nachgeschaltete Filter zur Unterdrückung eines Seitenbandes bei der Erzeugung eines SSB-Telefoniesignals haben?}{\qty{455}{\kHz} }
+{\qty{800}{\Hz} }
+{\textbf{\textcolor{DARCgreen}{\qty{2,4}{\kHz} }}}
+{\qty{10,7}{\MHz} }
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EE207}{Wie groß ist die Bandbreite von CW im Vergleich zu einem Sprachsignal in SSB oder AM?}{In beiden Fällen weist CW eine kleinere Bandbreite auf.}
+{In beiden Fällen weist CW eine größere Bandbreite auf.}
+{Die Bandbreite von CW ist kleiner als bei SSB, jedoch größer als bei AM.}
+{Die Bandbreite von CW ist größer als bei SSB, jedoch kleiner als bei AM.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EE207}{Wie groß ist die Bandbreite von CW im Vergleich zu einem Sprachsignal in SSB oder AM?}{\textbf{\textcolor{DARCgreen}{In beiden Fällen weist CW eine kleinere Bandbreite auf.}}}
+{In beiden Fällen weist CW eine größere Bandbreite auf.}
+{Die Bandbreite von CW ist kleiner als bei SSB, jedoch größer als bei AM.}
+{Die Bandbreite von CW ist größer als bei SSB, jedoch kleiner als bei AM.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Mikrofonverstärkung}
+\begin{itemize}
+  \item Mit der NF-Leistung wird die Leistung der HF gesteuert
+  \item Zu leises Mikrofon bewirkt weniger Ausgangleistung am Sender
+  \item Eine zu starke Mikrofonverstärkung kann Störungen bei Stationen auf dicht benachbarten Frequenzen verursachen
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EE206}{Was bewirkt eine zu geringe Mikrofonverstärkung bei einem SSB-Transceiver?}{Störungen bei Stationen, die auf dicht benachbarten Frequenzen arbeiten}
+{Störungen von Stationen, die auf einem anderen Frequenzband arbeiten}
+{geringe Bandbreite}
+{geringe Ausgangsleistung}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EE206}{Was bewirkt eine zu geringe Mikrofonverstärkung bei einem SSB-Transceiver?}{Störungen bei Stationen, die auf dicht benachbarten Frequenzen arbeiten}
+{Störungen von Stationen, die auf einem anderen Frequenzband arbeiten}
+{geringe Bandbreite}
+{\textbf{\textcolor{DARCgreen}{geringe Ausgangsleistung}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EE205}{Welche der aufgeführten Maßnahmen verringert die Ausgangsleistung eines SSB-Senders?}{Lauter ins Mikrofon sprechen }
+{Verringern der NF-Amplitude}
+{Verringern der Squelcheinstellung }
+{Erhöhen der NF-Bandbreite}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EE205}{Welche der aufgeführten Maßnahmen verringert die Ausgangsleistung eines SSB-Senders?}{Lauter ins Mikrofon sprechen }
+{\textbf{\textcolor{DARCgreen}{Verringern der NF-Amplitude}}}
+{Verringern der Squelcheinstellung }
+{Erhöhen der NF-Bandbreite}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EJ215}{Was bewirkt in der Regel eine zu hohe Mikrofonverstärkung bei einem SSB-Transceiver?}{Störungen bei Stationen, die auf dicht benachbarten Frequenzen arbeiten}
+{Störungen von Stationen, die auf einem anderen Frequenzband arbeiten}
+{Störungen der Stromversorgung des Transceivers}
+{Störungen von anderen elektronischen Geräten}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EJ215}{Was bewirkt in der Regel eine zu hohe Mikrofonverstärkung bei einem SSB-Transceiver?}{\textbf{\textcolor{DARCgreen}{Störungen bei Stationen, die auf dicht benachbarten Frequenzen arbeiten}}}
+{Störungen von Stationen, die auf einem anderen Frequenzband arbeiten}
+{Störungen der Stromversorgung des Transceivers}
+{Störungen von anderen elektronischen Geräten}
+\end{QQuestion}
+
+}
+\end{frame}%ENDCONTENT

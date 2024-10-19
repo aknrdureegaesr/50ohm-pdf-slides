@@ -1,0 +1,57 @@
+% !TeX program = lualatex
+
+% Author: Malte, DE7LMS
+% Year: 2022
+% TH208 four types of vertical antennas
+\documentclass[convert=false]{standalone}
+\input{../common/settings.tex}
+
+\usepackage{siunitx}
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{Fira Math}
+\setmathfont[range=up]{Roboto}
+\setmathfont[range=it]{Roboto-Italic}
+\setmathfont[range=\int]{Fira Math}
+\usepackage[euler]{textgreek}
+\usetikzlibrary{decorations.pathmorphing}
+
+\begin{document}
+
+\begin{circuitikz}[scale=1.5]
+  \draw[very thick] (-.2,0) -- (.2,0);
+  \draw[very thick, shorten >=-.2pt] (0,0) -- (0,.2);
+  \draw[very thick, shorten <=-.2pt] (0,.3) -- (0,2/1.6);
+  \draw (0,.2) to[short, -o] ++(-.2,0);
+  \draw (0,.3) to[short, -o] ++(-.2,0);
+
+  \draw[very thick]
+    (1-.2,0) -- (1.2,0)
+    (1,0) -- (1,.3)
+    (1,.7) -- (1,4/1.6);
+  \draw (1,.3) -- ++(-.15,0) to[american inductor, inductors/coils=3, inductors/width=.4, name=coil] ++(0,.4)
+    -- ++(.3,0) to[capacitor, capacitors/scale=.5] ++(0,-.4) -- ++(-.15,0);
+  \draw (1,.2) to[short, -o] ++(-.4,0);
+  \draw (coil.130) to[short, -o] (1-.4,0 |- coil.130);
+
+  \draw[very thick] (2-.2,0) -- (2.2,0);
+  \draw[very thick, shorten >=-.2pt] (2,0) -- (2,.2);
+  \draw[very thick, shorten <=-.2pt, shorten >=-.3pt] (2,.3) -- (2,.4);
+  \draw[very thick, shorten <=-.7pt] (2,.7) -- (2,5/1.6);
+  \draw[line width=.6pt, decoration={coil,aspect=0.2,segment length=0.5mm,amplitude=4mm}, decorate] (2,.4) -- (2,.7);
+  \draw (2,.2) to[short, -o] ++(-.2,0);
+  \draw (2,.3) to[short, -o] ++(-.2,0);
+
+  \draw (3.2,0) to[short,o-] ++(0,.3);
+  \draw[very thick] (3.2,.1) -- (3.2,2/1.6) -- (3-.2,2/1.6) -- (3-.2,.1);
+  \draw (3,0) to[short,o-] ++(0,.3);
+  \draw[white, double=black, double distance=1.2pt, thick] (3,.1) -- (3,5/1.6);
+
+  \foreach \x in {1,...,4} {
+    \node[below=1mm, font=\large] at (\x-1,0) {\x};
+  }
+\end{circuitikz}
+
+\end{document}
+

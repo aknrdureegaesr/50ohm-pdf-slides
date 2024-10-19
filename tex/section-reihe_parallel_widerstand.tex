@@ -1,0 +1,287 @@
+
+\section{Widerstand in Reihen- und Parallelschaltung}
+\label{section:reihe_parallel_widerstand}
+\begin{frame}%STARTCONTENT
+
+\frametitle{Reihenschaltung}
+Bei einer Reihenschaltung addieren sich die Widerstandswerte
+
+
+\begin{figure}
+    \DARCimage{0.85\linewidth}{812include}
+    \caption{\scriptsize Reihenschaltung von 3 Widerständen}
+    \label{e_reihenschaltung_von_r}
+\end{figure}
+
+$R_{ G } = R_{ 1 } + R_{ 2 } + R_{ 3 }$
+
+Beispiel: $R_{ G } = 100 \Omega + 200 \Omega + 300 \Omega$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Parallelschaltung}
+Bei einer Parallelschaltung von Widerständen ist der Gesamtwiderstand kleiner als der Wert des kleinsten Widerstandes
+
+
+\begin{figure}
+    \DARCimage{0.85\linewidth}{811include}
+    \caption{\scriptsize Parallelschaltung von 3 Widerständen}
+    \label{e_parallelschaltung_von_r}
+\end{figure}
+
+$\frac{ 1 }{ R_{ G } } = \frac{ 1 }{ R_{ 1 } } + \frac{ 1 }{ R_{ 2 } } + \frac{ 1 }{ R_{ 3 } }$
+
+\end{frame}
+
+\begin{frame}Vereinfachung für zwei Widerstände:
+
+$R_{ G } = \dfrac{ R_{ 1 } \cdot R_{ 2 } }{ R_{ 1 } + R_{ 2 }}$
+
+\end{frame}
+
+\begin{frame}Vereinfachung für gleiche Widerstände:
+
+$R_{ G } = \dfrac{ R }{ n }$
+
+$n$ steht für die Anzahl der Widerstände
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{ED104}{Zwei Widerstände mit $R_1 = \qty{100}{\ohm}$ und $R_2 = \qty{400}{\ohm}$ sind parallel geschaltet. Wie groß ist der Gesamtwiderstand?}{\qty{300}{\ohm}}
+{\qty{500}{\ohm}}
+{\qty{80}{\ohm}}
+{\qty{4}{\ohm}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{ED104}{Zwei Widerstände mit $R_1 = \qty{100}{\ohm}$ und $R_2 = \qty{400}{\ohm}$ sind parallel geschaltet. Wie groß ist der Gesamtwiderstand?}{\qty{300}{\ohm}}
+{\qty{500}{\ohm}}
+{\textbf{\textcolor{DARCgreen}{\qty{80}{\ohm}}}}
+{\qty{4}{\ohm}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{ED105}{Zwei Widerstände mit $R_1$~=~\qty{50}{\ohm} und $R_2$~=~\qty{200}{\ohm} sind parallel geschaltet. Wie groß ist der Gesamtwiderstand?}{\qty{250}{\ohm}}
+{\qty{40}{\ohm}}
+{\qty{150}{\ohm}}
+{\qty{4}{\ohm}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{ED105}{Zwei Widerstände mit $R_1$~=~\qty{50}{\ohm} und $R_2$~=~\qty{200}{\ohm} sind parallel geschaltet. Wie groß ist der Gesamtwiderstand?}{\qty{250}{\ohm}}
+{\textbf{\textcolor{DARCgreen}{\qty{40}{\ohm}}}}
+{\qty{150}{\ohm}}
+{\qty{4}{\ohm}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{ED106}{Drei gleich große parallel geschaltete Widerstände haben einen Gesamtwiderstand von \qty{1,7}{\kohm}. Welchen Wert hat jeder Einzelwiderstand?}{\qty{2,7}{\kohm}}
+{\qty{560}{\ohm}}
+{\qty{10}{\kohm}}
+{\qty{5,1}{\kohm}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{ED106}{Drei gleich große parallel geschaltete Widerstände haben einen Gesamtwiderstand von \qty{1,7}{\kohm}. Welchen Wert hat jeder Einzelwiderstand?}{\qty{2,7}{\kohm}}
+{\qty{560}{\ohm}}
+{\qty{10}{\kohm}}
+{\textbf{\textcolor{DARCgreen}{\qty{5,1}{\kohm}}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Gemischte Schaltungen}
+\end{frame}
+
+\begin{frame}
+\frametitle{Variante 1: Zwei Parallel und dazu einer in Reihe}
+
+\begin{figure}
+    \DARCimage{0.85\linewidth}{813include}
+    \caption{\scriptsize Gemischte Schaltung -- Variante 1}
+    \label{e_gemischte_schaltung_1}
+\end{figure}
+    \pause
+    Hier berechnet man zuerst die Parallelschaltung von $R_2$ und $R_3$ und addiert dann $R_1$ hinzu.
+    \pause
+    $R_{ G } = \dfrac{ R_{ 2 } \cdot R_{ 3 } }{ R_{ 2 } + R_{ 3 }} + R_{ 1 }$
+
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Variante 2: Zwei in Reihe und dazu einer Parallel}
+
+\begin{figure}
+    \DARCimage{0.85\linewidth}{814include}
+    \caption{\scriptsize Gemischte Schaltung -- Variante 2}
+    \label{e_gemischte_schaltung_2}
+\end{figure}
+    \pause
+    Hier addiert man zuerst $R_1$ und $R_2$ um mit diesem Ergebnis die Parallelschaltung zu $R_3$ zu berechnen.
+    \pause
+    $R_{ G } = \dfrac{ (R_{ 1 } + R_{ 2 }) \cdot R_{ 3 }} {( R_{ 1 } + R_{ 2 }) + R_{ 3 }}$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{ED110}{Wie groß ist der Gesamtwiderstand der Schaltung? Gegeben: $R_1$ = \qty{500}{\ohm}, $R_2$ = \qty{1000}{\ohm} und $R_3$ = \qty{1}{\kohm}}{\qty{501}{\ohm}}
+{\qty{2,5}{\kohm}}
+{\qty{1}{\kohm}}
+{\qty{5,1}{\kohm}}
+{\DARCimage{1.0\linewidth}{305include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{ED110}{Wie groß ist der Gesamtwiderstand der Schaltung? Gegeben: $R_1$ = \qty{500}{\ohm}, $R_2$ = \qty{1000}{\ohm} und $R_3$ = \qty{1}{\kohm}}{\qty{501}{\ohm}}
+{\qty{2,5}{\kohm}}
+{\textbf{\textcolor{DARCgreen}{\qty{1}{\kohm}}}}
+{\qty{5,1}{\kohm}}
+{\DARCimage{1.0\linewidth}{305include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{ED111}{Wie groß ist der Gesamtwiderstand der Schaltung? Gegeben: $R_1$ = \qty{1}{\kohm}, $R_2$ = \qty{2000}{\ohm} und $R_3$ = \qty{2}{\kohm}}{\qty{2}{\kohm}}
+{\qty{2,5}{\kohm}}
+{\qty{501}{\ohm}}
+{\qty{5,1}{\kohm}}
+{\DARCimage{1.0\linewidth}{305include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{ED111}{Wie groß ist der Gesamtwiderstand der Schaltung? Gegeben: $R_1$ = \qty{1}{\kohm}, $R_2$ = \qty{2000}{\ohm} und $R_3$ = \qty{2}{\kohm}}{\textbf{\textcolor{DARCgreen}{\qty{2}{\kohm}}}}
+{\qty{2,5}{\kohm}}
+{\qty{501}{\ohm}}
+{\qty{5,1}{\kohm}}
+{\DARCimage{1.0\linewidth}{305include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{ED108}{Wie groß ist der Gesamtwiderstand der Schaltung? Gegeben: $R_1$~=~\qty{500}{\ohm}, $R_2$~=~\qty{500}{\ohm} und $R_3$~=~\qty{1}{\kohm}}{\qty{2}{\kohm}}
+{\qty{250}{\ohm}}
+{\qty{1}{\kohm}}
+{\qty{500}{\ohm}}
+{\DARCimage{0.5\linewidth}{378include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{ED108}{Wie groß ist der Gesamtwiderstand der Schaltung? Gegeben: $R_1$~=~\qty{500}{\ohm}, $R_2$~=~\qty{500}{\ohm} und $R_3$~=~\qty{1}{\kohm}}{\qty{2}{\kohm}}
+{\qty{250}{\ohm}}
+{\qty{1}{\kohm}}
+{\textbf{\textcolor{DARCgreen}{\qty{500}{\ohm}}}}
+{\DARCimage{0.5\linewidth}{378include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{ED109}{Wie groß ist der Gesamtwiderstand der Schaltung? Gegeben: $R_1$~=~\qty{500}{\ohm}, $R_2$~=~\qty{1,5}{\kohm} und $R_3$~=~\qty{2}{\kohm}}{\qty{2}{\kohm}}
+{\qty{4}{\kohm}}
+{\qty{500}{\ohm}}
+{\qty{1}{\kohm}}
+{\DARCimage{0.5\linewidth}{378include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{ED109}{Wie groß ist der Gesamtwiderstand der Schaltung? Gegeben: $R_1$~=~\qty{500}{\ohm}, $R_2$~=~\qty{1,5}{\kohm} und $R_3$~=~\qty{2}{\kohm}}{\qty{2}{\kohm}}
+{\qty{4}{\kohm}}
+{\qty{500}{\ohm}}
+{\textbf{\textcolor{DARCgreen}{\qty{1}{\kohm}}}}
+{\DARCimage{0.5\linewidth}{378include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{ED112}{Wie groß ist der Gesamtwiderstand dieser Schaltung, wenn $R_1$~=~\qty{1}{\kohm}, $R_2$~=~\qty{3}{\kohm} und $R_3$~=~\qty{1500}{\ohm} betragen?}{\qty{2}{\kohm}}
+{\qty{5,5}{\kohm}}
+{\qty{3,5}{\kohm}}
+{\qty{1}{\kohm}}
+{\DARCimage{1.0\linewidth}{305include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{ED112}{Wie groß ist der Gesamtwiderstand dieser Schaltung, wenn $R_1$~=~\qty{1}{\kohm}, $R_2$~=~\qty{3}{\kohm} und $R_3$~=~\qty{1500}{\ohm} betragen?}{\textbf{\textcolor{DARCgreen}{\qty{2}{\kohm}}}}
+{\qty{5,5}{\kohm}}
+{\qty{3,5}{\kohm}}
+{\qty{1}{\kohm}}
+{\DARCimage{1.0\linewidth}{305include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{ED113}{Wie groß ist der Gesamtwiderstand dieser Schaltung, wenn $R_1$~=~\qty{10}{\kohm}, $R_2$~=~\qty{2,5}{\kohm}, $R_3$~=~\qty{500}{\ohm} und $R_4$~=~\qty{600}{\ohm} betragen? }{\qty{7,6}{\kohm}}
+{\qty{13,6}{\kohm}}
+{\qty{200}{\ohm}}
+{\qty{1}{\kohm}}
+{\DARCimage{1.0\linewidth}{385include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{ED113}{Wie groß ist der Gesamtwiderstand dieser Schaltung, wenn $R_1$~=~\qty{10}{\kohm}, $R_2$~=~\qty{2,5}{\kohm}, $R_3$~=~\qty{500}{\ohm} und $R_4$~=~\qty{600}{\ohm} betragen? }{\qty{7,6}{\kohm}}
+{\qty{13,6}{\kohm}}
+{\qty{200}{\ohm}}
+{\textbf{\textcolor{DARCgreen}{\qty{1}{\kohm}}}}
+{\DARCimage{1.0\linewidth}{385include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Belastbarkeit von Widerständen in Reihen- und Parallelschaltung}
+\begin{itemize}
+  \item Bei einer Reihenschaltung teilen sich die Spannungen auf.
+  \item Bei einer Parallelschaltung teilen sich die Ströme auf.
+  \item Somit ist bei der Berechnung mittels $P = U \cdot I$ immer ein Wert konstant und der andere entspechend kleiner.
+  \item $\rightarrow$ die Gesamtbelastbarkeit ist in beiden Fällen größer als die Einzelbelastbarkeit.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{ED107}{Welche Belastbarkeit kann die Zusammenschaltung von drei gleich großen Widerständen mit einer Einzelbelastbarkeit von je \qty{1}{\W} erreichen, wenn alle 3 Widerstände entweder parallel oder in Reihe geschaltet werden?}{\qty{1}{\W} bei Parallel- und \qty{3}{\W} bei Reihenschaltung.}
+{\qty{3}{\W} bei Parallel- und \qty{1}{\W} bei Reihenschaltung.}
+{\qty{3}{\W} bei Parallel- und bei Reihenschaltung.}
+{\qty{1}{\W} bei Parallel- und bei Reihenschaltung.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{ED107}{Welche Belastbarkeit kann die Zusammenschaltung von drei gleich großen Widerständen mit einer Einzelbelastbarkeit von je \qty{1}{\W} erreichen, wenn alle 3 Widerstände entweder parallel oder in Reihe geschaltet werden?}{\qty{1}{\W} bei Parallel- und \qty{3}{\W} bei Reihenschaltung.}
+{\qty{3}{\W} bei Parallel- und \qty{1}{\W} bei Reihenschaltung.}
+{\textbf{\textcolor{DARCgreen}{\qty{3}{\W} bei Parallel- und bei Reihenschaltung.}}}
+{\qty{1}{\W} bei Parallel- und bei Reihenschaltung.}
+\end{QQuestion}
+
+}
+\end{frame}%ENDCONTENT

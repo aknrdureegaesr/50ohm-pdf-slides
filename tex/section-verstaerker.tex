@@ -1,0 +1,224 @@
+
+\section{Verstärker}
+\label{section:verstaerker}
+\begin{frame}%STARTCONTENT
+\begin{itemize}
+  \item Mittels Transistoren lassen sich, abhängig von der Art der Schaltung, alle Arten von Signalen (Digital, NF oder HF) verstärken.
+  \item Dabei ist die Ausgangsleistung gegenüber der Eingangsleistung größer.
+  \item Es ist eine Spannungsquelle notwendig.
+  \item Wir haben im Kapitel Transistor schon gesehen, wie das funktioniert.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{ED401}{Was versteht man in der Elektronik unter Leistungsverstärkung?}{Die Ausgangsleistung ist gegenüber der Eingangsleistung größer und dazu ist eine Spannungsquelle notwendig.}
+{Die Ausgangsleistung ist gegenüber der Eingangsleistung größer, obwohl keine  Spannungsquelle notwendig ist.}
+{Die Ausgangsleistung ist gleich der Eingangsleistung, obwohl keine Spannungsquelle notwendig ist.}
+{Die Ausgangsleistung ist gleich der Eingangsleistung, da eine Spannungsquelle notwendig ist.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{ED401}{Was versteht man in der Elektronik unter Leistungsverstärkung?}{\textbf{\textcolor{DARCgreen}{Die Ausgangsleistung ist gegenüber der Eingangsleistung größer und dazu ist eine Spannungsquelle notwendig.}}}
+{Die Ausgangsleistung ist gegenüber der Eingangsleistung größer, obwohl keine  Spannungsquelle notwendig ist.}
+{Die Ausgangsleistung ist gleich der Eingangsleistung, obwohl keine Spannungsquelle notwendig ist.}
+{Die Ausgangsleistung ist gleich der Eingangsleistung, da eine Spannungsquelle notwendig ist.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{ED403}{Für welchen Zweck werden HF-Leistungsverstärker eingesetzt?}{Filterung des Sendesignals}
+{Modulation des Sendesignals}
+{Mischung des Sendesignals}
+{Anhebung des Sendesignals}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{ED403}{Für welchen Zweck werden HF-Leistungsverstärker eingesetzt?}{Filterung des Sendesignals}
+{Modulation des Sendesignals}
+{Mischung des Sendesignals}
+{\textbf{\textcolor{DARCgreen}{Anhebung des Sendesignals}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item \emph{Linearität} bedeutet: Eine Verdoppelung des Eingangssignals muss zu einer Verdoppelung des Ausgangssignals führen
+  \item Linearitätsabweichungen sind unerwünscht, weil sie zu Frequenzen führen, die im Originalsignal nicht vorhanden sind.
+  \item Sie werden im NF-Bereich als \emph{Verzerrungen} wahrgenommen und im HF-Bereich als \emph{Oberwellen}
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{828include}
+    \caption{\scriptsize Das Eingangssignal wird verstärkt. Bei Begrenzung durch fehlende Linearität wird das Ausgangssignal verformt.}
+    \label{e_verstaerker_linearitaet}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EF403}{Wie ist die Ausgangsstufe eines SSB-Senders aufgebaut?  }{Als linearer Verstärker}
+{Als Begrenzerverstärker}
+{Als nichtlinearer Verstärker}
+{Als Vervielfacher}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EF403}{Wie ist die Ausgangsstufe eines SSB-Senders aufgebaut?  }{\textbf{\textcolor{DARCgreen}{Als linearer Verstärker}}}
+{Als Begrenzerverstärker}
+{Als nichtlinearer Verstärker}
+{Als Vervielfacher}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item NF-Verstärker finden im Amateurfunk zum Beispiel bei der Anhebung des Signals für eine Ausgabe im Lautsprecher Anwendung
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{763include}
+    \caption{\scriptsize Schaltbild eines NF-Verstärkers}
+    \label{e_nf_verstaerker}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{ED402}{Worum handelt es sich bei dieser Schaltung?}{Tongenerator}
+{ZF-Verstärker}
+{HF-Verstärker}
+{NF-Verstärker}
+{\DARCimage{1.0\linewidth}{763include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{ED402}{Worum handelt es sich bei dieser Schaltung?}{Tongenerator}
+{ZF-Verstärker}
+{HF-Verstärker}
+{\textbf{\textcolor{DARCgreen}{NF-Verstärker}}}
+{\DARCimage{1.0\linewidth}{763include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Auch bei der Verstärkung des Mikrofonsignals findet man Verstärker
+  \item Verstärkung im Bereich von ca. 300 bis 3.\qty{000}{\hertz}
+  \item Die Bandbreite liegt bei \qty{2,7}{\kilo\hertz} oder darunter
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{246include}
+    \caption{\scriptsize Typischer Frequenzgang für einen Amateurfunk Mikrofonverstärker}
+    \label{e_frequenzgang_mikrofonverstaerker}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{question2x2}{EF307}{Welcher Frequenzgang ist am besten für den Mikrofonverstärker eines Sprechfunkgeräts geeignet?}{\DARCimage{0.75\linewidth}{249include}}
+{\DARCimage{0.75\linewidth}{247include}}
+{\DARCimage{0.75\linewidth}{248include}}
+{\DARCimage{0.75\linewidth}{246include}}
+\end{question2x2}
+
+}
+\only<2>{
+\begin{question2x2}{EF307}{Welcher Frequenzgang ist am besten für den Mikrofonverstärker eines Sprechfunkgeräts geeignet?}{\DARCimage{0.75\linewidth}{249include}}
+{\DARCimage{0.75\linewidth}{247include}}
+{\DARCimage{0.75\linewidth}{248include}}
+{\textbf{\textcolor{DARCgreen}{\DARCimage{0.75\linewidth}{246include}}}}
+\end{question2x2}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{EF308}{Über welche Bandbreite sollte der in der Blockschaltung dargestellte NF-Verstärker für eine gute Sprachverständlichkeit mindestens verfügen?}{ca. \qty{1,0}{\kHz}}
+{ca. \qty{6,0}{\kHz}}
+{ca. \qty{2,5}{\kHz}}
+{ca. \qty{12,5}{\kHz}}
+{\DARCimage{1.0\linewidth}{500include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{EF308}{Über welche Bandbreite sollte der in der Blockschaltung dargestellte NF-Verstärker für eine gute Sprachverständlichkeit mindestens verfügen?}{ca. \qty{1,0}{\kHz}}
+{ca. \qty{6,0}{\kHz}}
+{\textbf{\textcolor{DARCgreen}{ca. \qty{2,5}{\kHz}}}}
+{ca. \qty{12,5}{\kHz}}
+{\DARCimage{1.0\linewidth}{500include}}\end{PQuestion}
+
+}
+
+\end{frame}
+
+\begin{frame}\begin{itemize}
+  \item Die Stromzufuhr eines Senders sollte neben Stabilität auch einen guten Schutz gegen HF-Einstrahlung haben
+  \item Damit verhindert man das Einströmen von Hochfrequenz in das Stromnetz
+  \end{itemize}
+\begin{itemize}
+  \item Mehr dazu im Abschnitt Unerwünschte Ausstrahlungen im Kapitel Sender
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EF405}{Wie sollte die Stromzufuhr in einem Sender beschaffen sein?}{Sie sollte mit möglichst wenig Kapazität gegen Masse ausgelegt werden. }
+{Sie sollte möglichst hochohmig sein.}
+{Sie sollte über das Leistungsverstärkergehäuse geführt werden.}
+{Sie sollte gegen HF-Einstrahlung gut entkoppelt sein.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EF405}{Wie sollte die Stromzufuhr in einem Sender beschaffen sein?}{Sie sollte mit möglichst wenig Kapazität gegen Masse ausgelegt werden. }
+{Sie sollte möglichst hochohmig sein.}
+{Sie sollte über das Leistungsverstärkergehäuse geführt werden.}
+{\textbf{\textcolor{DARCgreen}{Sie sollte gegen HF-Einstrahlung gut entkoppelt sein.}}}
+\end{QQuestion}
+
+}
+\end{frame}%ENDCONTENT

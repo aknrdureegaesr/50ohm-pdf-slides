@@ -1,0 +1,60 @@
+% Dr. Matthias Jung
+% 2022
+% TD432
+
+\usepackage{amssymb}
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{Fira Math}
+\setmathfont[range=up]{Roboto}
+\setmathfont[range=it]{Roboto-Italic}
+\setmathfont[range=\int]{Fira Math}
+\usepackage[euler]{textgreek}
+
+\usepackage{siunitx}
+
+\begin{document}
+\begin{circuitikz}[european]
+    %\tikzstyle{help lines}=[blue!50];
+    %\draw[style=help lines] (0,0) grid (8,7);
+    
+    \draw(0,0) to [short, -*] ++(1.5,0) coordinate(c1)
+               to [short, -*] ++(1.5,0) coordinate(c2)
+               to [short, -*] ++(1.5,0) coordinate(c3)
+               to [short, -*] ++(1.5,0) coordinate(c4)
+               to [short, -o] ++(1.5,0) coordinate(c5);
+
+    \draw(0,6) to [short, -*] ++(1.5,0) coordinate(e1)
+               to [short, -*] ++(3.0,0) coordinate(e2)
+               to [short, -*] ++(1.5,0) coordinate(e3)
+               to [short, -o] ++(1.5,0) coordinate(e4);
+
+    \draw(6,3) node[npn, tr circle](trans){};
+
+    \draw(0,0) to [C] (0,6);
+    \draw(c1)  to [R,-*] ++(0,3) coordinate(d1)
+               to [R,- ] (e1);
+
+    \draw(c2)  to [C,-*] ++(0,3) coordinate(d2)
+               to [short] ++(0,2.65)
+               to [short] ++(0.75,0)
+               to [american inductor, inductors/coils=2, inductors/width=0.5] ++(0,-1.5)
+               |- (trans.B);
+    
+    \draw(d1) -- (d2);
+
+    \draw(trans.C) to [C] (e3);
+
+    \draw(trans.C) to [short, *-] ++(-1.5,0)
+                   to [american inductor, inductors/coils=3, inductors/width=0.75] (e2);
+    
+    \draw(trans.E) to [short, *-] ++(-1.5,0)
+                   to [C] (c3);
+    \draw(trans.E) to [R] (c4);
+
+    \draw(c5) ++(0.5,-0.05) node[](){--};
+    \draw(e4) ++(0.75,0) node[](){+};
+
+\end{circuitikz}
+\end{document}

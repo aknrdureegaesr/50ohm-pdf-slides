@@ -1,0 +1,123 @@
+
+\section{Digital Voice (DV)}
+\label{section:digital_voice}
+\begin{frame}%STARTCONTENT
+\begin{itemize}
+  \item Auch Sprache kann digital übertragen werden
+  \item z.\,B. mit den Übertragungsverfahren DMR, D-Star, C4FM und M17
+  \item Sprachsignale werden vor der Übertragung in einen Datenstrom umgewandelt
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{TDMA}
+Time Division Multiple Access -- Zeitmultiplexverfahren
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Übertragung mehrerer Datenströme in schnell abwechselnder Folge
+  \item Zwei oder mehr Sprachverbindungen nutzen quasi gleichzeitig dieselbe Frequenz
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{474include}
+    \caption{\scriptsize TDMA mit drei Verbindungen auf einer Frequenz}
+    \label{n_digital_voice_tdma}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Einstellungen}
+Es sind für digitale Sprache oft mehr Einstellungen zu berücksichtigen als zum Beispiel bei einer FM-Verbindung. Zum Beispiel:
+
+\begin{itemize}
+  \item Sprechgruppe (Talkgroup)
+  \item Raum oder Reflektor zum Zusammenschalten von Relaisfunkstellen
+  \item TDMA-Zeitschlitz
+  \item Color-Code
+  \end{itemize}
+\end{frame}
+
+\begin{frame} 
+\only<1>{
+\begin{QQuestion}{NE404}{Welche Übertragungsverfahren für digitalen Sprechfunk sind im Amateurfunk gebräuchlich?}{FM-Sprechfunk, RTTY, D-STAR, JS8, Olivia}
+{AM-Sprechfunk, FM-Sprechfunk, SSB-Sprechfunk, Olivia, SSTV}
+{DMR, D-STAR, C4FM, M17, FreeDV}
+{SSB-Sprechfunk, FT8, DMR, PSK31, SSTV}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{NE404}{Welche Übertragungsverfahren für digitalen Sprechfunk sind im Amateurfunk gebräuchlich?}{FM-Sprechfunk, RTTY, D-STAR, JS8, Olivia}
+{AM-Sprechfunk, FM-Sprechfunk, SSB-Sprechfunk, Olivia, SSTV}
+{\textbf{\textcolor{DARCgreen}{DMR, D-STAR, C4FM, M17, FreeDV}}}
+{SSB-Sprechfunk, FT8, DMR, PSK31, SSTV}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame} 
+\only<1>{
+\begin{QQuestion}{NE307}{Welche Übertragungsverfahren werden bei VHF/UHF-Handfunkgeräten üblicherweise verwendet?}{CW-Morsetelegrafie, FT8, D-STAR}
+{FM-Sprechfunk, DMR, D-STAR}
+{SSB-Sprechfunk, DMR, RTTY}
+{AM-Sprechfunk, C4FM, FT8}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{NE307}{Welche Übertragungsverfahren werden bei VHF/UHF-Handfunkgeräten üblicherweise verwendet?}{CW-Morsetelegrafie, FT8, D-STAR}
+{\textbf{\textcolor{DARCgreen}{FM-Sprechfunk, DMR, D-STAR}}}
+{SSB-Sprechfunk, DMR, RTTY}
+{AM-Sprechfunk, C4FM, FT8}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame} 
+\only<1>{
+\begin{QQuestion}{NE403}{Ist es bei bestimmten digitalen Verfahren zur Sprachübertragung (z.~B. DMR oder TETRA) möglich, mehrere Sprechverbindungen gleichzeitig auf derselben Frequenz innerhalb eines Empfangsgebiets abzuwickeln?}{Nein. Sprachübertragungen können nicht in Datenpakete aufgeteilt werden.}
+{Ja. Die Sendeleistung wird zur Verbesserung der digitalen Fehlerkorrektur erhöht.}
+{Nein. Zeitgleich stattfindende digitale Übertragungen stören sich prinzipbedingt gegenseitig.}
+{Ja. Die Sprachdaten werden abwechselnd in periodischen, kurzen Zeitschlitzen übertragen.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{NE403}{Ist es bei bestimmten digitalen Verfahren zur Sprachübertragung (z.~B. DMR oder TETRA) möglich, mehrere Sprechverbindungen gleichzeitig auf derselben Frequenz innerhalb eines Empfangsgebiets abzuwickeln?}{Nein. Sprachübertragungen können nicht in Datenpakete aufgeteilt werden.}
+{Ja. Die Sendeleistung wird zur Verbesserung der digitalen Fehlerkorrektur erhöht.}
+{Nein. Zeitgleich stattfindende digitale Übertragungen stören sich prinzipbedingt gegenseitig.}
+{\textbf{\textcolor{DARCgreen}{Ja. Die Sprachdaten werden abwechselnd in periodischen, kurzen Zeitschlitzen übertragen.}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame} 
+\only<1>{
+\begin{QQuestion}{NE402}{Sie möchten an einer Funkrunde mittels digitaler Sprachübertragung (z.~B. C4FM, DMR oder D-Star) über ein Repeaternetzwerk teilnehmen. Worauf müssen Sie neben der Wahl des Übertragungsverfahrens, der Frequenz und der Modulation achten?}{Alle Stationen müssen sich in Funkreichweite desselben Repeaters befinden.}
+{Sie müssen die gleiche Firmwareversion wie das Repeaternetzwerk verwenden.}
+{Alle Stationen müssen die gleiche Stationskennung, z.~B. DMR-ID, einstellen.}
+{Sie müssen geeignete Parameter, z.~B. Reflektor, Zeitschlitz oder Color-Code, wählen.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{NE402}{Sie möchten an einer Funkrunde mittels digitaler Sprachübertragung (z.~B. C4FM, DMR oder D-Star) über ein Repeaternetzwerk teilnehmen. Worauf müssen Sie neben der Wahl des Übertragungsverfahrens, der Frequenz und der Modulation achten?}{Alle Stationen müssen sich in Funkreichweite desselben Repeaters befinden.}
+{Sie müssen die gleiche Firmwareversion wie das Repeaternetzwerk verwenden.}
+{Alle Stationen müssen die gleiche Stationskennung, z.~B. DMR-ID, einstellen.}
+{\textbf{\textcolor{DARCgreen}{Sie müssen geeignete Parameter, z.~B. Reflektor, Zeitschlitz oder Color-Code, wählen.}}}
+\end{QQuestion}
+
+}
+\end{frame}%ENDCONTENT

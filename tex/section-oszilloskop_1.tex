@@ -1,0 +1,283 @@
+
+\section{Oszilloskop I}
+\label{section:oszilloskop_1}
+\begin{frame}%STARTCONTENT
+
+\frametitle{Periode}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Dauer einer vollständigen Schwingung
+  \item Wird zur Ermittlung der Frequenz benötigt, z.B. Oszilloskop
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{790include}
+    \caption{\scriptsize Periode und Amplitude in einer Sinusschwingung}
+    \label{e_periode_amplitude}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}\begin{itemize}
+  \item Periode steht im umgekehrten Verhältnis zur Frequenz
+  \item Formelzeichen T, Einheit Sekunde (s)
+  \end{itemize}
+    \pause
+    $T = \dfrac{1}{f} \Rightarrow f = \dfrac{1}{T}$
+
+
+
+\end{frame}
+
+\begin{frame}\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EB408}{Die Periodendauer von \qty{50}{\us} entspricht einer Frequenz von~...}{\qty{2}{\MHz}.}
+{\qty{20}{\kHz}.}
+{\qty{200}{\kHz}.}
+{\qty{20}{\MHz}.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EB408}{Die Periodendauer von \qty{50}{\us} entspricht einer Frequenz von~...}{\qty{2}{\MHz}.}
+{\textbf{\textcolor{DARCgreen}{\qty{20}{\kHz}.}}}
+{\qty{200}{\kHz}.}
+{\qty{20}{\MHz}.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Periodendauer ablesen}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Kästchen einer ganzen Periode im Nulldurchgang zählen
+  \item Mit der Zeiteinheit multiplizieren
+  \item Bei 8 Kästchen und 2 ms pro Kästchen $\rightarrow$ 8 $\cdot$ 2 ms = 16 ms
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{36include}
+    \caption{\scriptsize Eine Sinuswelle auf dem Bildschirm eine Oszilloskops}
+    \label{e_sinuswelle_oszilloskop}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{EI301}{Die Zeitbasis eines Oszilloskop ist so eingestellt, dass ein Skalenteil \qty{0,5}{\ms} entspricht. Welche Periodendauer hat die angelegte Spannung?}{\qty{4}{\ms}}
+{\qty{2}{\ms}}
+{\qty{1,5}{\ms}}
+{\qty{3}{\ms}}
+{\DARCimage{1.0\linewidth}{36include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{EI301}{Die Zeitbasis eines Oszilloskop ist so eingestellt, dass ein Skalenteil \qty{0,5}{\ms} entspricht. Welche Periodendauer hat die angelegte Spannung?}{\textbf{\textcolor{DARCgreen}{\qty{4}{\ms}}}}
+{\qty{2}{\ms}}
+{\qty{1,5}{\ms}}
+{\qty{3}{\ms}}
+{\DARCimage{1.0\linewidth}{36include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Frequenz ermitteln}
+$f = \dfrac{1}{T}$
+
+Erst Periodendauer ermitteln, dann Frequenz ausrechnen
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{EB410}{Welche Frequenz hat die in diesem Oszillogramm dargestellte Spannung?}{\qty{50}{\Hz}}
+{\qty{100}{\Hz}}
+{\qty{500}{\Hz}}
+{\qty{20}{\Hz}}
+{\DARCimage{1.0\linewidth}{56include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{EB410}{Welche Frequenz hat die in diesem Oszillogramm dargestellte Spannung?}{\textbf{\textcolor{DARCgreen}{\qty{50}{\Hz}}}}
+{\qty{100}{\Hz}}
+{\qty{500}{\Hz}}
+{\qty{20}{\Hz}}
+{\DARCimage{1.0\linewidth}{56include}}\end{PQuestion}
+
+}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+Eine Periode ist 4 Kästchen lang
+
+$T = 4\cdot 5ms = 20ms$
+
+$f = \dfrac{1}{T} = \dfrac{1}{20\cdot10^{-3}s} = $
+
+$0,05\frac{1}{10^{-3}s} = 0,05\cdot10^3Hz = 0,05kHz = 50Hz$
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{EI302}{Die Zeitbasis eines Oszilloskops ist so eingestellt, dass ein Skalenteil \qty{0,5}{\ms} entspricht. Welche Frequenz hat die angelegte Spannung? }{\qty{500}{\Hz}}
+{\qty{250}{\Hz}}
+{\qty{667}{\Hz}}
+{\qty{333}{\Hz}}
+{\DARCimage{1.0\linewidth}{36include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{EI302}{Die Zeitbasis eines Oszilloskops ist so eingestellt, dass ein Skalenteil \qty{0,5}{\ms} entspricht. Welche Frequenz hat die angelegte Spannung? }{\qty{500}{\Hz}}
+{\textbf{\textcolor{DARCgreen}{\qty{250}{\Hz}}}}
+{\qty{667}{\Hz}}
+{\qty{333}{\Hz}}
+{\DARCimage{1.0\linewidth}{36include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{EB409}{Welche Frequenz hat die in diesem Oszillogramm dargestellte Spannung in etwa?}{\qty{833}{\kHz}}
+{\qty{83,3}{\kHz}}
+{\qty{8,33}{\MHz}}
+{\qty{83,3}{\MHz}}
+{\DARCimage{1.0\linewidth}{53include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{EB409}{Welche Frequenz hat die in diesem Oszillogramm dargestellte Spannung in etwa?}{\qty{833}{\kHz}}
+{\textbf{\textcolor{DARCgreen}{\qty{83,3}{\kHz}}}}
+{\qty{8,33}{\MHz}}
+{\qty{83,3}{\MHz}}
+{\DARCimage{1.0\linewidth}{53include}}\end{PQuestion}
+
+}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+Eine Periode ist 4 Kästchen lang
+
+$T = 4\cdot 3\mu s = 12\mu s$
+
+$f = \dfrac{1}{T} = \dfrac{1}{12\cdot10^{-6}s} = $
+
+$0,0833\frac{1}{10^{-6}s} = 0,0833\cdot10^6Hz = 0,0833MHz = 83,3kHz$
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{EB411}{Welche Frequenz hat das in diesem Schirmbild dargestellte Signal?}{\qty{8,33}{\MHz}}
+{\qty{83,3}{\MHz}}
+{\qty{8,33}{\kHz}}
+{\qty{833}{\kHz}}
+{\DARCimage{1.0\linewidth}{55include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{EB411}{Welche Frequenz hat das in diesem Schirmbild dargestellte Signal?}{\textbf{\textcolor{DARCgreen}{\qty{8,33}{\MHz}}}}
+{\qty{83,3}{\MHz}}
+{\qty{8,33}{\kHz}}
+{\qty{833}{\kHz}}
+{\DARCimage{1.0\linewidth}{55include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Impuls}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Ein Signal springt von einem Wert auf einen höheren und zu einem späteren Zeitpunkt zurück
+  \item Dauer des Impulses wird von Mitte der ansteigenden Flanke bis zur Mitte der abfallenden Flanke gemessen
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{57include}
+    \caption{\scriptsize Impuls in einem Oszilloskop}
+    \label{e_impuls}
+\end{figure}
+
+ 
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{EI303}{Die Impulsdauer beträgt hier~...}{\qty{230}{\micro\s}.}
+{\qty{260}{\micro\s}.}
+{\qty{200}{\micro\s}.}
+{\qty{150}{\micro\s}.}
+{\DARCimage{1.0\linewidth}{57include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{EI303}{Die Impulsdauer beträgt hier~...}{\qty{230}{\micro\s}.}
+{\qty{260}{\micro\s}.}
+{\textbf{\textcolor{DARCgreen}{\qty{200}{\micro\s}.}}}
+{\qty{150}{\micro\s}.}
+{\DARCimage{1.0\linewidth}{57include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{NF-Verzerrungen}
+\begin{itemize}
+  \item Verzerrungen sind Abweichungen von der Sinusform
+  \item Diese können mit einem Oszilloskop sichtbar gemacht werden
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EI304}{Welches dieser Geräte wird für die Anzeige von NF-Verzerrungen verwendet?}{Ein Oszilloskop}
+{Ein Transistorvoltmeter}
+{Ein Vielfachmessgerät}
+{Ein Frequenzzähler}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EI304}{Welches dieser Geräte wird für die Anzeige von NF-Verzerrungen verwendet?}{\textbf{\textcolor{DARCgreen}{Ein Oszilloskop}}}
+{Ein Transistorvoltmeter}
+{Ein Vielfachmessgerät}
+{Ein Frequenzzähler}
+\end{QQuestion}
+
+}
+\end{frame}%ENDCONTENT

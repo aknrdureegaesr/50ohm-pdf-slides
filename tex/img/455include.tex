@@ -1,0 +1,42 @@
+% Author: Stephan Kregel, DG1HXJ
+% Year: 2022
+% 3-TC719
+
+
+\usepackage{amssymb}
+
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{Fira Math}
+\setmathfont[range=up]{Roboto}
+\setmathfont[range=it]{Roboto-Italic}
+\setmathfont[range=\int]{Fira Math}
+\usepackage[euler]{textgreek}
+\usetikzlibrary{arrows, arrows.meta}
+
+\begin{document}
+	\begin{circuitikz}[european]
+		\ctikzset{tubes/cathode right extend}
+		\draw (0,0) node[triode,filament, name=Tu,xscale=-1, yscale=1.02]{};
+		\draw (Tu.anode) -- ++(0,0.5) -- ++(3,0)coordinate(c1) 
+		to [C, *-*] ++(2,0) coordinate(c2) 
+		to [L, american, *-*] ++(2,0) coordinate(c3) -- ++(1,0) 
+		to node[ocirc]{} ++(0,0);
+		\draw (c2) to [vC, tunable end arrow={Triangle[angle=60:6pt]}, invert, mirror] ++(0,-2) to node[rground](g){} ++(0,0);
+		\draw (c3) to [vC, tunable end arrow={Triangle[angle=60:6pt]}, invert, mirror] ++(0,-2) to node[rground]{} ++(0,0);
+		\draw (c1) -- ++(0,-2) to [L=$\mathrm{L}$, american, name=L1] ++(0,-4) to node[ocirc](Ua){} ++(0,0);
+		\draw (Tu.cathode) -- ++(0,-0.5) coordinate(c4) 
+		to [L, l_=$\mathrm{L}$, american, name=L2, *-*] ++(0,-2) coordinate(c5)
+		to node[rground]{} ++(0,0);
+		\draw (c4) -- ++(-1,0) to [C, -o] ++(-2,0);
+		\draw (c5) -- ++(-3,0) to node[ocirc]{} ++(0,0);
+		\draw (c5) -- ++(1,0) to [C] ++(0,2) to [short, -*] ++(0,1.5) coordinate(c6);
+		\draw (Tu.control) -- (c6);
+		\draw (c6) -- ++(1,0) -- ++(0,-1.5) to [R] ++(0,-2) -- ++(0,-1) to node[ocirc](Ug){} ++(0,0);
+		\draw (Ug) node[anchor=north]{$-\mathrm{U}_\mathrm{g}$};
+		\draw (Ua) node[anchor=north]{$+\mathrm{U}_\mathrm{a}$};
+		\draw (6,-1) node[]{$\pi$-Filter};
+		%\draw [densely dashed] (L1.south west) -- (L1.south east);
+		\draw [densely dashed] (L2.south west) -- (L2.south east);
+	\end{circuitikz}
+\end{document}

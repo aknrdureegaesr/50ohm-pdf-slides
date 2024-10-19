@@ -1,0 +1,54 @@
+
+\section{Kanalcodierung}
+\label{section:kanalcodierung}
+\begin{frame}%STARTCONTENT
+\begin{itemize}
+  \item Die Abbildung zeigt einen Sender und einen Empfänger, welche über einen Kanal miteinander verbunden sind.
+  \item Durch atmosphärische Einflüsse oder Aussendungen anderer Stationen kann es zu Störungen auf dem Kanal kommen, welche zu Fehlern bei der Übertragung führen.
+  \end{itemize}
+
+\begin{figure}
+    \DARCimage{0.85\linewidth}{674include}
+    \caption{\scriptsize Kanal}
+    \label{kanal}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}Die Kanalcodierung fügt der zu übertragenden Information gezielt Redundanz hinzu, beispielsweise Wiederholungen oder Prüfsummen.
+
+\end{frame}
+
+\begin{frame}Wir unterscheiden zwei Arten der Kanalcodierung:
+
+\begin{itemize}
+  \item Fehlererkennung: Man kann erkennen, dass bei der Übertragung ein Fehler aufgetreten ist, und dann z. B. eine erneute Übertragung anfordern.
+  \item Vorwärtsfehlerkorrektur: Fehler, die bei der Übertragung entstehen, werden mit Hilfe der Redundanz beim Empfänger korrigiert.
+  \end{itemize}
+
+\begin{figure}
+    \DARCimage{0.85\linewidth}{676include}
+    \caption{\scriptsize Kanalcodierer}
+    \label{kanalcodierer}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AE409}{Was wird unter Kanalcodierung verstanden?}{Verschlüsselung des Kanals zum Schutz gegen unbefugtes Abhören}
+{Kompression von Daten vor der Übertragung zur Reduktion der Datenmenge}
+{Hinzufügen von Redundanz vor der Übertragung zum Schutz vor Übertragungsfehlern}
+{Zuordnung von Frequenzen zu Sende- bzw. Empfangskanälen zur häufigen Verwendung}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AE409}{Was wird unter Kanalcodierung verstanden?}{Verschlüsselung des Kanals zum Schutz gegen unbefugtes Abhören}
+{Kompression von Daten vor der Übertragung zur Reduktion der Datenmenge}
+{\textbf{\textcolor{DARCgreen}{Hinzufügen von Redundanz vor der Übertragung zum Schutz vor Übertragungsfehlern}}}
+{Zuordnung von Frequenzen zu Sende- bzw. Empfangskanälen zur häufigen Verwendung}
+\end{QQuestion}
+
+}
+\end{frame}%ENDCONTENT

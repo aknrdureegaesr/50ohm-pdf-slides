@@ -1,0 +1,102 @@
+
+\section{Übersteuerung}
+\label{section:digimod_uebersteuerung}
+\begin{frame}%STARTCONTENT
+
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Zu starkes Audiosignal am Eingang eines Senders $\rightarrow$ Oberschwingungen
+  \item Links ist in Gelb das erwünschte Signal
+  \item Rechts davon die unerwünschten Oberschwingungen
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{720include}
+    \caption{\scriptsize Ein übersteuertes FT8-Signal, ganz links das erwünschte, rechts davon die unerwünschten Oberschwingungen}
+    \label{uebersteuerung_ft8}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}\begin{itemize}
+  \item Zu Verzerrungen durch Übersteuerung kann es auch im Sendeverstärker kommen
+  \item Um das zu verhindern, verfügen viele Funkgeräte über eine automatische Pegelregelung (englisch: Automatic Level Control, ALC) $\rightarrow$ regelt Verstärkung automatisch runter
+  \item Bei digitalen Übertragungsverfahren kann die ALC jedoch Problemen führen
+  \item Das Signal könnte je nach Lautstärke oder Frequenz die ALC zu verschiedenen Zeitpunkten unterschiedlich stark auslösen $\rightarrow$ Amplitude wird unerwünscht verändert
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}\begin{itemize}
+  \item ALC-Probleme hängen von verschiedenen Faktoren ab
+  \item Übertragungsverfahren
+  \item Umsetzung der ALC im Transceiver (Reaktions- und Haltezeit)
+  \item Anzeige der ALC im Transceiver
+  \item $\rightarrow$ greift die ALC nicht ein, erzeugt sie keine Probleme
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EJ218}{Wie sollte bei digitalen Übertragungsverfahren (z. B. FT8, JS8, PSK31) der NF-Pegel am Eingang eines Funkgerätes mit automatischer Pegelregelung (ALC) im SSB-Betrieb eingestellt sein, um Störungen zu vermeiden?}{\qty{18}{\decibel} höher als die Lautstärke, bei der die automatische Pegelregelung (ALC) eingreift.}
+{So niedrig, dass die automatische Pegelregelung (ALC) nicht eingreift.}
+{Alle Bedienelemente sind auf das Maximum einzustellen.}
+{Die NF-Lautstärke muss $-\infty$~dB (also Null) betragen.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EJ218}{Wie sollte bei digitalen Übertragungsverfahren (z. B. FT8, JS8, PSK31) der NF-Pegel am Eingang eines Funkgerätes mit automatischer Pegelregelung (ALC) im SSB-Betrieb eingestellt sein, um Störungen zu vermeiden?}{\qty{18}{\decibel} höher als die Lautstärke, bei der die automatische Pegelregelung (ALC) eingreift.}
+{\textbf{\textcolor{DARCgreen}{So niedrig, dass die automatische Pegelregelung (ALC) nicht eingreift.}}}
+{Alle Bedienelemente sind auf das Maximum einzustellen.}
+{Die NF-Lautstärke muss $-\infty$~dB (also Null) betragen.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EJ217}{Was kann auftreten, wenn bei digitalen Übertragungsverfahren (z. B. RTTY, FT8, Olivia) die automatische Pegelregelung (ALC) eines Funkgerätes im SSB-Betrieb eingreift?}{Störungen von Stationen auf anderen Frequenzbändern}
+{Störungen von Computern oder anderen digitalen Geräten}
+{Störungen von Übertragungen auf Nachbarfrequenzen}
+{Störungen von nachfolgenden Sendungen auf derselben Frequenz}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EJ217}{Was kann auftreten, wenn bei digitalen Übertragungsverfahren (z. B. RTTY, FT8, Olivia) die automatische Pegelregelung (ALC) eines Funkgerätes im SSB-Betrieb eingreift?}{Störungen von Stationen auf anderen Frequenzbändern}
+{Störungen von Computern oder anderen digitalen Geräten}
+{\textbf{\textcolor{DARCgreen}{Störungen von Übertragungen auf Nachbarfrequenzen}}}
+{Störungen von nachfolgenden Sendungen auf derselben Frequenz}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EJ219}{Was ist zu tun, wenn es bei digitalen Übertragungsverfahren zu Störungen kommt, weil die automatische Pegelregelung (ALC) eines Funkgerätes im SSB-Betrieb eingreift?}{Die Sendeleistung sollte erhöht werden.}
+{Der NF-Pegel am Eingang des Funkgerätes sollte reduziert werden.}
+{Das Oberwellenfilter sollte abgeschaltet werden.}
+{Es sollte mit der RIT gegengesteuert werden.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EJ219}{Was ist zu tun, wenn es bei digitalen Übertragungsverfahren zu Störungen kommt, weil die automatische Pegelregelung (ALC) eines Funkgerätes im SSB-Betrieb eingreift?}{Die Sendeleistung sollte erhöht werden.}
+{\textbf{\textcolor{DARCgreen}{Der NF-Pegel am Eingang des Funkgerätes sollte reduziert werden.}}}
+{Das Oberwellenfilter sollte abgeschaltet werden.}
+{Es sollte mit der RIT gegengesteuert werden.}
+\end{QQuestion}
+
+}
+\end{frame}%ENDCONTENT

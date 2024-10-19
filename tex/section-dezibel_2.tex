@@ -1,0 +1,233 @@
+
+\section{Dezibel II}
+\label{section:dezibel_2}
+\begin{frame}%STARTCONTENT
+
+\frametitle{Leistungsverhältnis}
+Faktor 10
+
+$p = 10\cdot \log_{10}(\frac{P}{1mW})\textrm{dBm}$
+
+$p = 10\cdot \log_{10}(\frac{P}{1W})\textrm{dBW}$
+
+$0\textrm{dBm}$ liegt bei $P = 1mW$ vor.
+
+$0\textrm{dBW}$ liegt bei $P = 1W$ vor.
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AA110}{Welcher Leistung entsprechen die Pegel \qty{0}{\dBm}, \qty{3}{\dBm} und \qty{20}{\dBm}?}{\qty{0}{\mW}, \qty{30}{\mW}, \qty{200}{\mW}}
+{\qty{1}{\mW}, \qty{1,4}{\mW}, \qty{10}{\mW}}
+{\qty{1}{\mW}, \qty{2}{\mW}, \qty{100}{\mW}}
+{\qty{0}{\mW}, \qty{3}{\mW}, \qty{20}{\mW}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AA110}{Welcher Leistung entsprechen die Pegel \qty{0}{\dBm}, \qty{3}{\dBm} und \qty{20}{\dBm}?}{\qty{0}{\mW}, \qty{30}{\mW}, \qty{200}{\mW}}
+{\qty{1}{\mW}, \qty{1,4}{\mW}, \qty{10}{\mW}}
+{\textbf{\textcolor{DARCgreen}{\qty{1}{\mW}, \qty{2}{\mW}, \qty{100}{\mW}}}}
+{\qty{0}{\mW}, \qty{3}{\mW}, \qty{20}{\mW}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AA105}{Einer Leistungsverstärkung von 40 entsprechen~...}{\qty{32}{\decibel}.}
+{\qty{36,8}{\decibel}.}
+{\qty{16}{\decibel}.}
+{\qty{73,8}{\decibel}.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AA105}{Einer Leistungsverstärkung von 40 entsprechen~...}{\qty{32}{\decibel}.}
+{\qty{36,8}{\decibel}.}
+{\textbf{\textcolor{DARCgreen}{\qty{16}{\decibel}.}}}
+{\qty{73,8}{\decibel}.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Spannungsverhältnis}
+Faktor 20
+
+$u = 20\cdot \log_{10}(\frac{U}{0,775V})\textrm{dBu}$
+
+$0\textrm{dBu}$ liegt bei $U = 0,775V$ vor.
+
+$0\textrm{dBV}$ liegt bei $U = 1V$ vor.
+
+$0\textrm{dBµV}$ liegt bei $U = 1µV$ vor.
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AA111}{Einem Spannungsverhältnis von 15 entsprechen~...}{\qty{54}{\decibel}.}
+{\qty{15}{\decibel}.}
+{\qty{23,5}{\decibel}.}
+{\qty{11,7}{\decibel}.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AA111}{Einem Spannungsverhältnis von 15 entsprechen~...}{\qty{54}{\decibel}.}
+{\qty{15}{\decibel}.}
+{\textbf{\textcolor{DARCgreen}{\qty{23,5}{\decibel}.}}}
+{\qty{11,7}{\decibel}.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Berechnungen}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AA108}{Der Ausgangspegel eines Senders beträgt \qty{20}{\dBW}. Dies entspricht einer Ausgangsleistung von~...}{$10^{20}$~W.}
+{$10^{0,5}$~W.}
+{$10^2$~W.}
+{$10^1$~W.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AA108}{Der Ausgangspegel eines Senders beträgt \qty{20}{\dBW}. Dies entspricht einer Ausgangsleistung von~...}{$10^{20}$~W.}
+{$10^{0,5}$~W.}
+{\textbf{\textcolor{DARCgreen}{$10^2$~W.}}}
+{$10^1$~W.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $p = 20\textrm{dBW}$
+  \item gesucht: $P$
+  \end{itemize}
+    \pause
+    \begin{equation}\begin{align} \nonumber p &= 10\cdot \log_{10}(\frac{P}{1W})\textrm{dBW}\\ \nonumber \Rightarrow P &= 10^{\frac{p}{10}} \cdot 1W = 10^{\frac{20\textrm{dBW}}{10}} \cdot 1W = 10^2W \end{align}\end{equation}
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AA107}{Ein Sender mit \qty{1}{\W} Ausgangsleistung ist an eine Endstufe mit einer Verstärkung von \qty{10}{\decibel} angeschlossen. Wie groß ist der Ausgangspegel der Endstufe?}{\qty{3}{\dBW}}
+{\qty{1}{\dBW}}
+{\qty{10}{\dBW}}
+{\qty{20}{\dBW}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AA107}{Ein Sender mit \qty{1}{\W} Ausgangsleistung ist an eine Endstufe mit einer Verstärkung von \qty{10}{\decibel} angeschlossen. Wie groß ist der Ausgangspegel der Endstufe?}{\qty{3}{\dBW}}
+{\qty{1}{\dBW}}
+{\textbf{\textcolor{DARCgreen}{\qty{10}{\dBW}}}}
+{\qty{20}{\dBW}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AA109}{Ein Sender mit \qty{1}{\W} Ausgangsleistung ist an eine Endstufe mit einer Verstärkung von \qty{10}{\decibel} angeschlossen. Wie groß ist der Ausgangspegel der Endstufe?}{\qty{10}{\dBm}}
+{\qty{30}{\dBm}}
+{\qty{20}{\dBm}}
+{\qty{40}{\dBm}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AA109}{Ein Sender mit \qty{1}{\W} Ausgangsleistung ist an eine Endstufe mit einer Verstärkung von \qty{10}{\decibel} angeschlossen. Wie groß ist der Ausgangspegel der Endstufe?}{\qty{10}{\dBm}}
+{\qty{30}{\dBm}}
+{\qty{20}{\dBm}}
+{\textbf{\textcolor{DARCgreen}{\qty{40}{\dBm}}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+1W = 1000mW
+
+\qty{10}{\dB} = Faktor 10
+
+1000mW $\cdot$ 10 = 10000mW = 40dBm
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AA106}{Ein HF-Leistungsverstärker hat eine Verstärkung von \qty{16}{\decibel} mit maximal \qty{100}{\W} Ausgangsleistung. Welche HF-Ausgangsleistung ist zu erwarten, wenn der Verstärker mit \qty{1}{\W} HF-Eingangsleistung angesteuert wird?}{\qty{40}{\W}}
+{\qty{4}{\W}}
+{\qty{16}{\W}}
+{\qty{20}{\W}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AA106}{Ein HF-Leistungsverstärker hat eine Verstärkung von \qty{16}{\decibel} mit maximal \qty{100}{\W} Ausgangsleistung. Welche HF-Ausgangsleistung ist zu erwarten, wenn der Verstärker mit \qty{1}{\W} HF-Eingangsleistung angesteuert wird?}{\textbf{\textcolor{DARCgreen}{\qty{40}{\W}}}}
+{\qty{4}{\W}}
+{\qty{16}{\W}}
+{\qty{20}{\W}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item 16dB = 10dB + 6dB = 10 $\cdot$ 4 = 40
+  \item 1W $\cdot$ 40 = 40W
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AA112}{Der Pegelwert \qty{120}{\decibel}$\upmu$V/m entspricht einer elektrischen Feldstärke von~...}{\qty{1000}{\kV}/m.}
+{\qty{0,78}{\V}/m.}
+{\qty{41,6}{\V}/m.}
+{\qty{1}{\V}/m.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AA112}{Der Pegelwert \qty{120}{\decibel}$\upmu$V/m entspricht einer elektrischen Feldstärke von~...}{\qty{1000}{\kV}/m.}
+{\qty{0,78}{\V}/m.}
+{\qty{41,6}{\V}/m.}
+{\textbf{\textcolor{DARCgreen}{\qty{1}{\V}/m.}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $u = 120\textrm{dBµV}/m$
+  \item gesucht: $U$
+  \end{itemize}
+    \pause
+    \begin{equation}\begin{align} \nonumber u &= 20\cdot \log_{10}(\frac{U}{1\textrm{µV}})\textrm{\textrm{dBµV}}\\ \nonumber \Rightarrow U &= 10^{\frac{p}{20}} \cdot 1\textrm{µV} = 10^{\frac{120\textrm{dBµV}/m}{20}} \cdot 1\textrm{µV} = 1V/m \end{align}\end{equation}
+    \pause
+    In der Literatur ist oft zu finden: 120dBµV = 1V
+
+
+
+\end{frame}%ENDCONTENT

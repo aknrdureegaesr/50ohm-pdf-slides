@@ -1,0 +1,223 @@
+
+\section{Übertrager II}
+\label{section:uebertrager_2}
+\begin{frame}%STARTCONTENT
+
+\only<1>{
+\begin{QQuestion}{AC301}{Durch Gegeninduktion wird in einer Spule eine Spannung erzeugt, wenn~...}{sich die Spule in einem konstanten Magnetfeld befindet.}
+{ein veränderlicher Strom durch die Spule fließt und sich dabei ein dielektrischer Gegenstand innerhalb der Spule befindet. }
+{ein konstanter Gleichstrom durch eine magnetisch gekoppelte benachbarte Spule fließt.}
+{ein veränderlicher Strom durch eine magnetisch gekoppelte benachbarte Spule fließt.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC301}{Durch Gegeninduktion wird in einer Spule eine Spannung erzeugt, wenn~...}{sich die Spule in einem konstanten Magnetfeld befindet.}
+{ein veränderlicher Strom durch die Spule fließt und sich dabei ein dielektrischer Gegenstand innerhalb der Spule befindet. }
+{ein konstanter Gleichstrom durch eine magnetisch gekoppelte benachbarte Spule fließt.}
+{\textbf{\textcolor{DARCgreen}{ein veränderlicher Strom durch eine magnetisch gekoppelte benachbarte Spule fließt.}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC302}{Ein Transformator setzt die Spannung von \qty{230}{\V} auf \qty{6}{\V} herunter und liefert dabei einen Strom von \qty{1,15}{\A}. Wie groß ist der dadurch in der Primärwicklung zu erwartende Strom bei Vernachlässigung der Verluste?}{\qty{22,7}{\mA}}
+{\qty{30}{\mA}}
+{\qty{0,83}{\mA}}
+{\qty{33,3}{\mA}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC302}{Ein Transformator setzt die Spannung von \qty{230}{\V} auf \qty{6}{\V} herunter und liefert dabei einen Strom von \qty{1,15}{\A}. Wie groß ist der dadurch in der Primärwicklung zu erwartende Strom bei Vernachlässigung der Verluste?}{\qty{22,7}{\mA}}
+{\textbf{\textcolor{DARCgreen}{\qty{30}{\mA}}}}
+{\qty{0,83}{\mA}}
+{\qty{33,3}{\mA}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $U_P = 230V$
+  \item gegeben: $U_S = 6V$
+  \item gegeben: $I_S = 1,15A$
+  \item gesucht: $I_P$
+  \end{itemize}
+    \pause
+    \begin{equation}\begin{align} \nonumber \frac{U_P}{U_S} &= \frac{I_S}{I_P} \\ \nonumber \Rightarrow I_P &= \frac{I_S \cdot U_S}{U_P} = \frac{1,15A \cdot 6V}{230V} \\ \nonumber &= 30mA \end{align}\end{equation}
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AC303}{In dieser Schaltung beträgt $R$=\qty{16}{\kohm}. Die Impedanz zwischen den Anschlüssen a und b beträgt im Idealfall~...}{\qty{1}{\kohm}.}
+{\qty{64}{\kohm}.}
+{\qty{16}{\kohm}.}
+{\qty{4}{\kohm}.}
+{\DARCimage{0.75\linewidth}{303include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AC303}{In dieser Schaltung beträgt $R$=\qty{16}{\kohm}. Die Impedanz zwischen den Anschlüssen a und b beträgt im Idealfall~...}{\textbf{\textcolor{DARCgreen}{\qty{1}{\kohm}.}}}
+{\qty{64}{\kohm}.}
+{\qty{16}{\kohm}.}
+{\qty{4}{\kohm}.}
+{\DARCimage{0.75\linewidth}{303include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $Z_S = 16k\Omega$
+  \item gegeben: $ü = \frac{1}{4}$
+  \item gesucht: $Z_P$
+  \end{itemize}
+    \pause
+    \begin{equation}\begin{align} \nonumber ü &= \sqrt{\frac{Z_P}{Z_S}} \\ \nonumber \Rightarrow Z_P &= ü^2 \cdot Z_S = \frac{1^2}{4^2} \cdot 16k\Omega \\ \nonumber &= \frac{16k\Omega}{16} = 1k\Omega \end{align}\end{equation}
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AC304}{In dieser Schaltung beträgt $R$=\qty{6,4}{\kohm}. Die Impedanz zwischen den Anschlüssen a und b beträgt im Idealfall~...}{\qty{6,4}{\kohm}.}
+{\qty{26}{\kohm}.}
+{\qty{0,4}{\kohm}.}
+{\qty{1,6}{\kohm}.}
+{\DARCimage{0.75\linewidth}{303include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AC304}{In dieser Schaltung beträgt $R$=\qty{6,4}{\kohm}. Die Impedanz zwischen den Anschlüssen a und b beträgt im Idealfall~...}{\qty{6,4}{\kohm}.}
+{\qty{26}{\kohm}.}
+{\textbf{\textcolor{DARCgreen}{\qty{0,4}{\kohm}.}}}
+{\qty{1,6}{\kohm}.}
+{\DARCimage{0.75\linewidth}{303include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $Z_S = 6,4k\Omega$
+  \item gegeben: $ü = \frac{1}{4}$
+  \item gesucht: $Z_P$
+  \end{itemize}
+    \pause
+    \begin{equation}\begin{align} \nonumber ü &= \sqrt{\frac{Z_P}{Z_S}} \\ \nonumber \Rightarrow Z_P &= ü^2 \cdot Z_S = \frac{1^2}{4^2} \cdot 6,4k\Omega \\ \nonumber &= \frac{6,4k\Omega}{16} = 0,4k\Omega \end{align}\end{equation}
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC305}{Für die Anpassung einer Antenne mit einem Fußpunktwiderstand von \qty{450}{\ohm} an eine \qty{50}{\ohm}-Übertragungsleitung sollte ein Übertrager mit einem Windungsverhältnis von~...}{4:1 verwendet werden.}
+{3:1 verwendet werden.}
+{9:1 verwendet werden.}
+{16:1 verwendet werden.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC305}{Für die Anpassung einer Antenne mit einem Fußpunktwiderstand von \qty{450}{\ohm} an eine \qty{50}{\ohm}-Übertragungsleitung sollte ein Übertrager mit einem Windungsverhältnis von~...}{4:1 verwendet werden.}
+{\textbf{\textcolor{DARCgreen}{3:1 verwendet werden.}}}
+{9:1 verwendet werden.}
+{16:1 verwendet werden.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $Z_P = 450\Omega$
+  \item gegeben: $Z_S = 50\Omega$
+  \item gesucht: $ü$
+  \end{itemize}
+    \pause
+    \begin{equation}\begin{split} \nonumber ü &= \sqrt{\frac{Z_P}{Z_S}} = \sqrt{\frac{450\Omega}{50\Omega}} \\ &= \sqrt{\frac{9}{1}} = \frac{3}{1} \end{split}\end{equation}
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC306}{Für die Anpassung einer \qty{50}{\ohm} Übertragungsleitung an eine endgespeiste Halbwellenantenne mit einem Fußpunktwiderstand von \qty{2,5}{\kohm} wird ein Übertrager verwendet. Er sollte in etwa ein Windungverhältnis von~...}{1:3 aufweisen.}
+{1:7 aufweisen.}
+{1:49 aufweisen.}
+{1:14 aufweisen.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC306}{Für die Anpassung einer \qty{50}{\ohm} Übertragungsleitung an eine endgespeiste Halbwellenantenne mit einem Fußpunktwiderstand von \qty{2,5}{\kohm} wird ein Übertrager verwendet. Er sollte in etwa ein Windungverhältnis von~...}{1:3 aufweisen.}
+{\textbf{\textcolor{DARCgreen}{1:7 aufweisen.}}}
+{1:49 aufweisen.}
+{1:14 aufweisen.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $Z_P = 50\Omega$
+  \item gegeben: $Z_S = 2,5k\Omega$
+  \item gesucht: $ü$
+  \end{itemize}
+    \pause
+    \begin{equation}\begin{split} \nonumber ü &= \sqrt{\frac{Z_P}{Z_S}} = \sqrt{\frac{50\Omega}{2,5k\Omega}} \\ &= \sqrt{\frac{1}{50}} \approx \frac{1}{7} \end{split}\end{equation}
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AC307}{Eine Transformatorwicklung hat einen Drahtdurchmesser von \qty{0,5}{\mm}. Die zulässige Stromdichte beträgt \qty[per-mode=symbol]{2,5}{\A\per\mm\squared}. Wie groß ist der zulässige Strom?}{ca. \qty{0,49}{\A}}
+{ca. \qty{1,96}{\A}}
+{ca. \qty{1,25}{\A}}
+{ca. \qty{0,19}{\A}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AC307}{Eine Transformatorwicklung hat einen Drahtdurchmesser von \qty{0,5}{\mm}. Die zulässige Stromdichte beträgt \qty[per-mode=symbol]{2,5}{\A\per\mm\squared}. Wie groß ist der zulässige Strom?}{\textbf{\textcolor{DARCgreen}{ca. \qty{0,49}{\A}}}}
+{ca. \qty{1,96}{\A}}
+{ca. \qty{1,25}{\A}}
+{ca. \qty{0,19}{\A}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $d = 0,5mm$
+  \item gegeben: Stromdichte $\frac{I}{A} = \frac{2,5A}{1mm^2}$
+  \item gesucht: $I_{max}$
+  \end{itemize}
+    \pause
+    $A_{Dr} = \frac{d^2 \cdot \pi}{4} = \frac{(0,5mm)^2 \cdot \pi}{4} \approx 0,196mm^2$
+    \pause
+    $I_{max} = \frac{I}{A} \cdot A_{Dr} = \frac{2,5A}{1mm^2} \cdot 0,196mm^2 = 0,49A$
+
+
+
+\end{frame}%ENDCONTENT

@@ -1,0 +1,79 @@
+
+\section{Analog-Digital-Umsetzer (ADC)}
+\label{section:analog_digital_umsetzer}
+\begin{frame}%STARTCONTENT
+
+\only<1>{
+\begin{PQuestion}{AF620}{Welche Funktionen haben die einzelnen Blöcke im dargestellten Blockschaltbild eines digitalen Direktempfängers?}{1:~Abtastratengenerator, 2:~Antialiasing-Filter, 3:~Analog-Digital-Umsetzer}
+{1:~Analog-Digital-Umsetzer, 2:~Antialiasing-Filter, 3:~Abtastratengenerator}
+{1:~Analog-Digital-Umsetzer, 2:~Abtastratengenerator, 3:~Antialiasing-Filter}
+{1:~Antialiasing-Filter, 2:~Abtastratengenerator, 3:~Analog-Digital-Umsetzer}
+{\DARCimage{1.0\linewidth}{430include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AF620}{Welche Funktionen haben die einzelnen Blöcke im dargestellten Blockschaltbild eines digitalen Direktempfängers?}{1:~Abtastratengenerator, 2:~Antialiasing-Filter, 3:~Analog-Digital-Umsetzer}
+{1:~Analog-Digital-Umsetzer, 2:~Antialiasing-Filter, 3:~Abtastratengenerator}
+{1:~Analog-Digital-Umsetzer, 2:~Abtastratengenerator, 3:~Antialiasing-Filter}
+{\textbf{\textcolor{DARCgreen}{1:~Antialiasing-Filter, 2:~Abtastratengenerator, 3:~Analog-Digital-Umsetzer}}}
+{\DARCimage{1.0\linewidth}{430include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AF607}{Warum kommt es in einem A/D-Umsetzer zu Quantisierungsfehlern?}{Die Bandbreite des Eingangssignals ist begrenzt.}
+{Es steht nur eine begrenzte Anzahl diskreter Werte zur Verfügung.}
+{Es können nur ganzzahlige Frequenzen verwendet werden.}
+{Es können nur Werte zwischen 0 und 1 genutzt werden.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AF607}{Warum kommt es in einem A/D-Umsetzer zu Quantisierungsfehlern?}{Die Bandbreite des Eingangssignals ist begrenzt.}
+{\textbf{\textcolor{DARCgreen}{Es steht nur eine begrenzte Anzahl diskreter Werte zur Verfügung.}}}
+{Es können nur ganzzahlige Frequenzen verwendet werden.}
+{Es können nur Werte zwischen 0 und 1 genutzt werden.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AF608}{Wie viele Bereiche von Eingangswerten, z.\,B. Spannungen, kann ein A/D-Umsetzer mit \qty{8}{\bit} Auflösung maximal trennen?}{256}
+{8}
+{64}
+{1024}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AF608}{Wie viele Bereiche von Eingangswerten, z.\,B. Spannungen, kann ein A/D-Umsetzer mit \qty{8}{\bit} Auflösung maximal trennen?}{\textbf{\textcolor{DARCgreen}{256}}}
+{8}
+{64}
+{1024}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AF621}{Bei einer Abtastung mit einem A/D-Umsetzer mit \qty{24}{\bit} Auflösung wird ein Oszillator mit starkem Taktzittern (Jitter) eingesetzt. Welche Auswirkung wird das Zittern haben?}{Aufgrund der großen Auflösung bleibt die Schwankung ohne Auswirkung.}
+{Das Abschirmblech des A/D-Umsetzers wird durch Vibration störende Geräusche erzeugen.}
+{Es entsteht zusätzliches Rauschen im Abtastergebnis.}
+{Das Abtastergebnis wird verbessert (Dithering).}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AF621}{Bei einer Abtastung mit einem A/D-Umsetzer mit \qty{24}{\bit} Auflösung wird ein Oszillator mit starkem Taktzittern (Jitter) eingesetzt. Welche Auswirkung wird das Zittern haben?}{Aufgrund der großen Auflösung bleibt die Schwankung ohne Auswirkung.}
+{Das Abschirmblech des A/D-Umsetzers wird durch Vibration störende Geräusche erzeugen.}
+{\textbf{\textcolor{DARCgreen}{Es entsteht zusätzliches Rauschen im Abtastergebnis.}}}
+{Das Abtastergebnis wird verbessert (Dithering).}
+\end{QQuestion}
+
+}
+\end{frame}%ENDCONTENT

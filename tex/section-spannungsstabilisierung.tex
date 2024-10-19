@@ -1,0 +1,208 @@
+
+\section{Spannungsstabilisierung}
+\label{section:spannungsstabilisierung}
+\begin{frame}%STARTCONTENT
+
+\only<1>{
+\begin{PQuestion}{AD315}{Wenn man folgendes Signal an den Eingang der gezeigten Schaltung anlegt, beträgt die Ausgangsspannung zwischen A und B ungefähr~...}{\qty{6,2}{\V}.}
+{\qty{11,2}{\V}.}
+{\qty{5}{\V}.}
+{\qty{5,6}{\V}.}
+{\DARCimage{1.0\linewidth}{490include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AD315}{Wenn man folgendes Signal an den Eingang der gezeigten Schaltung anlegt, beträgt die Ausgangsspannung zwischen A und B ungefähr~...}{\qty{6,2}{\V}.}
+{\qty{11,2}{\V}.}
+{\textbf{\textcolor{DARCgreen}{\qty{5}{\V}.}}}
+{\qty{5,6}{\V}.}
+{\DARCimage{1.0\linewidth}{490include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AD316}{Welche Beziehung muss zwischen der Eingangsspannung und der Ausgangsspannung der folgenden Schaltung bestehen, damit der Linearspannungsregler IC1 eine stabilisierte Ausgangsspannung erzeugt?}{Die Eingangsspannung muss gleich der gewünschten Ausgangsspannung sein}
+{Die Eingangsspannung muss größer als die gewünschte Ausgangsspannung sein.}
+{Die Eingangsspannung muss mindestens doppelt so groß wie die gewünschte Ausgangsspannung sein.}
+{Die Eingangsspannung muss kleiner als die gewünschte Ausgangsspannung sein.}
+{\DARCimage{1.0\linewidth}{200include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AD316}{Welche Beziehung muss zwischen der Eingangsspannung und der Ausgangsspannung der folgenden Schaltung bestehen, damit der Linearspannungsregler IC1 eine stabilisierte Ausgangsspannung erzeugt?}{Die Eingangsspannung muss gleich der gewünschten Ausgangsspannung sein}
+{\textbf{\textcolor{DARCgreen}{Die Eingangsspannung muss größer als die gewünschte Ausgangsspannung sein.}}}
+{Die Eingangsspannung muss mindestens doppelt so groß wie die gewünschte Ausgangsspannung sein.}
+{Die Eingangsspannung muss kleiner als die gewünschte Ausgangsspannung sein.}
+{\DARCimage{1.0\linewidth}{200include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AD317}{Bei dieser Schaltung mit einem \qty{12}{\V}-Festspannungsregler schwankt die Eingangsspannung zwischen \qty{15}{\V} und \qty{18}{\V}. Wie groß ist die Spannungsschwankung am Ausgang?}{Die Spannungsschwankung beträgt ca.~\qty{3}{\V}.}
+{Die Spannungsschwankung beträgt nahezu null Volt.}
+{Die Spannungsschwankung beträgt ca.~\qty{0,7}{\V}.}
+{Die Spannungsschwankung liegt zwischen \qty{0,7}{\V} und \qty{3}{\V}.}
+{\DARCimage{1.0\linewidth}{200include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AD317}{Bei dieser Schaltung mit einem \qty{12}{\V}-Festspannungsregler schwankt die Eingangsspannung zwischen \qty{15}{\V} und \qty{18}{\V}. Wie groß ist die Spannungsschwankung am Ausgang?}{Die Spannungsschwankung beträgt ca.~\qty{3}{\V}.}
+{\textbf{\textcolor{DARCgreen}{Die Spannungsschwankung beträgt nahezu null Volt.}}}
+{Die Spannungsschwankung beträgt ca.~\qty{0,7}{\V}.}
+{Die Spannungsschwankung liegt zwischen \qty{0,7}{\V} und \qty{3}{\V}.}
+{\DARCimage{1.0\linewidth}{200include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AD319}{Ein linearer Spannungsregler stabilisiert eine Eingangsspannung von \qty{13,8}{\V} auf eine Ausgangsspannung von \qty{9}{\V}. Es fließt ein Ausgangsstrom von \qty{900}{\mA}. Wie groß ist die Verlustleistung im Spannungsregler?}{\qty{12,42}{\W}}
+{\qty{8,10}{\W}}
+{\qty{4,32}{\W}}
+{\qty{1,53}{\W}}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AD319}{Ein linearer Spannungsregler stabilisiert eine Eingangsspannung von \qty{13,8}{\V} auf eine Ausgangsspannung von \qty{9}{\V}. Es fließt ein Ausgangsstrom von \qty{900}{\mA}. Wie groß ist die Verlustleistung im Spannungsregler?}{\qty{12,42}{\W}}
+{\qty{8,10}{\W}}
+{\textbf{\textcolor{DARCgreen}{\qty{4,32}{\W}}}}
+{\qty{1,53}{\W}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $U_{zu} = 13,8V$
+  \item gegeben: $U_{ab} = 9V$
+  \item gegeben: $I = 900mA$
+  \item gesucht: $P_V$
+  \end{itemize}
+    \pause
+    $U_{IC1} = U_{zu} -- U_{ab} = 13,8V -- 9V = 4,8V$
+    \pause
+    $P_V = U_{IC1} \cdot I = 4,8V \cdot 900mA = 4,32W$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AD318}{Wie groß ist die Verlustleistung im Linearspannungsregler IC1?}{\qty{2,5}{\W}}
+{\qty{4,4}{\W}}
+{\qty{7,9}{\W} }
+{\qty{5,0}{\W}}
+{\DARCimage{1.0\linewidth}{201include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AD318}{Wie groß ist die Verlustleistung im Linearspannungsregler IC1?}{\qty{2,5}{\W}}
+{\textbf{\textcolor{DARCgreen}{\qty{4,4}{\W}}}}
+{\qty{7,9}{\W} }
+{\qty{5,0}{\W}}
+{\DARCimage{1.0\linewidth}{201include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $U_{zu} = 13,8V$
+  \item gegeben: $U_{ab} = 5V$
+  \item gegeben: $R_L = 10Ω$
+  \item gesucht: $P_V$
+  \end{itemize}
+    \pause
+    $I = \frac{U_{zu}}{R_L} = \frac{5V}{10Ω} = 500mA$
+    \pause
+    $U_{IC1} = U_{zu} -- U_{ab} = 13,8V -- 5V = 8,8V$
+    \pause
+    $P_V = U_{IC1} \cdot I = 8,8V \cdot 500mA = 4,4W$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{AD320}{Ein linearer Spannungsregler stabilisiert eine Eingangsspannung von \qty{13,8}{\V} auf eine Ausgangsspannung von \qty{5}{\V}. Es fließt ein Eingangsstrom von \qty{455}{\mA} und ein Ausgangsstrom von \qty{450}{\mA}. Wie groß ist der Wirkungsgrad?}{0,99}
+{0,36}
+{0,56}
+{0,64}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{AD320}{Ein linearer Spannungsregler stabilisiert eine Eingangsspannung von \qty{13,8}{\V} auf eine Ausgangsspannung von \qty{5}{\V}. Es fließt ein Eingangsstrom von \qty{455}{\mA} und ein Ausgangsstrom von \qty{450}{\mA}. Wie groß ist der Wirkungsgrad?}{0,99}
+{\textbf{\textcolor{DARCgreen}{0,36}}}
+{0,56}
+{0,64}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $U_{zu} = 13,8V$
+  \item gegeben: $U_{ab} = 5V$
+  \item gegeben: $I_{zu} = 455mA$
+  \item gegeben: $I_{ab} = 450mA$
+  \item gesucht: $\eta$
+  \end{itemize}
+    \pause
+    $\eta = \frac{P_{ab}}{P_{zu}} = \frac{U_{ab} \cdot I_{ab}}{U_{zu} \cdot I_{zu}} = \frac{5V \cdot 450mA}{13,8V \cdot 455mA} \approx 0,36$
+
+
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{AD321}{Wie groß ist der Wirkungsgrad $\left(\eta~=~\dfrac{P_{\symup{L}}}{P_{\symup{IN}}}\right)$ der dargestellten Spannungsstabilisierung, wenn durch den Lastwiderstand $R_{\symup{L}}$~=~\qty{470}{\ohm} ein Strom von $I_{\symup{L}}$~=~\qty{10}{\mA} und durch die Z-Diode ein Strom $I_{\symup{Z}}$~=~\qty{15}{\mA} fließt.}{0{,}21}
+{0{,}34}
+{0{,}17}
+{0{,}14}
+{\DARCimage{1.0\linewidth}{323include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{AD321}{Wie groß ist der Wirkungsgrad $\left(\eta~=~\dfrac{P_{\symup{L}}}{P_{\symup{IN}}}\right)$ der dargestellten Spannungsstabilisierung, wenn durch den Lastwiderstand $R_{\symup{L}}$~=~\qty{470}{\ohm} ein Strom von $I_{\symup{L}}$~=~\qty{10}{\mA} und durch die Z-Diode ein Strom $I_{\symup{Z}}$~=~\qty{15}{\mA} fließt.}{0{,}21}
+{0{,}34}
+{0{,}17}
+{\textbf{\textcolor{DARCgreen}{0{,}14}}}
+{\DARCimage{1.0\linewidth}{323include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lösungsweg}
+\begin{itemize}
+  \item gegeben: $R_L = 470Ω$
+  \item gegeben: $I_L = 10mA$
+  \item gegeben: $I_Z = 15mA$
+  \item gegeben: $U_{IN} = 13,8V$
+  \item gesucht: $\eta = \frac{P_L}{P_{IN}}$
+  \end{itemize}
+    \pause
+    $P_L = I_L^2 \cdot R_L = (10mA)^2 \cdot 470Ω = 47mW$
+    \pause
+    $P_{IN} = U_{IN} \cdot I_{IN} = U_{IN} \cdot (I_Z + I_L) = 13,8V \cdot (15mA + 10mA) = 345mW$
+    \pause
+    $\eta = \frac{P_L}{P_{IN}} = \frac{47mW}{345mW} \approx 0,14$
+
+
+
+\end{frame}%ENDCONTENT

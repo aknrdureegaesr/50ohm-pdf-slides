@@ -1,0 +1,106 @@
+
+\section{Digitale Signalverarbeitung}
+\label{section:digitale_signalverarbeitung_einleitung}
+\begin{frame}%STARTCONTENT
+\begin{itemize}
+  \item Im Bereich der Funktechnik spricht man bei Geräten, die mittels digitaler Signalverarbeitung arbeiten von sogenannten SDR-Geräten.
+  \item \emph{SDR} steht dabei  für Software Defined Radio.
+  \item In diesen Geräten ist zumindest ein Teil der Signalverarbeitung in Software realisiert.
+  \item Dieses hat einen Kostenvorteil und bringt eine große Flexibilität mit sich.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EF603}{Worauf deutet die Bezeichnung SDR bei einem Transceiver oder Empfänger hin?}{Zumindest ein Teil der Signalaufbereitung ist in Software realisiert.}
+{Es werden spezielle Antennenanschlüsse für digitale Signale verwendet.}
+{Zumindest im NF-Bereich wird Analogtechnik eingesetzt, um besseren Klang zu erreichen.}
+{Die Aussendung bzw. der Empfang erfolgt über das Internet und nicht per Funk.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EF603}{Worauf deutet die Bezeichnung SDR bei einem Transceiver oder Empfänger hin?}{\textbf{\textcolor{DARCgreen}{Zumindest ein Teil der Signalaufbereitung ist in Software realisiert.}}}
+{Es werden spezielle Antennenanschlüsse für digitale Signale verwendet.}
+{Zumindest im NF-Bereich wird Analogtechnik eingesetzt, um besseren Klang zu erreichen.}
+{Die Aussendung bzw. der Empfang erfolgt über das Internet und nicht per Funk.}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{A/D-Umsetzer}
+\begin{itemize}
+  \item Damit die Daten digital verarbeitet werden können, müssen sie zunächst digitalisiert werden.
+  \item Dazu wird das analoge Signal mittels eines Analog-Digital Umsetzers (A/D-Umsetzer) in digitale Werte umgesetzt.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Hierbei wird das analoge Signal in festen Zeitintervallen abgetastet und in einem digitalen Wertebereich (z.B. von -128 bis +127) abgebildet.
+  \item Die einzelnen gemessenen Signalwerte werden als Samples (Proben) bezeichnet.
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{411include}
+    \caption{\scriptsize Einfache Darstellung einer Sinuswelle aus 16 Samples und 7 Werten}
+    \label{e_digitale_signalverarbeitung}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{QQuestion}{EF602}{Was ist die Voraussetzung, um ein analoges Signal mit digitaler Signalverarbeitung zu filtern? Das Eingangssignal muss zunächst~...}{von Oberschwingungen befreit werden.}
+{demoduliert werden.}
+{von Rauschen befreit werden.}
+{digitalisiert werden.}
+\end{QQuestion}
+
+}
+\only<2>{
+\begin{QQuestion}{EF602}{Was ist die Voraussetzung, um ein analoges Signal mit digitaler Signalverarbeitung zu filtern? Das Eingangssignal muss zunächst~...}{von Oberschwingungen befreit werden.}
+{demoduliert werden.}
+{von Rauschen befreit werden.}
+{\textbf{\textcolor{DARCgreen}{digitalisiert werden.}}}
+\end{QQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{D/A-Umsetzer}
+\begin{itemize}
+  \item Nach der digitalen Verarbeitung des Signals wird es in einem Digital-Analog-Umsetzer (D/A-Umsetzer) wieder in ein analoges Signal verwandelt.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{EF601}{Folgendes Blockschaltbild stellt das Prinzip einer digitalen Signalverarbeitung dar. Welche Aufgaben haben die beiden Blöcke 1 und 2?}{beides A/D-Umsetzer}
+{1: D/A-Umsetzer, 2: A/D-Umsetzer}
+{beides D/A-Umsetzer}
+{1: A/D-Umsetzer, 2: D/A-Umsetzer}
+{\DARCimage{1.0\linewidth}{96include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{EF601}{Folgendes Blockschaltbild stellt das Prinzip einer digitalen Signalverarbeitung dar. Welche Aufgaben haben die beiden Blöcke 1 und 2?}{beides A/D-Umsetzer}
+{1: D/A-Umsetzer, 2: A/D-Umsetzer}
+{beides D/A-Umsetzer}
+{\textbf{\textcolor{DARCgreen}{1: A/D-Umsetzer, 2: D/A-Umsetzer}}}
+{\DARCimage{1.0\linewidth}{96include}}\end{PQuestion}
+
+}
+\end{frame}%ENDCONTENT

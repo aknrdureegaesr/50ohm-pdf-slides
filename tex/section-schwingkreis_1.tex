@@ -1,0 +1,269 @@
+
+\section{Schwingkreis I}
+\label{section:schwingkreis_1}
+\begin{frame}%STARTCONTENT
+\begin{itemize}
+  \item Kondensatoren und Spulen haben frequenzabhängige Widerstände
+  \item Damit sind passive Filterschaltungen möglich, um nur bestimmte Frequenzen passieren zu lassen
+  \end{itemize}
+    \pause
+    \emph{Zur Erinnerung}
+
+\begin{itemize}
+  \item Kondensator blockiert niedrige Frequenzen und  lässt hohe Frequenzen durch
+  \item Spule blockiert hohe Frequenzen und lässt niedrige Frequenzen durch
+  \end{itemize}
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Hochpass}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Bei niedrigen Frequenzen hat der Kondensator einen sehr hohen Widerstand
+  \item Schaltung wirkt wie ein frequenzabhängiger Spannungsteiler
+  \item U<sub>A</sub> ist dadurch sehr klein
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{592include}
+    \caption{\scriptsize Filtercharakteristik eines Hochpass}
+    \label{e_hochpass}
+\end{figure}
+
+
+\begin{figure}
+    \DARCimage{0.85\linewidth}{195include}
+    \caption{\scriptsize Hochpass aus Kondensator und Widerstand}
+    \label{e_hochpass_rc}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{ED202}{Wie wird die dargestellte Filtercharakteristik bezeichnet?}{Bandsperre}
+{Tiefpass}
+{Bandpass}
+{Hochpass}
+{\DARCimage{0.75\linewidth}{592include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{ED202}{Wie wird die dargestellte Filtercharakteristik bezeichnet?}{Bandsperre}
+{Tiefpass}
+{Bandpass}
+{\textbf{\textcolor{DARCgreen}{Hochpass}}}
+{\DARCimage{0.75\linewidth}{592include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{ED211}{Was stellt die folgende Schaltung dar? }{Hochpass}
+{Sperrkreis}
+{Bandpass}
+{Tiefpass}
+{\DARCimage{1.0\linewidth}{195include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{ED211}{Was stellt die folgende Schaltung dar? }{\textbf{\textcolor{DARCgreen}{Hochpass}}}
+{Sperrkreis}
+{Bandpass}
+{Tiefpass}
+{\DARCimage{1.0\linewidth}{195include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{ED212}{Was stellt die folgende Schaltung dar? }{Hochpass}
+{Sperrkreis}
+{Bandpass}
+{Tiefpass}
+{\DARCimage{1.0\linewidth}{754include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{ED212}{Was stellt die folgende Schaltung dar? }{\textbf{\textcolor{DARCgreen}{Hochpass}}}
+{Sperrkreis}
+{Bandpass}
+{Tiefpass}
+{\DARCimage{1.0\linewidth}{754include}}\end{PQuestion}
+
+}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{question2x2}{ED213}{Welche Schaltung stellt ein Hochpassfilter dar?}{\DARCimage{1.0\linewidth}{182include}}
+{\DARCimage{1.0\linewidth}{167include}}
+{\DARCimage{1.0\linewidth}{172include}}
+{\DARCimage{1.0\linewidth}{165include}}
+\end{question2x2}
+
+}
+\only<2>{
+\begin{question2x2}{ED213}{Welche Schaltung stellt ein Hochpassfilter dar?}{\DARCimage{1.0\linewidth}{182include}}
+{\DARCimage{1.0\linewidth}{167include}}
+{\DARCimage{1.0\linewidth}{172include}}
+{\textbf{\textcolor{DARCgreen}{\DARCimage{1.0\linewidth}{165include}}}}
+\end{question2x2}
+
+}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Tiefpass}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Bei niedrigen Frequenzen hat der Kondensator einen sehr hohen Widerstand
+  \item Schaltung wirkt wie ein frequenzabhängiger Spannungsteiler
+  \item U<sub>A</sub> ist dadurch sehr groß
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{591include}
+    \caption{\scriptsize Filtercharakteristik eines Tiefpass}
+    \label{e_hochpass}
+\end{figure}
+
+
+\begin{figure}
+    \DARCimage{0.85\linewidth}{175include}
+    \caption{\scriptsize Tiefpass aus Kondensator und Widerstand}
+    \label{e_tiefpass_rc}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{ED201}{Wie wird die dargestellte Filtercharakteristik bezeichnet?}{Bandsperre}
+{Hochpass}
+{Bandpass}
+{Tiefpass}
+{\DARCimage{0.75\linewidth}{591include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{ED201}{Wie wird die dargestellte Filtercharakteristik bezeichnet?}{Bandsperre}
+{Hochpass}
+{Bandpass}
+{\textbf{\textcolor{DARCgreen}{Tiefpass}}}
+{\DARCimage{0.75\linewidth}{591include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{ED208}{Was stellt die folgende Schaltung dar? }{Bandpass}
+{Sperrkreis}
+{Tiefpass}
+{Hochpass}
+{\DARCimage{1.0\linewidth}{175include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{ED208}{Was stellt die folgende Schaltung dar? }{Bandpass}
+{Sperrkreis}
+{\textbf{\textcolor{DARCgreen}{Tiefpass}}}
+{Hochpass}
+{\DARCimage{1.0\linewidth}{175include}}\end{PQuestion}
+
+}
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{PQuestion}{ED209}{Was stellt die folgende Schaltung dar? }{Tiefpass}
+{Sperrkreis}
+{Bandpass}
+{Hochpass}
+{\DARCimage{1.0\linewidth}{756include}}\end{PQuestion}
+
+}
+\only<2>{
+\begin{PQuestion}{ED209}{Was stellt die folgende Schaltung dar? }{\textbf{\textcolor{DARCgreen}{Tiefpass}}}
+{Sperrkreis}
+{Bandpass}
+{Hochpass}
+{\DARCimage{1.0\linewidth}{756include}}\end{PQuestion}
+
+}
+
+\end{frame}
+
+\begin{frame}
+\only<1>{
+\begin{question2x2}{ED210}{Welche Schaltung könnte für die Tiefpassfilterung in einem Mikrofonverstärker eingesetzt werden?}{\DARCimage{1.0\linewidth}{170include}}
+{\DARCimage{1.0\linewidth}{173include}}
+{\DARCimage{1.0\linewidth}{161include}}
+{\DARCimage{1.0\linewidth}{169include}}
+\end{question2x2}
+
+}
+\only<2>{
+\begin{question2x2}{ED210}{Welche Schaltung könnte für die Tiefpassfilterung in einem Mikrofonverstärker eingesetzt werden?}{\textbf{\textcolor{DARCgreen}{\DARCimage{1.0\linewidth}{170include}}}}
+{\DARCimage{1.0\linewidth}{173include}}
+{\DARCimage{1.0\linewidth}{161include}}
+{\DARCimage{1.0\linewidth}{169include}}
+\end{question2x2}
+
+}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Serienschwingkreis}
+\begin{columns}
+    \begin{column}{0.48\textwidth}
+    \begin{itemize}
+  \item Es gibt eine Resonanzfrequenz, bei der der Wechselstromwiderstand (Impedanz) sehr gering ist
+  \item Bandpass, Saugkreis (eine Frequenz wird rausgesaugt)
+  \end{itemize}
+
+    \end{column}
+   \begin{column}{0.48\textwidth}
+       
+\begin{figure}
+    \DARCimage{0.85\linewidth}{189include}
+    \caption{\scriptsize Impedanzverlauf eines Serienschwingkreis}
+    \label{e_serienschwingkreis_z}
+\end{figure}
+
+
+\begin{figure}
+    \DARCimage{0.85\linewidth}{757include}
+    \caption{\scriptsize Serienschwingkreis aus Kondensator und Spule}
+    \label{e_serienschwingkreis_cl}
+\end{figure}
+
+
+   \end{column}
+\end{columns}
+
+\end{frame}%ENDCONTENT

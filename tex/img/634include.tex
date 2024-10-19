@@ -1,0 +1,82 @@
+% Author: Dr. Matthias Jung, DL9MJ
+% Year: 2022
+\documentclass[convert=false]{standalone}
+\input{../common/settings.tex}
+
+\begin{document}
+
+\begin{circuitikz}
+    %\tikzstyle{help lines}=[blue!50];
+    %\draw[style=help lines] (0,-2) grid (18,8);
+    \draw(0,0) node[antenna]{}
+    to [amp, box, >] ++ (3,0) coordinate(c1);
+    \draw(c1) ++(0.5,0) node[mixer, box, label={IQ}] (mixx) {} ++(0.5,0);
+    \draw(mixx.west) node[inputarrow] {} to [short] ++(-1.0,0);
+    %G
+    \draw(mixx.south) node[inputarrow, rotate=90] {} to [short] ++(0,-1.0);
+    \draw(3,-2) to [twoport] ++(1,0);
+    \draw(3.3,1.2-3) node[] {G};
+
+    \def\x{0.08}
+
+    \draw[] (7.55-4,1.3-3) sin ++(\x, \x)
+                       cos ++(\x,-\x)
+                       sin ++(\x,-\x)
+                       cos ++(\x, \x);
+
+    \draw[] (7.55-4,1.15-3)sin ++(\x, \x)
+                       cos ++(\x,-\x)
+                       sin ++(\x,-\x)
+                       cos ++(\x, \x);
+
+    \draw[] (7.55-4,1.0-3) sin ++(\x, \x)
+                       cos ++(\x,-\x)
+                       sin ++(\x,-\x)
+                       cos ++(\x, \x);
+
+    \draw(7.2-4,0.60-3) -- ++(0.6,0);
+    \draw(7.2-4,0.65-3) rectangle ++ (0.6,0.1);
+    \draw(7.2-4,0.80-3) -- ++(0.6,0);
+
+    \draw(mixx.east) ++(0, 0.25) -| ++(0.5, 0.5)
+        to [short] ++(0.5,0)
+        to [lowpass, >] ++(1.0,0)
+        to [short] ++(1,0)
+        to [adc, >] ++(1,0)
+        -| ++(0.5, -0.5)
+        to [short] ++(0.5,0) node[inputarrow] {} ++(0,-0.25) coordinate(c2);
+    \draw(mixx.east) ++(0,-0.25) -| ++(0.5,-0.5)
+        to [short] ++(0.5,0)
+        to [lowpass, >] ++(1.0,0)
+        to [short] ++(1,0)
+        to [adc, >] ++(1,0)
+        -| ++(0.5, +0.5)
+        to [short] ++(0.5,0) node[inputarrow] {};
+    \draw (c2) to [twoportsplit, l ={\footnotesize De-Mapper}] ++(1,0)
+        to [twoportsplit, >,     l_={\footnotesize Kanaldecodierer}] ++(3,0)
+        to [twoportsplit, >,     l ={\footnotesize Quellendecodierer}] ++(1,0)
+        to [dac,>] ++(3,0)
+        to [amp, box, >] ++ (1,0)
+        to [short] ++(1,0)
+            node[inputarrow] {}
+            node[loudspeakershape, anchor=south, rotate=-90](L){};
+    % Decoration:
+    \draw[thick] (9+0.3,0.4) -- ++(0,-0.4);
+    \draw[thick] (9+0.1,0.2) -- ++(0.4,0);
+    \filldraw (9+0.2,0.3) circle (1pt);
+    \filldraw (9+0.4,0.3) circle (1pt);
+    \filldraw (9+0.2,0.1) circle (1pt);
+    \filldraw (9+0.4,0.1) circle (1pt);
+    \draw (9.65,-0.25) node(){\texttt{01}};
+    %
+    \draw (11.35,+0.25) node(){\tiny\texttt{01+01}};
+    \draw (11.65,-0.25) node(){\texttt{01}};
+    %
+    \draw (13.35,+0.25) node(){\texttt{01}};
+    \draw (13.65,-0.25) node(){\tiny\texttt{0101}};
+
+    % Dashed Block:
+    \draw[thick, gray, dashed] (8.25,-1) rectangle ++(6.5,2.25);
+    \draw[gray] (11.5,1.5) node(){FPGA oder Software};
+\end{circuitikz}
+\end{document}

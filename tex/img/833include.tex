@@ -1,0 +1,15 @@
+% Author: Prof. Dr. Matthias Jung, DL9MJ
+% Year: 2024
+\begin{tikzpicture}[isometric view]
+    %\draw[-Triangle] (0,0,0) -- (1,0,0) node [pos=1.2] {$x$};
+    %\draw[-Triangle] (0,0,0) -- (0,1,0) node [pos=1.2] {$y$};
+    %\draw[-Triangle] (0,0,0) -- (0,0,1) node [pos=1.2] {$z$};
+    
+    \draw[ultra thick] (0,0,0) to [short, i={$I$}] (5,0,0);
+    % Der Befehl: [x={(0,0,1)}] legt fest dass die neue X-Koordiante Z ist.
+    \foreach \i in {1,...,4} {
+        \draw[DARCorange] (\i,0,0) [x={(0,0,1)}] circle (1);
+        \draw[DARCorange] (\i,0.707,0.707) [x={(0,0,1)}] node[inputarrow, DARCorange, rotate=45](){};
+    }
+    \draw[DARCorange] (2,0.707,0.707) [x={(0,0,1)}] node[anchor=south east](){B};
+\end{tikzpicture}

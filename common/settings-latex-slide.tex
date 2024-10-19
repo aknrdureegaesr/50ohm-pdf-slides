@@ -1,0 +1,150 @@
+\PassOptionsToPackage{fleqn}{amsmath}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{csquotes}
+\usepackage[greek,german]{babel}
+\usepackage{siunitx}
+\usepackage{tabularray}
+\usepackage{fontawesome5}
+\usepackage{cancel}
+\makeatletter
+\let\ang\relax
+\makeatother
+\usepackage{texvc}
+
+\DeclareSIUnit{\baud}{Bd}
+\DeclareSIUnit{\dBi}{dBi}
+\DeclareSIUnit{\dBm}{dBm}
+\DeclareSIUnit{\dBu}{dBu}
+\DeclareSIUnit{\dBV}{dbV}
+\DeclareSIUnit{\dBW}{dBW}
+\DeclareSIUnit{\ppm}{ppm}
+\DeclareSIUnit{\pps}{pps}
+\DeclareSIUnit{\CPM}{CPM}
+\DeclareSIUnit{\WPM}{WPM}
+\DeclareSIUnit\noop{\relax}
+
+\definecolor{DARCgreen}{RGB}{0,155,110}
+\definecolor{DARCorange}{RGB}{250,180,0}
+\definecolor{DARCred}{RGB}{225,80,35}
+\definecolor{DARCblue}{RGB}{0,160,220}
+\definecolor{DARCgray}{RGB}{190,190,190}
+\definecolor{DARClightgray}{HTML/cmyk}{e8e9e8/.11,.07,.09,0}
+
+\definecolor{unit-title}{RGB}{155,205,185}
+\definecolor{attention-title}{RGB}{255,230,170}
+\definecolor{danger-title}{RGB}{245,175,150}
+\definecolor{hint-title}{RGB}{185,220,245}
+\definecolor{advanced-title}{RGB}{225,230,235}
+
+\definecolor{DARCdarkblue}{RGB}{43, 103, 140}
+
+\definecolor{r}{rgb}{0.98, 0.84, 0.65}
+\definecolor{rsilver}{rgb}{0.75, 0.75, 0.75}
+\definecolor{rgold}{rgb}{0.85, 0.65, 0.13}
+\definecolor{rbrown}{rgb}{0.59, 0.29, 0.0}
+\definecolor{rblack}{rgb}{0,0,0}
+\definecolor{rred}{rgb}{0.89, 0.0, 0.13}
+\definecolor{rorange}{rgb}{0.93, 0.53, 0.18}
+\definecolor{ryellow}{rgb}{1.0, 0.96, 0.0}
+\definecolor{rgreen}{rgb}{0.0, 0.42, 0.24}
+\definecolor{rblue}{rgb}{0.06, 0.2, 0.65}
+\definecolor{rviolet}{rgb}{0.56, 0.0, 1.0}
+\definecolor{rgrey}{rgb}{0.33, 0.33, 0.33}
+\definecolor{rwhite}{rgb}{0.96, 0.96, 0.96}
+
+\tcbset{QSO/.style={
+	enhanced,boxrule=0pt,
+	frame empty,colback=DARClightgray,fontupper=\footnotesize,
+	interior code={
+		\fill[tcbcolback](frame.north west)to(frame.north east)to([yshift=-\ht\strutbox]interior.north east)to(interior.south east)to(interior.south west)to([yshift=-\ht\strutbox]interior.north west)--cycle;
+	}
+}}
+
+\newcommand{\QSOown}[1]{\begin{tcolorbox}[
+		QSO,
+		leftrule=\ht\strutbox,
+		right skip=.1\linewidth
+]%
+#1%
+\end{tcolorbox}}
+
+\newcommand{\QSOother}[1]{\begin{tcolorbox}[
+		QSO,
+		rightrule=\ht\strutbox,
+		left skip=.1\linewidth]%
+		#1%
+\end{tcolorbox}}
+
+\newenvironment{QQuestion}[6]{
+    \begin{block}{#1}
+        #2
+        \begin{itemize}
+            \item[A:] #3
+            \item[B:] #4
+            \item[C:] #5
+            \item[D:] #6
+        \end{itemize}
+    \end{block}
+}
+
+\newenvironment{PQuestion}[7]{
+    \begin{block}{#1}
+        \begin{columns}
+            \begin{column}{0.48\linewidth}
+                #7
+            \end{column}
+            \begin{column}{0.48\linewidth}
+                #2
+                \begin{itemize}
+                    \item[A:] #3
+                    \item[B:] #4
+                    \item[C:] #5
+                    \item[D:] #6
+                \end{itemize}
+            \end{column}
+        \end{columns}
+    \end{block}
+}
+
+\newenvironment{question_md}[6]{
+    \Question{#1}{#2}{#3}{#4}{#5}{#6}
+}
+
+\newenvironment{question2x2}[6]{
+    \begin{block}{#1}
+        #2
+        \begin{columns}
+            \begin{column}{0.48\linewidth}
+                \begin{itemize}
+                    \item[A:] #3
+                    \item[B:] #4
+                \end{itemize}
+            \end{column}
+            \begin{column}{0.48\linewidth}
+                \begin{itemize}
+                    \item[C:] #5
+                    \item[D:] #6
+                \end{itemize}
+            \end{column}
+        \end{columns}
+    \end{block}
+}
+
+%\newenvironment{DARCtabular}[1]{
+%    \begin{tblr}{hlines, colspec={#1}}
+%}{
+%    \end{tblr}
+%}
+
+\NewTblrEnviron{DARCtabular}
+
+\SetTblrInner[DARCtabular]{
+    row{odd} = {DARCblue!30},
+    row{even} = {DARCblue!50},
+    row{1} = {bg=DARCblue, fg=white, font=\bfseries}
+}
+
+\SetTblrOuter[DARCtabular]{
+    baseline=B
+}

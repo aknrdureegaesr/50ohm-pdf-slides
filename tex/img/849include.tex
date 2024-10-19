@@ -1,0 +1,19 @@
+% Author: Prof. Dr. Matthias Jung, DL9MJ
+% Author: Michael Groni, DB7YI
+% Year: 2024
+% Spitzen- und Effektivwert
+% bearbeitete Version von Bild 834
+
+\begin{tikzpicture}
+    \draw[-Triangle] (0,0) -- (2.1*pi,0) node[below]{$t$};
+    \draw[-Triangle] (0,2*-1.1) -- (0,2*1.3) node[above]{$U$};
+    \foreach \x in {1,...,6}{
+        \draw (\x,-.1) -- (\x,.1);
+    }
+    \draw[Triangle-Triangle] (.5*pi,0) -- (.5*pi,2);
+    \draw (.5*pi,1) node[right,text width=pi]{$\hat{U}$}; 
+    \draw[color=DARCred,very thick] plot[domain=0:2*pi,smooth] (\x,{2*sin(\x r)});
+    \draw[Triangle-Triangle] (pi,0) -- (pi,1.4);
+    \draw[DARCgray](0.1,1.4) -- (2*pi,1.4); % Horizontale auf Höhe des Effektivwerts
+    \draw (pi,0.7) node[right,text width=pi]{$U_\text{eff}$};
+\end{tikzpicture}
