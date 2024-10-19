@@ -19,23 +19,23 @@ jobs:
             - name: Compile Slides N
               uses: dante-ev/latex-action@latest
               with:
-                working_directory: tex
+                #working_directory: tex
                 compiler: lualatex
-                root_file: slide-N.tex
+                root_file: tex/slide-N.tex
 
-            - name: Compile Slides E
-              uses: dante-ev/latex-action@latest
-              with:
-                working_directory: tex
-                compiler: lualatex
-                root_file: slide-E.tex
+            #- name: Compile Slides E
+            #  uses: dante-ev/latex-action@latest
+            #  with:
+            #    working_directory: tex
+            #    compiler: lualatex
+            #    root_file: slide-E.tex
 
-            - name: Compile Slides NE
-              uses: dante-ev/latex-action@latest
-              with:
-                working_directory: tex
-                compiler: lualatex
-                root_file: slide-NE.tex
+            #- name: Compile Slides NE
+            #  uses: dante-ev/latex-action@latest
+            #  with:
+            #    working_directory: tex
+            #    compiler: lualatex
+            #    root_file: slide-NE.tex
 
             - name: Upload PDF slides-N
               uses: actions/upload-artifact@v4.4.3
@@ -43,14 +43,14 @@ jobs:
                 name: slide-N
                 path: tex/slide-N.pdf
                 
-            - name: Upload PDF slides-E
-              uses: actions/upload-artifact@v4.4.3
-              with:
-                name: slide-E
-                path: tex/slide-E.pdf
+            #- name: Upload PDF slides-E
+            #  uses: actions/upload-artifact@v4.4.3
+            #  with:
+            #    name: slide-E
+            #    path: tex/slide-E.pdf
 
-            - name: Upload PDF slides-NE
-              uses: actions/upload-artifact@v4.4.3
-              with:
-                name: slide-NE
-                path: tex/slide-NE.pdf
+            #- name: Upload PDF slides-NE
+            #  uses: actions/upload-artifact@v4.4.3
+            #  with:
+            #    name: slide-NE
+            #    path: tex/slide-NE.pdf
