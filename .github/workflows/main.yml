@@ -21,27 +21,27 @@ jobs:
               with:
                 working_directory: tex
                 compiler: lualatex
-                root_file: slides-N.tex
+                root_file: slide-N.tex
 
             - name: Compile Slides E
               uses: dante-ev/latex-action@latest
               with:
                 working_directory: tex
                 compiler: lualatex
-                root_file: slides-E.tex
+                root_file: slide-E.tex
 
             - name: Compile Slides NE
               uses: dante-ev/latex-action@latest
               with:
                 working_directory: tex
                 compiler: lualatex
-                root_file: slides-NE.tex
+                root_file: slide-NE.tex
 
             - name: Upload PDF slides-N
               uses: actions/upload-artifact@v4.4.3
               with:
                 name: slide-N
-                path: tex/slides-N.pdf
+                path: tex/slide-N.pdf
                 
             - name: Upload PDF slides-E
               uses: actions/upload-artifact@v4.4.3
@@ -53,4 +53,4 @@ jobs:
               uses: actions/upload-artifact@v4.4.3
               with:
                 name: slide-NE
-                path: tex/slides-NE.pdf
+                path: tex/slide-NE.pdf
