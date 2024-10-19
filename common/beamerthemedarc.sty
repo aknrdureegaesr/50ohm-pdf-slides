@@ -64,15 +64,15 @@
 \setbeamertemplate{blocks}[default]
 \setbeamercovered{invisible}
 
-%% Header Line:
-%\setbeamertemplate{headline}{
-%  \begin{tikzpicture}[overlay, remember picture]
-%  	\draw[
-%      line width=1mm,
-%      draw=structure.fg
-%    ] (current page.north east) ++(0,-1.0cm) -- ++(-\paperwidth,0) {};
-%  \end{tikzpicture}
-%}
+% Header Line:
+\setbeamertemplate{headline}{
+  \begin{tikzpicture}[overlay, remember picture]
+  	\draw[
+      line width=1mm,
+      draw=structure.fg
+    ] (current page.north east) ++(0,-1.0cm) -- ++(-\paperwidth,0) {};
+  \end{tikzpicture}
+}
 
 % Footer Line:
 \setbeamertemplate{footline} {%
@@ -109,6 +109,11 @@
       xshift=+0.5\paperwidth,
       yshift=-0.08829365079\paperwidth
     ] (worldpic) at (current page.north west) {\includegraphics[width=\paperwidth]{world.png}};
+    \node[
+      anchor = south east,
+      xshift=-0.5cm,
+      yshift=1cm
+    ] (worldpic) at (current page.south east) {\includegraphics[width=2.5cm]{50ohm.pdf}};
 		\draw[
       line width=1mm,
       draw=structure.fg
