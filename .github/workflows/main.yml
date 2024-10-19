@@ -24,20 +24,20 @@ jobs:
             - name: Build PDFs
               run: make
 
+            - name: Upload PDF slides-N
+              uses: actions/upload-artifact@v4.4.3
+              with:
+                name: slide-N
+                path: tex/slides-N.pdf
+                
             - name: Upload PDF slides-E
-              uses: actions/upload-artifact@v2
+              uses: actions/upload-artifact@v4.4.3
               with:
                 name: slide-E
                 path: tex/slide-E.pdf
 
-            - name: Upload PDF slides-N
-              uses: actions/upload-artifact@v2
-              with:
-                name: slide-N
-                path: path/to/slides-N.pdf
-
             - name: Upload PDF slides-NE
-              uses: actions/upload-artifact@v2
+              uses: actions/upload-artifact@v4.4.3
               with:
                 name: slide-NE
                 path: tex/slides-NE.pdf
