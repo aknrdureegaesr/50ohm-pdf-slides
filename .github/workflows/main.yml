@@ -11,36 +11,37 @@ on:
         branches:
             - main
 
+
+
 jobs:
     build:
         runs-on: debian-latest
-
         steps:
-        - name: Checkout repository
-            uses: actions/checkout@v2
-
-        - name: Set up Debian with LaTeX
+            - name: checkout repo
+            uses: actions/checkout@v4
+            
+            - name: Set up Debian with LaTeX
             run: |
-                sudo apt-get update
-                sudo apt-get install -y texlive-full make
+            sudo apt-get update
+            sudo apt-get install -y texlive-full make
 
-        - name: Build PDFs
+            - name: Build PDFs
             run: make
 
             - name: Upload PDF slides-E
-                uses: actions/upload-artifact@v2
-                with:
-                name: slide-E
-                path: tex/slide-E.pdf
+            uses: actions/upload-artifact@v2
+            with:
+            name: slide-E
+            path: tex/slide-E.pdf
 
             - name: Upload PDF slides-N
-                uses: actions/upload-artifact@v2
-                with:
-                name: slide-N
-                path: path/to/slides-N.pdf
+            uses: actions/upload-artifact@v2
+            with:
+            name: slide-N
+            path: path/to/slides-N.pdf
 
             - name: Upload PDF slides-NE
-                uses: actions/upload-artifact@v2
-                with:
-                name: slide-NE
+            uses: actions/upload-artifact@v2
+            with:
+            name: slide-NE
                 path: tex/slides-NE.pdf
