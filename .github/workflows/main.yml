@@ -19,7 +19,7 @@ jobs:
             - name: Compile Slides N
               uses: dante-ev/latex-action@latest
               with:
-                #working_directory: tex
+                working_directory: tex
                 compiler: lualatex
                 root_file: tex/slide-N.tex
 
