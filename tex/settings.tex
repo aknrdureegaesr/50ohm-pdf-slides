@@ -258,17 +258,17 @@
 	}
 }
 
-\newcommand*{\DARCimageCache}[1]{
-	\prop_gset_from_keyval:Nn \g__ptxcd_image_size_cache_prop {#1}
-}
-
-\hook_gput_code:nnn {enddocument/afterlastpage}{write-DARCimage-size-cache}{
-	\iow_now:Ne \@auxout {
-		\exp_not:N \DARCimageCache{
-			\seq_use:Nn  \g__ptxcd_image_size_seq {,}
-		}
-	}
-}
+%\newcommand*{\DARCimageCache}[1]{
+%	\prop_gset_from_keyval:Nn \g__ptxcd_image_size_cache_prop {#1}
+%}
+%
+%\hook_gput_code:nnn {enddocument/afterlastpage}{write-DARCimage-size-cache}{
+%	\iow_now:Ne \@auxout {
+%		\exp_not:N \DARCimageCache{
+%			\seq_use:Nn  \g__ptxcd_image_size_seq {,}
+%		}
+%	}
+%}
 
 \NewDocumentCommand{\DARCimage}{sO{Bild~zur~Prüfungsfrage~\l_ptxcd_question_tl}mm}{
 	\par\smallskip
